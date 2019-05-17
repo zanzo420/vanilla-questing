@@ -11,7 +11,7 @@ function Manifesto() { return (
       <div id={ 'inner' }>
          <Primary header={ 'Introduction' } id={ 'intro' }>
             <Paragraph>
-               Greetings! This is a web-based quest helper for Vanilla/Classic World of Warcraft. The application takes a <a href='https://github.com/wickstjo/react-questing/blob/master/public/routes/alliance/shared.json'>handwritten JSON file</a> (that contains a route) and parses it to an easy to follow guide with dynamically rendered maps, directions and objective/quest logs.
+               Greetings! This is a web-based quest helper for Vanilla/Classic World of Warcraft. The application takes a <a href='https://github.com/wickstjo/vanilla-questing/blob/master/public/routes/alliance/shared.json'>handwritten JSON file</a> (that contains a route) and parses it to an easy to follow guide with dynamically rendered maps, directions and objective/quest logs.
             </Paragraph>
             <Paragraph>
                It was originally intended for quest routing in mind, but can be used for anything map and coordinate related and uses the same metrics that the game does. The route files were designed with flexibility and precision in mind so even large sweeping changes are easy to implement while machine auditing makes sure that every quest has an appropriate start and conclusion.
@@ -70,6 +70,11 @@ function Manifesto() { return (
                   Loading images of zones is the most bandwidth intense part of the ordeal. They’re around 2.5MB in size each and there’s around 45 zones in total. Google Chrome is decent at caching and remembering data that you’ve viewed before, but Firefox refuses to do it. While I look into finding a fix for Firefox, consider using Chrome and preloading everything if the “flickering” becomes annoying and your download speed isn’t absurd.
                </Paragraph>
             </Secondary>
+            <Secondary header={ `Key Bindings` } id={ `bindings` }>
+               <Paragraph>
+                  For browsing back and forward, use the <hl>A</hl> and <hl>D</hl> keys. To quickly open the reference overview, use <hl>Q</hl>. To close any prompt, use <hl>Escape</hl>. For the time being there is no way to customize these, but rest assured that the feature is coming.
+               </Paragraph>
+            </Secondary>
          </Primary>
          <Primary header={ `Contribute` } id={ `contribute` }>
             <Paragraph>
@@ -77,7 +82,7 @@ function Manifesto() { return (
             </Paragraph>
             <Table data={[
                ['PayPal', 'Jfwick@gmail.com'],
-               ['Ethereum', '0x1234'],
+               ['Ethereum', '0x1234 (TBA)'],
                ['Discord', 'Strafir#9133'],
                ['Reddit', 'Wickstjo'],
                ['Github', 'Wickstjo']
