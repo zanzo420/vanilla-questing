@@ -1,4 +1,6 @@
 import React, { useState, useContext } from 'react';
+import EventListener from 'react-event-listener';
+
 import { Context } from "../../context";
 import { specific } from '../../funcs/build';
 
@@ -91,10 +93,21 @@ function Create() {
       }
    }
 
+   // ENTER KEY LISTENER
+   const key_listener = (event) => {
+      if (event.key.toLowerCase() === 'enter' && state.prompt.visible) {
+         submit();
+      }
+   }
+
    return (
       <>
          <div id={ 'header' }>Create Profile</div>
          <div id={ 'create' }>
+            <EventListener
+               target={ 'window' }
+               onKeyDown={ key_listener }
+            />
             <input
                autoFocus
                id={ 'content' }
