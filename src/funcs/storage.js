@@ -9,9 +9,9 @@ function check() {
       if (localStorage.getItem('vanilla-questing') !== null) {
 
          // CONVERT & SET
-         localStorage.setItem(key, convert(
-            localStorage.getItem('vanilla-questing')
-         ));
+         localStorage.setItem(key, JSON.stringify({
+            profiles: convert(localStorage.getItem('vanilla-questing'))
+         }));
          
          // DELETE OLD KEY
          localStorage.removeItem('vanilla-questing');
@@ -61,8 +61,11 @@ function change(state, block) {
 // CONVERT OLD STORAGE OBJECT
 function convert(old) {
 
+   // OBJECTIFY
+   const foo = JSON.parse(old);
+
    // FETCH KEYS & DECLARE PROFILES
-   const keys = Object.keys(old);
+   const keys = Object.keys(foo);
    let profiles = [];
 
    // LOOP THROUGH
@@ -70,8 +73,8 @@ function convert(old) {
 
       // PUSH EACH NAME/DETAILS BLOCK
       profiles.push([key, {
-         icon: old[key].race,
-         block: old[key].block
+         icon: foo[key].race,
+         block: foo[key].block
       }]);
    })
 
