@@ -1,11 +1,37 @@
 {
-   "scripts": {
-      "watch": "watchify core/app.js -o core/bundle.js -v",
-      "ugly": "uglifyjs core/bundle.js -mc > core/bundle.min.js"
-   },
-   "dependencies": {
-      "jquery": "^3.3.1",
-      "uglify-es": "^3.3.9",
-      "watchify": "^3.11.0"
-   }
+  "name": "react-proj",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://wickstjo.github.io/vanilla-questing",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-event-listener": "^0.6.6",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "react-sizer": "^1.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "push": "bash push.sh",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
