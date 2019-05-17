@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from "./context";
 import Init from './init';
 
@@ -11,7 +11,7 @@ import Manifesto from './pages/manifesto';
 import Error from './pages/error';
 
 function App() { return (
-   <HashRouter>
+   <BrowserRouter>
       <Provider>
          <Init />
          <Menu />
@@ -21,7 +21,7 @@ function App() { return (
             <Route component={ Error } />
          </Switch>
       </Provider>
-   </HashRouter>
+   </BrowserRouter>
 )}
 
 export default App;

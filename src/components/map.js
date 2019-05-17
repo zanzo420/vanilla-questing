@@ -122,7 +122,7 @@ function Map() {
          })
 
       }
-   }, [local.resolution, state.current])
+   }, [local.resolution, state.current, state.data.route[state.current].zone])
 
    return (
       <div onMouseOver={ prevnext.show } onMouseOut={ prevnext.hide }>

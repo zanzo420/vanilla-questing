@@ -13,7 +13,7 @@ function Create() {
       button: 'bad',
       errors: []
    })
-
+   
    // AUDIT NAME -- FORCE LOWERCASE
    const audit = (event) => {
       const input = event.target.value.toLowerCase();

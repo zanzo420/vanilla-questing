@@ -6,15 +6,15 @@ function check() {
    return new Promise((resolve, reject) => {
 
       // CONVERT OLD PROFILES
-      if (localStorage.getItem('questing-page') !== null) {
+      if (localStorage.getItem('vanilla-questing') !== null) {
 
          // CONVERT & SET
          localStorage.setItem(key, convert(
-            localStorage.getItem('questing-page')
+            localStorage.getItem('vanilla-questing')
          ));
          
          // DELETE OLD KEY
-         localStorage.removeItem('questing-page');
+         localStorage.removeItem('vanilla-questing');
       }
 
       // NUKE LEGACY STUFF ENTIRELY
