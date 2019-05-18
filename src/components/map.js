@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Context } from "../context";
+
 import EventListener from 'react-event-listener';
 import { next, previous } from "../funcs/browsing";
 
@@ -115,7 +116,7 @@ function Map() {
             ...local,
             last_position: position,
             style: {
-               backgroundImage: 'url(' + require('../interface/images/maps/' + state.data.route[state.current].zone + '.png') + ')',
+               backgroundImage: 'url(' + require('../interface/images/maps/' + state.data.route[state.current].zone + '.jpg') + ')',
                left: position.x + 'px',
                top: position.y + 'px',
             }

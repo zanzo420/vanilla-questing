@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 // SHORTHAND FOR LOGGING
 function log(stuff) {
    console.log(stuff);
@@ -25,8 +27,94 @@ function shorten(string) {
    return string;
 }
 
+// PRELOAD BACKGROUNDS
+function preload_bgs(dispatch) {
+   console.log('Started Preload!');
+
+   // SHOW PROMPT
+   dispatch({
+      type: 'show-prompt',
+      payload: 'loading'
+   })
+
+   // ALL THE ZONES
+   const zones = [
+      'alterac',
+      'arathi',
+      'ashenvale',
+      'azshara',
+      'badlands',
+      'barrens',
+      'blasted',
+      'darkshore',
+      'darnassus',
+      'deadwind',
+      'desolace',
+      'durotar',
+      'duskwood',
+      'dustwallow',
+      'elwynn',
+      'epl',
+      'felwood',
+      'feralas',
+      'hillsbrad',
+      'hinterlands',
+      'ironforge',
+      'loch',
+      'moonglade',
+      'morogh',
+      'mulgore',
+      'needles',
+      'orgrimmar',
+      'redridge',
+      'searing',
+      'silverpine',
+      'steppes',
+      'stonetalon',
+      'stormwind',
+      'stv',
+      'swamp',
+      'tanaris',
+      'teldrassil',
+      'thunderbluff',
+      'tirisfal',
+      'undercity',
+      'ungoro',
+      'westfall',
+      'wetlands',
+      'winterspring',
+      'wpl'
+   ];
+
+   // PROMISE CONTAINER
+   let promises = [];
+
+   // GENERATE & PUSH A PROMISE FOR EACH ZONE
+   zones.forEach(zone => {
+
+      // GENERATE A PROMISE
+      var p = new Promise((resolve, reject) => {
+         axios.get(
+            require('../interface/images/maps/' + zone + '.jpg')
+         ).then(() => { resolve(); });
+      });
+
+      // PUSH IT TO THE CONTAINER
+      promises.push(p);
+   });
+
+   // WAIT FOR EVERYTHING TO RESOLVE
+   Promise.all(promises).then(() => {
+
+      // LOG SUCCESS & HIDE PROMPT
+      console.log('Preload Complete!');
+      dispatch({ type: 'hide-prompt' })
+   });
+}
+
 export {
    log,
    sleep,
-   shorten
+   shorten,
+   preload_bgs
 }
