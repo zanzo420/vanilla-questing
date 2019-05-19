@@ -35,7 +35,11 @@ function Objective({ index, quests, waypoint }) {
 
       // SPECIALS
       if (type === 'special') {
-         return <div>{ header }</div>
+         if (header instanceof Array) {
+            return <div><a href={ header[1] } target="_blank" rel="noopener noreferrer">{ header[0] }</a></div>
+         } else {
+            return <div>{ header }</div>
+         }
    
       // ARRAYS
       } else if (header instanceof Array) {
@@ -73,10 +77,11 @@ function Single({ quests, header }) {
    }
 
    return (
-   <div>
-      <a href={ 'https://classicdb.ch/?quest=' + quests[header.toString().toLowerCase()] } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a>
-   </div>
-)}
+      <div>
+         <a href={ 'https://classicdb.ch/?quest=' + quests[header.toString().toLowerCase()] } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a>
+      </div>
+   )
+}
 
 // MULTI HEADER BLOCK
 function Multi({ quests, header, tag }) {
@@ -86,10 +91,11 @@ function Multi({ quests, header, tag }) {
    }
    
    return (
-   <div className="split">
-      <div><a href={ 'https://classicdb.ch/?quest=' + quests[header.toString().toLowerCase()] } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a></div>
-      <div>{ tag }</div>
-   </div>
-)}
+      <div className="split">
+         <div><a href={ 'https://classicdb.ch/?quest=' + quests[header.toString().toLowerCase()] } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a></div>
+         <div>{ tag }</div>
+      </div>
+   )
+}
 
 export default Objective;
