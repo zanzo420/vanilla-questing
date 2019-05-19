@@ -3,7 +3,6 @@ import { Context } from "../context";
 
 import EventListener from 'react-event-listener';
 import { next, previous } from "../funcs/browsing";
-
 import { autocenter, update_position, dimensions } from "../funcs/map";
 
 import '../interface/css/map.scss';

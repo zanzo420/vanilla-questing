@@ -3783,7 +3783,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 30.08,
+         "experience": 31.08,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 21 },
@@ -3802,7 +3802,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 30.08,
+         "experience": 31.08,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -3827,7 +3827,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 30.08,
+         "experience": 31.08,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -3846,7 +3846,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 30.08,
+         "experience": 31.08,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -3862,7 +3862,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 30.08,
+         "experience": 31.08,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },

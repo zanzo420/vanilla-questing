@@ -942,17 +942,18 @@
                "type": "travel"
             },
             {
-               "coords": { "x": 36, "y": 46 },
+               "coords": { "x": 37, "y": 45 },
                "align": "bottom",
-               "header": "auberdine flightpath",
+               "header": "lower auberdine",
+               "starts": ["for love eternal", "buzzbox 827", ["washed ashore", "p1"], "cave mushrooms", "the red crystal"],
                "special": ["learn the flightpath"],
-               "type": "flightpath"
+               "type": "hub"
             },
             {
                "coords": { "x": 39, "y": 43 },
                "align": "bottom",
-               "header": "auberdine",
-               "starts": ["for love eternal", "buzzbox 827", ["washed ashore", "p1"], "cave mushrooms", "the red crystal", "deep ocean, vast sea", ["bashal'aran", "p1"], "tools of the highborne", "plagued lands", ["how big a threat?", "p1"], ["the tower of althalaxx", "p1"]],
+               "header": "upper auberdine",
+               "starts": ["deep ocean, vast sea", ["bashal'aran", "p1"], "tools of the highborne", "plagued lands", ["how big a threat?", "p1"], ["the tower of althalaxx", "p1"]],
                "type": "hub"
             },
             {
@@ -1040,7 +1041,8 @@
             },
             {
                "coords": { "x": 39, "y": 43 },
-               "header": "auberdine",
+               "align": "bottom",
+               "header": "upper auberdine",
                "ends": ["plagued lands"],
                "starts": ["cleansing of the infected"],
                "type": "hub"
@@ -1078,11 +1080,18 @@
                "type": "objective"
             },
             {
+               "coords": { "x": 37, "y": 45 },
+               "header": "lower auberdine",
+               "ends": [["washed ashore", "p1"], "buzzbox 827"],
+               "starts": [["washed ashore", "p2"], "buzzbox 411"],
+               "type": "hub"
+            },
+            {
                "coords": { "x": 39, "y": 43 },
                "align": "right",
-               "header": "auberdine",
-               "ends": [["washed ashore", "p1"], "buzzbox 827", ["how big a threat?", "p1"]],
-               "starts": [["washed ashore", "p2"], "buzzbox 411", ["how big a threat?", "p2"], "the cliffspring river", ["the tower of althalaxx", "p1"]],
+               "header": "upper auberdine",
+               "ends": [["how big a threat?", "p1"]],
+               "starts": [["how big a threat?", "p2"], "the cliffspring river", ["the tower of althalaxx", "p1"]],
                "completed": ["thundris windweaver"],
                "type": "hub"
             },
@@ -1164,11 +1173,19 @@
                "type": "objective"
             },
             {
+               "coords": { "x": 37, "y": 45 },
+               "header": "lower auberdine",
+               "ends": ["the red crystal", ["washed ashore", "p2"], "for love eternal"],
+               "starts": ["as water cascades", "fruit of the sea"],
+               "special": ["fill the empty vial at the moonwell.", "be level 15"],
+               "type": "hub"
+            },
+            {
                "coords": { "x": 39, "y": 43 },
-               "header": "auberdine",
-               "ends": ["cleansing of the infected", ["how big a threat?", "p2"], "the red crystal", ["washed ashore", "p2"], "for love eternal", "tools of the highborne"],
-               "starts": ["tharnariun's hope", "as water cascades", "fruit of the sea"],
-               "special": ["fill the empty vial at the moonwell", "be level 15"],
+               "align": "top",
+               "header": "upper auberdine",
+               "ends": ["cleansing of the infected", ["how big a threat?", "p2"], "tools of the highborne"],
+               "starts": ["tharnariun's hope"],
                "type": "hub"
             }
          ]
@@ -1179,12 +1196,14 @@
          "waypoints": [
             {
                "coords": { "x": 39, "y": 43 },
-               "header": "auberdine",
+               "header": "upper auberdine",
+               "ends": ["cleansing of the infected", ["how big a threat?", "p2"], "tools of the highborne"],
+               "starts": ["tharnariun's hope"],
                "type": "hub"
             },
             {
                "coords": { "x": 47, "y": 49 },
-               "align": "right",
+               "align": "bottom",
                "header": "mysterious red crystal",
                "ends": ["as water cascades"],
                "starts": ["the fragments within"],
@@ -1312,9 +1331,16 @@
             },
             {
                "coords": { "x": 39, "y": 43 },
-               "header": "auberdine",
-               "ends": ["the cliffspring river", "deep ocean, vast sea", "tharnariun's hope", "the fragments within", "cave mushrooms", "fruit of the sea", "beached sea creature", "beached sea turtle"],
+               "align": "top",
+               "header": "upper auberdine",
+               "ends": ["the cliffspring river", "deep ocean, vast sea", "tharnariun's hope"],
                "starts": ["the blackwood corrupted"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 37, "y": 45 },
+               "header": "lower auberdine",
+               "ends": ["the fragments within", "cave mushrooms", "fruit of the sea", "beached sea creature", "beached sea turtle"],
                "special": ["fill your bowl at the moonwell"],
                "type": "hub"
             }
@@ -1325,10 +1351,9 @@
          "experience": 16.50,
          "waypoints": [
             {
-               "coords": { "x": 39, "y": 43 },
-               "header": "auberdine",
-               "ends": ["the cliffspring river", "deep ocean, vast sea", "tharnariun's hope", "the fragments within", "cave mushrooms", "fruit of the sea", "beached sea creature", "beached sea turtle"],
-               "starts": ["the blackwood corrupted"],
+               "coords": { "x": 37, "y": 45 },
+               "header": "lower auberdine",
+               "ends": ["the fragments within", "cave mushrooms", "fruit of the sea", "beached sea creature", "beached sea turtle"],
                "special": ["fill your bowl at the moonwell"],
                "type": "hub"
             },
@@ -1356,7 +1381,7 @@
             },
             {
                "coords": { "x": 39, "y": 43 },
-               "header": "auberdine",
+               "header": "upper auberdine",
                "ends": ["the blackwood corrupted"],
                "special": ["hearthstone to ironforge"],
                "type": "hub"
