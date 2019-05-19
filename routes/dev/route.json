@@ -1585,7 +1585,7 @@
             {
                "coords": { "x": 57, "y": 53 },
                "header": "westfall flightpath",
-               "special": ["learn the flightpath"],
+               "special": ["learn the flightpath", ["your text", "your url"]],
                "type": "flightpath"
             }
          ]
