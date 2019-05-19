@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Line({ current, next }) {
+function Line({ current, next, offcolor }) {
 
    // IF THERE IS A PREDICESSOR
    if (next !== undefined) {
@@ -9,6 +9,7 @@ function Line({ current, next }) {
          y1={ current.coords.y + '%' }
          x2={ next.coords.x + '%' }
          y2={ next.coords.y + '%' }
+         id={ offcolor ? 'secondary-line' : null }
       />
 
    // OTHERWISE, RETURN NULL
