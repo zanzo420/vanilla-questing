@@ -357,9 +357,9 @@
                "type": "flightpath"
             },
             {
-               "coords": { "x": 31, "y": 47 },
+               "coords": { "x": 32, "y": 48 },
                "align": "right",
-               "header": "lakeshire blacksmith",
+               "header": "the northern bridge",
                "starts": ["the price of shoes", "the lost tools"],
                "type": "quest"
             },
@@ -525,7 +525,7 @@
             {
                "coords": { "x": 21, "y": 56 },
                "header": "argos nightwhisper",
-               "starts": ["the corruption abroad"],
+               "starts": [["the corruption abroad", "d"]],
                "type": "quest"
             },
             {
@@ -579,7 +579,7 @@
             {
                "coords": { "x": 22, "y": 46 },
                "align": "top",
-               "header": "lakeshire",
+               "header": "lakeshire hillside",
                "ends": ["visit the herbalist"],
                "starts": ["delivering daffodils"],
                "type": "quest"
@@ -600,9 +600,9 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 31, "y": 47 },
+               "coords": { "x": 32, "y": 48 },
                "align": "right",
-               "header": "lakeshire blacksmith",
+               "header": "The Northern Bridge",
                "ends": ["the lost tools", "return to verner"],
                "type": "quest"
             },
@@ -806,7 +806,7 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 27, "y": 44 },
+               "coords": { "x": 28, "y": 46 },
                "align": "top",
                "header": "lakeshire",
                "ends": [["messenger to westfall", "p2"]],
@@ -817,7 +817,7 @@
             {
                "coords": { "x": 22, "y": 45 },
                "align": "top",
-               "header": "lakeshire",
+               "header": "lakeshire hillside",
                "starts": ["an unwelcome guest", "redridge goulash"],
                "type": "quest"
             }
@@ -830,7 +830,7 @@
             {
                "coords": { "x": 22, "y": 45 },
                "align": "top",
-               "header": "lakeshire",
+               "header": "lakeshire hillside",
                "starts": ["an unwelcome guest", "redridge goulash"],
                "type": "quest"
             },
@@ -920,7 +920,7 @@
             },
             {
                "coords": { "x": 23, "y": 44 },
-               "header": "chef brennan",
+               "header": "lakeshire hillside",
                "ends": ["redridge goulash", "an unwelcome guest"],
                "type": "quest"
             },
@@ -1051,7 +1051,7 @@
                "coords": { "x": 39, "y": 43 },
                "align": "top",
                "header": "auberdine",
-               "ends": ["the corruption abroad"],
+               "ends": [["the corruption abroad", "d"]],
                "starts": [["the absent minded prospector", "p1"], "onu", ["wanted: murkdeep", "e"]],
                "type": "hub"
             },
