@@ -1585,7 +1585,10 @@
             {
                "coords": { "x": 57, "y": 53 },
                "header": "westfall flightpath",
-               "special": ["learn the flightpath", ["your text", "your url"]],
+               "special": [
+                  "learn the flightpath",
+                  ["respec to shadowform dude", "https://www.wowhead.com/"]
+               ],
                "type": "flightpath"
             }
          ]

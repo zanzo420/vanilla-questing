@@ -140,9 +140,9 @@ function hearthstones(route) {
    // ASSEMBLE LIST OF EACH 'SET HS' OCCURRENCE
    route.forEach((block, index) => {
       block.waypoints.forEach(waypoint => {
-         if (waypoint.special !== undefined && waypoint.special instanceof String) {
+         if (waypoint.special !== undefined) {
             waypoint.special.forEach(message => {
-               if (message.toLowerCase() === 'set hearthstone') {
+               if (typeof message === 'string' && message.toLowerCase() === 'set hearthstone') {
                   container.push({
                      block: index,
                      zone: block.zone
