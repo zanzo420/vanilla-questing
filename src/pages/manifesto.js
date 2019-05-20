@@ -43,7 +43,7 @@ function Manifesto() { return (
                </Paragraph>
             </Secondary>
          </Primary>
-         <Primary header={ `Technical Features` } id={ `technical-features` }>
+         <Primary header={ `Features` } id={ `features` }>
             <Paragraph>
                The entire application is written in React and hosted via Github pages. The route files are very self explanatory and you don't need to be a programmer to write one yourself. Everything is open-source and viewable from the <a href="https://github.com/wickstjo/vanilla-questing">github repository</a>. There are no backend components or cookies being used.
             </Paragraph>
@@ -73,6 +73,11 @@ function Manifesto() { return (
             <Secondary header={ `Key Bindings` } id={ `bindings` }>
                <Paragraph>
                   For browsing back and forward, use the <hl>A</hl> and <hl>D</hl> keys. To quickly open the reference overview, use <hl>Q</hl>. To close any prompt, use <hl>Escape</hl>. For the time being there is no way to customize these, but rest assured that the feature is coming.
+               </Paragraph>
+            </Secondary>
+            <Secondary header={ `Graphics` } id={ `graphics` }>
+               <Paragraph>
+                  I'm certainly not a graphic designer but having icons and backgrounds is preferable than staring at a gray page. I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for extracting high quality icons from the original game and providing a <a href="https://barrens.chat/viewtopic.php?f=5&t=901" target="_blank" rel="noopener noreferrer">downloadable package</a> for use in projects like this.
                </Paragraph>
             </Secondary>
          </Primary>
