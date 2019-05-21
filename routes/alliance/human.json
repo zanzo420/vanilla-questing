@@ -185,7 +185,7 @@
                "align": "right",
                "header": "guard thomas",
                "ends": ["further concerns"],
-               "starts": ["find the lost guards", "bounty on murlocs", "protect the frontier"],
+               "starts": ["find the lost guards", "protect the frontier"],
                "type": "quest"
             },
             {
@@ -208,7 +208,6 @@
                "header": "rolf's corpse",
                "ends": ["discover rolf's fate"],
                "starts": ["report to thomas"],
-               "objectives": ["bounty on murlocs"],
                "type": "quest"
             }
          ]
@@ -223,7 +222,6 @@
                "header": "rolf's corpse",
                "ends": ["discover rolf's fate"],
                "starts": ["report to thomas"],
-               "objectives": ["bounty on murlocs"],
                "type": "quest"
             },
             {
@@ -243,7 +241,7 @@
                "coords": { "x": 74, "y": 72 },
                "align": "bottom",
                "header": "guard thomas",
-               "ends": ["bounty on murlocs", "protect the frontier", "report to thomas"],
+               "ends": ["protect the frontier", "report to thomas"],
                "type": "quest"
             },
             {
