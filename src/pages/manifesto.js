@@ -77,7 +77,7 @@ function Manifesto() { return (
             </Secondary>
             <Secondary header={ `Graphics` } id={ `graphics` }>
                <Paragraph>
-                  I'm certainly not a graphic designer but having icons and backgrounds is preferable than staring at a gray page. I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for extracting high quality icons from the original game and providing a <a href="https://barrens.chat/viewtopic.php?f=5&t=901" target="_blank" rel="noopener noreferrer">downloadable package</a> for use in projects like this.
+                  I'm certainly not a graphic designer but having icons and backgrounds is preferable than staring at a gray page. I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for extracting high quality icons from the original game and providing a <a href="https://barrens.chat/viewtopic.php?f=5&t=901" target="_blank" rel="noopener noreferrer">downloadable package</a> to use in projects like this.
                </Paragraph>
             </Secondary>
          </Primary>

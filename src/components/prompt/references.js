@@ -2,7 +2,7 @@ import React from 'react';
 
 function References() { return (
    <>
-      <div id={ 'header' }>Refereces</div>
+      <div id={ 'header' }>References</div>
       <div id="references">
          <div className='container'>
             <Marker data={['Flightpath', 'green']} />
