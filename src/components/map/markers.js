@@ -24,7 +24,6 @@ function Markers() {
       'darnassus',
       'durotar',
       'ironforge',
-      'morogh',
       'needles',
       'redridge',
       'stormwind',
