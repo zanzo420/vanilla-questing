@@ -42,12 +42,12 @@ function Manifesto() { return (
                   Being penalized while grouping used to be the norm and something only those with tons of rested experience could partake in. Quest items aren’t shared between party members so those should always be completed alone, but for kill quests I  would go as far as to even suggest partying. You’ll be clearing zones so thoroughly that the reduction in experience from kills every now and then won’t come close to the gains you’ll make from smashing through kill quests quicker.
                </Paragraph>
             </Secondary>
-            <Secondary header={ 'Maximizing Reputation' } id={ 'reputation' }>
+            <Secondary header={ 'Focusing on Reputation' } id={ 'reputation' }>
                <Paragraph>
-                  Reputation rewards from quests have very harsh diminishing returns and should therefore be completed while you’re in level range. Starting zones grant a massive amount of reputation so players who don’t want to spend more gold on runecloth than they have to (in order to obtain the mount skill) should migrate to the correct factions starting zone immediately. Humans gain 10% more reputation than any other race and have a real chance of reaching exalted before level 40.
+                  Quests that award reputation have very harsh diminishing returns and should therefore be completed while you’re in level range. Starting zones grant a massive amount of reputation so players who don’t want to spend gold on runecloth should migrate to the correct factions starting area immediately. Humans gain 10% more reputation than others and have a very real chance of reaching exalted before level 40.
                </Paragraph>
                <Paragraph>
-                  Every human route I’ve ran has reached exalted from the same quest at level 48, but running the night-elf route rewards you with an additional <hl>9791</hl> reputation. Completing the four Blackfathom Deeps dungeon quests rewards you an additional <hl>1725</hl> reputation adding up to a total of <hl>11516</hl> more reputation with Darnassus. Whether that’s enough to reach exalted before level 40 depends entirely on how accurate private server values are.
+                  Every human route I’ve ran has reached exalted with Darnassus from the same quest at level 48. Running the night-elf route instead rewards you with an additional <hl>9791</hl> reputation and completing the four Blackfathom Deeps dungeon quests bumps that number up by another <hl>1725</hl> which adds up to a total of <hl>11516</hl> extra reputation with darnassus. Whether that’s enough to reach exalted before level 40 depends entirely on how accurate private server values are.
                </Paragraph>
             </Secondary>
          </Primary>
