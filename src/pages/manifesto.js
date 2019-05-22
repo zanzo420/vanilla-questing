@@ -44,10 +44,10 @@ function Manifesto() { return (
             </Secondary>
             <Secondary header={ 'Focusing on Reputation' } id={ 'reputation' }>
                <Paragraph>
-                  Quests that award reputation have very harsh diminishing returns and should therefore be completed while you’re in level range. Starting zones grant a massive amount of reputation so players who don’t want to spend gold on runecloth should migrate to the correct factions starting area immediately. Humans gain 10% more reputation than others and have a very real chance of reaching exalted before level 40.
+                  Quests that award reputation have very harsh diminishing returns and should therefore be completed while you’re within level range. Starting zones grant a massive amount of reputation so players who don’t want to spend gold on runecloth should migrate to the correct factions starting area immediately. Humans gain 10% more reputation than others and have a very real chance of reaching exalted before level 40.
                </Paragraph>
                <Paragraph>
-                  Every human route I’ve ran has reached exalted with Darnassus from the same quest at level 48. Running the night-elf route instead rewards you with an additional <hl>9791</hl> reputation and completing the four Blackfathom Deeps dungeon quests bumps that number up by another <hl>1725</hl> which adds up to a total of <hl>11516</hl> extra reputation with darnassus. Whether that’s enough to reach exalted before level 40 depends entirely on how accurate private server values are.
+                  Every human route I’ve ran has reached exalted with Darnassus from the same quest at level 48. Running the night-elf route instead rewards you with an additional <i>9791</i> reputation and completing the four Blackfathom Deeps dungeon quests bumps that number up by another <i>1725</i> which adds up to a total of <i>11516</i> extra reputation with darnassus. Whether that’s enough to reach exalted before level 40 depends entirely on how accurate private server values are.
                </Paragraph>
             </Secondary>
          </Primary>
@@ -80,7 +80,7 @@ function Manifesto() { return (
             </Secondary>
             <Secondary header={ `Key Bindings` } id={ `bindings` }>
                <Paragraph>
-                  For browsing back and forward, use the <hl>A</hl> and <hl>D</hl> keys. To quickly open the reference overview, use <hl>Q</hl>. To close any prompt, use <hl>Escape</hl>. For the time being there is no way to customize these, but rest assured that the feature is coming.
+                  For browsing back and forward, you can choose between using <i>A and D</i> or the <i>Arrowkeys</i>. To quickly open the reference overview, use <i>Q</i>. To close any prompt, use <i>Escape</i>. For the time being there is no way to customize these, but rest assured that the feature is coming.
                </Paragraph>
             </Secondary>
             <Secondary header={ `Graphics` } id={ `graphics` }>

@@ -49,6 +49,7 @@ const key_listener = (event, state, dispatch) => {
    switch (event.key.toLowerCase()) {
 
       // PREVIOUS BLOCK
+      case'arrowleft':
       case 'a': {
          if (!state.prompt.visible) {
             previous(state, dispatch);
@@ -56,6 +57,7 @@ const key_listener = (event, state, dispatch) => {
       }
 
       // NEXT BLOCK
+      case'arrowright':
       case 'd': {
          if (!state.prompt.visible) {
             next(state, dispatch);
