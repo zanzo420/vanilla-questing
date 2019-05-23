@@ -88,6 +88,15 @@ function Manifesto() { return (
                   I'm certainly not a graphic designer but having icons and backgrounds is preferable than staring at a gray page. I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for extracting high quality icons from the original game and providing a <a href="https://barrens.chat/viewtopic.php?f=5&t=901" target="_blank" rel="noopener noreferrer">downloadable package</a> to use in projects like this.
                </Paragraph>
             </Secondary>
+            <Secondary header={ `Reducing Pickup Time` } id={ `questie` }>
+            <Paragraph>
+                  It’s very hard to indicate where exactly the quests I want you to pick up are in hubs like Lakeshire that contains a multitude of both high and low level quests in close proximity. I suggest using the <a href="https://willitclassic.com/view/zN3cdlIhnmtCjOwOnH8q" target="_blank" rel="noopener noreferrer">ingame addon Questie</a> to get minimap markers in order to speed up the process of picking up and returning the correct quests with minimal downtime. Try the following questie configs:
+               </Paragraph>
+               <Paragraph>
+                  /questie setminlevel 15<br />
+                  /questie resizemap
+               </Paragraph>
+            </Secondary>
          </Primary>
          <Primary header={ `Contribute` } id={ `contribute` }>
             <Paragraph>
