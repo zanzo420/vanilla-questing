@@ -12,6 +12,7 @@
             },
             {
                "coords": { "x": 54, "y": 53 },
+               "align": "bottom",
                "header": "sentinel hill inn",
                "starts": ["red leather bandanas"],
                "special": ["set hearthstone"],
@@ -22,6 +23,8 @@
                "align": "right",
                "header": "sentinel tower",
                "starts": [["the people's militia", "p1"], ["the defias brotherhood", "p1"], "patrolling westfall"],
+               "ends": ["return to lewis"],
+               "special": ["the lewis quest is exclusive to humans"],
                "type": "hub"
             },
             {
