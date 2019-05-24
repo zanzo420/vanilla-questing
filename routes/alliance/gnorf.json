@@ -199,24 +199,53 @@
                "type": "hub"
             },
             {
+               "coords": { "x": 25, "y": 51 },
+               "header": "frostmane hold",
+               "objectives": ["frostmane hold"],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 26, "y": 43 },
-               "align": "top",
                "header": "gnomeregan enterance",
                "objectives": ["operation recombobulation"],
                "type": "objective"
             },
             {
-               "coords": { "x": 25, "y": 51 },
-               "header": "frostmane hold",
-               "objectives": ["frostmane hold"],
-               "special": ["heathstone to kharanos"],
-               "type": "objective"
+               "coords": { "x": 31, "y": 33 },
+               "header": "Mountainside",
+               "special": ["clib the mountain from here"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 34, "y": 26 },
+               "align": "top",
+               "header": "Mountainside",
+               "special": ["jump from the highest cliff", "die & spirit ress"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 9.19,
+         "waypoints": [
+            {
+               "coords": { "x": 11, "y": 44 },
+               "header": "wetlands spirit healer",
+               "special": ["spirit ress"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "menethil flightpath",
+               "special": ["learn the flightpath", "hearthstone to kharanos"],
+               "type": "flightpath"
             }
          ]
       },
       {
          "zone": "morogh",
-         "experience": 9.19,
+         "experience": 9.20,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 53 },
@@ -879,10 +908,11 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 25, "y": 10 },
-               "header": "wetlands passageway",
-               "special": ["run to menethil harbor"],
-               "type": "travel"
+               "coords": { "x": 34, "y": 51 },
+               "align": "top",
+               "header": "loch modan flightpath",
+               "special": ["fly to wetlands"],
+               "type": "flightpath"
             }
          ]
       },
@@ -891,34 +921,9 @@
          "experience": 13.73,
          "waypoints": [
             {
-               "coords": { "x": 52, "y": 72 },
-               "align": "right",
-               "header": "wetlands passageway",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 57, "y": 55 },
-               "align": "right",
-               "header": "wetlands road",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 44, "y": 38 },
-               "align": "top",
-               "header": "wetlands road",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 20, "y": 43 },
-               "align": "top",
-               "header": "wetlands road",
-               "type": "travel"
-            },
-            {
                "coords": { "x": 9, "y": 60 },
                "align": "bottom",
                "header": "menethil flightpath",
-               "special": ["learn the flightpath"],
                "type": "flightpath"
             },
             {
