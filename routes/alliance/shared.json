@@ -1619,6 +1619,13 @@
                "header": "bluegill marsh",
                "objectives": ["claws from the deep"],
                "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 26 },
+               "align": "right",
+               "header": "sundown encampment",
+               "special": ["completely optional", "buy 1x bronze tube", "buy greens for selling"],
+               "type": "travel"
             }
          ]
       },
@@ -1627,11 +1634,11 @@
          "experience": 23.79,
          "waypoints": [
             {
-               "coords": { "x": 19, "y": 40 },
+               "coords": { "x": 26, "y": 26 },
                "align": "right",
-               "header": "bluegill marsh",
-               "objectives": ["claws from the deep"],
-               "type": "objective"
+               "header": "sundown encampment",
+               "special": ["completely optional", "buy 1x bronze tube", "buy greens for selling"],
+               "type": "travel"
             },
             {
                "coords": { "x": 8, "y": 59 },
@@ -1896,7 +1903,7 @@
                "coords": { "x": 53, "y": 60 },
                "align": "top",
                "header": "stormwind auction house",
-               "special": ["buy 1x bronze tube"],
+               "special": ["buy 1x bronze tube", "if you didn't before"],
                "type": "objective"
             },
             {
