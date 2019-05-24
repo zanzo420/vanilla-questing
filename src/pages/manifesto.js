@@ -104,7 +104,6 @@ function Manifesto() { return (
             </Paragraph>
             <Table data={[
                ['PayPal', 'Jfwick@gmail.com'],
-               ['Ethereum', '0x1234 (TBA)'],
                ['Discord', 'Strafir#9133'],
                ['Battle.net', 'Strafir#2132'],
                ['Reddit', 'Wickstjo'],
