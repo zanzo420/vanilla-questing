@@ -81,9 +81,15 @@ function convert(old) {
    return profiles;
 }
 
+// EXPORT PROFILE OBJECT
+function _export() {
+   return localStorage.getItem(key);
+}
+
 export {
    check,
    fetch,
    update,
-   change
+   change,
+   _export
 };

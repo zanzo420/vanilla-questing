@@ -21,7 +21,7 @@
          margin-bottom: 5px;
       }
    
-      #create, #import {
+      #create, #import, #export {
          background: rgba(0, 0, 0, 0.473);
          min-width: 300px;
          padding: 2px;
@@ -187,6 +187,17 @@
          
          .container:last-child {
             margin-right: 0px;
+         }
+      }
+
+      #export {
+         textarea {
+            width: 100%;
+            resize: none;
+            height: 300px;
+            border: 0px solid black;
+            outline: none;
+            padding: 5px;
          }
       }
 

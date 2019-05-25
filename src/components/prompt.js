@@ -7,6 +7,7 @@ import '../interface/css/prompt.scss';
 import Import from './prompt/import';
 import Create from './prompt/create';
 import References from './prompt/references';
+import Export from './prompt/export';
 
 // PROMPT CONTAINER
 function Prompt() {
@@ -66,6 +67,11 @@ function Content({ type }) {
       // REFERENCES
       case 'references': {
          return <References />
+      }
+
+      // REFERENCES
+      case 'export': {
+         return <Export />
       }
 
       // FALLBACK

@@ -46,6 +46,22 @@ function Menu() {
       preload_bgs(dispatch);
    }
 
+   // IMPORT PROFILES
+   const imp_profiles = () => {
+      dispatch({
+         type: 'show-prompt',
+         payload: 'import_profiles'
+      })
+   }
+
+   // EXPORT PROFILES
+   const exp_profiles = () => {
+      dispatch({
+         type: 'show-prompt',
+         payload: 'export'
+      })
+   }
+
    return (
       <div id="menu"><div className="inner">
          <div>
@@ -59,8 +75,10 @@ function Menu() {
          </div>
          <div>
             <Main header='Actions'>
-               <Sub header='Preload Backgrounds' icon='preload' func={ preload } />
                <Sub header='Import Custom Route' icon='import' func={ custom } />
+               <Sub header='Preload Backgrounds' icon='preload' func={ preload } />
+               <Sub header='Import Profiles' icon='imp_profiles' func={ imp_profiles } />
+               <Sub header='Export Profiles' icon='exp_profiles' func={ exp_profiles } />
             </Main>
             <Main header='Load Progress'>
                <Profiles />
