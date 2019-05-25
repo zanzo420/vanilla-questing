@@ -5,7 +5,10 @@ function Export() { return (
    <>
       <div id={ 'header' }>Export Profiles</div>
       <div id={ 'export' }>
-         <textarea value={ _export() } />
+         <textarea
+            value={ _export() }
+            readOnly
+         />
       </div>
    </>
 )}

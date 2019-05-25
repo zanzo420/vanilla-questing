@@ -4,10 +4,11 @@ import { sleep } from "../funcs/misc";
 
 import '../interface/css/prompt.scss';
 
-import Import from './prompt/import';
+import ImportRoute from './prompt/import_route';
 import Create from './prompt/create';
 import References from './prompt/references';
 import Export from './prompt/export';
+import ImportProfiles from './prompt/import_profiles';
 
 // PROMPT CONTAINER
 function Prompt() {
@@ -55,8 +56,8 @@ function Content({ type }) {
       }
 
       // IMPORT ROUTE
-      case 'import': {
-         return <Import />
+      case 'import-route': {
+         return <ImportRoute />
       }
 
       // CREATE PROFILE
@@ -69,9 +70,14 @@ function Content({ type }) {
          return <References />
       }
 
-      // REFERENCES
+      // EXPORT PROFILES
       case 'export': {
          return <Export />
+      }
+
+      // IMPORT ROUTE
+      case 'import-profiles': {
+         return <ImportProfiles />
       }
 
       // FALLBACK

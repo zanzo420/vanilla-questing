@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Context } from "../../context";
 import { custom } from '../../funcs/build';
 
-function Import() {
+function ImportRoute() {
 
    // GLOBAL CONTEXT
    const { dispatch } = useContext(Context);
@@ -88,4 +88,4 @@ function Import() {
    )
 }
 
-export default Import;
+export default ImportRoute;

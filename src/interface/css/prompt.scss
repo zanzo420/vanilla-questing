@@ -190,7 +190,7 @@
          }
       }
 
-      #export {
+      #export, #import {
          textarea {
             width: 100%;
             resize: none;
@@ -198,6 +198,27 @@
             border: 0px solid black;
             outline: none;
             padding: 5px;
+         }
+
+         // BUTTONS
+         #good, #bad {
+            background: rgba(87, 194, 65, 0.897);
+            border: 2px solid rgba(87, 194, 65, 0.911);
+            width: auto;
+            margin-top: 2px;
+            color: white;
+            transition: 0.3s;
+            padding: 3px 5px;
+            width: 100%;
+         }
+         
+         #good {
+            cursor: pointer;
+         }
+         
+         #bad {
+            background: rgba(194, 65, 65, 0.897);
+            border: 2px solid rgba(199, 70, 70, 0.897);
          }
       }
 

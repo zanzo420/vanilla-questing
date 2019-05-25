@@ -17,7 +17,7 @@ function Menu() {
    const custom = () => {
       dispatch({
          type: 'show-prompt',
-         payload: 'import'
+         payload: 'import-route'
       })
    }
 
@@ -47,15 +47,15 @@ function Menu() {
    }
 
    // IMPORT PROFILES
-   const imp_profiles = () => {
+   const import_profiles = () => {
       dispatch({
          type: 'show-prompt',
-         payload: 'import_profiles'
+         payload: 'import-profiles'
       })
    }
 
    // EXPORT PROFILES
-   const exp_profiles = () => {
+   const export_profiles = () => {
       dispatch({
          type: 'show-prompt',
          payload: 'export'
@@ -74,11 +74,13 @@ function Menu() {
             </Main>
          </div>
          <div>
+            <Main header='Storage'>
+               <Sub header='Export Profiles' icon='export_profiles' func={ export_profiles } />
+               <Sub header='Import Profiles' icon='import_profiles' func={ import_profiles } />
+            </Main>
             <Main header='Actions'>
-               <Sub header='Import Custom Route' icon='import' func={ custom } />
                <Sub header='Preload Backgrounds' icon='preload' func={ preload } />
-               <Sub header='Import Profiles' icon='imp_profiles' func={ imp_profiles } />
-               <Sub header='Export Profiles' icon='exp_profiles' func={ exp_profiles } />
+               <Sub header='Import Custom Route' icon='import' func={ custom } />
             </Main>
             <Main header='Load Progress'>
                <Profiles />
