@@ -1,5 +1,19 @@
 import axios from 'axios';
 
+// ALLIANCE ROUTES
+import human from '../routes/alliance/human.json';
+import gnorf from '../routes/alliance/gnorf.json';
+import nelf from '../routes/alliance/nelf.json';
+import alliance_shared from '../routes/alliance/shared.json';
+import alliance_quests from '../routes/alliance/quests.json';
+
+// HORDE ROUTES
+import trorc from '../routes/horde/trorc.json';
+import tauren from '../routes/horde/tauren.json';
+import undead from '../routes/horde/undead.json';
+import horde_shared from '../routes/horde/shared.json';
+import horde_quests from '../routes/horde/quests.json';
+
 // ALLIANCE RACES
 const alliance = new Map([
    ['human', 'human'],
