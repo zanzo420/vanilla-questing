@@ -37,17 +37,22 @@ function ImportRoute() {
          // GENERATE A FETCHABLE URL
          reader.onload = () => {
 
-            // FETCH THE CONTENT & DEPLOY TO PARENT
-            const file = reader.result;
-            const faction = local.alliance ? 'alliance' : 'horde';
-
             // GENERATE CUSTOM BUILD
-            custom(file, faction).then(response => {
+            custom({
+               file: reader.result,
+               faction: local.alliance ? 'alliance' : 'horde'
+            }).then(response => {
 
                // SET BUILD
                dispatch({
                   type: 'load',
                   payload: response
+               })
+
+               // SET LOADED PROFILE TO NULL
+               dispatch({
+                  type: 'loaded',
+                  payload: null
                })
 
                // HIDE PROMPT

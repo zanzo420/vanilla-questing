@@ -104,8 +104,8 @@ function Provider({ children }) {
       current: 0,
       profiles: null,
       prompt: {
-         visible: false,
-         type: null
+         visible: true,
+         type: 'loading'
       },
       selected_race: null,
       loaded: null

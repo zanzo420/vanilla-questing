@@ -22,22 +22,20 @@ function Home({ location }) {
    // IF DATA HAS BEN LOADED
    if (state.data !== null) {
       return (
-         <>
+         <div id={ 'innerbody' }>
             <EventListener
                target={ document }
                onKeyDown={ key_event }
             />
-            <div id={ 'innerbody' }>
-               <div className={ 'inner' }>
-                  <div id={ 'map-wrapper' }>
-                     <Map />
-                  </div>
-                  <div id={ 'panel-wrapper' }>
-                     <Panel />
-                  </div>
+            <div className={ 'inner' }>
+               <div id={ 'map-wrapper' }>
+                  <Map />
+               </div>
+               <div id={ 'panel-wrapper' }>
+                  <Panel />
                </div>
             </div>
-         </>
+         </div>
       )
    
    // OTHERWISE, SHOW LOADING SCREEN

@@ -26,23 +26,21 @@ function Profiles({ hide }) {
 
    // OPEN PROFILE
    const open = (header, details) => {
-      specific(details).then(response => {
          
-         // LOAD ROUTE
-         dispatch({
-            type: 'load',
-            payload: response
-         })
+      // LOAD ROUTE
+      dispatch({
+         type: 'load',
+         payload: specific(details)
+      })
 
-         // MARK PROFILE AS LOADED
-         dispatch({
-            type: 'loaded',
-            payload: header
-         })
+      // MARK PROFILE AS LOADED
+      dispatch({
+         type: 'loaded',
+         payload: header
+      })
 
-         // HIDE SUBMENU
-         hide();
-      });
+      // HIDE SUBMENU
+      hide();
    }
 
    // IF PROFILES HAVE LOADED

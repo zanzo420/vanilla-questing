@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-// ALLIANCE CONTENT
+// ALLIANCE
 import human from '../routes/alliance/human.json';
 import gnorf from '../routes/alliance/gnorf.json';
 import nelf from '../routes/alliance/nelf.json';
 import alliance_shared from '../routes/alliance/shared.json';
 import alliance_quests from '../routes/alliance/quests.json';
 
-// HORDE CONTENT
+// HORDE
 import trorc from '../routes/horde/trorc.json';
 import tauren from '../routes/horde/tauren.json';
 import undead from '../routes/horde/undead.json';
@@ -34,7 +34,7 @@ const races = {
    ])
 }
 
-// ASSEMBLE JSON DATA
+// CONSTRUCT REQUESTED ROUTE
 function route(race) {
 
    // PLACEHOLDER
@@ -44,28 +44,28 @@ function route(race) {
    if (races.alliance.has(race)) {
       content = {
          quests: alliance_quests,
-         route: {
-            ...races.alliance.get(race),
-            ...alliance_shared
-         }
+         route: [
+            ...races.alliance.get(race).path,
+            ...alliance_shared.path
+         ]
       }
 
    // GENERATE HORDE BUILD
    } else if (races.horde.has(race)) {
       content = {
          quests: horde_quests,
-         route: {
-            ...races.horde.get(race),
-            ...horde_shared
-         }
+         route: [
+            ...races.horde.get(race).path,
+            ...horde_shared.path
+         ]
       }
    }
 
    // CONSTRUCT & RETURN DATA OBJECT
    return {
       quests: content.quests,
-      route: content.route.path,
-      hearthstones: hearthstones(content.route.path)
+      route: content.route,
+      hearthstones: hearthstones(content.route)
    }
 }
 
@@ -73,11 +73,11 @@ function route(race) {
 function random() {
 
    // PICK A RACE RANDOMLY
-   const collective = [ ...races.alliance.keys(), ...races.horde.keys() ];
-   const race = Math.floor((Math.random() * collective.length) + 0);
+   const all = [ ...races.alliance.keys(), ...races.horde.keys() ];
+   const race = Math.floor((Math.random() * all.length) + 0);
 
    // CONSTRUCT BUILD
-   const build = route(collective[race]);
+   const build = route(all[race]);
 
    // RETURN FINALIZED BUILD
    return {
@@ -88,29 +88,18 @@ function random() {
 
 // SPECIFIC ROUTE
 function specific({ icon, block }) {
-   return route(icon).then(data => {
-      return {
-         data: data,
-         current: block,
-      }
-   });
+   return {
+      data: route(icon),
+      current: block
+   }
 }
 
 // IMPORTED DATASET
-function custom(url, faction) {
-   return axios.get(url).then(response => {
-
-      let quests = {}
-
-      if (faction === 'alliance') {
-         quests = alliance_quests;
-      } else {
-         quests = horde_quests
-      }
-
+function custom({ file, faction }) {
+   return axios.get(file).then(response => {
       return {
          data: {
-            quests: quests,
+            quests: faction === 'alliance' ? alliance_quests : horde_quests,
             route: response.data.path,
             hearthstones: hearthstones(response.data.path)
          },
