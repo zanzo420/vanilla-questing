@@ -1,8 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { Context } from "./context";
-
 import { random, dev } from './funcs/build';
-import { check, fetch } from './funcs/storage';
+import { check } from './funcs/storage';
 import { sleep } from './funcs/misc';
 
 function Init() {

@@ -59,7 +59,7 @@ function Create() {
          
          // GENERATE DETAILS
          const details = {
-            icon: state.selected_race,
+            race: state.selected_race,
             block: 0
          }
 

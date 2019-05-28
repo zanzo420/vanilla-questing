@@ -65,12 +65,24 @@ function change(state, block) {
 
 // CONVERT OLD STORAGE OBJECT
 function convert(storage) {
+   let update = false;
+
    storage.profiles.forEach(profile => {
       if (profile[1].icon !== undefined) {
+
+         // TRANSFORM 'ICON' KEY TO 'RACE'
          profile[1].race = profile[1].icon;
          delete profile[1].icon;
+
+         // MARK TO UPDATE STORAGE
+         update = true;
       }
    });
+
+   // UPDATE STORAGE IF NECESSARY
+   if (update) {
+      localStorage.setItem(key, JSON.stringify(storage));
+   }
 
    return storage;
 }

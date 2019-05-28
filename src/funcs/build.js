@@ -87,9 +87,9 @@ function random() {
 }
 
 // SPECIFIC ROUTE
-function specific({ icon, block }) {
+function specific({ race, block }) {
    return {
-      data: route(icon),
+      data: route(race),
       current: block
    }
 }

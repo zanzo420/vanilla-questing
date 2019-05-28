@@ -67,34 +67,30 @@ function Profiles({ hide }) {
 
 // SINGLE PROFILE
 function Profile({ header, details, open, remove, state }) {
-   if (state.loaded === header) {
-      return (
-         <div className={ 'item' } id={ 'loaded' }>
-            <div className={ 'icon' } id={ details.icon } />
-            <div className={ 'header' }>
-               { header }
-            </div>
+   if (state.loaded === header) { return (
+      <div className={ 'item' } id={ 'loaded' }>
+         <div className={ 'icon' } id={ details.race } />
+         <div className={ 'header' }>
+            { header }
          </div>
-      )
-   } else {
-      return (
-         <div className={ 'item' }>
-            <div
-               className={ 'icon' }
-               id={ details.icon }
-               onClick={() => { open(header, details) }}
-            />
-            <div className={ 'header' } onClick={() => { open(header, details) }}>
-               { header }
-            </div>
-            <div
-               className={ 'action' }
-               id={ 'remove' }
-               onClick={() => { remove(header) }}
-            />
+      </div>
+   )} else { return (
+      <div className={ 'item' }>
+         <div
+            className={ 'icon' }
+            id={ details.race }
+            onClick={() => { open(header, details) }}
+         />
+         <div className={ 'header' } onClick={() => { open(header, details) }}>
+            { header }
          </div>
-      )
-   }
+         <div
+            className={ 'action' }
+            id={ 'remove' }
+            onClick={() => { remove(header) }}
+         />
+      </div>
+   )}
 }
 
 export default Profiles;

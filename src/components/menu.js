@@ -65,7 +65,7 @@ function Menu() {
    return (
       <div id="menu"><div className="inner">
          <div>
-            <Main header='Route' link='/' />
+            <Main header='Home' link='/' />
             <Main header='Manifesto' link='/manifesto' />
             <Main header='Help'>
                <Sub header='References' icon='references' func={ references } />
