@@ -46,7 +46,7 @@ function Create() {
       // IF ERRORS WERE FOUND, SHOW THEM & TURN BUTTON RED
       if (errors.length !== 0) {
          set_local({
-            ...local,
+            name: input,
             button: 'bad',
             errors: errors
          })
@@ -84,6 +84,13 @@ function Create() {
             payload: state.profiles
          });
 
+         // RESET LOCAL STATE
+         set_local({
+            name: '',
+            button: 'bad',
+            errors: []
+         })
+
          // HIDE PROMPT
          dispatch({ type: 'hide-prompt' });
       }
@@ -110,6 +117,7 @@ function Create() {
                type={ 'text' }
                placeholder={ 'Enter Profile Name' }
                onChange={ audit }
+               value={ local.name }
             />
             <input
                id={ local.button }

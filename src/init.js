@@ -17,12 +17,9 @@ function Init() {
    useEffect(() => {
 
       // CHECK STORAGE HEALTH
-      check().then(() => {
+      check().then(profiles => {
 
-         // FETCH PROFILES
-         const profiles = fetch();
-
-         // GIVE THE PAGE A SECOND TO RESOLVE
+         // GIVE THE PAGE A SECOND TO RESOLVE DIMENSIONS
          sleep(1000).then(() => {
 
             // WHEN DEVELOPING
