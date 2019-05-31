@@ -88,10 +88,29 @@ function random() {
 
 // SPECIFIC ROUTE
 function specific({ race, block }) {
-   return {
-      data: route(race),
-      current: block
+
+   // DEFAULT TO RANDOM ROUTE
+   let response = random();
+   
+   // MAKE SURE THE RACE EXISTS
+   if (exists(race)) {
+
+      // FETCH BUILD
+      const build = route(race);
+
+      // IF THE REQUESTED BLOCK IS WITHIN LIMITS
+      if (block <= build.route.length) {
+
+         // UPDATE RESPONSE WITH REQUESTED ROUTE
+         response = {
+            data: build,
+            current: parseInt(block)
+         }
+      }
    }
+
+   // FINALLY RETURN
+   return response;
 }
 
 // IMPORTED DATASET

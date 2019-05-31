@@ -8,6 +8,7 @@ import './interface/css/general.scss';
 import Menu from './components/menu';
 import Home from './pages/home';
 import Manifesto from './pages/manifesto';
+import Target from './pages/target';
 import Error from './pages/error';
 
 function App() { return (
@@ -18,6 +19,7 @@ function App() { return (
          <Switch>
             <Route exact path="/" component={ Home } />
             <Route path="/manifesto" component={ Manifesto } />
+            <Route path="/:race/:block" component={ Target } />
             <Route component={ Error } />
          </Switch>
       </Provider>

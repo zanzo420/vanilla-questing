@@ -38,8 +38,8 @@ function Home() {
          </div>
       )
    
-   // OTHERWISE, SHOW LOADING SCREEN
-   } else { return <div>Loading...</div> }
+   // OTHERWISE, RETURN NOTHING
+   } else { return null; }
 }
 
 export default Home;

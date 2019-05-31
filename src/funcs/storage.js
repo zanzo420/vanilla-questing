@@ -1,3 +1,5 @@
+import { sleep } from "./misc";
+
 // STORAGE KEY
 const key = 'profiles';
 
@@ -30,8 +32,12 @@ function check() {
       // IF IT DOES, CHECK THAT ITS CORRECTLY WRITTEN
       } else { storage = convert(storage); }
 
-      // THEN RESOLVE & RETURN HASHMAP OF PROFILES
-      resolve(new Map(storage.profiles));
+      // FINALLY RESOLVE
+
+      // GIVE THE PAGE A SECOND TO STABILIZE DIMENSIONS, THEN RESOLVE
+      sleep(1000).then(() => {
+         resolve(new Map(storage.profiles));
+      });
    })
 }
 
