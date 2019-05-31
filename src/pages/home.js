@@ -9,7 +9,7 @@ import '../interface/css/innerbody.scss';
 import Map from '../components/map';
 import Panel from '../components/panel';
 
-function Home({ location }) {
+function Home() {
    
    // GLOBAL CONTEXT
    const { state, dispatch } = useContext(Context);

@@ -73,6 +73,7 @@ function Profile({ header, details, open, remove, state }) {
          <div className={ 'header' }>
             { header }
          </div>
+         <div className={ 'loaded' }>Loaded</div>
       </div>
    )} else { return (
       <div className={ 'item' }>
