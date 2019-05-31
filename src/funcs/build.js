@@ -65,7 +65,8 @@ function route(race) {
    return {
       quests: content.quests,
       route: content.route,
-      hearthstones: hearthstones(content.route)
+      hearthstones: hearthstones(content.route),
+      race: race
    }
 }
 

@@ -10,7 +10,7 @@ import Profiles from './menu/profiles';
 
 function Menu() {
 
-   // GLOBAL CONTEXT
+   // GLOBAL STATE
    const { dispatch } = useContext(Context);
 
    // IMPORT CUSTOM ROUTE
