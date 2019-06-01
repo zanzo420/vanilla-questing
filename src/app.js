@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from "./context";
-import Init from './init';
 
 import './interface/css/general.scss';
 
+import Init from './init';
 import Menu from './components/menu';
 import Home from './pages/home';
 import Manifesto from './pages/manifesto';
@@ -17,9 +17,9 @@ function App() { return (
          <Init />
          <Menu />
          <Switch>
-            <Route exact path="/" component={ Home } />
-            <Route path="/manifesto" component={ Manifesto } />
-            <Route path="/:race/:block" component={ Target } />
+            <Route exact path={ '/' } component={ Home } />
+            <Route path={ '/manifesto' } component={ Manifesto } />
+            <Route path={ '/:race/:block' } component={ Target } />
             <Route component={ Error } />
          </Switch>
       </Provider>
