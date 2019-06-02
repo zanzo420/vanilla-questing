@@ -87,6 +87,30 @@ function reducer(state, action) {
          }
       }
 
+      // SHOW MESSAGE
+      case 'show-message': {
+         return {
+            ...state,
+            message: {
+               visible: true,
+               type: action.payload.type,
+               value: action.payload.value
+            }
+         }
+      }
+
+      // HIDE MESSAGE
+      case 'hide-message': {
+         return {
+            ...state,
+            message: {
+               visible: false,
+               type: undefined,
+               value: undefined
+            }
+         }
+      }
+
       // FALLBACK
       default: {
          console.log('Reducer Error!');
@@ -108,7 +132,12 @@ function Provider({ children }) {
          type: 'loading'
       },
       selected_race: null,
-      loaded: null
+      loaded: null,
+      message: {
+         visible: false,
+         type: undefined,
+         value: undefined
+      }
    });
 
    return (

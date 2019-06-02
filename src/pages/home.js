@@ -6,6 +6,7 @@ import { key_listener } from '../funcs/browsing';
 
 import '../interface/css/innerbody.scss';
 
+import Message from '../components/message';
 import Map from '../components/map';
 import Panel from '../components/panel';
 
@@ -27,6 +28,7 @@ function Home() {
                target={ document }
                onKeyDown={ key_event }
             />
+            <Message />
             <div className={ 'inner' }>
                <div id={ 'map-wrapper' }>
                   <Map />

@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 // ALLIANCE
 import human from '../routes/alliance/human.json';
 import gnorf from '../routes/alliance/gnorf.json';
@@ -115,17 +113,15 @@ function specific({ race, block }) {
 }
 
 // IMPORTED DATASET
-function custom({ file, faction }) {
-   return axios.get(file).then(response => {
-      return {
-         data: {
-            quests: faction === 'alliance' ? alliance_quests : horde_quests,
-            route: response.data.path,
-            hearthstones: hearthstones(response.data.path)
-         },
-         current: 0
-      }
-   })
+function custom({ build, faction }) {
+   return {
+      data: {
+         quests: faction === 'alliance' ? alliance_quests : horde_quests,
+         route: build.path,
+         hearthstones: hearthstones(build.path)
+      },
+      current: 0
+   }
 }
 
 // DEVELOPMENT DATASET

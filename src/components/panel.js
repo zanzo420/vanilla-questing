@@ -61,10 +61,20 @@ function Panel() {
 function Copy() {
 
    // GLOBAL STATE
-   const { state } = useContext(Context);
+   const { state, dispatch } = useContext(Context);
+
+   const message = () => {
+      dispatch({
+         type: 'show-message',
+         payload: {
+            type: 'good',
+            value: 'link copied to clipboard'
+         }
+      })
+   }
 
    return (
-      <CopyToClipboard text={ 'http://vanilla-questing.me/' + state.data.race + '/' + state.current }>
+      <CopyToClipboard text={ 'http://vanilla-questing.me/' + state.data.race + '/' + state.current } onCopy={ message }>
          <div id={ 'link' }>Link</div>
       </CopyToClipboard>
    )
