@@ -91,6 +91,15 @@ function Create() {
             errors: []
          })
 
+         // SHOW MESSAGE
+         dispatch({
+            type: 'show-message',
+            payload: {
+               type: 'good',
+               value: 'profile "' + local.name + '" created'
+            }
+         })
+
          // HIDE PROMPT
          dispatch({ type: 'hide-prompt' });
       }

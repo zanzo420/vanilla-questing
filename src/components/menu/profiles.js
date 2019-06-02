@@ -39,6 +39,15 @@ function Profiles({ hide }) {
          payload: header
       })
 
+      // SHOW MESSAGE
+      dispatch({
+         type: 'show-message',
+         payload: {
+            type: 'good',
+            value: 'profile "' + header + '" loaded'
+         }
+      })
+
       // HIDE SUBMENU
       hide();
    }

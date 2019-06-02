@@ -60,6 +60,13 @@ function ImportProfiles() {
             type: 'loaded',
             payload: null
          })
+         dispatch({
+            type: 'show-message',
+            payload: {
+               type: 'good',
+               value: 'imported profiles successfully'
+            }
+         })
          set_local({
             value: '',
             button: 'bad'
