@@ -1438,6 +1438,7 @@
          "waypoints": [
             {
                "coords": { "x": 48, "y": 70 },
+               "align": "left",
                "header": "mystral lake",
                "objectives": ["elemental bracers"],
                "special": ["use the scroll when you have 5"],
@@ -1445,34 +1446,51 @@
             },
             {
                "coords": { "x": 50, "y": 67 },
-               "align": "right",
+               "align": "top",
                "header": "sentinel velene starstrike",
                "ends": ["elemental bracers"],
                "type": "quest"
             },
             {
-               "coords": { "x": 63, "y": 52 },
-               "align": "right",
-               "header": "ashenvale road",
+               "coords": { "x": 94, "y": 47 },
+               "align": "top",
+               "header": "azshara border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 23.49,
+         "waypoints": [
+            {
+               "coords": { "x": 11, "y": 75 },
+               "header": "ashenvale border",
                "type": "travel"
             },
             {
-               "coords": { "x": 54, "y": 35 },
-               "align": "top",
-               "header": "the nightsong woods",
-               "objectives": [["raene's cleansing", "p4"]],
-               "special": ["kill trees for the key", "hearthstone to astranaar"],
-               "type": "objective"
-            },
+               "coords": { "x": 12, "y": 78 },
+               "align": "right",
+               "header": "azshara flightpath",
+               "special": ["fly to astranaar"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ashenvale",
+         "experience": 23.49,
+         "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
-               "align": "bottom",
+               "align": "right",
                "header": "astranaar",
                "ends": ["an aggressive defense"],
                "type": "hub"
             },
             {
                "coords": { "x": 34, "y": 48 },
+               "align": "top",
                "header": "astranaar flightpath",
                "special": ["fly to auberdine"],
                "type": "flightpath"
@@ -1485,6 +1503,7 @@
          "waypoints": [
             {
                "coords": { "x": 36, "y": 46 },
+               "align": "bottom",
                "header": "darkshore flightpath",
                "type": "flightpath"
             },
@@ -1498,6 +1517,7 @@
             },
             {
                "coords": { "x": 33, "y": 40 },
+               "align": "top",
                "header": "auberdine harbor",
                "special": ["sail to darnassus"],
                "type": "travel"
@@ -3839,17 +3859,10 @@
                "ends": [["the missing diplomat", "p6"]],
                "starts": [["the missing diplomat", "p7"]],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 41, "y": 89 },
-               "align": "bottom",
-               "header": "angus stern",
-               "starts": ["morgan stern"],
-               "type": "quest"
-            },            
+            },           
             {
                "coords": { "x": 40, "y": 82 },
-               "align": "top",
+               "align": "bottom",
                "header": "archmage malin",
                "starts": [["malin's request", "p1"]],
                "type": "quest"
@@ -3960,7 +3973,6 @@
             {
                "coords": { "x": 66, "y": 45 },
                "header": "theramore inn",
-               "ends": ["morgan stern"],
                "starts": ["they call him smiling jim", "highperch venom"],
                "type": "quest"
             },
@@ -4028,106 +4040,56 @@
          "experience": 31.30,
          "waypoints": [
             {
-               "coords": { "x": 34, "y": 48 },
-               "align": "top",
-               "header": "ashenvale flightpath",
-               "type": "flightpath"
-            },
-            {
                "coords": { "x": 36, "y": 50 },
-               "align": "right",
+               "align": "bottom",
                "header": "astranaar",
                "starts": ["kayneth stillwind", "fallen sky lake"],
                "special": ["set hearthstone"],
                "type": "hub"
             },
             {
-               "coords": { "x": 22, "y": 53 },
-               "header": "the shrine of aessina",
-               "starts": ["vile satyr! dryads in danger!", "the howling vale"],
-               "type": "quest"
-            },
+               "coords": { "x": 34, "y": 48 },
+               "header": "ashenvale flightpath",
+               "special": ["fly to azshara"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 31.30,
+         "waypoints": [
             {
-               "coords": { "x": 47, "y": 56 },
-               "align": "bottom",
-               "header": "ashenvale road",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 54, "y": 46 },
+               "coords": { "x": 12, "y": 78 },
                "align": "right",
-               "header": "shael'dryn",
-               "ends": [["raene's cleansing", "p3"]],
-               "starts": [["raene's cleansing", "p4"]],
-               "type": "quest"
+               "header": "azshara flightpath",
+               "special": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 11, "y": 75 },
+               "header": "ashenvale border",
+               "type": "travel"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 31.35,
+         "experience": 31.30,
          "waypoints": [
             {
-               "coords": { "x": 54, "y": 46 },
+               "coords": { "x": 94, "y": 47 },
                "align": "bottom",
-               "header": "shael'dryn",
-               "ends": [["raene's cleansing", "p4"]],
-               "starts": [["raene's cleansing", "p5"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 62, "y": 46 },
-               "align": "bottom",
-               "header": "ashenvale road",
+               "header": "azshara border",
                "type": "travel"
             },
             {
-               "coords": { "x": 50, "y": 39 },
-               "align": "top",
-               "header": "tome of melandris",
-               "objectives": ["the howling vale"],
+               "coords": { "x": 85, "y": 45 },
+               "align": "bottom",
+               "header": "forest song",
+               "ends": ["kayneth stillwind"],
+               "starts": ["vile satyr! dryads in danger!", "the howling vale", "forsaken diseases"],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 66, "y": 42 },
-               "align": "right",
-               "header": "passageway",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 67, "y": 57 },
-               "align": "right",
-               "header": "night run",
-               "objectives": [["the tower of althalaxx", "p5"]],
-               "special": ["first spawner"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 67, "y": 82 },
-               "align": "right",
-               "header": "fallen sky lake",
-               "objectives": ["fallen sky lake"],
-               "special": ["kill & loot the oracle"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "ashenvale",
-         "experience": 31.43,
-         "waypoints": [
-            {
-               "coords": { "x": 67, "y": 82 },
-               "header": "fallen sky lake",
-               "objectives": ["fallen sky lake"],
-               "special": ["kill & loot the oracle"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 72, "y": 73 },
-               "header": "the dor'danil barrow den",
-               "objectives": [["raene's cleansing", "p5"]],
-               "type": "objective"
             },
             {
                "coords": { "x": 78, "y": 45 },
@@ -4137,6 +4099,18 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 78, "y": 42 },  
+               "header": "geltharis",
+               "objectives": ["the branch of cenarius"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ashenvale",
+         "experience": 31.41,
+         "waypoints": [
+            {
                "coords": { "x": 78, "y": 42 },
                "align": "top",
                "header": "geltharis",
@@ -4144,54 +4118,86 @@
                "type": "objective"
             },
             {
+               "coords": { "x": 85, "y": 45 },
+               "align": "right",
+               "header": "forest song",
+               "ends": ["the branch of cenarius"],
+               "starts": ["satyr slaying"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 82, "y": 49 },
                "align": "bottom",
                "header": "satyrnaar",
-               "objectives": [["the tower of althalaxx", "p5"]],
+               "objectives": [["the tower of althalaxx", "p5"], "satyr slaying"],
                "special": ["second spawner"],
                "type": "objective"
             },
             {
-               "coords": { "x": 85, "y": 45 },
-               "align": "top",
-               "header": "forest song",
-               "ends": ["kayneth stillwind"],
+               "coords": { "x": 67, "y": 57 },
+               "align": "bottom",
+               "header": "night run",
+               "objectives": [["the tower of althalaxx", "p5"], "satyr slaying"],
+               "special": ["first spawner"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 39 },
+               "header": "tome of melandris",
+               "objectives": ["the howling vale", ["raene's cleansing", "p4"]],
                "type": "quest"
             },
             {
-               "coords": { "x": 94, "y": 47 },
-               "align": "top",
-               "header": "azshara border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "azshara",
-         "experience": 31.56,
-         "waypoints": [
-            {
-               "coords": { "x": 11, "y": 75 },
-               "header": "ashenvale border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 12, "y": 78 },
-               "header": "azshara flightpath",
-               "special": ["fly to ashenvale"],
-               "type": "flightpath"
+               "coords": { "x": 54, "y": 46 },
+               "align": "bottom",
+               "header": "shael'dryn",
+               "ends": [["raene's cleansing", "p4"]],
+               "starts": [["raene's cleansing", "p5"]],
+               "type": "quest"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 31.56,
+         "experience": 31.58,
          "waypoints": [
             {
-               "coords": { "x": 34, "y": 48 },
-               "header": "ashenvale flightpath",
-               "type": "flightpath"
+               "coords": { "x": 54, "y": 46 },
+               "header": "shael'dryn",
+               "ends": [["raene's cleansing", "p4"]],
+               "starts": [["raene's cleansing", "p5"]],
+               "type": "quest"
             },
+            {
+               "coords": { "x": 67, "y": 82 },
+               "align": "bottom",
+               "header": "fallen sky lake",
+               "objectives": ["fallen sky lake"],
+               "special": ["kill & loot the oracle"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 72 },
+               "align": "right",
+               "header": "the dor'danil barrow den",
+               "objectives": [["raene's cleansing", "p5"], "forsaken diseases"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 85, "y": 45 },
+               "align": "right",
+               "header": "forest song",
+               "ends": ["satyr slaying", "the howling vale", "forsaken diseases"],
+               "starts": ["velinde starsong"],
+               "special": ["hearthstone to astranaar"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ashenvale",
+         "experience": 31.77,
+         "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
                "align": "bottom",
@@ -4200,18 +4206,19 @@
                "type": "hub"
             },
             {
+               "coords": { "x": 26, "y": 38 },
+               "align": "top",
+               "header": "maestra's post",
+               "ends": [["the tower of althalaxx", "p5"], "supplies to auberdine"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 54, "y": 46 },
                "align": "top",
                "header": "shael'dryn",
                "ends": [["raene's cleansing", "p5"]],
                "starts": [["raene's cleansing", "p6"]],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 56, "y": 56 },
-               "align": "right",
-               "header": "shrine enterance",
-               "type": "travel"
             },
             {
                "coords": { "x": 56, "y": 49 },
@@ -4225,7 +4232,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 31.70,
+         "experience": 32,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 49 },
@@ -4259,7 +4266,7 @@
             },
             {
                "coords": { "x": 55, "y": 80 },
-               "align": "right",
+               "align": "bottom",
                "header": "bloodtooth camp",
                "objectives": [["raene's cleansing", "p10"]],
                "type": "objective"
@@ -4268,7 +4275,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 31.77,
+         "experience": 32.08,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 80 },
@@ -4289,48 +4296,18 @@
                "align": "top",
                "header": "astranaar",
                "ends": [["raene's cleansing", "p11"]],
+               "special": ["you will lose your rod", "fly to darnassus"],
                "type": "hub"
-            },
-            {
-               "coords": { "x": 22, "y": 53 },
-               "header": "the shrine of aessina",
-               "ends": ["the branch of cenarius", "the howling vale"],
-               "starts": ["velinde starsong"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 26, "y": 38 },
-               "header": "maestra's post",
-               "ends": [["the tower of althalaxx", "p5"], "supplies to auberdine"],
-               "special": ["hearthstone to astranaar"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "ashenvale",
-         "experience": 32.06,
-         "waypoints": [
-            {
-               "coords": { "x": 36, "y": 50 },
-               "align": "right",
-               "header": "astranaar",
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 34, "y": 48 },
-               "header": "ashenvale flightpath",
-               "special": ["fly to darnassus"],
-               "type": "flightpath"
             }
          ]
       },
       {
          "zone": "teldrassil",
-         "experience": 32.06,
+         "experience": 32.13,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 94 },
+               "align": "right",
                "header": "darnassus flightpath",
                "type": "flightpath"
             },
@@ -4343,7 +4320,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 32.06,
+         "experience": 32.13,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
@@ -4370,7 +4347,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 32.07,
+         "experience": 32.14,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 83 },
@@ -4411,7 +4388,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 32.09,
+         "experience": 32.15,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 90 },
@@ -4420,6 +4397,7 @@
             },
             {
                "coords": { "x": 58, "y": 94 },
+               "align": "right",
                "header": "darnassus flightpath",
                "special": ["fly to ratchet"],
                "type": "flightpath"
@@ -4428,7 +4406,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 32.09,
+         "experience": 32.15,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -4448,7 +4426,7 @@
       },
       {
          "zone": "stv",
-         "experience": 32.12,
+         "experience": 32.18,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -4475,7 +4453,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 32.15,
+         "experience": 32.20,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
@@ -4496,7 +4474,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 32.17,
+         "experience": 32.22,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
@@ -4518,7 +4496,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 32.17,
+         "experience": 32.22,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -4537,7 +4515,7 @@
       },
       {
          "zone": "stv",
-         "experience": 32.19,
+         "experience": 32.24,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 8 },
@@ -5251,6 +5229,12 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 41, "y": 89 },
+               "header": "angus stern",
+               "starts": ["morgan stern"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 57, "y": 69 },
                "align": "bottom",
                "header": "stormwind bank",
@@ -5498,7 +5482,7 @@
                "coords": { "x": 66, "y": 45 },
                "align": "right",
                "header": "theramore inn",
-               "ends": ["highperch venom"],
+               "ends": ["highperch venom", "morgan stern"],
                "starts": ["mudrock soup and bugs"],
                "special": ["set hearthstone"],
                "type": "quest"
