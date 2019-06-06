@@ -83,11 +83,6 @@ function Manifesto() { return (
                   For browsing back and forward, you can choose between using <i>A and D</i> or the <i>Arrowkeys</i>. To quickly open the reference overview, use <i>Q</i>. To close any prompt, use <i>Escape</i>. For the time being there is no way to customize these, but rest assured that the feature is coming.
                </Paragraph>
             </Secondary>
-            <Secondary header={ `Graphics` } id={ `graphics` }>
-               <Paragraph>
-                  I'm certainly not a graphic designer but having icons and backgrounds is preferable than staring at a gray page. I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for extracting high quality icons from the original game and providing a <a href="https://barrens.chat/viewtopic.php?f=5&t=901" target="_blank" rel="noopener noreferrer">downloadable package</a> to use in projects like this.
-               </Paragraph>
-            </Secondary>
             <Secondary header={ `Reducing Pickup Time` } id={ `questie` }>
             <Paragraph>
                   It’s very hard to indicate where exactly the quests I want you to pick up are in hubs like Lakeshire that contains a multitude of both high and low level quests in close proximity. I suggest using the <a href="https://willitclassic.com/view/zN3cdlIhnmtCjOwOnH8q" target="_blank" rel="noopener noreferrer">ingame addon Questie</a> to get minimap markers in order to speed up the process of picking up and returning the correct quests with minimal downtime. Try the following questie configs:
@@ -109,6 +104,21 @@ function Manifesto() { return (
                ['Reddit', 'Wickstjo'],
                ['Github', 'Wickstjo']
             ]}/>
+         </Primary>
+         <Primary header={ `Credits` } id={ `credits` }>
+         <Secondary header={ `WC3 Icons` } id={ `icons` }>
+               <Paragraph>
+                  I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for extracting high quality icons from WC3 and providing a <a href="https://barrens.chat/viewtopic.php?f=5&t=901" target="_blank" rel="noopener noreferrer">downloadable package</a> to use in projects like this. There’s a wide assortment of classic related content being posted there regularly that you might actually learn something from which certainly can’t be said about the trash that gets constantly re-uploaded to youtube.
+               </Paragraph>
+            </Secondary>
+            <Secondary header={ `Remastered Backgrounds` } id={ `backgrounds` }>
+               <Paragraph>
+               The in-game coordinate system which every addon follows is percentage based, which means that only the original maps can be used for a guide like this. I had hoped blizzard would redo the original maps themselves for classics launch, but this is yet another thing that the community has taken upon themselves to fix.
+               </Paragraph>
+               <Paragraph>
+               Again, I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for providing maps in a proper format and size, and the reddit user <a href="https://www.reddit.com/user/AthenaNosta" target="_blank" rel="noopener noreferrer">AthenaNosta</a> for algorithmically remastering them. All of the remastered backgrounds are publically available in gigapixel resolution if that’s something you’re into. You can read more in the <a href="https://www.reddit.com/r/classicwow/comments/bwqzql/here_have_some_upscaled_highresolution_wow_maps/" target="_blank" rel="noopener noreferrer">reddit thread</a>.
+               </Paragraph>
+            </Secondary>
          </Primary>
       </div>
    </div>

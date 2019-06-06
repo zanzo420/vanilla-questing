@@ -29,6 +29,7 @@ function Markers() {
       'stormwind',
       'tanaris',
       'westfall',
+      'thunderbluff'
    ])
 
    // GENERATE MAP MARKERS

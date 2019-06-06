@@ -4048,7 +4048,14 @@
                "type": "hub"
             },
             {
+               "coords": { "x": 22, "y": 53 },
+               "header": "the shrine of aessina",
+               "starts": ["the howling vale"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 34, "y": 48 },
+               "align": "top",
                "header": "ashenvale flightpath",
                "special": ["fly to azshara"],
                "type": "flightpath"
@@ -4088,7 +4095,7 @@
                "align": "bottom",
                "header": "forest song",
                "ends": ["kayneth stillwind"],
-               "starts": ["vile satyr! dryads in danger!", "the howling vale", "forsaken diseases"],
+               "starts": ["vile satyr! dryads in danger!", "forsaken diseases"],
                "type": "quest"
             },
             {
@@ -4187,8 +4194,7 @@
                "coords": { "x": 85, "y": 45 },
                "align": "right",
                "header": "forest song",
-               "ends": ["satyr slaying", "the howling vale", "forsaken diseases"],
-               "starts": ["velinde starsong"],
+               "ends": ["satyr slaying", "forsaken diseases"],
                "special": ["hearthstone to astranaar"],
                "type": "quest"
             }
@@ -4204,6 +4210,14 @@
                "header": "astranaar",
                "ends": ["fallen sky lake"],
                "type": "hub"
+            },
+            {
+               "coords": { "x": 22, "y": 53 },
+               "align": "bottom",
+               "header": "the shrine of aessina",
+               "ends": ["the howling vale"],
+               "starts": ["velinde starsong"],
+               "type": "quest"
             },
             {
                "coords": { "x": 26, "y": 38 },
