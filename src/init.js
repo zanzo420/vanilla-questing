@@ -1,7 +1,8 @@
 import { useContext, useEffect } from 'react';
 import { Context } from "./context";
 import { random, specific, dev } from './funcs/build';
-import { check } from './funcs/storage';
+import { check as check_storage } from './funcs/storage';
+import { check as check_settings } from './funcs/settings';
 
 function Init() {
 
@@ -15,7 +16,10 @@ function Init() {
    useEffect(() => {
 
       // CHECK STORAGE HEALTH
-      check().then(profiles => {
+      check_storage().then(profiles => {
+
+         // CHECK SETTINGS HEALTH
+         const settings = check_settings();
 
          // WHEN DEVELOPING
          if (developing) {
@@ -64,14 +68,17 @@ function Init() {
             }
          }
 
-         // IRREGARDLESS, SET PROFILES
+         // IRREGARDLESS, UPDATE STORAGE STUFF IN STATE
          dispatch({
-            type: 'set_profiles',
-            payload: profiles
+            type: 'storage',
+            payload: {
+               profiles: profiles,
+               settings: settings
+            }
          })
 
          // FINALLY, HIDE PROMPT
-         dispatch({type: 'hide-prompt' })
+         dispatch({ type: 'hide-prompt' })
       })
    }, [])
 

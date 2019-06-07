@@ -9,6 +9,7 @@ import Menu from './components/menu';
 import Home from './pages/home';
 import Manifesto from './pages/manifesto';
 import Target from './pages/target';
+import Preferences from './pages/preferences';
 import Error from './pages/error';
 
 function App() { return (
@@ -20,6 +21,7 @@ function App() { return (
             <Route exact path={ '/' } component={ Home } />
             <Route path={ '/manifesto' } component={ Manifesto } />
             <Route path={ '/:race/:block' } component={ Target } />
+            <Route path={ '/preferences' } component={ Preferences } />
             <Route component={ Error } />
          </Switch>
       </Provider>

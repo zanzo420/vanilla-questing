@@ -18,21 +18,19 @@ function check() {
          if (localStorage.getItem(item) !== null) {
             localStorage.removeItem(item);
          }
-      });
+      })
 
-      // IF NO CURRENT STORAGE KEY EXISTS, CREATE IT
+      // IF STORAGE KEY DOESNT EXISTS
       if (localStorage.getItem(key) === null) {
          
          // OVERWRITE STORAGE VAR
-         storage = { profiles: [] }
+         storage = {
+            profiles: []
+         }
 
-         // SET STORAGE
+         // STRINGIFY & SET IT
          localStorage.setItem(key, JSON.stringify(storage));
-      
-      // IF IT DOES, CHECK THAT ITS CORRECTLY WRITTEN
-      } else { storage = convert(storage); }
-
-      // FINALLY RESOLVE
+      }
 
       // GIVE THE PAGE A SECOND TO STABILIZE DIMENSIONS, THEN RESOLVE
       sleep(1000).then(() => {
@@ -67,30 +65,6 @@ function change(state, block) {
       state.profiles.set(state.loaded, details);
       update(state.profiles);
    }
-}
-
-// CONVERT OLD STORAGE OBJECT
-function convert(storage) {
-   let update = false;
-
-   storage.profiles.forEach(profile => {
-      if (profile[1].icon !== undefined) {
-
-         // TRANSFORM 'ICON' KEY TO 'RACE'
-         profile[1].race = profile[1].icon;
-         delete profile[1].icon;
-
-         // MARK TO UPDATE STORAGE
-         update = true;
-      }
-   });
-
-   // UPDATE STORAGE IF NECESSARY
-   if (update) {
-      localStorage.setItem(key, JSON.stringify(storage));
-   }
-
-   return storage;
 }
 
 // EXPORT PROFILE OBJECT

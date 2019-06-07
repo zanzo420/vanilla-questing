@@ -1,0 +1,76 @@
+#preferences {
+   width: 500px;
+   margin: auto;
+
+   .header {
+      font-size: 17px;
+      padding-top: 25px;
+      padding-bottom: 5px;
+      color: white;
+      text-align: center;
+      margin-bottom: 10px;
+   }
+
+   .option {
+      background: rgba(0, 0, 0, 0.219);
+      display: flex;
+      color: white;
+      text-transform: capitalize;
+      margin-bottom: 5px;
+      padding: 2px;
+
+      #header {
+         flex: 1;
+         padding: 6px 7px;
+      }
+
+      #swapper {
+         width: 170px;
+         display: flex;
+
+         div {
+            background: rgb(82, 82, 82);
+            flex: 1;
+            text-align: center;
+            padding: 6px 7px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-left: 2px;
+         }
+
+         #current {
+            background: gray;
+            cursor: default;
+         }
+      }
+   }
+
+   .keybind {
+      background: rgba(0, 0, 0, 0.219);
+      display: flex;
+      color: white;
+      text-transform: capitalize;
+      margin-bottom: 5px;
+      padding: 2px;
+      cursor: pointer;
+
+      div {
+         padding: 6px 8px;
+         transition: 0.3s;
+      }
+
+      #header {
+         flex: 1;
+      }
+
+      #bind, #current {
+         width: 85px;
+         background: rgb(82, 82, 82);
+         text-align: center;
+      }
+
+      #current {
+         background: gray;
+      }
+   }
+}

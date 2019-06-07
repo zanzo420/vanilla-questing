@@ -29,6 +29,15 @@ function reducer(state, action) {
          }
       }
 
+      // SET STORED PROFILES/SETTINGS
+      case 'storage': {
+         return {
+            ...state,
+            profiles: action.payload.profiles,
+            settings: action.payload.settings
+         }
+      }
+
       // SET PROFILES ON INIT LOAD
       case 'set_profiles': {
          return {
@@ -127,6 +136,7 @@ function Provider({ children }) {
       data: null,
       current: 0,
       profiles: null,
+      settings: null,
       prompt: {
          visible: true,
          type: 'loading'
