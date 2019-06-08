@@ -4454,6 +4454,7 @@
                "header": "booty bay",
                "completed": ["the haunted isle"],
                "starts": ["supplies to private thorsen", "investigate the camp", "bloodscalp ears", "the stone of the tides", "supply and demand"],
+               "special": ["set hearthstone"],
                "type": "hub"
             },
             {
@@ -4776,30 +4777,11 @@
          "experience": 33.36,
          "waypoints": [
             {
-               "coords": { "x": 28, "y": 78 },
-               "align": "right",
-               "header": "booy bay flightpath",
-               "type": "flightpath"
-            },
-            {
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
                "ends": ["investigate the camp", "krazek's cookery", "bloodscalp ears", "the stone of the tides", "supply and demand"],
                "starts": ["favor for krazek"],
-               "special": ["set hearthstone"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 33.50,
-         "waypoints": [
-            {
-               "coords": { "x": 27, "y": 77 },
-               "header": "booty bay",
-               "ends": ["investigate the camp", "krazek's cookery", "bloodscalp ears", "the stone of the tides", "supply and demand"],
-               "starts": ["favor for krazek"],
+               "special": ["bank any STV pages"],
                "type": "hub"
             },
             {
@@ -5247,13 +5229,6 @@
                "header": "angus stern",
                "starts": ["morgan stern"],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 57, "y": 69 },
-               "align": "bottom",
-               "header": "stormwind bank",
-               "special": ["bank any STV pages"],
-               "type": "objective"
             },
             {
                "coords": { "x": 66, "y": 62 },
@@ -6910,7 +6885,8 @@
                "align": "top",
                "header": "dandred's fold",
                "objectives": ["dark council"],
-               "special": ["kill nagaz", "hearthstone to southshore"],
+               "starts": ["the ensorcelled parchment"],
+               "special": ["kill nagaz", "inspect the chest", "hearthstone to southshore"],
                "type": "objective"
             }
          ]
@@ -6923,8 +6899,8 @@
                "coords": { "x": 50, "y": 54 },
                "align": "right",
                "header": "southshore",
-               "ends": ["noble deaths", "dark council", ["preserving knowledge", "e"], ["crushridge warmongers", "e"]],
-               "starts": ["return to milton"],
+               "ends": ["noble deaths", "dark council", ["preserving knowledge", "e"], ["crushridge warmongers", "e"], "the ensorcelled parchment"],
+               "starts": ["return to milton", "stormpike's deciphering"],
                "type": "hub"
             },
             {
@@ -6970,7 +6946,7 @@
                "coords": { "x": 75, "y": 12 },
                "align": "right",
                "header": "the library",
-               "ends": [["mythology of the titans", "d"]],
+               "ends": [["mythology of the titans", "d"], "stormpike's deciphering"],
                "type": "quest"
             },
             {
@@ -7126,14 +7102,15 @@
             },
             {
                "coords": { "x": 38, "y": 3 },
+               "align": "top",
                "header": "rebel camp",
                "ends": ["return to corporal kaleb"],
-               "starts": ["kurzen's mystery", "colonel kurzen"],
+               "starts": ["colonel kurzen"],
                "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 4 },
-               "align": "bottom",
+               "align": "top",
                "header": "the stockpile",
                "objectives": ["colonel kurzen"],
                "type": "objective"
@@ -7146,10 +7123,18 @@
          "waypoints": [
             {
                "coords": { "x": 50, "y": 4 },
-               "align": "right",
+               "align": "top",
                "header": "the stockpile",
                "objectives": ["colonel kurzen"],
                "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "align": "top",
+               "header": "rebel camp",
+               "ends": ["colonel kurzen"],
+               "starts": ["kurzen's mystery"],
+               "type": "quest"
             },
             {
                "coords": { "x": 49, "y": 22 },
@@ -7256,8 +7241,9 @@
             },
             {
                "coords": { "x": 38, "y": 3 },
+               "align": "top",
                "header": "rebel camp",
-               "ends": ["kurzen's mystery", "colonel kurzen"],
+               "ends": ["kurzen's mystery"],
                "starts": ["troll witchery"],
                "type": "quest"
             },

@@ -564,7 +564,7 @@
                "coords": { "x": 60, "y": 52 },
                "align": "right",
                "header": "brill",
-               "starts": ["proof of demise", "wanted: maggot eye", "deaths in the family", "the haunted mills", "the chill of death", "graverobbers", "delivery to silverpine"],
+               "starts": ["wanted: maggot eye", "deaths in the family", "the haunted mills", "the chill of death", "graverobbers", "delivery to silverpine"],
                "special": ["set hearthstone", "buy 1x coarse thread", "learn the herbalism profession"],
                "type": "hub"
             },
@@ -573,16 +573,19 @@
                "align": "top",
                "header": "deathguard dillinger",
                "starts": ["a putrid task"],
+               "special": ["kill zombies everywhere"],
                "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 54 },
                "header": "gordo",
                "starts": ["gordo's task"],
+               "special": ["he patrols the road"],
                "type": "quest"
             },
             {
-               "coords": { "x": 53, "y": 49 },
+               "coords": { "x": 55, "y": 49 },
+               "align": "top",
                "header": "stillwater pond",
                "objectives": ["gordo's task", "a putrid task", "the chill of death"],
                "special": ["locate weeds with herb tracking"],
@@ -592,10 +595,10 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 11.14,
+         "experience": 11.15,
          "waypoints": [
             {
-               "coords": { "x": 53, "y": 49 },
+               "coords": { "x": 55, "y": 49 },
                "align": "top",
                "header": "stillwater pond",
                "objectives": ["gordo's task", "a putrid task"],
@@ -603,76 +606,12 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 58, "y": 49 },
-               "align": "top",
-               "header": "junior apothecary holland",
-               "ends": ["gordo's task"],
-               "starts": ["doom weed"],
+               "coords": { "x": 58, "y": 50 },
+               "align": "right",
+               "header": "brill graveyard",
+               "ends": ["gordo's task", "a putrid task"],
+               "starts": ["doom weed", "the mills overrun"],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 58, "y": 51 },
-               "align": "bottom",
-               "header": "deathguard dillinger",
-               "ends": ["a putrid task"],
-               "starts": ["the mills overrun"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "tirisfal",
-         "experience": 11.23,
-         "waypoints": [
-            {
-               "coords": { "x": 58, "y": 51 },
-               "align": "bottom",
-               "header": "deathguard dillinger",
-               "ends": ["a putrid task"],
-               "starts": ["the mills overrun"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 56, "y": 42 },
-               "header": "gnoll encampment",
-               "objectives": ["graverobbers", "doom weed"],
-               "special": ["locate weeds with herb tracking"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 59, "y": 36 },
-               "align": "right",
-               "header": "garren's haunt",
-               "objectives": ["graverobbers"],
-               "special": ["Mongrels"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 59, "y": 31 },
-               "align": "right",
-               "header": "garren's haunt",
-               "objectives": ["graverobbers", "wanted: maggot eye"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "tirisfal",
-         "experience": 11.32,
-         "waypoints": [
-            {
-               "coords": { "x": 59, "y": 31 },
-               "align": "right",
-               "header": "garren's haunt",
-               "objectives": ["graverobbers", "wanted: maggot eye"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 52, "y": 67 },
-               "align": "right",
-               "header": "scarlet encampment",
-               "objectives": ["proof of demise"],
-               "type": "objective"
             },
             {
                "coords": { "x": 41, "y": 54 },
@@ -706,7 +645,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 11.57,
+         "experience": 11.30,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 36 },
@@ -726,22 +665,63 @@
                "align": "top",
                "header": "gregor agamand",
                "objectives": ["the haunted mills", "the mills overrun"],
-               "special": ["hearthstone to brill"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 31 },
+               "align": "right",
+               "header": "garren's haunt",
+               "objectives": ["graverobbers", "wanted: maggot eye"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 36 },
+               "align": "right",
+               "header": "garren's haunt",
+               "objectives": ["graverobbers"],
+               "special": ["Mongrels"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 42 },
+               "header": "gnoll encampment",
+               "objectives": ["graverobbers", "doom weed"],
+               "special": ["locate weeds with herb tracking"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "tirisfal",
-         "experience": 11.63,
+         "experience": 11.46,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 42 },
+               "header": "gnoll encampment",
+               "objectives": ["graverobbers", "doom weed"],
+               "special": ["locate weeds with herb tracking"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "top",
+               "header": "brill",
+               "ends": ["wanted: maggot eye", "graverobbers", "deaths in the family", "the haunted mills", ["fields of grief", "p1"], "the chill of death", "the mills overrun", "doom weed"],
+               "starts": ["forsaken duties", "the prodigal lich", "the family crypt"],
+               "completed": ["speak with sevren", ["fields of grief", "p2"]],
+               "special": ["abandon herbalism is you want"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 12.19,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },
                "align": "top",
                "header": "brill",
-               "ends": ["proof of demise", "wanted: maggot eye", "graverobbers", "deaths in the family", "the haunted mills", ["fields of grief", "p1"], "the chill of death"],
-               "starts": ["forsaken duties", "the prodigal lich", "the family crypt"],
-               "completed": ["speak with sevren", ["fields of grief", "p2"]],
                "type": "hub"
             },
             {
@@ -763,7 +743,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 12.46,
+         "experience": 12.41,
          "waypoints": [
             {
                "coords": { "x": 76, "y": 61 },
@@ -787,13 +767,6 @@
                "type": "hub"
             },
             {
-               "coords": { "x": 58, "y": 51 },
-               "header": "brill graveyard",
-               "ends": ["the mills overrun", "doom weed"],
-               "special": ["abandon herbalism is you want"],
-               "type": "quest"
-            },
-            {
                "coords": { "x": 53, "y": 27 },
                "header": "agamand family crypt",
                "objectives": ["the family crypt"],
@@ -804,7 +777,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 12.73,
+         "experience": 12.69,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },

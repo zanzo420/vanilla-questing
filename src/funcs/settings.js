@@ -23,6 +23,12 @@ function check() {
    return JSON.parse(localStorage.getItem(key));
 }
 
+function keys() {
+   
+   // BOUND KEYS
+}
+
 export {
-   check
+   check,
+   keys
 }

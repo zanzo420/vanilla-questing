@@ -1,39 +1,56 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import EventListener from 'react-event-listener';
+import { Context } from "../context";
+
 import '../interface/css/preferences.scss';
 
-function Preferences() { return (
-   <div id={ 'preferences' }>
-      <div className={ 'header' }>General</div>
-      <Swapper
-         header={ 'database' }
-         first={ 'classicDB' }
-         second={ 'wowhead' }
-      />
-      <Swapper
-         header={ 'keybindings' }
-         first={ 'enable' }
-         second={ 'disable' }
-      />
-      <div className={ 'header' }>Keybindings</div>
-      <Keybind
-         header={ 'close prompts' }
-         bind={ 'escape' }
-      />
-      <Keybind
-         header={ 'open references' }
-         bind={ 'q' }
-      />
-      <Keybind
-         header={ 'browse backward' }
-         bind={ 'a' }
-      />
-      <Keybind
-         header={ 'browse forward' }
-         bind={ 'd' }
-      />
-   </div>
-)}
+function Preferences() {
+   
+   // GLOBAL CONTEXT
+   const { state } = useContext(Context);
+
+   // IF STATE HAS LOADED
+   if (state.settings !== null) {
+      return (
+         <div id={ 'preferences' }>
+            <div className={ 'header' }>
+               General
+            </div>
+            <Swapper
+               header={ 'database' }
+               first={ 'classicDB' }
+               second={ 'wowhead' }
+            />
+            <Swapper
+               header={ 'keybindings' }
+               first={ 'enable' }
+               second={ 'disable' }
+            />
+            <div className={ 'header' }>
+               Keybindings
+            </div>
+            <Keybind
+               header={ 'close prompts' }
+               bind={ state.settings.close }
+            />
+            <Keybind
+               header={ 'open references' }
+               bind={ state.settings.references }
+            />
+            <Keybind
+               header={ 'browse backward' }
+               bind={ state.settings.backward }
+            />
+            <Keybind
+               header={ 'browse forward' }
+               bind={ state.settings.forward }
+            />
+         </div>
+      )
+
+   // OTHERWISE, RETURN NOTHING
+   } else { return null; }
+}
 
 function Swapper({ header, first, second }) {
 
@@ -50,11 +67,11 @@ function Swapper({ header, first, second }) {
    }
 
    return (
-      <div className={ 'option' }>
+      <div className={ 'option' } onClick={ swap }>
          <div id={ 'header' }>{ header }</div>
          <div id={ 'swapper' }>
-            <div id={ local.selected ? 'current' : null } onClick={ swap }>{ first }</div>
-            <div id={ local.selected ? null : 'current' } onClick={ swap }>{ second }</div>
+            <div id={ local.selected ? 'current' : null }>{ first }</div>
+            <div id={ local.selected ? null : 'current' }>{ second }</div>
          </div>
       </div>
    )
