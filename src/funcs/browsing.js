@@ -46,45 +46,47 @@ function jump(event, state, dispatch) {
 
 // BROWSING KEY LISTENER
 const key_listener = (event, state, dispatch) => {
-   switch (event.key.toLowerCase()) {
 
-      // PREVIOUS BLOCK
-      case'arrowleft':
-      case 'a': {
-         if (!state.prompt.visible) {
-            previous(state, dispatch);
-         } break;
-      }
+   // IF KEYBINDS ARE ENABLED, EXECUTE REQUEST
+   if (state.settings.keybinds === 'enable') {
+      switch (event.code) {
 
-      // NEXT BLOCK
-      case'arrowright':
-      case 'd': {
-         if (!state.prompt.visible) {
-            next(state, dispatch);
-         } break;
-      }
+         // PREVIOUS BLOCK
+         case state.settings.binds.backward: {
+            if (!state.prompt.visible) {
+               previous(state, dispatch);
+            } break;
+         }
 
-      // SHOW REFERENCES
-      case 'q': {
-         if (!state.prompt.visible) {
+         // NEXT BLOCK
+         case state.settings.binds.forward: {
+            if (!state.prompt.visible) {
+               next(state, dispatch);
+            } break;
+         }
+
+         // SHOW REFERENCES
+         case state.settings.binds.references: {
+            if (!state.prompt.visible) {
+               dispatch({
+                  type: 'show-prompt',
+                  payload: 'references'
+               })
+            } break;
+         }
+
+         // CLOSE PROMPT
+         case state.settings.binds.close: {
             dispatch({
-               type: 'show-prompt',
-               payload: 'references'
+               type: 'hide-prompt',
             })
-         } break;
-      }
+            break;
+         }
 
-      // HIDE PROMPT
-      case 'escape': {
-         dispatch({
-            type: 'hide-prompt',
-         })
-         break;
-      }
-
-      // FALLBACK
-      default: {
-         return null;
+         // FALLBACK
+         default: {
+            return null;
+         }
       }
    }
 }

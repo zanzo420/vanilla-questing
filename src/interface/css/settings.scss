@@ -1,24 +1,26 @@
-#preferences {
-   width: 500px;
+#settings {
+   width: 600px;
    margin: auto;
 
    .header {
       font-size: 17px;
-      padding-top: 25px;
-      padding-bottom: 5px;
       color: white;
-      text-align: center;
-      margin-bottom: 10px;
+      margin-top: 20px;
+      padding: 10px;
+   }
+
+   .container {
+      background: rgba(0, 0, 0, 0.205);
+      padding: 4px;
    }
 
    .option {
-      background: rgba(0, 0, 0, 0.219);
+      background: rgba(0, 0, 0, 0.158);
       display: flex;
       color: white;
       text-transform: capitalize;
-      margin-bottom: 5px;
-      padding: 2px;
       cursor: pointer;
+      padding: 2px;
 
       #header {
          flex: 1;
@@ -30,7 +32,7 @@
          display: flex;
 
          div {
-            background: rgb(82, 82, 82);
+            background: rgba(47, 128, 175, 0.452);
             flex: 1;
             text-align: center;
             padding: 6px 7px;
@@ -38,20 +40,25 @@
             margin-left: 2px;
          }
 
+         div:first-child {
+            margin: 0px;
+         }
+
          #current {
-            background: gray;
+            background: rgba(60, 199, 60, 0.438);
+            text-decoration: underline;
          }
       }
    }
 
    .keybind {
-      background: rgba(0, 0, 0, 0.219);
+      background: rgba(0, 0, 0, 0.158);
       display: flex;
       color: white;
       text-transform: capitalize;
-      margin-bottom: 5px;
-      padding: 2px;
+      margin-top: 4px;
       cursor: pointer;
+      padding: 2px;
 
       div {
          padding: 6px 8px;
@@ -63,13 +70,14 @@
       }
 
       #bind, #current {
-         width: 85px;
-         background: rgb(82, 82, 82);
+         width: 170px;
+         background: rgba(47, 128, 175, 0.452);
          text-align: center;
       }
 
       #current {
-         background: gray;
+         background: rgba(60, 199, 60, 0.411);
+         text-decoration: underline;
       }
    }
 }

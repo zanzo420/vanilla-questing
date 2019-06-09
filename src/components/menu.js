@@ -72,7 +72,7 @@ function Menu() {
                <Sub header='Report issues' icon='report' link='/manifesto#contribute' />
                <Sub header='Donate' icon='donate' link='/manifesto#contribute' />
             </Main>
-            <Main header='Preferences' link='/preferences' />
+            <Main header='Settings' link='/settings' />
          </div>
          <div>
             <Main header='Storage'>

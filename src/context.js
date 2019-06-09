@@ -1,5 +1,6 @@
 import React, { createContext, useReducer } from "react";
-import { update, change } from "./funcs/storage";
+import { update as update_profiles, change } from "./funcs/storage";
+import { update_bind, update_prop } from "./funcs/settings";
 import Prompt from './components/prompt';
 
 // DECLARE CONTEXT
@@ -12,7 +13,7 @@ function reducer(state, action) {
       // CHANGE BLOCK
       case 'block': {
 
-         // CHANGE STORAGE CONTENT
+         // CHANGE PROFILE BLOCK VALUE
          change(state, action.payload);
 
          return {
@@ -50,7 +51,7 @@ function reducer(state, action) {
       case 'update_profiles': {
 
          // UPDATE STORAGE
-         update(action.payload);
+         update_profiles(action.payload);
          
          return {
             ...state,
@@ -117,6 +118,22 @@ function reducer(state, action) {
                type: undefined,
                value: undefined
             }
+         }
+      }
+
+      // CHANGE KEYBIND
+      case 'change-keybind': {
+         return {
+            ...state,
+            settings: update_bind(state.settings, action.payload)
+         }
+      }
+
+      // CHANGE SETTING
+      case 'change-setting': {
+         return {
+            ...state,
+            settings: update_prop(state.settings, action.payload)
          }
       }
 
