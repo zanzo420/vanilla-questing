@@ -170,6 +170,8 @@
                "align": "right",
                "header": "tiragarde keep",
                "objectives": ["vanquish the betrayers", "carry your weight"],
+               "starts": [["the admiral's orders", "p1"]],
+               "special": ["loot the chest upstairs"],
                "type": "objective"
             },
             {
@@ -239,7 +241,7 @@
                "coords": { "x": 52, "y": 42 },
                "align": "bottom",
                "header": "razor hill",
-               "ends": ["vanquish the betrayers", "encroachment"],
+               "ends": ["vanquish the betrayers", "encroachment", ["the admiral's orders", "p1"]],
                "type": "hub"
             },
             {
@@ -472,7 +474,7 @@
                "coords": { "x": 60, "y": 52 },
                "align": "top",
                "header": "brill",
-               "starts": ["deaths in the family", "the haunted mills", "the chill of death", "forsaken duties", "the prodigal lich", ["a new plague", "p1"], "the mills overrun", "delivery to silverpine"],
+               "starts": ["deaths in the family", "the haunted mills", "the chill of death", "forsaken duties", "the prodigal lich", ["a new plague", "p2"], "the mills overrun", "delivery to silverpine"],
                "special": ["buy 1x coarse thread"],
                "type": "hub"
             },
@@ -501,7 +503,7 @@
                "coords": { "x": 36, "y": 43 },
                "align": "top",
                "header": "whispering shore",
-               "objectives": [["a new plague", "p1"]],
+               "objectives": [["a new plague", "p2"]],
                "type": "objective"
             }
          ]
@@ -514,7 +516,7 @@
                "coords": { "x": 36, "y": 43 },
                "align": "bottom",
                "header": "whispering shore",
-               "objectives": [["a new plague", "p1"]],
+               "objectives": [["a new plague", "p2"]],
                "type": "objective"
             },
             {
@@ -561,8 +563,8 @@
                "coords": { "x": 60, "y": 52 },
                "align": "right",
                "header": "brill",
-               "ends": ["deaths in the family", "the haunted mills", "the chill of death", ["a new plague", "p1"], "the mills overrun", "delivery to silverpine", ["at war with the scarlet crusade", "p1"], "proof of demise", ["fields of grief", "p1"]],
-               "starts": [["at war with the scarlet crusade", "p2"], ["a new plague", "p2"], "the family crypt"],
+               "ends": ["deaths in the family", "the haunted mills", "the chill of death", ["a new plague", "p2"], "the mills overrun", "delivery to silverpine", ["at war with the scarlet crusade", "p1"], "proof of demise", ["fields of grief", "p1"]],
+               "starts": [["at war with the scarlet crusade", "p2"], ["a new plague", "p3"], "the family crypt"],
                "completed": [["fields of grief", "p2"], "speak with sevren"],
                "type": "hub"
             },
@@ -625,7 +627,7 @@
                "coords": { "x": 86, "y": 53 },
                "align": "top",
                "header": "venomweb vale",
-               "objectives": [["a new plague", "p2"]],
+               "objectives": [["a new plague", "p3"]],
                "special": ["hearthstone to brill"],
                "type": "objective"
             }
@@ -639,8 +641,8 @@
                "coords": { "x": 60, "y": 52 },
                "align": "top",
                "header": "brill",
-               "ends": [["a new plague", "p2-3"], ["at war with the scarlet crusade", "p3"], "return to the magistrate"],
-               "starts": [["a new plague", "p3"]],
+               "ends": [["a new plague", "p3"], ["at war with the scarlet crusade", "p3"], "return to the magistrate"],
+               "completed": [["a new plague", "p4"]],
                "type": "hub"
             },
             {
