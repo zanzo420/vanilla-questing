@@ -16,7 +16,7 @@ function check() {
             backward: 'KeyA',
             forward: 'KeyD'
          }
-      });
+      })
    }
 
    // PARSE & RETURN STORAGE ITEM

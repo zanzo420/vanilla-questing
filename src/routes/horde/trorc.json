@@ -1023,18 +1023,10 @@
                "align": "top",
                "header": "rane yorick",
                "ends": ["ivar the foul"],
-               "special": ["hearthstone to sepulcher"],
                "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "silverpine",
-         "experience": 13.98,
-         "waypoints": [
+            },
             {
                "coords": { "x": 43, "y": 41 },
-               "align": "top",
                "header": "sepulcher",
                "ends": ["rot hide clues", ["arugal's folly", "p1"]],
                "starts": [["arugal's folly", "p2"], "the engraved ring", "border crossing"],
@@ -1042,8 +1034,8 @@
             },
             {
                "coords": { "x": 56, "y": 46 },
-               "align": "right",
-               "header": "sepulcher flightpath",
+               "align": "bottom",
+               "header": "deep elem mine",
                "objectives": [["arugal's folly", "p2"]],
                "type": "objective"
             }
@@ -1056,7 +1048,7 @@
             {
                "coords": { "x": 56, "y": 46 },
                "align": "right",
-               "header": "sepulcher flightpath",
+               "header": "deep elem mine",
                "objectives": [["arugal's folly", "p2"]],
                "type": "objective"
             },
@@ -1085,7 +1077,7 @@
             {
                "coords": { "x": 56, "y": 46 },
                "align": "right",
-               "header": "sepulcher flightpath",
+               "header": "deep elem mine",
                "objectives": [["arugal's folly", "p3"]],
                "type": "objective"
             },
@@ -1129,7 +1121,6 @@
                "coords": { "x": 63, "y": 48 },
                "align": "top",
                "header": "undercity flightpath",
-               "special": ["learn the flightpath"],
                "type": "flightpath"
             },
             {
