@@ -193,7 +193,8 @@
                "coords": { "x": 67, "y": 87 },
                "align": "bottom",
                "header": "echo isles",
-               "objectives": ["zalazane"],
+               "objectives": ["zalazane", "minshina's skull"],
+               "special": ["loot the skull"],
                "type": "objective"
             },
             {
