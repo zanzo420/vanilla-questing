@@ -47,7 +47,7 @@ function Manifesto() { return (
                   Quests that award reputation have very harsh diminishing returns and should therefore be completed while you’re within level range. Starting zones grant a massive amount of reputation so players who don’t want to spend gold on runecloth should migrate to the correct factions starting area immediately. Humans gain 10% more reputation than others and have a very real chance of reaching exalted before level 40.
                </Paragraph>
                <Paragraph>
-                  Every human route I’ve ran has reached exalted with Darnassus from the same quest at level 48. Running the night-elf route instead rewards you with an additional <i>9791</i> reputation and completing the four Blackfathom Deeps dungeon quests bumps that number up by another <i>1725</i> which adds up to a total of <i>11516</i> extra reputation with Darnassus. Whether that’s enough to reach exalted before level 40 depends entirely on how accurate private server values are. If you're playing on a PVE server and want to exhaust all sources of Darnassus reputation, do the quests in Stonetalon after western Ashenvale.
+                  As a disclaimer to all the private server human players that are set on reaching exalted with another faction before level 40: The reputation rewards on the Classic client are significantly lower than we’re used to. Do not gimp your leveling route and expect to be exalted by 40.
                </Paragraph>
             </Secondary>
          </Primary>
@@ -84,7 +84,7 @@ function Manifesto() { return (
                </Paragraph>
             </Secondary>
             <Secondary header={ `Reducing Pickup Time` } id={ `questie` }>
-            <Paragraph>
+               <Paragraph>
                   It’s very hard to indicate where exactly the quests I want you to pick up are in hubs like Lakeshire that contains a multitude of both high and low level quests in close proximity. I suggest using the <a href="https://willitclassic.com/view/zN3cdlIhnmtCjOwOnH8q" target="_blank" rel="noopener noreferrer">ingame addon Questie</a> to get minimap markers in order to speed up the process of picking up and returning the correct quests with minimal downtime. Try the following questie configs:
                </Paragraph>
                <Paragraph>
@@ -92,18 +92,32 @@ function Manifesto() { return (
                   /questie resizemap
                </Paragraph>
             </Secondary>
+            <Secondary header={ `Direct Linking` } id={ `linking` }>
+               <Paragraph>
+                  After you hit the blue link button in the sidepanel, your clipboard will contain a direct link to the current page/build you're viewing. This is quite handy when you want to communicate your current status to a friend or perhaps show them where a certain questline starts. For people who switch computers a lot you might want to bookmark your progress rather than dealing with profiles since modern browsers tend to sync with a cloud and bookmarks are saved. Providing a link to the page you’re viewing also makes reporting bugs a lot easier.
+               </Paragraph>
+            </Secondary>
          </Primary>
          <Primary header={ `Contribute` } id={ `contribute` }>
-            <Paragraph>
-               I’m always looking to better the product. If you encounter bugs, inconsistencies or something that’s blatantly wrong, feel free to contact me via your preferred medium. If you would like to contribute, monetarily or otherwise, you can do that too. Thank you!
-            </Paragraph>
-            <Table data={[
-               ['PayPal', 'Jfwick@gmail.com'],
-               ['Discord', 'Strafir#9133'],
-               ['Battle.net', 'Strafir#2132'],
-               ['Reddit', 'Wickstjo'],
-               ['Github', 'Wickstjo']
-            ]}/>
+            <Secondary header={ `Reporting Bugs` } id={ `report` }>
+               <Paragraph>
+                  If you have ideas on how the project could be improved, feel free to make pull requests on GitHub or contact me directly via your preferred medium. The same thing applies to route related bugs/ideas, but to make things easier for both of us, read the "direct linking" header and provide me with a link ontop of a brief explanation of the issue.
+               </Paragraph>
+            </Secondary>
+            <Secondary header={ `Monetary Donations` } id={ `monetary` }>
+               <Paragraph>
+                  If you feel like the project has saved you time, any and all monetary contributions via PayPal are greatly appreciated. Thank you to all the generous people who have already donated!
+               </Paragraph>
+            </Secondary>
+            <Secondary header={ `Contact Me` } id={ `contact` }>
+               <Table data={[
+                  ['PayPal', 'Jfwick@gmail.com'],
+                  ['Discord', 'Strafir#9133'],
+                  ['BattleNet', 'Strafir#2132'],
+                  ['Reddit', 'Wickstjo'],
+                  ['GitHub', 'Wickstjo']
+               ]}/>
+            </Secondary>
          </Primary>
          <Primary header={ `Credits` } id={ `credits` }>
          <Secondary header={ `WC3 Icons` } id={ `icons` }>

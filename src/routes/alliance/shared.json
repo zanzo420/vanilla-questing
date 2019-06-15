@@ -11544,6 +11544,59 @@
             {
                "coords": { "x": 67, "y": 51 },
                "header": "theramore flightpath",
+               "special": ["fly to darnassus"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "teldrassil",
+         "experience": 52.60,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 94 },
+               "align": "right",
+               "header": "darnassus flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 56, "y": 90 },
+               "align": "top",
+               "header": "darnassus teleporter",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "darnassus",
+         "experience": 52.60,
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 41 },
+               "header": "darnassus teleporter",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 40, "y": 85 },
+               "header": "gracina spiritmight",
+               "starts": ["march of the silithid"],
+               "special": ["hearthstone to theramore"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 52.60,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 45 },
+               "header": "theramore inn",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "theramore flightpath",
                "special": ["fly to azshara"],
                "type": "flightpath"
             }
@@ -11691,6 +11744,7 @@
                "coords": { "x": 52, "y": 28 },
                "align": "top",
                "header": "gadgetzan",
+               "ends": ["march of the silithid"],
                "starts": ["super sticky", "bungle in the jungle"],
                "special": ["set hearthstone", "buy some noggenfogger"],
                "type": "hub"

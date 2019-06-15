@@ -71,28 +71,42 @@ function Objective({ index, quests, waypoint }) {
 
 // DEFAULT BLOCK
 function Single({ quests, header }) {
+
+   // FIND ID
+   const id = quests[header.toString().toLowerCase()];
    
-   if (quests[header.toString().toLowerCase()] === undefined) {
-      console.log(header);
+   // IF ID WAS NOT FOUND, LOG ERROR
+   if (id === undefined) {
+      console.log(header + ' not found!');
    }
 
    return (
       <div>
-         <a href={ 'https://classicdb.ch/?quest=' + quests[header.toString().toLowerCase()] } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a>
+         <a href={ 'https://classicdb.ch/?quest=' + id } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a>
       </div>
    )
 }
 
 // MULTI HEADER BLOCK
 function Multi({ quests, header, tag }) {
+
+   // PLACEHOLDERS
+   let id;
+
+   if (tag[0] === 'p') {
+      id = quests[header.toString().toLowerCase()][tag[1] - 1]
+   } else {
+      id = quests[header.toString().toLowerCase()];
+   }
    
-   if (quests[header.toString().toLowerCase()] === undefined) {
-      console.log(header);
+   // IF ID WAS NOT FOUND, LOG ERROR
+   if (id === undefined) {
+      console.log(header + ' not found!');
    }
    
    return (
       <div className="split">
-         <div><a href={ 'https://classicdb.ch/?quest=' + quests[header.toString().toLowerCase()] } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a></div>
+         <div><a href={ 'https://classicdb.ch/?quest=' + id } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a></div>
          <div>{ tag }</div>
       </div>
    )
