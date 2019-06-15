@@ -1,5 +1,6 @@
 import React from 'react';
 import { shorten } from '../../../funcs/misc';
+import { fetch_id } from '../../../funcs/quests';
 
 function Quest({ quest, quests }) {
 
@@ -28,19 +29,19 @@ function Quest({ quest, quests }) {
 }
 
 // DEFAULT BLOCK
-function Single({ quests, header }) { return (
-   <div><a href={ 'https://classicdb.ch/?quest=' + quests[header.toString().toLowerCase()] } target='_blank' rel='noopener noreferrer'>
-      { shorten(header) }
+function Single(props) { return (
+   <div><a href={ 'https://classicdb.ch/?quest=' + fetch_id(props) } target='_blank' rel='noopener noreferrer'>
+      { shorten(props.header) }
    </a></div>
 )}
 
 // MULTI HEADER BLOCK
-function Multi({ quests, header, tag }) { return (
+function Multi(props) { return (
    <div className="split">
-      <div><a href={ 'https://classicdb.ch/?quest=' + quests[header.toString().toLowerCase()] } target='_blank' rel='noopener noreferrer'>
-         { shorten(header) }
+      <div><a href={ 'https://classicdb.ch/?quest=' + fetch_id(props) } target='_blank' rel='noopener noreferrer'>
+         { shorten(props.header) }
       </a></div>
-      <div>{ tag }</div>
+      <div>{ props.tag }</div>
    </div>
 )}
 

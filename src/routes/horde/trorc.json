@@ -367,7 +367,7 @@
             {
                "coords": { "x": 32, "y": 38 },
                "header": "thrall",
-               "starts": ["hidden enemies"],
+               "starts": [["hidden enemies", "p1"]],
                "type": "quest"
             }
          ]
@@ -379,7 +379,7 @@
             {
                "coords": { "x": 32, "y": 38 },
                "header": "thrall",
-               "starts": ["hidden enemies"],
+               "starts": [["hidden enemies", "p1"]],
                "type": "quest"
             },
             {
@@ -416,7 +416,7 @@
                "coords": { "x": 55, "y": 9 },
                "align": "right",
                "header": "skull rock cave",
-               "objectives": ["skull rock", "hidden enemies"],
+               "objectives": ["skull rock", ["hidden enemies", "p1"]],
                "type": "objective"
             }
          ]
@@ -429,7 +429,7 @@
                "coords": { "x": 55, "y": 9 },
                "align": "right",
                "header": "skull rock cave",
-               "objectives": ["skull rock", "hidden enemies"],
+               "objectives": ["skull rock", ["hidden enemies", "p1"]],
                "type": "objective"
             },
             {

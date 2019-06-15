@@ -1,5 +1,6 @@
 import React from 'react';
 import { shorten } from '../../../funcs/misc';
+import { fetch_id } from '../../../funcs/quests';
 
 function Objective({ index, quests, waypoint }) {
 
@@ -70,46 +71,18 @@ function Objective({ index, quests, waypoint }) {
 }
 
 // DEFAULT BLOCK
-function Single({ quests, header }) {
-
-   // FIND ID
-   const id = quests[header.toString().toLowerCase()];
-   
-   // IF ID WAS NOT FOUND, LOG ERROR
-   if (id === undefined) {
-      console.log(header + ' not found!');
-   }
-
-   return (
-      <div>
-         <a href={ 'https://classicdb.ch/?quest=' + id } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a>
-      </div>
-   )
-}
+function Single(props) { return (
+   <div>
+      <a href={ 'https://classicdb.ch/?quest=' + fetch_id(props) } target='_blank' rel='noopener noreferrer'>{ shorten(props.header) }</a>
+   </div>
+)}
 
 // MULTI HEADER BLOCK
-function Multi({ quests, header, tag }) {
-
-   // PLACEHOLDERS
-   let id;
-
-   if (tag[0] === 'p') {
-      id = quests[header.toString().toLowerCase()][tag[1] - 1]
-   } else {
-      id = quests[header.toString().toLowerCase()];
-   }
-   
-   // IF ID WAS NOT FOUND, LOG ERROR
-   if (id === undefined) {
-      console.log(header + ' not found!');
-   }
-   
-   return (
-      <div className="split">
-         <div><a href={ 'https://classicdb.ch/?quest=' + id } target='_blank' rel='noopener noreferrer'>{ shorten(header) }</a></div>
-         <div>{ tag }</div>
-      </div>
-   )
-}
+function Multi(props) { return (
+   <div className="split">
+      <div><a href={ 'https://classicdb.ch/?quest=' + fetch_id(props) } target='_blank' rel='noopener noreferrer'>{ shorten(props.header) }</a></div>
+      <div>{ props.tag }</div>
+   </div>
+)}
 
 export default Objective;

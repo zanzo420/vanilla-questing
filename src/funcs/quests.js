@@ -53,6 +53,30 @@ function quest_name(quest) {
    }
 }
 
+// FETCH QUEST ID FOR SIDEPANEL LINKS
+function fetch_id({ quests, header, tag }) {
+
+   // PLACEHOLDER
+   let id = quests[header.toString().toLowerCase()];
+   
+   // IF THE QUEST IS TAGGED, FETCH THE CORRECT ID
+   if (tag !== undefined && tag[0] === 'p') {
+      id = quests[header.toString().toLowerCase()][tag[1] - 1]
+   }
+
+   // IF THE ID CANT BE LOCATED, LOG ERROR
+   if (id === undefined) {
+      console.log(header + ' not found!');
+   }
+
+   if (id instanceof Array) {
+      console.log(header + ' is an array')
+   }
+
+   return id;
+}
+
 export {
-   filter
+   filter,
+   fetch_id
 }

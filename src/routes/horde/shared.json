@@ -408,7 +408,7 @@
             {
                "coords": { "x": 32, "y": 38 },
                "header": "thrall",
-               "starts": [["hidden enemies", "d"]],
+               "starts": [["hidden enemies", "p3, d"]],
                "type": "quest"
             },
             {
@@ -422,7 +422,7 @@
                "coords": { "x": 53, "y": 49 },
                "align": "bottom",
                "header": "ragefire chasm",
-               "objectives": [["slaying the beast", "d"], ["hidden enemies", "d"], ["testing an enemy's strength", "d"], ["the power to destroy", "d"]],
+               "objectives": [["slaying the beast", "d"], ["hidden enemies", "p3, d"], ["testing an enemy's strength", "d"], ["the power to destroy", "d"]],
                "ends": [["searching for the lost satchel", "d"]],
                "starts": [["returning the lost satchel", "d"]],
                "type": "objective"
@@ -437,7 +437,7 @@
                "coords": { "x": 53, "y": 49 },
                "align": "bottom",
                "header": "ragefire chasm",
-               "objectives": [["slaying the beast", "d"], ["hidden enemies", "d"], ["testing an enemy's strength", "d"], ["the power to destroy", "d"]],
+               "objectives": [["slaying the beast", "d"], ["hidden enemies", "p3, d"], ["testing an enemy's strength", "d"], ["the power to destroy", "d"]],
                "ends": [["searching for the lost satchel", "d"]],
                "starts": [["returning the lost satchel", "d"]],
                "type": "objective"
@@ -452,7 +452,7 @@
             {
                "coords": { "x": 32, "y": 38 },
                "header": "thrall",
-               "ends": [["hidden enemies", "d"]],
+               "ends": [["hidden enemies", "p3, d"]],
                "type": "quest"
             }
          ]
@@ -464,16 +464,16 @@
             {
                "coords": { "x": 32, "y": 38 },
                "header": "thrall",
-               "ends": [["hidden enemies", "d"]],
-               "starts": [["hidden enemies", "p3"]],
+               "ends": [["hidden enemies", "p3, d"]],
+               "starts": [["hidden enemies", "p4"]],
                "type": "quest"
             },
             {
                "coords": { "x": 47, "y": 53 },
                "align": "bottom",
                "header": "neeru fireblade",
-               "ends": [["hidden enemies", "p3"]],
-               "starts": [["hidden enemies", "p4"]],
+               "ends": [["hidden enemies", "p4"]],
+               "starts": [["hidden enemies", "p5"]],
                "type": "quest"
             }
          ]
@@ -486,14 +486,14 @@
                "coords": { "x": 47, "y": 53 },
                "align": "right",
                "header": "neeru fireblade",
-               "ends": [["hidden enemies", "p3"]],
-               "starts": [["hidden enemies", "p4"]],
+               "ends": [["hidden enemies", "p4"]],
+               "starts": [["hidden enemies", "p5"]],
                "type": "quest"
             },
             {
                "coords": { "x": 32, "y": 38 },
                "header": "thrall",
-               "ends": [["hidden enemies", "p4"]],
+               "ends": [["hidden enemies", "p5"]],
                "starts": ["the spirits of stonetalon"],
                "type": "quest"
             },
@@ -2088,7 +2088,7 @@
                "coords": { "x": 74, "y": 60 },
                "align": "top",
                "header": "windshear mine",
-               "completed": [["gerenzo's order", "f"]],
+               "completed": [["gerenzo's order", "p1, f"]],
                "starts": [["gerenzo's order", "p2"]],
                "special": ["enter from the left"],
                "type": "quest"
@@ -2101,11 +2101,10 @@
          "waypoints": [
             {
                "coords": { "x": 74, "y": 60 },
-               "align": "right",
+               "align": "top",
                "header": "windshear mine",
-               "ends": [["gerenzo's order", "p1"]],
-               "starts": [["gerenzo's order", "p1-2"]],
-               "objectives": [["gerenzo's order", "p1"]],
+               "completed": [["gerenzo's order", "p1, f"]],
+               "starts": [["gerenzo's order", "p2"]],
                "type": "quest"
             },
             {
@@ -3894,7 +3893,7 @@
                "coords": { "x": 60, "y": 19 },
                "align": "right",
                "header": "tarren mill",
-               "starts": [["battle of hillsbrad", "e"], ["humbert's sword", "e"], "regthar deathgate", "infiltration", ["helcular's revenge", "p1"], "stone tokens", "prison break in"],
+               "starts": [["battle of hillsbrad", "p6, e"], ["humbert's sword", "e"], "regthar deathgate", "infiltration", ["helcular's revenge", "p1"], "stone tokens", "prison break in"],
                "special": ["set hearthstone"],
                "type": "hub"
             },
@@ -3964,7 +3963,7 @@
             {
                "coords": { "x": 71, "y": 79 },
                "header": "dun garok",
-               "objectives": [["elixir of agony", "p4"], ["battle of hillsbrad", "e"], ["humbert's sword", "e"]],
+               "objectives": [["elixir of agony", "p4"], ["battle of hillsbrad", "p6, e"], ["humbert's sword", "e"]],
                "special": ["die & corpse ress"],
                "type": "objective"
             }
@@ -3977,7 +3976,7 @@
             {
                "coords": { "x": 60, "y": 19 },
                "header": "tarren mill",
-               "ends": [["elixir of agony", "p4"], ["battle of hillsbrad", "e"], ["humbert's sword", "e"]],
+               "ends": [["elixir of agony", "p4"], ["battle of hillsbrad", "p6, e"], ["humbert's sword", "e"]],
                "starts": [["battle of hillsbrad", "p7"]],
                "completed": [["elixir of agony", "p5"]],
                "special": ["fly to undercity"],
@@ -4550,7 +4549,7 @@
                "coords": { "x": 32, "y": 29 },
                "align": "bottom",
                "header": "grom'gol basecamp",
-               "starts": ["the defense of grom'gol"],
+               "starts": [["the defense of grom'gol", "p1"]],
                "ends": ["the vile reef"],
                "type": "hub"
             }
@@ -4564,7 +4563,7 @@
                "coords": { "x": 32, "y": 29 },
                "align": "bottom",
                "header": "grom'gol basecamp",
-               "starts": ["the defense of grom'gol"],
+               "starts": [["the defense of grom'gol", "p1"]],
                "type": "hub"
             },
             {
@@ -4584,7 +4583,7 @@
             {
                "coords": { "x": 32, "y": 25 },
                "header": "placeholder",
-               "objectives": [["raptor mastery", "p2"], "the defense of grom'gol"],
+               "objectives": [["raptor mastery", "p2"], ["the defense of grom'gol", "p1"]],
                "type": "objective"
             }
          ]
@@ -4596,14 +4595,14 @@
             {
                "coords": { "x": 32, "y": 25 },
                "header": "placeholder",
-               "objectives": [["raptor mastery", "p2"], "the defense of grom'gol"],
+               "objectives": [["raptor mastery", "p2"], ["the defense of grom'gol", "p1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 32, "y": 29 },
                "align": "bottom",
                "header": "grom'gol basecamp",
-               "ends": ["the defense of grom'gol"],
+               "ends": [["the defense of grom'gol", "p1"]],
                "type": "hub"
             },
             {
@@ -5497,7 +5496,7 @@
                "coords": { "x": 56, "y": 56 },
                "header": "ghost walker post",
                "ends": ["khan dez'hepah", "befouled by satyr", "the burning of spirits"],
-               "starts": ["alliance relations", "centaur bounty"],
+               "starts": [["alliance relations", "p4"], "centaur bounty"],
                "type": "hub"
             },
             {
@@ -5718,7 +5717,7 @@
                "coords": { "x": 22, "y": 53 },
                "align": "top",
                "header": "keldran",
-               "ends": [["alliance relations", "p3"]],
+               "ends": [["alliance relations", "p4"]],
                "type": "quest"
             },
             {
@@ -6022,7 +6021,7 @@
                "coords": { "x": 58, "y": 65 },
                "align": "bottom",
                "header": "parquel fintallas",
-               "starts": [["test of lore", "d"]],
+               "starts": [["test of lore", "p5, d"]],
                "type": "quest"
             },
             {
@@ -6060,7 +6059,7 @@
                "align": "right",
                "header": "scarlet monastery",
                "starts": [["vorrel's revenge", "d"]],
-               "objectives": [["into the scarlet monastery", "d"], ["test of lore", "d"], ["hearts of zeal", "d"], ["compendium of the fallen", "d"]],
+               "objectives": [["into the scarlet monastery", "d"], ["test of lore", "p5, d"], ["hearts of zeal", "d"], ["compendium of the fallen", "d"]],
                "special": ["hearthstone to undercity"],
                "type": "objective"
             }
@@ -6080,9 +6079,9 @@
                "coords": { "x": 58, "y": 65 },
                "align": "bottom",
                "header": "parquel fintallas",
-               "ends": [["test of lore", "d"]],
+               "ends": [["test of lore", "p5, d"]],
                "starts": ["final passage"],
-               "completed": [["test of lore", "6"]],
+               "completed": [["test of lore", "p6"]],
                "special": ["the answer is ner'zul"],
                "type": "quest"
             },
@@ -6129,7 +6128,7 @@
                "coords": { "x": 74, "y": 36 },
                "align": "top",
                "header": "hammerfall",
-               "starts": [["the broken sigil", "e"], ["call to arms", "e"], ["the real threat", "e"], ["foul magics", "e"]],
+               "starts": [["the broken sigil", "e"], ["call to arms", "p3, e"], ["the real threat", "e"], ["foul magics", "e"]],
                "special": ["set hearthstone"],
                "type": "hub"
             },
@@ -6157,7 +6156,7 @@
             {
                "coords": { "x": 20, "y": 68 },
                "header": "ogre encampment",
-               "objectives": [["call to arms", "e"], ["the real threat", "e"]],
+               "objectives": [["call to arms", "p3, e"], ["the real threat", "e"]],
                "special": ["hearthstone to hammerfall"],
                "type": "objective"
             }
@@ -6171,7 +6170,7 @@
                "coords": { "x": 74, "y": 36 },
                "align": "top",
                "header": "hammerfall",
-               "ends": [["the broken sigil", "e"], ["call to arms", "e"], ["the real threat", "e"], ["foul magics", "e"]],
+               "ends": [["the broken sigil", "e"], ["call to arms", "p3, e"], ["the real threat", "e"], ["foul magics", "e"]],
                "starts": [["sigil of arathor", "e"]],
                "completed": ["sigil of thoradin"],
                "type": "hub"
@@ -6296,7 +6295,7 @@
                "align": "bottom",
                "header": "faldir's cove",
                "starts": ["deep sea salvage", "drowned sorrows", ["sunken treasure", "p2"]],
-               "completed": ["land ho!", ["sunken treasure", "f"]],
+               "completed": ["land ho!", ["sunken treasure", "p1, f"]],
                "type": "quest"
             }
          ]
@@ -6310,7 +6309,7 @@
                "align": "bottom",
                "header": "faldir's cove",
                "starts": ["deep sea salvage", "drowned sorrows", ["sunken treasure", "p2"]],
-               "completed": ["land ho!", ["sunken treasure", "f"]],
+               "completed": ["land ho!", ["sunken treasure", "p1, f"]],
                "type": "quest"
             },
             {
@@ -6377,14 +6376,14 @@
                "align": "right",
                "header": "tarren mill",
                "ends": [["the crown of will", "p1"]],
-               "starts": [["the crown of will", "e"], "lord aliden perenolde", "wanted: baron vardus"],
+               "starts": [["the crown of will", "p2, e"], "lord aliden perenolde", "wanted: baron vardus"],
                "special": ["set hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 45, "y": 47 },
                "header": "ruins of alterac",
-               "objectives": [["the crown of will", "e"]],
+               "objectives": [["the crown of will", "p2, e"]],
                "special": ["run back to tarren mill"],
                "type": "objective"
             }
@@ -6399,26 +6398,26 @@
                "align": "right",
                "header": "tarren mill",
                "ends": [["the crown of will", "p1"]],
-               "starts": [["the crown of will", "p2"]],
+               "starts": [["the crown of will", "p2, e"]],
                "type": "hub"
             },
             {
                "coords": { "x": 40, "y": 42 },
                "align": "top",
                "header": "glommus",
-               "objectives": [["the crown of will", "p2"]],
+               "objectives": [["the crown of will", "p2, e"]],
                "type": "objective"
             },
             {
                "coords": { "x": 38, "y": 46 },
                "header": "muckrake",
-               "objectives": [["the crown of will", "p2"]],
+               "objectives": [["the crown of will", "p2, e"]],
                "type": "objective"
             },
             {
                "coords": { "x": 40, "y": 53 },
                "header": "targ",
-               "objectives": [["the crown of will", "p2"]],
+               "objectives": [["the crown of will", "p2, e"]],
                "special": ["run back to tarren mill"],
                "type": "objective"
             }
@@ -6432,14 +6431,14 @@
                "coords": { "x": 62, "y": 82 },
                "align": "right",
                "header": "tarren mill",
-               "ends": [["the crown of will", "p2"]],
-               "starts": [["the crown of will", "p3"]],
+               "ends": [["the crown of will", "p2, e"]],
+               "starts": [["the crown of will", "p3, e"]],
                "type": "hub"
             },
             {
                "coords": { "x": 36, "y": 54 },
                "header": "alterac keep",
-               "objectives": [["the crown of will", "p3"]],
+               "objectives": [["the crown of will", "p3, e"]],
                "type": "objective"
             },
             {
@@ -6475,7 +6474,7 @@
                "coords": { "x": 60, "y": 19 },
                "align": "right",
                "header": "tarren mill",
-               "ends": [["the crown of will", "p3"], "lord aliden perenolde", "wanted: baron vardus", ["vorrel's revenge", "e"], "taretha's gift"],
+               "ends": [["the crown of will", "p3, e"], "lord aliden perenolde", "wanted: baron vardus", ["vorrel's revenge", "e"], "taretha's gift"],
                "starts": [["the crown of will", "p4"]],
                "special": ["fly to undercity"],
                "type": "hub"
@@ -7379,7 +7378,7 @@
                "coords": { "x": 41, "y": 12 },
                "align": "right",
                "header": "uldaman",
-               "starts": ["the platinum discs"],
+               "starts": [["the platinum discs", "p1"]],
                "ends": [["necklace recovery, take two", "d"]],
                "objectives": [["uldaman reagent run", "d"], ["solution to doom", "d"], ["reclaimed treasures", "d"], ["find the gems and power source", "d"]],
                "special": ["hearthstone to kargath"],
@@ -8116,7 +8115,7 @@
                "coords": { "x": 27, "y": 48 },
                "align": "top",
                "header": "gilveradin sunchaser",
-               "ends": ["ripple recovery"],
+               "ends": [["ripple recovery", "p2"]],
                "starts": ["a sticky situation"],
                "type": "quest"
             },
@@ -11869,7 +11868,7 @@
             {
                "coords": { "x": 31, "y": 45 },
                "header": "donova snowden",
-               "ends": ["the new springs", "it's a secret to everybody"],
+               "ends": ["the new springs", ["it's a secret to everybody", "p3"]],
                "starts": ["the videre elixir", "strange sources"],
                "type": "quest"
             },
@@ -12671,7 +12670,7 @@
                "align": "top",
                "header": "cyrus therepentous",
                "completed": [["a taste of flame", "p1"]],
-               "starts": [["a taste of flame", "D"]],
+               "starts": [["a taste of flame", "p2, d"]],
                "type": "quest"
             },
             {
@@ -12711,7 +12710,7 @@
                "align": "top",
                "header": "lotwil veriatus",
                "ends": [["the rise of the machines", "p2"]],
-               "starts": [["the rise of the machines", "d"]],
+               "starts": [["the rise of the machines", "p3, d"]],
                "type": "quest"
             }
          ]
@@ -12725,7 +12724,7 @@
                "align": "top",
                "header": "lotwil veriatus",
                "ends": [["the rise of the machines", "p2"]],
-               "starts": [["the rise of the machines", "d"]],
+               "starts": [["the rise of the machines", "p3, d"]],
                "type": "quest"
             },
             {
@@ -12799,9 +12798,9 @@
                "align": "bottom",
                "header": "blackrock depths",
                "ends": [["dark iron legacy", "d"], "attunement to the core", ["commander gor'shak", "d"]],
-               "objectives": [["a taste of flame", "d"], ["the last element", "d"], ["the heart of the mountain", "d"], ["ribbly screwspigot", "d"], ["the rise of the machines", "d"], ["attunement to the core", "d"], ["dark iron legacy", "d"], ["kill on sight: high ranking dark iron officials", "d"], ["commander gor'shak", "d"], ["disharmony of fire", "d"], ["lost thunderbrew recipe", "d"]],
+               "objectives": [["a taste of flame", "p2, d"], ["the last element", "d"], ["the heart of the mountain", "d"], ["ribbly screwspigot", "d"], ["the rise of the machines", "p3, d"], ["attunement to the core", "d"], ["dark iron legacy", "d"], ["kill on sight: high ranking dark iron officials", "d"], ["commander gor'shak", "d"], ["disharmony of fire", "d"], ["lost thunderbrew recipe", "d"]],
                "completed": [["what is going on?", "p1"]],
-               "starts": [["what is going on?", "p2"]],
+               "starts": [["what is going on?", "p2, d"]],
                "special": ["camp out & return the mc quest"],
                "type": "objective"
             }
@@ -12822,7 +12821,7 @@
                "coords": { "x": 26, "y": 45 },
                "align": "top",
                "header": "lotwil veriatus",
-               "ends": [["the rise of the machines", "d"]],
+               "ends": [["the rise of the machines", "p3, d"]],
                "type": "quest"
             }
          ]
@@ -12835,7 +12834,7 @@
                "coords": { "x": 26, "y": 45 },
                "align": "top",
                "header": "lotwil veriatus",
-               "ends": [["the rise of the machines", "d"]],
+               "ends": [["the rise of the machines", "p3, d"]],
                "type": "quest"
             },
             {
@@ -12862,7 +12861,7 @@
                "coords": { "x": 95, "y": 32 },
                "align": "top",
                "header": "cyrus therepentous",
-               "ends": [["a taste of flame", "p2"]],
+               "ends": [["a taste of flame", "p2, d"]],
                "type": "quest"
             }
          ]
@@ -12875,7 +12874,7 @@
                "coords": { "x": 95, "y": 32 },
                "align": "top",
                "header": "cyrus therepentous",
-               "ends": [["a taste of flame", "p2"]],
+               "ends": [["a taste of flame", "p2, d"]],
                "type": "quest"
             },
             {
@@ -14041,7 +14040,7 @@
                "coords": { "x": 32, "y": 38 },
                "align": "top",
                "header": "thrall",
-               "ends": [["what is going on?", "d"]],
+               "ends": [["what is going on?", "p2, d"]],
                "completed": ["the eastern kingdom"],
                "starts": ["the royal rescue"],
                "type": "quest"

@@ -66,7 +66,7 @@
                "coords": { "x": 49, "y": 19 },
                "align": "top",
                "header": "furlbrow's pumpin farm",
-               "objectives": ["poor old blanchy", "the forgotten heirloom", "the killing fields", "the people's militia"],
+               "objectives": ["poor old blanchy", "the forgotten heirloom", "the killing fields", ["the people's militia", "p1"]],
                "type": "objective"
             },
             {
@@ -701,7 +701,7 @@
                "align": "top",
                "header": "sentinel tower",
                "ends": [["the defias brotherhood", "p6"]],
-               "starts": [["the defias brotherhood", "d"], ["red silk bandanas", "d"]],
+               "starts": [["the defias brotherhood", "p7, d"], ["red silk bandanas", "d"]],
 
                "type": "quest"
             },
@@ -709,7 +709,7 @@
                "coords": { "x": 43, "y": 72 },
                "header": "deadmines",
                "starts": ["the unsent letter"],
-               "objectives": [["the defias brotherhood", "d"], ["red silk bandanas", "d"], ["underground assault", "d"], ["oh brother...", "d"], ["collecting memories", "d"]],
+               "objectives": [["the defias brotherhood", "p7, d"], ["red silk bandanas", "d"], ["underground assault", "d"], ["oh brother...", "d"], ["collecting memories", "d"]],
                "type": "objective"
             }
          ]
@@ -727,7 +727,7 @@
                "coords": { "x": 57, "y": 47 },
                "align": "top",
                "header": "sentinel tower",
-               "ends": [["the defias brotherhood", "d"], ["red silk bandanas", "d"]],
+               "ends": [["the defias brotherhood", "p7, d"], ["red silk bandanas", "d"]],
                "type": "quest"
             },
             {
@@ -1096,7 +1096,7 @@
                "coords": { "x": 36, "y": 84 },
                "header": "prospector remtravel",
                "ends": [["the absent minded prospector", "p1"]],
-               "starts": [["the absent minded prospector", "F"]],
+               "starts": [["the absent minded prospector", "p2, f"]],
                "type": "quest"
             },
             {
@@ -1559,8 +1559,8 @@
             {
                "coords": { "x": 31, "y": 84 },
                "header": "chief archaeologist greywhisker",
-               "ends": [["the absent minded prospector", "p2"]],
-               "starts": [["the absent minded prospector", "p3"]],
+               "ends": [["the absent minded prospector", "p3"]],
+               "starts": [["the absent minded prospector", "p4"]],
                "type": "quest"
             }
          ]
@@ -1670,7 +1670,7 @@
                "coords": { "x": 11, "y": 60 },
                "align": "right",
                "header": "menethil inn",
-               "ends": [["the absent minded prospector", "p3"]],
+               "ends": [["the absent minded prospector", "p4"]],
                "type": "quest"
             },
             {
@@ -2556,7 +2556,7 @@
                "align": "top",
                "header": "menethil",
                "ends": ["the doomed fleet"],
-               "starts": ["the greenwarden", ["the absent minded prospector", "p4"], "the cursed crew", "digging through the ooze"],
+               "starts": ["the greenwarden", ["the absent minded prospector", "p5"], "the cursed crew", "digging through the ooze"],
                "completed": ["the third fleet"],
                "special": ["buy a flagon of mead", "set hearthstone"],
                "type": "hub"
@@ -2647,14 +2647,14 @@
             {
                "coords": { "x": 24, "y": 50 },
                "header": "wetlands mountainside",
-               "objectives": [["the absent minded prospector", "p4"], ["ormer's revenge", "p1"]],
+               "objectives": [["the absent minded prospector", "p5"], ["ormer's revenge", "p1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 28, "y": 45 },
                "align": "right",
                "header": "wetlands mountainside",
-               "objectives": [["the absent minded prospector", "p4"], ["ormer's revenge", "p1"]],
+               "objectives": [["the absent minded prospector", "p5"], ["ormer's revenge", "p1"]],
                "type": "objective"
             }
          ]
@@ -2666,7 +2666,7 @@
             {
                "coords": { "x": 28, "y": 45 },
                "header": "wetlands mountainside",
-               "objectives": [["the absent minded prospector", "p4"], ["ormer's revenge", "p1"]],
+               "objectives": [["the absent minded prospector", "p5"], ["ormer's revenge", "p1"]],
                "type": "objective"
             },
             {
@@ -2834,7 +2834,7 @@
                "coords": { "x": 11, "y": 59 },
                "align": "bottom",
                "header": "menethil",
-               "ends": [["the absent minded prospector", "p4"], "the cursed crew", "digging through the ooze"],
+               "ends": [["the absent minded prospector", "p5"], "the cursed crew", "digging through the ooze"],
                "starts": ["lifting the curse", "lightforge iron"],
                "type": "hub"
             },
@@ -4969,7 +4969,7 @@
                "coords": { "x": 46, "y": 48 },
                "align": "bottom",
                "header": "refuge point",
-               "ends": ["malin's request"],
+               "ends": [["malin's request", "p1"]],
                "starts": ["worth its weight in gold", "northfold manor"],
                "type": "hub"
             },
@@ -6256,7 +6256,7 @@
                "coords": { "x": 11, "y": 32 },
                "align": "top",
                "header": "misty valley",
-               "objectives": ["mazens behest"],
+               "objectives": [["mazens behest", "p2"]],
                "special": ["abysmal drop rate"],
                "type": "objective"
             },
@@ -6302,7 +6302,7 @@
                "coords": { "x": 67, "y": 19 },
                "align": "right",
                "header": "nethergarde keep",
-               "ends": ["mazens behest", "supplies to nethergarde"],
+               "ends": [["mazens behest", "p2"], "supplies to nethergarde"],
                "type": "quest"
             },
             {
@@ -7540,7 +7540,7 @@
                "coords": { "x": 54, "y": 33 },
                "align": "top",
                "header": "hammertoe's digsite",
-               "starts": ["a sign of hope"],
+               "starts": [["a sign of hope", "p1"]],
                "objectives": ["a dwarf and his tools"],
                "special": ["click the crumpled map"],
                "type": "quest"
@@ -7568,8 +7568,8 @@
             {
                "coords": { "x": 54, "y": 44 },
                "header": "hillside camp",
-               "ends": ["a dwarf and his tools", "mirages", "a sign of hope"],
-               "starts": ["scrounging", ["a sign of hope", "d"]],
+               "ends": ["a dwarf and his tools", "mirages", ["a sign of hope", "p1"]],
+               "starts": ["scrounging", ["a sign of hope", "p2"]],
                "type": "quest"
             },
             {
@@ -7942,9 +7942,9 @@
                "coords": { "x": 41, "y": 12 },
                "align": "top",
                "header": "uldaman",
-               "starts": [["the platinum discs", "p2"], "prospect of faith", "the hidden chamber"],
-               "ends": [["a sign of hope", "d"], ["the lost dwarves", "d"], ["restoring the necklace", "d"], ["back to uldaman", "d"]],
-               "objectives": [["uldaman reagent run", "d"], ["agmond's fate", "d"], ["power stones", "d"], ["solution to doom", "d"], ["a sign of hope", "d"], ["reclaimed treasures", "d"], ["the lost dwarves", "d"]],
+               "starts": [["the platinum discs", "p2"], ["prospect of faith", "p1"], "the hidden chamber"],
+               "ends": [["a sign of hope", "p2"], ["the lost dwarves", "d"], ["restoring the necklace", "p1"], ["back to uldaman", "d"]],
+               "objectives": [["uldaman reagent run", "d"], ["agmond's fate", "d"], ["power stones", "d"], ["solution to doom", "d"], ["reclaimed treasures", "d"], ["the lost dwarves", "d"]],
                "completed": ["amulet of secrets", "find the gems", ["the platinum discs", "p1"]],
                "special": ["die & take ress sickness"],
                "type": "objective"
@@ -8169,7 +8169,7 @@
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
                "ends": ["scaring shaky", "keep an eye out", "up to snuff", ["the bloodsail buccaneers", "p4"], ["stranglethorn fever", "e"], ["the captain's chest", "e"]],
-               "starts": ["akiris by the bundle", ["the bloodsail buccaneers", "p5"], "zanzil's secret", "voodoo dues"],
+               "starts": [["akiris by the bundle", "p1"], ["the bloodsail buccaneers", "p5"], "zanzil's secret", "voodoo dues"],
                "completed": ["return to mackinley"],
                "type": "hub"
             },
@@ -9115,7 +9115,7 @@
             {
                "coords": { "x": 40, "y": 85 },
                "header": "temple of the moon",
-               "ends": ["rise of the silithid", "rise of the silithid", "doling justice"],
+               "ends": ["rise of the silithid", "rise of the silithid", ["doling justice", "p2"]],
                "type": "quest"
             },
             {
@@ -10534,7 +10534,7 @@
                "coords": { "x": 64, "y": 60 },
                "align": "top",
                "header": "dorius stonetender",
-               "starts": [["suntara stones", "f"]],
+               "starts": [["suntara stones", "p1, f"]],
                "type": "quest"
             }
          ]
@@ -10547,14 +10547,14 @@
                "coords": { "x": 64, "y": 60 },
                "align": "right",
                "header": "dorius stonetender",
-               "starts": [["suntara stones", "f"]],
+               "starts": [["suntara stones", "p1, F"]],
                "type": "quest"
             },
             {
                "coords": { "x": 75, "y": 19 },
                "align": "right",
                "header": "signed letter",
-               "ends": [["suntara stones", "f"]],
+               "ends": [["suntara stones", "p1, f"]],
                "starts": [["suntara stones", "p2"]],
                "type": "quest"
             },
@@ -10792,8 +10792,8 @@
                "coords": { "x": 30, "y": 26 },
                "header": "zamael lunthistle",
                "completed": [["prayer to elune", "p1"]],
-               "starts": [["prayer to elune", "e"]],
-               "objectives": [["the flame's casing", "e"], ["release them", "e"], ["prayer to elune", "e"]],
+               "starts": [["prayer to elune", "p2, e"]],
+               "objectives": [["the flame's casing", "e"], ["release them", "e"], ["prayer to elune", "p2, e"]],
                "type": "quest"
             },
             {
@@ -10930,7 +10930,7 @@
                "align": "right",
                "header": "the library",
                "ends": [["rise, obsidion!" ,"e"], "proof of deed"],
-               "starts": ["at last!", "a little slime goes a long way"],
+               "starts": ["at last!", ["a little slime goes a long way", "p1"]],
                "type": "quest"
             }
          ]
@@ -10944,7 +10944,7 @@
                "align": "right",
                "header": "the library",
                "ends": [["rise, obsidion!" ,"e"], "proof of deed"],
-               "starts": ["at last!", "a little slime goes a long way"],
+               "starts": ["at last!", ["a little slime goes a long way", "p1"]],
                "type": "quest"
             },
             {
@@ -12234,7 +12234,7 @@
                "align": "right",
                "header": "gadgetzan",
                "ends": ["pawn captures queen"],
-               "starts": ["calm before the storm"],
+               "starts": [["calm before the storm", "p1"]],
                "type": "hub"
             },
             {
@@ -12297,7 +12297,7 @@
                "coords": { "x": 41, "y": 67 },
                "align": "right",
                "header": "southern slimepools",
-               "objectives": ["a little slime goes a long way"],
+               "objectives": [["a little slime goes a long way", "p1"]],
                "type": "objective"
             },
             {
@@ -12310,7 +12310,7 @@
                "coords": { "x": 41, "y": 59 },
                "align": "top",
                "header": "northern slimepools",
-               "objectives": ["a little slime goes a long way"],
+               "objectives": [["a little slime goes a long way", "p1"]],
                "type": "objective"
             },
             {
@@ -12408,7 +12408,7 @@
             {
                "coords": { "x": 31, "y": 45 },
                "header": "donova snowden",
-               "ends": ["the new springs", "it's a secret to everybody"],
+               "ends": ["the new springs", ["it's a secret to everybody", "p3"]],
                "starts": ["the videre elixir"],
                "type": "quest"
             },
@@ -12474,7 +12474,7 @@
             {
                "coords": { "x": 40, "y": 85 },
                "header": "temple of the moon",
-               "ends": [["calm before the storm", "p1"], "prayer to elune"],
+               "ends": [["calm before the storm", "p1"], ["prayer to elune", "p2, e"]],
                "starts": [["calm before the storm", "p2"]],
                "type": "quest"
             },
@@ -13223,7 +13223,7 @@
                "coords": { "x": 43, "y": 84 },
                "header": "chillwind camp",
                "ends": ["a call to arms: the plaguelands!", "the everlook report"],
-               "starts": ["a plague upon thee", "clear the way"],
+               "starts": [["a plague upon thee", "p1"], "clear the way"],
                "completed": ["argent dawn commission"],
                "special": ["equip the trinket"],
                "type": "quest"
@@ -14198,7 +14198,7 @@
             {
                "coords": { "x": 49, "y": 31 },
                "header": "royal factor bathrilor",
-               "ends": ["better late than never"],
+               "ends": [["better late than never", "p2"]],
                "starts": ["good natured emma"],
                "type": "quest"
             },
@@ -14534,7 +14534,7 @@
                "completed": [["a crumpled up note", "d"], ["a shred of hope", "d"]],
                "starts": [["jail break!", "d"], ["the princess's surprise", "d"]],
                "ends": [["attunement to the core", "d"], ["the fate of the kingdom", "d"], ["dark iron legacy", "d"]],
-               "objectives": [["incendius!", "d"], ["the heart of the mountain", "d"], ["a taste of flame", "d"], ["ribbly screwspigot", "d"], ["attunement to the core", "d"], ["the fate of the kingdom", "d"], ["hurley blackbreath", "d"]],
+               "objectives": [["incendius!", "d"], ["the heart of the mountain", "d"], ["a taste of flame", "p2, d"], ["ribbly screwspigot", "d"], ["attunement to the core", "d"], ["the fate of the kingdom", "d"], ["hurley blackbreath", "d"]],
                "special": ["farm a crumpled up note", "camp out & return mc prequest", "hearthstone to redridge"],
                "type": "objective"
             }
@@ -14579,7 +14579,7 @@
                "coords": { "x": 95, "y": 32 },
                "align": "top",
                "header": "cyrus therepentous",
-               "ends": [["a taste of flame", "d"]],
+               "ends": [["a taste of flame", "p2, d"]],
                "type": "quest"
             },
             {
