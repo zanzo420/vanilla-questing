@@ -1036,7 +1036,7 @@
                "coords": { "x": 55, "y": 51 },
                "align": "bottom",
                "header": "zangen stonehoof",
-               "starts": ["the sacred flame"],
+               "starts": [["the sacred flame", "p1"]],
                "type": "quest"
             },
             {
@@ -1773,7 +1773,7 @@
                "align": "right",
                "header": "gann's stonespine",
                "ends": ["gann's reclamation"],
-               "starts": [["revenge of gann", "e"]],
+               "starts": [["revenge of gann", "p1"]],
                "type": "quest"
             }
          ]
@@ -1786,7 +1786,7 @@
                "coords": { "x": 46, "y": 77 },
                "header": "gann's stonespine",
                "ends": ["gann's reclamation"],
-               "starts": [["revenge of gann", "e"]],
+               "starts": [["revenge of gann", "p1"]],
                "type": "quest"
             },
             {
@@ -1826,8 +1826,8 @@
             {
                "coords": { "x": 46, "y": 77 },
                "header": "gann's stonespine",
-               "ends": [["revenge of gann", "e"]],
-               "starts": [["revenge of gann", "p3"]],
+               "ends": [["revenge of gann", "p1"]],
+               "starts": [["revenge of gann", "p2"]],
                "type": "quest"
             }
          ]
@@ -1839,14 +1839,14 @@
             {
                "coords": { "x": 46, "y": 77 },
                "header": "gann's stonespine",
-               "ends": [["revenge of gann", "e"]],
-               "starts": [["revenge of gann", "p3"]],
+               "ends": [["revenge of gann", "p1"]],
+               "starts": [["revenge of gann", "p2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 47, "y": 86 },
                "header": "bael modan flying machine",
-               "objectives": [["revenge of gann", "p3"]],
+               "objectives": [["revenge of gann", "p2"]],
                "type": "objective"
             }
          ]
@@ -1858,13 +1858,13 @@
             {
                "coords": { "x": 47, "y": 86 },
                "header": "bael modan flying machine",
-               "objectives": [["revenge of gann", "p3"]],
+               "objectives": [["revenge of gann", "p2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 46, "y": 77 },
                "header": "gann's stonespine",
-               "ends": [["revenge of gann", "p3"]],
+               "ends": [["revenge of gann", "p2"]],
                "type": "quest"
             },
             {
@@ -2756,7 +2756,7 @@
                "coords": { "x": 60, "y": 73 },
                "align": "bottom",
                "header": "moonwell",
-               "objectives": ["the sacred flame"],
+               "objectives": [["the sacred flame", "p1"]],
                "special": ["fill the phial"],
                "type": "objective"
             },
@@ -2945,8 +2945,8 @@
                "coords": { "x": 55, "y": 51 },
                "align": "bottom",
                "header": "zangen stonehoof",
-               "ends": [["the sacred flame", "p3"]],
-               "starts": [["the sacred flame", "p4"]],
+               "ends": [["the sacred flame", "p1"]],
+               "starts": [["the sacred flame", "p2"]],
                "type": "quest"
             }
          ]
@@ -2959,8 +2959,8 @@
                "coords": { "x": 55, "y": 51 },
                "align": "bottom",
                "header": "zangen stonehoof",
-               "ends": [["the sacred flame", "p3"]],
-               "starts": [["the sacred flame", "p4"]],
+               "ends": [["the sacred flame", "p1"]],
+               "starts": [["the sacred flame", "p2"]],
                "type": "quest"
             },
             {
@@ -3263,8 +3263,8 @@
                "coords": { "x": 45, "y": 50 },
                "align": "bottom",
                "header": "freewind post",
-               "ends": ["message to freewind post", ["the sacred flame", "p3"]],
-               "starts": ["pacify the centaur", ["the sacred flame", "p4"], "alien egg", "wind rider"],
+               "ends": ["message to freewind post", ["the sacred flame", "p2"]],
+               "starts": ["pacify the centaur", ["the sacred flame", "p3"], "alien egg", "wind rider"],
                "special": ["learn the flightpath", "set hearthstone"],
                "type": "hub"
             },
@@ -3294,7 +3294,7 @@
                "coords": { "x": 54, "y": 42 },
                "align": "top",
                "header": "dorn plainstalker",
-               "completed": [["test of faith", "p1"]],
+               "completed": ["test of faith"],
                "starts": ["test of endurance"],
                "special": ["jump off the plank"],
                "type": "quest"
@@ -3310,7 +3310,7 @@
             {
                "coords": { "x": 42, "y": 32 },
                "header": "splithoof cave",
-               "objectives": [["the sacred flame", "p4"]],
+               "objectives": [["the sacred flame", "p3"]],
                "special": ["inside the cave", "hearthstone to freewind"],
                "type": "objective"
             }
@@ -3324,7 +3324,7 @@
                "coords": { "x": 45, "y": 50 },
                "align": "top",
                "header": "freewind post",
-               "ends": ["pacify the centaur", ["the sacred flame", "p4"], "alien egg"],
+               "ends": ["pacify the centaur", ["the sacred flame", "p3"], "alien egg"],
                "starts": ["grimtotem spying", "wanted: arnak grimtotem", "serpent wild"],
                "type": "hub"
             },
@@ -3446,7 +3446,7 @@
                "align": "top",
                "header": "dorn plainstalker",
                "ends": ["test of strength"],
-               "starts": [["test of lore", "p2"]],
+               "starts": [["test of lore", "p1"]],
                "type": "quest"
             },
             {
@@ -3547,8 +3547,8 @@
                "coords": { "x": 79, "y": 46 },
                "align": "bottom",
                "header": "braug dimspirit",
-               "ends": [["test of lore", "p2"]],
-               "starts": [["test of lore", "p3"]],
+               "ends": [["test of lore", "p1"]],
+               "starts": [["test of lore", "p2"]],
                "special": ["die & take ress sickness"],
                "type": "quest"
             }
@@ -3585,7 +3585,7 @@
             {
                "coords": { "x": 76, "y": 75 },
                "header": "barrow den",
-               "objectives": [["test of lore", "p3"]],
+               "objectives": [["test of lore", "p2"]],
                "special": ["hearthstone to stonetalon"],
                "type": "objective"
             }
@@ -3605,9 +3605,9 @@
                "coords": { "x": 79, "y": 46 },
                "align": "bottom",
                "header": "braug dimspirit",
-               "ends": [["test of lore", "p3"]],
-               "completed": [["test of lore", "p4"]],
-               "starts": [["test of lore", "p5"]],
+               "ends": [["test of lore", "p2"]],
+               "completed": [["test of lore", "p3"]],
+               "starts": [["test of lore", "p4"]],
                "special": ["answer is neltharion", "die & take ress sickness"],
                "type": "quest"
             }
@@ -3874,7 +3874,7 @@
                "coords": { "x": 58, "y": 65 },
                "align": "bottom",
                "header": "parquel fintallas",
-               "ends": [["test of lore", "p5"]],
+               "ends": [["test of lore", "p4"]],
                "type": "quest"
             },
             {
@@ -4877,7 +4877,7 @@
                "coords": { "x": 60, "y": 19 },
                "align": "bottom",
                "header": "tarren mill",
-               "starts": ["gol'dir", "the hammer may fall", "dalaran patrols", "bracers of binding", ["helcular's revenge", "p3"]],
+               "starts": ["gol'dir", "the hammer may fall", "dalaran patrols", "bracers of binding", ["helcular's revenge", "p2"]],
                "type": "hub"
             },
             {
@@ -4917,7 +4917,7 @@
                "coords": { "x": 38, "y": 66 },
                "align": "top",
                "header": "flame of uzel",
-               "objectives": [["helcular's revenge", "p3"]],
+               "objectives": [["helcular's revenge", "p2"]],
                "type": "objective"
             },
             {
@@ -4957,7 +4957,7 @@
                "coords": { "x": 46, "y": 32 },
                "align": "top",
                "header": "darrow hill cave",
-               "objectives": [["helcular's revenge", "p3"]],
+               "objectives": [["helcular's revenge", "p2"]],
                "special": ["the two remaining fires"],
                "type": "objective"
             },
@@ -4965,7 +4965,7 @@
                "coords": { "x": 53, "y": 53 },
                "align": "bottom",
                "header": "helcular's grave",
-               "ends": [["helcular's revenge", "p3"]],
+               "ends": [["helcular's revenge", "p2"]],
                "type": "objective"
             },
             {
@@ -6080,9 +6080,9 @@
                "coords": { "x": 58, "y": 65 },
                "align": "bottom",
                "header": "parquel fintallas",
-               "ends": [["test of lore", "p6"]],
+               "ends": [["test of lore", "d"]],
                "starts": ["final passage"],
-               "completed": [["test of lore", "p7"]],
+               "completed": [["test of lore", "6"]],
                "special": ["the answer is ner'zul"],
                "type": "quest"
             },
@@ -7480,16 +7480,16 @@
                "coords": { "x": 81, "y": 81 },
                "align": "bottom",
                "header": "misty reed post",
-               "ends": [["lack of surplus", "p2"], ["threat from the sea", "p1"]],
-               "starts": [["threat from the sea", "p3"]],
-               "completed": [["threat from the sea", "p2"]],
+               "ends": [["lack of surplus", "p2"]],
+               "starts": [["threat from the sea", "p2"]],
+               "completed": [["threat from the sea", "p1"]],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 78 },
                "align": "bottom",
                "header": "stagalbog cave",
-               "objectives": [["threat from the sea", "p3"]],
+               "objectives": [["threat from the sea", "p2"]],
                "special": ["Plain murlocs are found on the beach"],
                "type": "objective"
             }
@@ -7503,7 +7503,7 @@
                "coords": { "x": 66, "y": 78 },
                "align": "bottom",
                "header": "stagalbog cave",
-               "objectives": [["threat from the sea", "p3"]],
+               "objectives": [["threat from the sea", "p2"]],
                "special": ["Plain murlocs are found on the beach"],
                "type": "objective"
             },
@@ -7511,8 +7511,8 @@
                "coords": { "x": 81, "y": 81 },
                "align": "bottom",
                "header": "misty reed post",
-               "ends": [["threat from the sea", "p3"]],
-               "completed": [["threat from the sea", "p4"]],
+               "ends": [["threat from the sea", "p2"]],
+               "completed": [["threat from the sea", "p3"]],
                "type": "quest"
             },
             {

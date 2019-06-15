@@ -10,7 +10,7 @@ function Init() {
    const { dispatch } = useContext(Context);
 
    // ARE YOU DEVELOPING
-   const developing = true;
+   const developing = false;
 
    // ON INITIAL PAGE LOAD
    useEffect(() => {
