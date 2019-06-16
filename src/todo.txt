@@ -1,30 +1,3 @@
-FIX NON HUMAN STARTERS IN AUBERDINE
-
-{
-   "coords": { "x": 37, "y": 45 },
-   "align": "top",
-   "header": "lower auberdine",
-   "ends": [["washed ashore", "p2"]],
-   "type": "hub"
-},
-
-{
-   "coords": { "x": 37, "y": 62 },
-   "header": "beached sea turtle",
-   "starts": ["beached sea turtle"],
-   "type": "quest"
-},
-{
-   "coords": { "x": 36, "y": 71 },
-   "header": "beached sea creature",
-   "starts": ["beached sea creature"],
-   "type": "quest"
-},
-
-"beached sea turtle", "beached sea creature"
-
----
-
 MAKE BETTER CONTEXT SWITCH CASES FOR EVENTS
 CONVERT MAP STATE TO REDUCER
 

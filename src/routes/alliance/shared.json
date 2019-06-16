@@ -5329,6 +5329,8 @@
             {
                "coords": { "x": 44, "y": 91 },
                "header": "thousand needles lifts",
+               "starts": ["lonebrow's journal"],
+               "special": ["at the dwarfs corpse"],
                "type": "travel"
             }
          ]
@@ -5341,12 +5343,15 @@
                "coords": { "x": 32, "y": 21 },
                "align": "top",
                "header": "thousand needles lifts",
+               "starts": ["lonebrow's journal"],
+               "special": ["at the dwarfs corpse"],
                "type": "travel"
             },
             {
                "coords": { "x": 8, "y": 18 },
                "align": "top",
                "header": "thalanaar flightpath",
+               "ends": ["lonebrow's journal"],
                "special": ["learn the flightpath"],
                "type": "flightpath"
             },
@@ -6434,6 +6439,8 @@
                "align": "bottom",
                "header": "fallow sanctuary",
                "objectives": ["draenethyst crystals"],
+               "starts": ["the lost supplies"],
+               "special": ["loot a scattered crate"],
                "type": "objective"
             },
             {
@@ -6527,7 +6534,7 @@
                "coords": { "x": 67, "y": 19 },
                "align": "right",
                "header": "nethergarde keep",
-               "ends": ["deliver the shipment"],
+               "ends": ["deliver the shipment", "the lost supplies"],
                "type": "quest"
             },
             {
@@ -8452,7 +8459,8 @@
                "align": "right",
                "header": "lost rigger cove",
                "objectives": ["wanted: andre firebeard", "pirate hats ahoy!", "southsea shakedown", "stoley's shipment"],
-               "special": ["abysmal drop rate", "hearthstone to gadgetzan"],
+               "starts": [["ship schedule", "r"]],
+               "special": ["abysmal drop rate on hats", "schedule drops from lockboxes", "hearthstone to gadgetzan"],
                "type": "objective"
             }
          ]
@@ -8576,7 +8584,7 @@
                "coords": { "x": 67, "y": 23 },
                "align": "top",
                "header": "steamwheedle port",
-               "ends": ["pirate hats ahoy!", "stoley's shipment", "southsea shakedown", "wanted: andre firebeard"],
+               "ends": ["pirate hats ahoy!", "stoley's shipment", "southsea shakedown", "wanted: andre firebeard", ["ship schedule", "r"]],
                "starts": ["deliver to mackinley"],
                "type": "quest"
             },

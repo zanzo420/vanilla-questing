@@ -1648,6 +1648,13 @@
                "objectives": ["consumed by hatred", "tribes at war"],
                "special": ["geomancers"],
                "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 51 },
+               "align": "right",
+               "header": "lakota'mani",
+               "starts": ["lakota'mani"],
+               "type": "objective"
             }
          ]
       },
@@ -1656,10 +1663,10 @@
          "experience": 22.94,
          "waypoints": [
             {
-               "coords": { "x": 44, "y": 47 },
-               "header": "agama'gor",
-               "objectives": ["consumed by hatred", "tribes at war"],
-               "special": ["geomancers"],
+               "coords": { "x": 47, "y": 51 },
+               "align": "top",
+               "header": "lakota'mani",
+               "starts": ["lakota'mani"],
                "type": "objective"
             },
             {
@@ -1673,7 +1680,7 @@
             {
                "coords": { "x": 45, "y": 59 },
                "header": "camp taurajo",
-               "ends": ["tribes at war", "owatanka", "cry of the thunderhawk"],
+               "ends": ["tribes at war", "owatanka", "cry of the thunderhawk", "lakota'mani"],
                "starts": [["betrayal from within", "p1"], "mahren skyseer"],
                "completed": ["blood shards of agamaggan"],
                "type": "hub"
@@ -1715,7 +1722,6 @@
                "align": "bottom",
                "header": "blackthorn ridge",
                "objectives": ["weapons of choice"],
-               "special": ["warfrenzies & seers"],
                "type": "objective"
             }
          ]
@@ -1729,7 +1735,6 @@
                "align": "top",
                "header": "blackthorn ridge",
                "objectives": ["weapons of choice"],
-               "special": ["warfrenzies & seers"],
                "type": "objective"
             },
             {
@@ -1743,7 +1748,8 @@
                "align": "bottom",
                "header": "nak",
                "objectives": [["betrayal from within", "p1"], "weapons of choice"],
-               "special": ["stalkers"],
+               "starts": ["washte pawne"],
+               "special": ["stalkers", "washte is a windserpent"],
                "type": "objective"
             }
          ]
@@ -1757,7 +1763,8 @@
                "align": "bottom",
                "header": "nak",
                "objectives": [["betrayal from within", "p1"], "weapons of choice"],
-               "special": ["stalkers"],
+               "starts": ["washte pawne"],
+               "special": ["stalkers", "washte is a windserpent"],
                "type": "objective"
             },
             {
@@ -1870,7 +1877,7 @@
             {
                "coords": { "x": 45, "y": 59 },
                "header": "camp taurajo",
-               "ends": ["weapons of choice", ["betrayal from within", "p1"]],
+               "ends": ["weapons of choice", ["betrayal from within", "p1"], "washte pawne"],
                "starts": [["betrayal from within", "p2"]],
                "special": ["fly to crossroads"],
                "type": "hub"
@@ -2764,6 +2771,8 @@
                "align": "bottom",
                "header": "mystal lake",
                "objectives": ["stonetalon standstill"],
+               "starts": ["the befouled element"],
+               "special": ["kill tideress"],
                "type": "objective"
             },
             {
@@ -2807,7 +2816,8 @@
                "align": "top",
                "header": "splintertree post",
                "completed": ["the hunt completed"],
-               "ends": ["satyr horns", "stonetalon standstill", "ursangous's paw", "shadumbra's head", ["freedom to ruul", "f"]],
+               "ends": ["satyr horns", "stonetalon standstill", "ursangous's paw", "shadumbra's head", ["freedom to ruul", "f"], "the befouled element"],
+               "starts": ["je'neu of the earthen ring"],
                "special": ["fly to zoram strand"],
                "type": "hub"
             }
@@ -2821,7 +2831,9 @@
                "coords": { "x": 73, "y": 61 },
                "align": "top",
                "header": "splintertree post",
-               "ends": ["satyr horns", "stonetalon standstill", "ursangous's paw", "shadumbra's head", ["freedom to ruul", "f"]],
+               "completed": ["the hunt completed"],
+               "ends": ["satyr horns", "stonetalon standstill", "ursangous's paw", "shadumbra's head", ["freedom to ruul", "f"], "the befouled element"],
+               "starts": ["je'neu of the earthen ring"],
                "special": ["fly to zoram strand"],
                "type": "hub"
             },
@@ -2829,7 +2841,7 @@
                "coords": { "x": 12, "y": 33 },
                "align": "top",
                "header": "zoram base",
-               "ends": ["between a rock and a thistlefur", "troll charm"],
+               "ends": ["between a rock and a thistlefur", "troll charm", "je'neu of the earthen ring"],
                "starts": ["king of the foulweald"],
                "special": ["fly to ratchet"],
                "type": "hub"
@@ -4248,7 +4260,8 @@
             {
                "coords": { "x": 70, "y": 86 },
                "header": "rustmaul digsite",
-               "objectives": [["the swarm grows", "p3"]],
+               "objectives": [["the swarm grows", "p3"], ["parts of the swarm", "p1, r"]],
+               "starts": [["parts of the swarm", "p1, r"]],
                "type": "objective"
             },
             {
@@ -4357,14 +4370,28 @@
                "coords": { "x": 52, "y": 25 },
                "align": "bottom",
                "header": "tanaris flightpath",
-               "special": ["fly to stonetalon"],
+               "special": ["fly to crossroads"],
                "type": "flightpath"
             }
          ]
       },
       {
-         "zone": "stonetalon",
+         "zone": "barrens",
          "experience": 32.84,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "header": "the crossroads",
+               "ends": [["parts of the swarm", "p1, r"]],
+               "starts": [["parts of the swarm", "p2"]],
+               "special": ["fly to stonetalon"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 32.86,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 60 },
@@ -4381,7 +4408,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 32.84,
+         "experience": 32.86,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 4 },
@@ -4417,7 +4444,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 32.88,
+         "experience": 32.90,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 38 },
@@ -5230,6 +5257,13 @@
                "coords": { "x": 49, "y": 92 },
                "header": "orgrimmar gates",
                "type": "travel"
+            },
+            {
+               "coords": { "x": 75, "y": 34 },
+               "align": "top",
+               "header": "belgrom rockmaul",
+               "ends": [["parts of the swarm", "p2"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 45, "y": 64 },
@@ -8569,7 +8603,8 @@
                "align": "right",
                "header": "lost rigger cove",
                "objectives": ["wanted: andre firebeard", "pirate hats ahoy!", "southsea shakedown", "stoley's shipment"],
-               "special": ["abysmal drop rate for hats", "don't bother if it's crowded", "hearthstone to gadgetzan"],
+               "starts": [["ship schedule", "r"]],
+               "special": ["abysmal drop rate on hats", "schedule drops from lockboxes", "hearthstone to gadgetzan"],
                "type": "objective"
             }
          ]
@@ -8590,7 +8625,7 @@
                "coords": { "x": 67, "y": 23 },
                "align": "top",
                "header": "steamwheedle port",
-               "ends": ["pirate hats ahoy!", "stoley's shipment", "southsea shakedown", "wanted: andre firebeard"],
+               "ends": ["pirate hats ahoy!", "stoley's shipment", "southsea shakedown", "wanted: andre firebeard", ["ship schedule", "r"]],
                "starts": ["deliver to mackinley"],
                "type": "quest"
             },
@@ -8751,10 +8786,17 @@
             },
             {
                "coords": { "x": 76, "y": 34 },
-               "align": "top",
+               "align": "right",
                "header": "gordunni outpost",
                "objectives": [["the ogres of feralas", "p1"], "gordunni cobalt"],
                "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 29 },
+               "align": "top",
+               "header": "gordunni scroll",
+               "starts": ["the gordunni scroll"],
+               "type": "quest"
             }
          ]
       },
@@ -8763,18 +8805,18 @@
          "experience": 47.80,
          "waypoints": [
             {
-               "coords": { "x": 76, "y": 34 },
-               "align": "right",
-               "header": "gordunni outpost",
-               "objectives": [["the ogres of feralas", "p1"], "gordunni cobalt"],
-               "type": "objective"
+               "coords": { "x": 75, "y": 29 },
+               "align": "top",
+               "header": "gordunni scroll",
+               "starts": ["the gordunni scroll"],
+               "type": "quest"
             },
             {
                "coords": { "x": 75, "y": 44 },
                "align": "right",
                "header": "camp mojache",
-               "ends": [["the ogres of feralas", "p1"], "a new cloak's sheen", "gordunni cobalt", "war on the woodpaw"],
-               "starts": [["the ogres of feralas", "p2"], ["a grim discovery", "p1"], "a strange request", "the sunken temple", "alpha strike"],
+               "ends": [["the ogres of feralas", "p1"], "a new cloak's sheen", "gordunni cobalt", "war on the woodpaw", "the gordunni scroll"],
+               "starts": [["the ogres of feralas", "p2"], ["a grim discovery", "p1"], "a strange request", "the sunken temple", "alpha strike", "dark ceremony"],
                "type": "hub"
             },
             {
@@ -8795,7 +8837,7 @@
                "coords": { "x": 60, "y": 60 },
                "align": "top",
                "header": "ruins of isildien",
-               "objectives": [["the ogres of feralas", "p2"]],
+               "objectives": [["the ogres of feralas", "p2"], "dark ceremony"],
                "type": "objective"
             },
             {
@@ -8803,7 +8845,6 @@
                "align": "top",
                "header": "high wilderness",
                "objectives": ["natural materials"],
-               "special": ["metallic fragments", "resilient sinews"],
                "type": "objective"
             }
          ]
@@ -8846,8 +8887,8 @@
                "coords": { "x": 75, "y": 44 },
                "align": "right",
                "header": "camp mojache",
-               "ends": [["the ogres of feralas", "p2"], ["a grim discovery", "p1"], "the mark of quality", "natural materials", "alpha strike"],
-               "starts": [["a grim discovery", "p2"], "improved quality", "woodpaw investigation"],
+               "ends": [["the ogres of feralas", "p2"], ["a grim discovery", "p1"], "the mark of quality", "natural materials", "alpha strike", "dark ceremony"],
+               "starts": [["a grim discovery", "p2"], "improved quality", "woodpaw investigation", "the gordunni orb"],
                "type": "hub"
             },
             {
@@ -9001,9 +9042,16 @@
          "experience": 48.87,
          "waypoints": [
             {
-               "coords": { "x": 45, "y": 64 },
+               "coords": { "x": 46, "y": 65 },
+               "align": "right",
                "header": "orgrimmar flightpath",
                "type": "flightpath"
+            },
+            {
+               "coords": { "x": 37, "y": 86 },
+               "header": "uthel'nay",
+               "ends": ["the gordunni orb"],
+               "type": "quest"
             },
             {
                "coords": { "x": 47, "y": 53 },
@@ -14406,6 +14454,7 @@
                "align": "right",
                "header": "owl wing thicket",
                "objectives": [["wild guardians", "p2"]],
+               "starts": [["guarding secrets", "p1, r"]],
                "type": "objective"
             },
             {
@@ -14458,8 +14507,8 @@
                "coords": { "x": 35, "y": 53 },
                "align": "top",
                "header": "bloodvenom post",
-               "ends": [["wild guardians", "p2"]],
-               "starts": [["wild guardians", "p3"]],
+               "ends": [["wild guardians", "p2"], ["guarding secrets", "p1, r"]],
+               "starts": [["wild guardians", "p3"], ["guarding secrets", "p2"]],
                "type": "hub"
             },
             {
