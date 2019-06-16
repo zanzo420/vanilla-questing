@@ -1075,9 +1075,18 @@
             },
             {
                "coords": { "x": 38, "y": 82 },
+               "align": "right",
                "header": "twilight vale",
                "objectives": ["buzzbox 525"],
                "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 84 },
+               "align": "bottom",
+               "header": "prospector remtravel",
+               "ends": [["the absent minded prospector", "p1"]],
+               "starts": [["the absent minded prospector", "p2, f"]],
+               "type": "quest"
             }
          ]
       },
@@ -1086,19 +1095,54 @@
          "experience": 21.52,
          "waypoints": [
             {
-               "coords": { "x": 38, "y": 82 },
-               "align": "top",
-               "header": "twilight vale",
-               "objectives": ["buzzbox 525"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 36, "y": 84 },
+               "align": "right",
                "header": "prospector remtravel",
                "ends": [["the absent minded prospector", "p1"]],
                "starts": [["the absent minded prospector", "p2, f"]],
                "type": "quest"
             },
+            {
+               "coords": { "x": 33, "y": 81 },
+               "align": "top",
+               "header": "beached sea creature",
+               "starts": ["beached sea creature"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 84 },
+               "header": "beached sea turtle",
+               "starts": ["beached sea turtle"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 86 },
+               "header": "beached sea turtle",
+               "starts": ["beached sea turtle"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 88 },
+               "header": "beached sea creature",
+               "starts": ["beached sea creature"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 86 },
+               "align": "bottom",
+               "header": "the master's glaive",
+               "ends": ["the master's glaive"],
+               "starts": ["return to onu", ["therylune's escape", "f"]],
+               "completed": ["the twilight camp"],
+               "special": ["use your scrying bowl", "click on the book"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "experience": 21.52,
+         "waypoints": [
             {
                "coords": { "x": 39, "y": 86 },
                "align": "bottom",
@@ -1505,6 +1549,7 @@
                "coords": { "x": 36, "y": 46 },
                "align": "bottom",
                "header": "darkshore flightpath",
+               "ends": ["beached sea turtle", "beached sea turtle", "beached sea creature", "beached sea creature"],
                "type": "flightpath"
             },
             {

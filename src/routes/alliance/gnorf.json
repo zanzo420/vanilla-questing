@@ -1124,14 +1124,34 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 40, "y": 54 },
+               "coords": { "x": 37, "y": 45 },
                "align": "top",
+               "header": "lower auberdine",
+               "ends": [["washed ashore", "p2"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 40, "y": 54 },
+               "align": "right",
                "header": "furbolg encampment",
                "objectives": [["how big a threat?", "p2"]],
                "type": "objective"
             },
             {
+               "coords": { "x": 37, "y": 62 },
+               "header": "beached sea turtle",
+               "starts": ["beached sea turtle"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 71 },
+               "header": "beached sea creature",
+               "starts": ["beached sea creature"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 39, "y": 64 },
+               "align": "right",
                "header": "darkshore forest",
                "objectives": ["cleansing of the infected"],
                "type": "objective"
@@ -1179,7 +1199,7 @@
             {
                "coords": { "x": 37, "y": 45 },
                "header": "lower auberdine",
-               "ends": ["the red crystal", ["washed ashore", "p2"], "for love eternal"],
+               "ends": ["the red crystal", "beached sea turtle", "beached sea creature", "for love eternal"],
                "starts": ["as water cascades", "fruit of the sea"],
                "special": ["fill the empty vial at the moonwell.", "be level 15"],
                "type": "hub"
