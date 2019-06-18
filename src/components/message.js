@@ -22,13 +22,18 @@ function Message() {
 
             // SHOW THE MESSAGE FOR 3 SECONDS
             sleep(3000).then(() => {
-               document.getElementById('message').style.opacity = 0;
+               
+               if(document.getElementById('message') !== null) {
+                  document.getElementById('message').style.opacity = 0;
+               }
 
                // WAIT 300MS FOR OPACITY TO GRADUALLY FADE
                sleep(300).then(() => {
 
                   // CHANGE DISPLAY TO NONE
-                  document.getElementById('message').style.display = 'none';
+                  if(document.getElementById('message') !== null) {
+                     document.getElementById('message').style.display = 'none';
+                  }
 
                   // UPDATE STATE
                   dispatch({ type: 'hide-message' })
