@@ -39,11 +39,13 @@ function Level() {
 
    }, [state.current, state.data])
 
+   // <div>{ local.level } + { local.difference }</div>
+
    return (
       <div id="level">
          <div className="split">
             <div>Level</div>
-            <div>{ local.level } + { local.difference }</div>
+            <div>{ local.level }</div>
             <div id="bar" style={ local.width }></div>
          </div>
       </div>

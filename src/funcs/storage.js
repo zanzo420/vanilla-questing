@@ -49,6 +49,7 @@ function fetch() {
 function update(hashmap) {
    const stringified = JSON.stringify({ 'profiles': Array.from(hashmap) });
    localStorage.setItem(key, stringified);
+   return hashmap;
 }
 
 // CHANGE BLOCK NUM FOR LOADED PROFILE
@@ -65,6 +66,8 @@ function change(state, block) {
       state.profiles.set(state.loaded, details);
       update(state.profiles);
    }
+
+   return block;
 }
 
 // EXPORT PROFILE OBJECT

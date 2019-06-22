@@ -12,13 +12,9 @@ function reducer(state, action) {
 
       // CHANGE BLOCK
       case 'block': {
-
-         // CHANGE PROFILE BLOCK VALUE
-         change(state, action.payload);
-
          return {
             ...state,
-            current: action.payload
+            current: change(state, action.payload)
          }
       }
 
@@ -49,13 +45,9 @@ function reducer(state, action) {
 
       // UPDATE PROFILES
       case 'update_profiles': {
-
-         // UPDATE STORAGE
-         update_profiles(action.payload);
-         
          return {
             ...state,
-            profiles: action.payload
+            profiles: update_profiles(action.payload)
          }
       }
 
@@ -139,7 +131,7 @@ function reducer(state, action) {
 
       // FALLBACK
       default: {
-         console.log('Reducer Error!');
+         console.log('Context reducer type not found');
          return state;
       }
    }
