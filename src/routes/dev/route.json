@@ -934,7 +934,7 @@
                "coords": { "x": 39, "y": 43 },
                "align": "bottom",
                "header": "upper auberdine",
-               "starts": ["deep ocean, vast sea", ["bashal'aran", "p1"], "tools of the highborne", "plagued lands", ["how big a threat?", "p1"], ["the tower of althalaxx", "p1"]],
+               "starts": ["deep ocean, vast sea", ["bashal'aran", "p1"], "tools of the highborne", "plagued lands", ["how big a threat?", "p1"]],
                "type": "hub"
             },
             {
@@ -947,39 +947,20 @@
             },
             {
                "coords": { "x": 46, "y": 37 },
-               "align": "bottom",
-               "header": "bashal'aran",
-               "objectives": [["bashal'aran", "p2"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "darkshore",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 46, "y": 37 },
                "align": "right",
                "header": "bashal'aran",
                "objectives": [["bashal'aran", "p2"]],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 44, "y": 36 },
-               "header": "asterion",
-               "ends": [["bashal'aran", "p2"]],
-               "starts": [["bashal'aran", "p3"]],
-               "type": "quest"
             }
          ]
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 13.28,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 36 },
+               "align": "bottom",
                "header": "asterion",
                "ends": [["bashal'aran", "p2"]],
                "starts": [["bashal'aran", "p3"]],
@@ -987,7 +968,7 @@
             },
             {
                "coords": { "x": 48, "y": 37 },
-               "align": "right",
+               "align": "bottom",
                "header": "bashal'aran",
                "objectives": [["bashal'aran", "p3"]],
                "type": "objective"
@@ -996,7 +977,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 13.40,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 37 },
@@ -1051,7 +1032,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 13.65,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 53 },
@@ -1092,7 +1073,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 13.93,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 46 },
@@ -1151,7 +1132,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 14.42,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 61 },
@@ -1174,32 +1155,30 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 37, "y": 45 },
-               "header": "lower auberdine",
-               "ends": ["the red crystal", "beached sea turtle", "beached sea creature", "for love eternal"],
-               "starts": ["as water cascades", "fruit of the sea"],
-               "special": ["fill the empty vial at the moonwell.", "be level 15"],
-               "type": "hub"
-            },
-            {
                "coords": { "x": 39, "y": 43 },
                "align": "top",
                "header": "upper auberdine",
                "ends": ["cleansing of the infected", ["how big a threat?", "p2"], "tools of the highborne"],
                "starts": ["tharnariun's hope"],
                "type": "hub"
+            },
+            {
+               "coords": { "x": 37, "y": 45 },
+               "header": "lower auberdine",
+               "ends": ["the red crystal", "beached sea turtle", "beached sea creature", "for love eternal"],
+               "starts": ["as water cascades", "fruit of the sea"],
+               "special": ["fill the empty vial at the moonwell.", "be level 15"],
+               "type": "hub"
             }
          ]
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 15.00,
          "waypoints": [
             {
-               "coords": { "x": 39, "y": 43 },
-               "header": "upper auberdine",
-               "ends": ["cleansing of the infected", ["how big a threat?", "p2"], "tools of the highborne"],
-               "starts": ["tharnariun's hope"],
+               "coords": { "x": 37, "y": 45 },
+               "header": "lower auberdine",
                "type": "hub"
             },
             {
@@ -1249,7 +1228,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 15.29,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 26 },
@@ -1299,7 +1278,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 15.53,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 27 },
@@ -1349,7 +1328,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 16.25,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 45 },
@@ -1370,7 +1349,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 16.34,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 35 },
@@ -1391,7 +1370,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 16.47,
          "waypoints": [
             {
                "coords": { "x": 19, "y": 51 },
@@ -1410,20 +1389,20 @@
                "coords": { "x": 77, "y": 51 },
                "align": "top",
                "header": "deeprun tram",
-               "completed": ["deeprun rat roundup", "me brother, nipsy"],
+               "completed": ["me brother, nipsy"],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 16.50,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 8 },
                "align": "right",
                "header": "deeprun tram",
-               "completed": ["deeprun rat roundup", "me brother, nipsy"],
+               "completed": ["me brother, nipsy"],
                "type": "travel"
             },
             {
