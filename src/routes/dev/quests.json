@@ -73,7 +73,7 @@
    "riverpaw gnoll bounty": 11,
    "wanted: hogger": 176,
    "a warrior's training": 1638,
-   "westfall stew": 36,
+   "westfall stew": [36, 38],
    "a swift message": 6181,
    "continue to stormwind": 6281,
    "dungar longdrink": 6261,
