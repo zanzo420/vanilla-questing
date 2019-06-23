@@ -4037,7 +4037,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 30.89,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 42 },
@@ -4071,6 +4071,13 @@
                "type": "objective"
             },
             {
+               "coords": { "x": 55, "y": 34 },
+               "align": "top",
+               "header": "nightsong woods",
+               "objectives": ["the howling vale", ["raene's cleansing", "p4"]],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 50, "y": 39 },
                "header": "tome of melandris",
                "objectives": ["the howling vale", ["raene's cleansing", "p4"]],
@@ -4088,7 +4095,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 31.13,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 46 },
@@ -4124,7 +4131,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 31.27,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
@@ -4168,7 +4175,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 31.53,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 49 },
@@ -4211,7 +4218,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 31.59,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 80 },
@@ -4239,7 +4246,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 31.71,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 94 },
@@ -4256,7 +4263,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 0,
+         "experience": 31.71,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
@@ -4283,7 +4290,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 0,
+         "experience": 31.73,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 83 },
@@ -4324,7 +4331,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 31.75,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 90 },
@@ -4342,7 +4349,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 31.75,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -4362,7 +4369,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 31.77,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -4374,8 +4381,7 @@
             {
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
-               "completed": ["the haunted isle"],
-               "starts": ["supplies to private thorsen", "investigate the camp", "bloodscalp ears", "the stone of the tides", "supply and demand"],
+               "starts": ["supplies to private thorsen", "investigate the camp", "bloodscalp ears", "supply and demand"],
                "special": ["set hearthstone"],
                "type": "hub"
             },
@@ -4390,32 +4396,10 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 78, "y": 44 },
-               "align": "top",
-               "header": "duskwood flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 74, "y": 47 },
-               "align": "top",
-               "header": "darkshire",
-               "ends": ["the caravan road"],
-               "starts": ["the scythe of elune"],
-               "completed": ["the carevin family"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "duskwood",
-         "experience": 0,
+         "experience": 31.79,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
-               "align": "top",
                "header": "darkshire",
                "ends": ["the caravan road"],
                "starts": ["the scythe of elune"],
@@ -4433,7 +4417,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 31.82,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -4443,7 +4427,7 @@
             },
             {
                "coords": { "x": 87, "y": 95 },
-               "align": "top",
+               "align": "right",
                "header": "stranglethorn vale river",
                "objectives": ["supply and demand"],
                "type": "objective"
@@ -4452,11 +4436,10 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 31.84,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 8 },
-               "align": "bottom",
                "header": "stranglethorn vale river",
                "objectives": ["supply and demand"],
                "type": "objective"
@@ -4472,10 +4455,10 @@
             },
             {
                "coords": { "x": 38, "y": 3 },
-               "align": "right",
+               "align": "top",
                "header": "rebel camp",
                "ends": ["supplies to private thorsen"],
-               "starts": ["bookie herod", "the second rebellion", "bad medicine", "krazek's cookery"],
+               "starts": ["bookie herod", "the second rebellion", "bad medicine"],
                "completed": ["jungle secrets"],
                "type": "quest"
             },
@@ -4490,7 +4473,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 31.95,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 13 },
@@ -4540,123 +4523,40 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 32.29,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 16 },
-               "align": "top",
+               "align": "bottom",
                "header": "northern mainland",
                "objectives": [["raptor mastery", "p1"]],
                "type": "objective"
             },
             {
-               "coords": { "x": 21, "y": 22 },
-               "align": "top",
-               "header": "savage coast isle",
-               "objectives": ["the stone of the tides"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 36, "y": 11 },
-               "align": "top",
-               "header": "nesingwary's expedition",
-               "ends": [["panther mastery", "p2"], ["tiger mastery", "p2"], ["raptor mastery", "p1"]],
-               "starts": [["raptor mastery", "p2"], ["tiger mastery", "p3"]],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 36, "y": 11 },
-               "align": "top",
-               "header": "nesingwary's expedition",
-               "ends": [["panther mastery", "p2"], ["tiger mastery", "p2"], ["raptor mastery", "p1"]],
-               "starts": [["raptor mastery", "p2"], ["tiger mastery", "p3"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 33, "y": 14 },
-               "align": "top",
+               "coords": { "x": 33, "y": 16 },
+               "align": "bottom",
                "header": "tkashi ruins",
                "objectives": ["bloodscalp ears"],
                "type": "objective"
             },
             {
-               "coords": { "x": 30, "y": 17 },
-               "header": "stranglethorn valley",
-               "objectives": [["tiger mastery", "p3"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 32, "y": 23 },
-               "align": "right",
-               "header": "grom'gol hillside",
-               "objectives": [["raptor mastery", "p2"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 32, "y": 23 },
-               "header": "grom'gol hillside",
-               "objectives": [["raptor mastery", "p2"]],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 36, "y": 11 },
+               "align": "right",
                "header": "nesingwary's expedition",
-               "ends": [["raptor mastery", "p2"], ["tiger mastery", "p3"]],
+               "ends": [["panther mastery", "p2"], ["tiger mastery", "p2"], ["raptor mastery", "p1"]],
                "type": "quest"
             },
             {
                "coords": { "x": 38, "y": 3 },
+               "align": "top",
                "header": "rebel camp",
                "ends": ["the second rebellion", "bad medicine"],
-               "starts": ["special forces"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 50, "y": 8 },
-               "align": "bottom",
-               "header": "bookie herod's strongbox",
-               "ends": ["the hidden key"],
-               "starts": ["the spy revealed"],
-               "objectives": ["special forces"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 50, "y": 8 },
-               "align": "bottom",
-               "header": "bookie herod's strongbox",
-               "ends": ["the hidden key"],
-               "starts": ["the spy revealed"],
-               "objectives": ["special forces"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 38, "y": 4 },
-               "header": "rebel camp",
-               "ends": ["special forces", "the spy revealed"],
-               "completed": ["patrol schedules", "report to doren"],
+               "starts": ["krazek's cookery"],
                "type": "quest"
             },
             {
                "coords": { "x": 42, "y": 3 },
-               "align": "right",
+               "align": "top",
                "header": "duskwood border",
                "type": "travel"
             }
@@ -4664,7 +4564,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 32.53,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 87 },
@@ -4696,12 +4596,13 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 32.59,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
-               "ends": ["investigate the camp", "krazek's cookery", "bloodscalp ears", "the stone of the tides", "supply and demand"],
+               "ends": ["investigate the camp", "krazek's cookery", "bloodscalp ears", "supply and demand"],
+               "completed": ["the haunted isle"],
                "starts": ["favor for krazek"],
                "special": ["bank any STV pages"],
                "type": "hub"
@@ -4717,7 +4618,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 32.71,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 51 },
@@ -5985,7 +5886,7 @@
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
                "ends": [["goblin sponsorship", "p3"]],
-               "starts": [["goblin sponsorship", "p4"], "some assembly required", "hostile takeover", "water elementals"],
+               "starts": [["goblin sponsorship", "p4"], "some assembly required", "hostile takeover", "the stone of the tides"],
                "special": ["set hearthstone"],
                "type": "hub"
             },
@@ -6025,6 +5926,43 @@
                "type": "travel"
             },
             {
+               "coords": { "x": 36, "y": 11 },
+               "align": "bottom",
+               "header": "nesingwary's expedition",
+               "starts": [["raptor mastery", "p2"], ["tiger mastery", "p3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "align": "top",
+               "header": "rebel camp",
+               "starts": ["special forces"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 8 },
+               "align": "right",
+               "header": "bookie herod's strongbox",
+               "ends": ["the hidden key"],
+               "starts": ["the spy revealed"],
+               "objectives": ["special forces"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 18 },
+               "align": "bottom",
+               "header": "venture co. base",
+               "objectives": ["hostile takeover", ["goblin sponsorship", "p4"]],
+               "special": ["kill the foreman", "loot the chest"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
                "coords": { "x": 42, "y": 18 },
                "align": "right",
                "header": "venture co. base",
@@ -6040,10 +5978,23 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 21, "y": 23 },
+               "coords": { "x": 32, "y": 23 },
                "align": "bottom",
+               "header": "grom'gol hillside",
+               "objectives": [["raptor mastery", "p2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 17 },
+               "align": "top",
+               "header": "stranglethorn valley",
+               "objectives": [["tiger mastery", "p3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 21, "y": 23 },
                "header": "savage coast isle",
-               "objectives": ["water elementals"],
+               "objectives": ["the stone of the tides"],
                "special": ["hearthstone to booty bay"],
                "type": "objective"
             }
@@ -6056,8 +6007,8 @@
             {
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
-               "ends": [["goblin sponsorship", "p4"], "some assembly required", "hostile takeover", "water elementals"],
-               "starts": ["magical analysis"],
+               "ends": [["goblin sponsorship", "p4"], "some assembly required", "hostile takeover", "the stone of the tides"],
+               "starts": ["water elementals"],
                "type": "hub"
             },
             {
@@ -6418,6 +6369,56 @@
                "coords": { "x": 66, "y": 24 },
                "align": "right",
                "header": "nethergarde flightpath",
+               "special": ["fly to westfall"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "sentinel hill flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 87, "y": 95 },
+               "align": "top",
+               "header": "stranglethorn vale river",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 8 },
+               "align": "top",
+               "header": "stranglethorn vale river",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 21, "y": 23 },
+               "header": "savage coast isle",
+               "objectives": ["water elementals"],
+               "special": ["hearthstone to booty bay"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "booty bay",
+               "ends": ["water elementals"],
+               "starts": ["magical analysis"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "align": "right",
+               "header": "booy bay flightpath",
                "special": ["fly to ironforge"],
                "type": "flightpath"
             }
