@@ -904,7 +904,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 20.48,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 44 },
@@ -950,7 +950,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 21.03,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 32 },
@@ -974,27 +974,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 78, "y": 44 },
-               "align": "bottom",
-               "header": "duskwood flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 74, "y": 47 },
-               "align": "bottom",
-               "header": "darkshire",
-               "ends": [["messenger to darkshire", "p1"]],
-               "starts": [["messenger to darkshire", "p2"]],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "duskwood",
-         "experience": 0,
+         "experience": 21.14,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
@@ -1006,7 +986,7 @@
             },
             {
                "coords": { "x": 78, "y": 44 },
-               "align": "bottom",
+               "align": "right",
                "header": "duskwood flightpath",
                "special": ["fly to wetlands"],
                "type": "flightpath"
@@ -1015,7 +995,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 21.18,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 60 },
@@ -1033,7 +1013,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 21.18,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 44 },
@@ -1083,7 +1063,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 21.41,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 84 },
@@ -1132,7 +1112,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 21.58,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 86 },
@@ -1170,7 +1150,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 21.67,
          "waypoints": [
             {
                "coords": { "x": 29, "y": 15 },
@@ -1205,7 +1185,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 21.84,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 22 },
@@ -1226,27 +1206,39 @@
                "coords": { "x": 34, "y": 48 },
                "align": "bottom",
                "header": "ashenvale flightpath",
-               "special": ["learn the flightpath"],
+               "special": ["fly to auberdine"],
                "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "experience": 21.94,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 43 },
+               "align": "right",
+               "header": "auberdine",
+               "ends": ["wanted: murkdeep", ["the absent minded prospector", "p2"]],
+               "starts": [["the absent minded prospector", "p3"]],
+               "type": "hub"
             },
             {
-               "coords": { "x": 36, "y": 50 },
+               "coords": { "x": 36, "y": 46 },
                "align": "bottom",
-               "header": "astranaar",
-               "ends": ["orendil's cure"],
-               "starts": ["the zoram strand", "elune's tear", ["raene's cleansing", "p1"], "culling the threat"],
-               "special": ["set hearthstone"],
-               "type": "hub"
+               "header": "darkshore flightpath",
+               "ends": ["beached sea turtle", "beached sea turtle", "beached sea creature", "beached sea creature"],
+               "special": ["fly to ashenvale"],
+               "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 22.19,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
-               "align": "bottom",
                "header": "astranaar",
                "ends": ["orendil's cure"],
                "starts": ["the zoram strand", "elune's tear", ["raene's cleansing", "p1"], "culling the threat"],
@@ -1255,7 +1247,7 @@
             },
             {
                "coords": { "x": 43, "y": 57 },
-               "align": "right",
+               "align": "bottom",
                "header": "astranaar road",
                "type": "travel"
             },
@@ -1277,7 +1269,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 22.34,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 35 },
@@ -1318,7 +1310,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 22.62,
          "waypoints": [
             {
                "coords": { "x": 23, "y": 52 },
@@ -1352,14 +1344,15 @@
             {
                "coords": { "x": 14, "y": 21 },
                "header": "ancient statuette",
-               "objectives": ["the ancient statuette"],
+               "objectives": ["the ancient statuette", "the zoram strand"],
+               "special": ["farm around half the heads"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 22.84,
          "waypoints": [
             {
                "coords": { "x": 14, "y": 21 },
@@ -1392,7 +1385,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 22.93,
          "waypoints": [
             {
                "coords": { "x": 7, "y": 14 },
@@ -1419,14 +1412,14 @@
                "align": "right",
                "header": "ashenvale road",
                "objectives": [["supplies to auberdine", "f"]],
-               "special": ["hearthstone to astranaar"],
+               "special": ["this is very difficult and long alone", "hearthstone to astranaar"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 23.03,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
@@ -1469,7 +1462,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 23.42,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 70 },
@@ -1496,7 +1489,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 23.50,
          "waypoints": [
             {
                "coords": { "x": 11, "y": 75 },
@@ -1514,7 +1507,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 23.50,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
@@ -1534,22 +1527,13 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 23.57,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 46 },
-               "align": "bottom",
-               "header": "darkshore flightpath",
-               "ends": ["beached sea turtle", "beached sea turtle", "beached sea creature", "beached sea creature"],
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 39, "y": 43 },
                "align": "right",
-               "header": "auberdine",
-               "ends": ["wanted: murkdeep", ["the absent minded prospector", "p2"]],
-               "starts": [["the absent minded prospector", "p3"]],
-               "type": "hub"
+               "header": "darkshore flightpath",
+               "type": "flightpath"
             },
             {
                "coords": { "x": 33, "y": 40 },
@@ -1562,7 +1546,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 23.57,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 97 },
@@ -1585,25 +1569,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 31, "y": 41 },
-               "header": "darnassus teleporter",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 31, "y": 84 },
-               "header": "chief archaeologist greywhisker",
-               "ends": [["the absent minded prospector", "p3"]],
-               "starts": [["the absent minded prospector", "p4"]],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "darnassus",
-         "experience": 0,
+         "experience": 23.57,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 84 },
@@ -1621,7 +1587,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 23.61,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 90 },
@@ -1638,7 +1604,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0,
+         "experience": 23.61,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 40 },
@@ -1655,7 +1621,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 23.61,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 57 },
@@ -1687,7 +1653,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 23.68,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 26 },
@@ -1720,7 +1686,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 23.79,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
@@ -1756,28 +1722,35 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 23.82,
          "waypoints": [
             {
                "coords": { "x": 19, "y": 58 },
-               "align": "bottom",
+               "align": "right",
                "header": "jitters",
                "ends": ["raven hill"],
                "starts": ["jitters' growling gut"],
                "type": "quest"
             },
             {
+               "coords": { "x": 14, "y": 67 },
+               "align": "bottom",
+               "header": "duskwood riverside",
+               "objectives": ["eight-legged menaces", "the totem of infliction"],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 11, "y": 55 },
                "header": "duskwood riverside",
                "objectives": ["eight-legged menaces", "the totem of infliction"],
-               "special": ["vial of spider venom", "farm 6x gooey spider leg"],
                "type": "objective"
             },
             {
                "coords": { "x": 11, "y": 44 },
+               "align": "right",
                "header": "duskwood riverside",
                "objectives": ["eight-legged menaces", "the totem of infliction"],
-               "special": ["vial of spider venom", "farm 6x gooey spider leg"],
+               "special": [ "have 6x gooey spider leg by now"],
                "type": "objective"
             },
             {
@@ -1798,7 +1771,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 23.98,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 31 },
@@ -1823,14 +1796,6 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 26, "y": 35 },
-               "align": "bottom",
-               "header": "ravel hill cemetary",
-               "objectives": ["the totem of infliction"],
-               "special": ["ghoul fangs"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 8, "y": 34 },
                "align": "bottom",
                "header": "the hushed bank",
@@ -1847,7 +1812,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 24.10,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 42 },
@@ -1872,7 +1837,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 24.14,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 64 },
@@ -1906,7 +1871,7 @@
             },
             {
                "coords": { "x": 67, "y": 16 },
-               "align": "right",
+               "align": "top",
                "header": "duskwood riverside",
                "type": "travel"
             }
@@ -1914,7 +1879,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0,
+         "experience": 24.31,
          "waypoints": [
             {
                "coords": { "x": 72, "y": 85 },
@@ -1940,7 +1905,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 24.35,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 87 },
@@ -1983,7 +1948,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 24.42,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 44 },
@@ -2020,7 +1985,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 24.71,
          "waypoints": [
             {
                "coords": { "x": 79, "y": 72 },
@@ -2041,7 +2006,7 @@
             {
                "coords": { "x": 74, "y": 47 },
                "header": "darkshire",
-               "ends": [["the night watch", "p1"], "return the comb", "the totem of infliction"],
+               "ends": [["the night watch", "p1"], "return the comb"],
                "starts": [["the night watch", "p2"], "deliver the thread"],
                "type": "hub"
             },
@@ -2055,7 +2020,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0,
+         "experience": 24.80,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 85 },
@@ -2090,7 +2055,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 24.85,
          "waypoints": [
             {
                "coords": { "x": 8, "y": 72 },
@@ -2141,7 +2106,7 @@
             },
             {
                "coords": { "x": 43, "y": 36 },
-               "align": "top",
+               "align": "right",
                "header": "redridge road",
                "type": "travel"
             }
@@ -2149,7 +2114,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 24.91,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 36 },
@@ -2190,19 +2155,21 @@
                "coords": { "x": 63, "y": 50 },
                "header": "an empty jar",
                "ends": [["looking further", "e"]],
+               "special": ["urn on the top"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 25.13,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 50 },
                "align": "right",
                "header": "an empty jar",
                "ends": [["looking further", "e"]],
+               "special": ["urn on the top"],
                "type": "quest"
             },
             {
@@ -2229,7 +2196,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 25.22,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 44 },
@@ -2281,7 +2248,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 25.77,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -2298,7 +2265,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 25.77,
          "waypoints": [
             {
                "coords": { "x": 3, "y": 36 },
@@ -2327,7 +2294,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 25.84,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
@@ -2348,7 +2315,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 25.92,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -2366,7 +2333,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 25.92,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 57 },
@@ -2407,7 +2374,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 26.22,
          "waypoints": [
             {
                "coords": { "x": 15, "y": 38 },
@@ -2435,7 +2402,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 26.28,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 42 },
@@ -2453,7 +2420,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 26.28,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -2501,7 +2468,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 26.44,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 59 },
@@ -2552,7 +2519,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 26.70,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 64 },
@@ -2579,7 +2546,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 26.71,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 61 },
@@ -2589,7 +2556,7 @@
             },
             {
                "coords": { "x": 11, "y": 59 },
-               "align": "top",
+               "align": "right",
                "header": "menethil",
                "ends": ["the doomed fleet"],
                "starts": ["the greenwarden", ["the absent minded prospector", "p5"], "the cursed crew", "digging through the ooze"],
@@ -2597,19 +2564,6 @@
                "special": ["buy a flagon of mead", "set hearthstone"],
                "type": "hub"
             },
-            {
-               "coords": { "x": 8, "y": 59 },
-               "align": "top",
-               "header": "karl boran",
-               "starts": ["reclaiming goods"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "wetlands",
-         "experience": 0,
-         "waypoints": [
             {
                "coords": { "x": 8, "y": 59 },
                "header": "karl boran",
@@ -2630,6 +2584,19 @@
                "header": "tarrel rockweaver",
                "starts": [["in search of the excavation team", "p1"]],
                "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 26.75,
+         "waypoints": [
+            {
+               "coords": { "x": 12, "y": 52 },
+               "align": "right",
+               "header": "tarrel rockweaver",
+               "starts": [["in search of the excavation team", "p1"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 13, "y": 41 },
@@ -2640,24 +2607,12 @@
             },
             {
                "coords": { "x": 14, "y": 38 },
+               "align": "right",
                "header": "sealed barrel",
                "ends": ["the search continues"],
                "starts": ["search more hovels"],
                "type": "quest"
             },
-            {
-               "coords": { "x": 14, "y": 35 },
-               "header": "half-buried barrel",
-               "ends": ["search more hovels"],
-               "starts": ["return the statuette"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "wetlands",
-         "experience": 0,
-         "waypoints": [
             {
                "coords": { "x": 14, "y": 35 },
                "header": "half-buried barrel",
@@ -2676,7 +2631,22 @@
                "align": "right",
                "header": "whelgar's excavation site",
                "ends": [["in search of the excavation team", "p1"]],
-               "starts": [["ormer's revenge", "p1"], "uncovering the past", ["in search of the excavation team", "p2"]],
+               "starts": [["ormer's revenge", "p1"], "uncovering the past"],
+               "special": ["loot the flagongut fossil"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 26.98,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 52 },
+               "align": "right",
+               "header": "whelgar's excavation site",
+               "ends": [["in search of the excavation team", "p1"]],
+               "starts": [["ormer's revenge", "p1"], "uncovering the past"],
                "special": ["loot the flagongut fossil"],
                "type": "quest"
             },
@@ -2697,7 +2667,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.04,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 45 },
@@ -2744,7 +2714,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.19,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 42 },
@@ -2758,7 +2728,7 @@
                "align": "right",
                "header": "whelgar's excavation site",
                "ends": [["ormer's revenge", "p2"], "uncovering the past"],
-               "starts": [["ormer's revenge", "p3"]],
+               "starts": [["ormer's revenge", "p3"], ["in search of the excavation team", "p2"]],
                "type": "quest"
             },
             {
@@ -2772,7 +2742,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.31,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 52 },
@@ -2789,8 +2759,8 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 44, "y": 43 },
-               "align": "bottom",
+               "coords": { "x": 43, "y": 44 },
+               "align": "top",
                "header": "angerfang encampment",
                "objectives": ["war banners"],
                "type": "objective"
@@ -2829,7 +2799,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.47,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 75 },
@@ -2864,7 +2834,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.56,
          "waypoints": [
             {
                "coords": { "x": 11, "y": 59 },
@@ -2905,7 +2875,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.86,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 52 },
@@ -2918,8 +2888,7 @@
                "header": "shipwreck",
                "ends": ["lifting the curse"],
                "starts": ["the eye of paleth"],
-               "objectives": ["lifting the curse"],
-               "special": ["the lockbox is below the ship"],
+               "special": ["kill the captain", "the lockbox is below the ship"],
                "type": "quest"
             },
             {
@@ -2956,7 +2925,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.11,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 18 },
@@ -2991,7 +2960,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.23,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 27 },
@@ -3016,26 +2985,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 45, "y": 93 },
-               "align": "top",
-               "header": "wetlands border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 49, "y": 88 },
-               "align": "top",
-               "header": "cache of explosives",
-               "objectives": [["the thandol span", "p3"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "arathi",
-         "experience": 0,
+         "experience": 28.43,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 88 },
@@ -3046,7 +2996,6 @@
             },
             {
                "coords": { "x": 45, "y": 93 },
-               "align": "top",
                "header": "wetlands border",
                "type": "travel"
             }
@@ -3054,25 +3003,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 51, "y": 9 },
-               "header": "arathi highlands border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 50, "y": 18 },
-               "header": "dun modr",
-               "ends": [["the thandol span", "p3"]],
-               "starts": ["plea to the alliance"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.44,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 18 },
@@ -3090,7 +3021,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 28.51,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 93 },
@@ -3122,7 +3053,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 28.58,
          "waypoints": [
             {
                "coords": { "x": 82, "y": 57 },
@@ -3147,7 +3078,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.60,
          "waypoints": [
             {
                "coords": { "x": 10, "y": 59 },
@@ -3182,7 +3113,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.73,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 67 },
@@ -3210,7 +3141,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 28.78,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -3226,29 +3157,14 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 32, "y": 49 },
-               "header": "stormwind gates",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 34, "y": 57 },
-               "header": "cleara's house",
-               "special": ["loot apples"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "elwynn",
-         "experience": 0,
+         "experience": 28.78,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 57 },
+               "align": "right",
                "header": "cleara's house",
                "special": ["loot apples"],
+               "objectives": ["items of some consequence"],
                "type": "objective"
             },
             {
@@ -3260,7 +3176,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 28.78,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 87 },
@@ -3318,7 +3234,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 28.89,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 78 },
@@ -3368,24 +3284,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 31, "y": 59 },
-               "header": "redridge flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 26, "y": 47 },
-               "header": "guard berton",
-               "ends": ["what comes around..."],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "redridge",
-         "experience": 0,
+         "experience": 29.05,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 47 },
@@ -3395,6 +3294,7 @@
             },
             {
                "coords": { "x": 31, "y": 59 },
+               "align": "right",
                "header": "redridge flightpath",
                "special": ["fly to duskwood"],
                "type": "flightpath"
@@ -3403,20 +3303,13 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 29.09,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
-               "align": "right",
+               "align": "top",
                "header": "duskwood flightpath",
                "type": "flightpath"
-            },
-            {
-               "coords": { "x": 72, "y": 35 },
-               "header": "watcher backus",
-               "ends": [["the missing diplomat", "p4"]],
-               "starts": [["the missing diplomat", "p5"]],
-               "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 47 },
@@ -3436,7 +3329,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 29.22,
          "waypoints": [
             {
                "coords": { "x": 80, "y": 48 },
@@ -3452,6 +3345,14 @@
                "objectives": [["the legend of stalvan", "p13"], ["a noble brew", "p1"]],
                "special": ["loot the small white flower"],
                "type": "objective"
+            },
+            {
+               "coords": { "x": 72, "y": 35 },
+               "align": "top",
+               "header": "watcher backus",
+               "ends": [["the missing diplomat", "p4"]],
+               "starts": [["the missing diplomat", "p5"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 64, "y": 47 },
@@ -3480,7 +3381,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 29.40,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -3498,7 +3399,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 29.40,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },
@@ -3533,20 +3434,19 @@
                "coords": { "x": 24, "y": 35 },
                "align": "bottom",
                "header": "dawning wood catacombs",
-               "objectives": ["ghoulish effigy", ["the night watch", "p3"]],
+               "objectives": ["ghoulish effigy", ["the night watch", "p3"], "the totem of infliction"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 29.51,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 35 },
-               "align": "top",
                "header": "dawning wood catacombs",
-               "objectives": ["ghoulish effigy", ["the night watch", "p3"]],
+               "objectives": ["ghoulish effigy", ["the night watch", "p3"], "the totem of infliction"],
                "type": "objective"
             },
             {
@@ -3582,7 +3482,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 29.59,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 78 },
@@ -3602,13 +3502,13 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 29.62,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
                "align": "bottom",
                "header": "darkshire",
-               "ends": [["the night watch", "p3"], "the weathered grave", "note to the mayor"],
+               "ends": [["the night watch", "p3"], "the totem of infliction", "the weathered grave", "note to the mayor"],
                "starts": [["bride of the embalmer", "e"], ["mor'ladim", "e"]],
                "completed": ["morgan ladimore", "translate abercrombie's note", "wait for sirra to finish", "translation to ello"],
                "type": "hub"
@@ -3631,7 +3531,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 29.93,
          "waypoints": [
             {
                "coords": { "x": 72, "y": 35 },
@@ -3666,7 +3566,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 30.02,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -3684,7 +3584,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.02,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },
@@ -3717,7 +3617,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.06,
          "waypoints": [
             {
                "coords": { "x": 29, "y": 31 },
@@ -3743,7 +3643,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 30.14,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 45 },
@@ -3762,7 +3662,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.14,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
@@ -3773,7 +3673,7 @@
             {
                "coords": { "x": 73, "y": 72 },
                "header": "worgen grove",
-               "objectives": [["worgen in the woods", "p4"]],
+               "objectives": [["worgen in the woods", "p3"]],
                "type": "objective"
             },
             {
@@ -3789,7 +3689,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.43,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
@@ -3811,7 +3711,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 30.43,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -3829,14 +3729,8 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.43,
          "waypoints": [
-            {
-               "coords": { "x": 5, "y": 37 },
-               "align": "top",
-               "header": "westfall border",
-               "type": "travel"
-            },
             {
                "coords": { "x": 18, "y": 29 },
                "align": "top",
@@ -3845,15 +3739,8 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 19, "y": 45 },
-               "align": "bottom",
-               "header": "raven hill cemetary",
-               "special": ["grind mobs to level 31"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 7, "y": 45 },
-               "align": "bottom",
+               "coords": { "x": 5, "y": 37 },
+               "align": "top",
                "header": "westfall border",
                "type": "travel"
             }
@@ -3861,26 +3748,25 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 30.47,
          "waypoints": [
-            {
-               "coords": { "x": 57, "y": 53 },
-               "align": "top",
-               "header": "westfall flightpath",
-               "type": "flightpath"
-            },
             {
                "coords": { "x": 65, "y": 45 },
                "align": "top",
                "header": "duskwood border",
-               "special": ["fly to stormwind"],
                "type": "travel"
+            },
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "westfall flightpath",
+               "special": ["fly to stormwind"],
+               "type": "flightpath"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 30.47,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -3921,7 +3807,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 30.58,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 30 },
@@ -3964,7 +3850,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 30.62,
          "waypoints": [
             {
                "coords": { "x": 10, "y": 62 },
@@ -3992,7 +3878,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 30.68,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 56 },
@@ -4024,7 +3910,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 30.71,
          "waypoints": [
             {
                "coords": { "x": 68, "y": 49 },
@@ -4056,7 +3942,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 30.77,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 59 },
@@ -4073,7 +3959,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 30.77,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
@@ -4100,7 +3986,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 30.77,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 78 },
@@ -4118,7 +4004,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 30.77,
          "waypoints": [
             {
                "coords": { "x": 94, "y": 47 },
