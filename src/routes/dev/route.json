@@ -7011,7 +7011,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 41.88,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 69 },
@@ -7026,7 +7026,7 @@
                "header": "booty bay",
                "ends": [["the bloodsail buccaneers", "p2"], "pretty boy duncan"],
                "completed": [["the bloodsail buccaneers", "p3"]],
-               "starts": ["singing blue shards", "return to corporal kaleb", "skullsplitter tusks", ["excelsior", "e"], ["the curse of the tides", "e"]],
+               "starts": ["singing blue shards", "skullsplitter tusks", ["excelsior", "e"], ["the curse of the tides", "e"]],
                "type": "hub"
             },
             {
@@ -7040,7 +7040,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 41.97,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -7057,7 +7057,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 41.97,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 8 },
@@ -7068,7 +7068,7 @@
                "coords": { "x": 36, "y": 11 },
                "align": "bottom",
                "header": "nesingwary's expedition",
-               "starts": [["panther mastery", "p3"], ["tiger mastery", "p4"], ["raptor mastery", "p3"]],
+               "starts": [["panther mastery", "p3"], ["raptor mastery", "p3"]],
                "completed": ["the green hills of stranglethorn", ["chapter", "1-4"]],
                "type": "quest"
             },
@@ -7076,7 +7076,6 @@
                "coords": { "x": 38, "y": 3 },
                "align": "top",
                "header": "rebel camp",
-               "ends": ["return to corporal kaleb"],
                "starts": ["colonel kurzen"],
                "type": "quest"
             },
@@ -7091,7 +7090,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.07,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 4 },
@@ -7117,6 +7116,14 @@
                "type": "objective"
             },
             {
+               "coords": { "x": 44, "y": 35 },
+               "align": "bottom",
+               "header": "ziata'jai ruins",
+               "objectives": ["skullsplitter tusks"],
+               "special": ["farm some of the tusks"],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 38, "y": 37 },
                "header": "stranglethorn mainland",
                "objectives": [["panther mastery", "p3"]],
@@ -7133,7 +7140,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.21,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 42 },
@@ -7165,16 +7172,9 @@
             },
             {
                "coords": { "x": 29, "y": 19 },
-               "align": "bottom",
+               "align": "right",
                "header": "bal'lal ruins",
                "objectives": ["kurzen's mystery"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 32, "y": 17 },
-               "align": "top",
-               "header": "northern stranglethorn",
-               "objectives": [["tiger mastery", "p4"]],
                "type": "objective"
             },
             {
@@ -7194,7 +7194,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.27,
          "waypoints": [
             {
                "coords": { "x": 25, "y": 9 },
@@ -7207,7 +7207,7 @@
                "coords": { "x": 36, "y": 11 },
                "align": "bottom",
                "header": "nesingwary's expedition",
-               "ends": [["panther mastery", "p3"], ["tiger mastery", "p4"], ["raptor mastery", "p3"]],
+               "ends": [["panther mastery", "p3"], ["raptor mastery", "p3"]],
                "starts": [["panther mastery", "p4"], ["raptor mastery", "p4"]],
                "type": "quest"
             },
@@ -7238,7 +7238,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.44,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 34 },
@@ -7257,7 +7257,7 @@
                "coords": { "x": 36, "y": 11 },
                "align": "right",
                "header": "nesingwary's expedition",
-               "ends": [["panther mastery", "p4"], ["tiger mastery", "p4"], ["raptor mastery", "p4"]],
+               "ends": [["panther mastery", "p4"], ["raptor mastery", "p4"]],
                "starts": ["big game hunter"],
                "type": "quest"
             },
@@ -7274,7 +7274,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.55,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -7293,7 +7293,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 42.66,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 39 },
@@ -7311,7 +7311,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 42.66,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 30 },
@@ -7334,7 +7334,7 @@
       },
       {
          "zone": "needles",
-         "experience": 0,
+         "experience": 42.67,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 96 },
@@ -7353,7 +7353,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 42.72,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 22 },
@@ -7370,7 +7370,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 42.72,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 51 },
@@ -7393,7 +7393,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 42.77,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 57 },
