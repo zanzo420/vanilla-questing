@@ -1,1443 +1,1224 @@
 {
    "path": [
       {
-         "zone": "morogh",
-         "experience": 5.54,
+         "zone": "durotar",
+         "experience": 5.42,
          "waypoints": [
             {
-               "coords": { "x": 34, "y": 72 },
+               "coords": { "x": 43, "y": 69 },
                "align": "bottom",
-               "header": "coldridge pass enterance",
-               "starts": ["senir's observations", "supplies to tannok"],
+               "header": "zureetha fargaze",
+               "starts": ["report to sen'jin village"],
                "type": "quest"
             },
             {
-               "coords": { "x": 47, "y": 53 },
+               "coords": { "x": 52, "y": 68 },
                "align": "bottom",
-               "header": "kharanos",
-               "ends": ["senir's observations", "supplies to tannok"],
-               "starts": [],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 50, "y": 49 },
-               "align": "top",
-               "header": "steelgrill's depot",
-               "starts": ["the grizzled den", "stocking jetsteam", "ammo for rumbleshot"],
+               "header": "ukor",
+               "starts": ["a peon's burden"],
                "type": "quest"
             },
             {
-               "coords": { "x": 51, "y": 51 },
+               "coords": { "x": 52, "y": 42 },
                "align": "right",
-               "header": "placeholder",
-               "objectives": ["stocking jetsteam"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "morogh",
-         "experience": 5.97,
-         "waypoints": [
-            {
-               "coords": { "x": 51, "y": 51 },
-               "align": "right",
-               "header": "placeholder",
-               "objectives": ["stocking jetsteam"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 50, "y": 49 },
-               "align": "top",
-               "header": "steelgrill's depot",
-               "ends": ["stocking jetsteam"],
-               "starts": ["evershine"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 44, "y": 57 },
-               "align": "bottom",
-               "header": "ammo crate",
-               "objectives": ["ammo for rumbleshot"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 42, "y": 55 },
-               "align": "top",
-               "header": "ammo crate",
-               "objectives": ["the grizzled den"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 41, "y": 65 },
-               "align": "bottom",
-               "header": "hegnar rumbleshot",
-               "ends": ["ammo for rumbleshot"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 30, "y": 46 },
-               "align": "top",
-               "header": "brewnall village",
-               "ends": ["evershine"],
-               "starts": ["a favor for evershine", "the perfect stout", "bitter rivals"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 27, "y": 47 },
-               "align": "top",
-               "header": "placeholder",
-               "objectives": ["a favor for evershine"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "morogh",
-         "experience": 7.13,
-         "waypoints": [
-            {
-               "coords": { "x": 27, "y": 47 },
-               "align": "top",
-               "header": "placeholder",
-               "objectives": ["a favor for evershine"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 30, "y": 46 },
-               "align": "top",
-               "header": "brewnall village",
-               "ends": ["a favor for evershine"],
-               "starts": ["return to bellowfiz"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 35, "y": 52 },
-               "align": "bottom",
-               "header": "tundra macgrann",
-               "starts": ["tundra macgrann's stolen stash"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 39, "y": 54 },
-               "align": "bottom",
-               "header": "meat locker",
-               "objectives": ["tundra macgrann's stolen stash"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "morogh",
-         "experience": 7.26,
-         "waypoints": [
-            {
-               "coords": { "x": 39, "y": 54 },
-               "align": "bottom",
-               "header": "meat locker",
-               "objectives": ["tundra macgrann's stolen stash"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 35, "y": 52 },
-               "align": "bottom",
-               "header": "tundra macgrann",
-               "ends": ["tundra macgrann's stolen stash"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 47, "y": 53 },
-               "align": "bottom",
-               "header": "kharanos",
-               "ends": ["bitter rivals"],
-               "starts": ["return to marleth", "frostmane hold", "tools for steelgrill"],
-               "special": ["buy 1x thunder ale", "set hearthstone"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 46, "y": 49 },
-               "align": "top",
-               "header": "razzle sprysprocket",
-               "starts": ["operation recombobulation"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 50, "y": 49 },
-               "align": "top",
-               "header": "steelgrill's depot",
-               "ends": ["tools for steelgrill", "the grizzled den", "return to bellowfiz"],
-               "starts": [],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "morogh",
-         "experience": 7.85,
-         "waypoints": [
-            {
-               "coords": { "x": 50, "y": 49 },
-               "align": "top",
-               "header": "steelgrill's depot",
-               "ends": ["tools for steelgrill", "the grizzled den", "return to bellowfiz"],
-               "starts": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 41, "y": 44 },
-               "align": "top",
-               "header": "shimmer ridge",
-               "objectives": ["the perfect stout"],
-               "special": ["loot baskets"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 30, "y": 46 },
-               "align": "top",
-               "header": "brewnall village",
-               "ends": ["the perfect stout", "return to marleth"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 25, "y": 51 },
-               "header": "frostmane hold",
-               "objectives": ["frostmane hold"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 26, "y": 43 },
-               "header": "gnomeregan enterance",
-               "objectives": ["operation recombobulation"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 31, "y": 33 },
-               "header": "Mountainside",
-               "special": ["clib the mountain from here"],
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 34, "y": 26 },
-               "align": "top",
-               "header": "Mountainside",
-               "special": ["jump from the highest cliff", ["step by step guide", "https://imgur.com/a/Zc3vECJ"]],
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "wetlands",
-         "experience": 8.51,
-         "waypoints": [
-            {
-               "coords": { "x": 11, "y": 44 },
-               "header": "wetlands spirit healer",
-               "special": ["spirit ress"],
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 9, "y": 60 },
-               "header": "menethil flightpath",
-               "special": ["learn the flightpath", "hearthstone to kharanos"],
-               "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "morogh",
-         "experience": 8.51,
-         "waypoints": [
-            {
-               "coords": { "x": 47, "y": 53 },
-               "align": "bottom",
-               "header": "kharanos",
-               "ends": ["frostmane hold"],
-               "starts": ["the reports"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 46, "y": 49 },
-               "header": "razzle sprysprocket",
-               "ends": ["operation recombobulation"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 53, "y": 35 },
-               "align": "top",
-               "header": "gates of ironforge",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "ironforge",
-         "experience": 8.82,
-         "waypoints": [
-            {
-               "coords": { "x": 12, "y": 89 },
-               "header": "gates of ironforge",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 40, "y": 57 },
-               "align": "top",
-               "header": "senator barin redstone",
-               "ends": ["the reports"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 56, "y": 48 },
-               "align": "top",
-               "header": "ironforge flightpath",
-               "special": ["learn the flightpath"],
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 77, "y": 51 },
-               "align": "top",
-               "header": "deeprun tram",
-               "special": ["ride to stormwind"],
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "stormwind",
-         "experience": 8.87,
-         "waypoints": [
-            {
-               "coords": { "x": 63, "y": 8 },
-               "align": "right",
-               "header": "deeprun tram",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 66, "y": 62 },
-               "align": "right",
-               "header": "stormwind flightpath",
-               "special": ["learn the flightpath"],
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 70, "y": 87 },
-               "align": "right",
-               "header": "stormwind gates",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "elwynn",
-         "experience": 8.87,
-         "waypoints": [
-            {
-               "coords": { "x": 32, "y": 49 },
-               "align": "top",
-               "header": "stormwind gates",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 42, "y": 66 },
-               "align": "bottom",
-               "header": "goldshire",
-               "completed": ["a fishy peril"],
-               "starts": ["gold dust exchange", "further concerns", "kobold candles"],
+               "header": "razor hill",
+               "ends": ["a peon's burden"],
+               "starts": ["vanquish the betrayers"],
                "special": ["set hearthstone"],
                "type": "hub"
             },
             {
-               "coords": { "x": 61, "y": 52 },
+               "coords": { "x": 49, "y": 40 },
                "align": "top",
-               "header": "jasperlode mine",
-               "objectives": ["kobold candles", "gold dust exchange"],
-               "type": "objective"
+               "header": "furl scornbrow",
+               "starts": ["carry your weight"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 5.48,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 40 },
+               "align": "top",
+               "header": "furl scornbrow",
+               "starts": ["carry your weight"],
+               "type": "quest"
             },
             {
-               "coords": { "x": 74, "y": 72 },
+               "coords": { "x": 58, "y": 57 },
                "align": "right",
-               "header": "guard thomas",
-               "ends": ["further concerns"],
-               "starts": ["find the lost guards", "protect the frontier", "report to gryan stoutmantle"],
-               "type": "quest"
+               "header": "tiragarde keep",
+               "objectives": ["vanquish the betrayers", "carry your weight"],
+               "starts": [["the admiral's orders", "p1"]],
+               "special": ["loot the chest upstairs", "grind mobs to level 6"],
+               "type": "objective"
             }
          ]
       },
       {
-         "zone": "elwynn",
-         "experience": 9.15,
+         "zone": "durotar",
+         "experience": 6.03,
          "waypoints": [
             {
-               "coords": { "x": 74, "y": 72 },
+               "coords": { "x": 58, "y": 57 },
                "align": "right",
-               "header": "guard thomas",
-               "ends": ["further concerns"],
-               "starts": ["find the lost guards", "protect the frontier", "report to gryan stoutmantle"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 72, "y": 66 },
-               "header": "riverside forest",
-               "objectives": ["protect the frontier"],
+               "header": "tiragarde keep",
+               "objectives": ["vanquish the betrayers", "carry your weight"],
+               "starts": [["the admiral's orders", "p1"]],
+               "special": ["loot the chest upstairs", "grind mobs to level 6"],
                "type": "objective"
             },
             {
-               "coords": { "x": 73, "y": 60 },
+               "coords": { "x": 52, "y": 42 },
                "align": "top",
-               "header": "half-eaten corpse",
-               "ends": ["find the lost guards"],
-               "starts": ["discover rolf's fate"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 80, "y": 56 },
-               "align": "top",
-               "header": "rolf's corpse",
-               "ends": ["discover rolf's fate"],
-               "starts": ["report to thomas"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 80, "y": 67 },
-               "align": "right",
-               "header": "logging camp",
-               "starts": ["a bundle of trouble", "red linen goods"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "elwynn",
-         "experience": 9.35,
-         "waypoints": [
-            {
-               "coords": { "x": 80, "y": 67 },
-               "align": "right",
-               "header": "logging camp",
-               "starts": ["a bundle of trouble", "red linen goods"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 78, "y": 61 },
-               "align": "top",
-               "header": "riverside forest",
-               "objectives": ["protect the frontier", "a bundle of trouble"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 74, "y": 72 },
-               "align": "bottom",
-               "header": "guard thomas",
-               "ends": ["protect the frontier", "report to thomas"],
-               "starts": ["deliver thomas' report"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 69, "y": 79 },
-               "align": "bottom",
-               "header": "brackwell pumpkin patch",
-               "objectives": ["red linen goods"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "elwynn",
-         "experience": 9.73,
-         "waypoints": [
-            {
-               "coords": { "x": 69, "y": 79 },
-               "align": "top",
-               "header": "brackwell pumpkin patch",
-               "objectives": ["red linen goods"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 80, "y": 67 },
-               "align": "top",
-               "header": "logging camp",
-               "ends": ["a bundle of trouble", "red linen goods"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 92, "y": 72 },
-               "align": "top",
-               "header": "redridge border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "redridge",
-         "experience": 9.97,
-         "waypoints": [
-            {
-               "coords": { "x": 8, "y": 72 },
-               "align": "bottom",
-               "header": "elwynn border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 31, "y": 59 },
-               "align": "bottom",
-               "header": "lakeshire flightpath",
-               "special": ["learn the flightpath", "hearthstone to goldshire"],
-               "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "elwynn",
-         "experience": 9.97,
-         "waypoints": [
-            {
-               "coords": { "x": 42, "y": 66 },
-               "align": "top",
-               "header": "goldshire",
-               "ends": ["gold dust exchange", "kobold candles", "deliver thomas' report"],
-               "starts": ["shipment to stormwind", "elmore's task"],
+               "header": "razor hill",
+               "ends": ["vanquish the betrayers", ["the admiral's orders", "p1"]],
+               "starts": ["from the wreckage", "encroachment", "break a few eggs", ["the admiral's orders", "p2"]],
                "type": "hub"
             },
             {
-               "coords": { "x": 18, "y": 83 },
-               "header": "verna furlbrow",
-               "starts": [["westfall stew", "p1"]],
+               "coords": { "x": 49, "y": 40 },
+               "align": "top",
+               "header": "furl scornbrow",
+               "ends": ["carry your weight"],
                "type": "quest"
             }
          ]
       },
       {
-         "zone": "westfall",
-         "experience": 10.26,
+         "zone": "durotar",
+         "experience": 6.57,
          "waypoints": [
             {
-               "coords": { "x": 60, "y": 19 },
+               "coords": { "x": 49, "y": 40 },
                "align": "top",
-               "header": "verna furlbrow",
-               "starts": [["westfall stew", "p1"]],
+               "header": "furl scornbrow",
+               "ends": ["carry your weight"],
                "type": "quest"
             },
             {
-               "coords": { "x": 56, "y": 31 },
-               "header": "salma saldean",
-               "ends": [["westfall stew", "p1"]],
-               "type": "quest"
+               "coords": { "x": 62, "y": 50 },
+               "align": "right",
+               "header": "scuttle coast",
+               "objectives": ["from the wreckage"],
+               "type": "objective"
             },
             {
-               "coords": { "x": 57, "y": 47 },
-               "header": "sentinel tower",
-               "ends": ["report to gryan stoutmantle"],
+               "coords": { "x": 55, "y": 74 },
+               "align": "bottom",
+               "header": "sen'jin village",
+               "ends": ["report to sen'jin village"],
+               "starts": ["minshina's skull", "report to orgnil", "zalazane", "a solvent spirit", "practical prey", "thwarting kolkar aggression"],
                "type": "hub"
             },
             {
-               "coords": { "x": 57, "y": 53 },
-               "header": "westfall flightpath",
-               "special": ["fly to stormwind"],
-               "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "stormwind",
-         "experience": 10.44,
-         "waypoints": [
-            {
-               "coords": { "x": 66, "y": 62 },
-               "align": "bottom",
-               "header": "stormwind flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 56, "y": 65 },
-               "align": "bottom",
-               "header": "morgan pestle",
-               "ends": ["shipment to stormwind"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 52, "y": 12 },
-               "header": "grimand elmore",
-               "ends": ["elmore's task"],
-               "starts": ["stormpike's delivery"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 65, "y": 6 },
+               "coords": { "x": 49, "y": 77 },
                "align": "top",
-               "header": "deeprun tram",
-               "completed": ["deeprun rat roundup"],
-               "special": ["ride to ironforge"],
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "ironforge",
-         "experience": 10.68,
-         "waypoints": [
+               "header": "Attack Plan: Sen'jin Village",
+               "objectives": ["thwarting kolkar aggression"],
+               "type": "objective"
+            },
             {
-               "coords": { "x": 78, "y": 52 },
+               "coords": { "x": 48, "y": 77 },
                "align": "top",
-               "header": "deeprun tram",
-               "completed": ["deeprun rat roundup"],
-               "type": "quest"
+               "header": "Attack Plan: Valley of Trials",
+               "objectives": ["thwarting kolkar aggression"],
+               "type": "objective"
             },
             {
-               "coords": { "x": 19, "y": 51 },
+               "coords": { "x": 46, "y": 79 },
+               "header": "Attack Plan: Orgrimmar",
+               "objectives": ["thwarting kolkar aggression"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 6.91,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 79 },
                "align": "top",
-               "header": "innkeeper firebrew",
-               "special": ["set hearthstone"],
+               "header": "Attack Plan: Orgrimmar",
+               "objectives": ["thwarting kolkar aggression"],
                "type": "objective"
             },
             {
-               "coords": { "x": 12, "y": 89 },
-               "header": "gates of ironforge",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "morogh",
-         "experience": 10.68,
-         "waypoints": [
-            {
-               "coords": { "x": 53, "y": 35 },
-               "header": "gates of ironforge",
-               "type": "travel"
+               "coords": { "x": 56, "y": 80 },
+               "align": "top",
+               "header": "darkspear strand",
+               "objectives": ["a solvent spirit"],
+               "special": ["crawlers"],
+               "type": "objective"
             },
             {
-               "coords": { "x": 68, "y": 55 },
+               "coords": { "x": 58, "y": 82 },
                "align": "bottom",
-               "header": "gol'bolar quarry",
-               "starts": ["the public servant", "those blasted troggs"],
-               "type": "quest"
+               "header": "echo isles",
+               "objectives": ["a solvent spirit"],
+               "special": ["crabs"],
+               "type": "objective"
             },
             {
-               "coords": { "x": 71, "y": 55 },
+               "coords": { "x": 61, "y": 79 },
                "align": "bottom",
-               "header": "gol'bolar quarry mine",
-               "objectives": ["the public servant", "those blasted troggs"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "morogh",
-         "experience": 10.88,
-         "waypoints": [
-            {
-               "coords": { "x": 71, "y": 55 },
-               "align": "bottom",
-               "header": "gol'bolar quarry mine",
-               "objectives": ["the public servant", "those blasted troggs"],
+               "header": "taillasher eggs",
+               "objectives": ["break a few eggs"],
                "type": "objective"
             },
             {
-               "coords": { "x": 68, "y": 55 },
-               "align": "bottom",
-               "header": "gol'bolar quarry",
-               "ends": ["the public servant", "those blasted troggs"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 63, "y": 50 },
-               "header": "rudna amberstill",
-               "starts": [["protecting the herd", "e"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 62, "y": 47 },
-               "header": "amberstill ranch hill",
-               "objectives": [["protecting the herd", "e"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "morogh",
-         "experience": 11.07,
-         "waypoints": [
-            {
-               "coords": { "x": 62, "y": 47 },
-               "header": "amberstill ranch hill",
-               "objectives": [["protecting the herd", "e"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 63, "y": 50 },
-               "header": "rudna amberstill",
-               "ends": [["protecting the herd", "e"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 84, "y": 39 },
+               "coords": { "x": 69, "y": 72 },
                "align": "right",
-               "header": "pilor hammerfoot",
-               "starts": ["the lost pilot"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 80, "y": 36 },
-               "align": "top",
-               "header": "a dwarven corpse",
-               "ends": ["the lost pilot"],
-               "starts": ["a pilot's revenge"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 78, "y": 38 },
-               "header": "mangleclaw",
-               "objectives": ["a pilot's revenge"],
+               "header": "echo isles",
+               "objectives": ["break a few eggs", "practical prey"],
                "type": "objective"
             }
          ]
       },
       {
-         "zone": "morogh",
-         "experience": 11.24,
+         "zone": "durotar",
+         "experience": 7.27,
          "waypoints": [
             {
-               "coords": { "x": 78, "y": 38 },
-               "header": "mangleclaw",
-               "objectives": ["a pilot's revenge"],
+               "coords": { "x": 69, "y": 72 },
+               "align": "right",
+               "header": "echo isles",
+               "objectives": ["break a few eggs", "practical prey"],
                "type": "objective"
             },
             {
-               "coords": { "x": 84, "y": 39 },
-               "align": "right",
-               "header": "pilor hammerfoot",
-               "ends": ["a pilot's revenge"],
-               "type": "quest"
+               "coords": { "x": 67, "y": 87 },
+               "align": "bottom",
+               "header": "echo isles",
+               "objectives": ["zalazane", "minshina's skull"],
+               "special": ["loot the skull"],
+               "type": "objective"
             },
             {
-               "coords": { "x": 85, "y": 29 },
-               "align": "right",
-               "header": "loch modan passageway",
-               "type": "travel"
+               "coords": { "x": 55, "y": 74 },
+               "align": "left",
+               "header": "sen'jin village",
+               "ends": ["minshina's skull", "zalazane", "a solvent spirit", "practical prey", "thwarting kolkar aggression"],
+               "special": ["hearthstone to razor hill"],
+               "type": "hub"
             }
          ]
       },
       {
-         "zone": "loch",
-         "experience": 11.33,
+         "zone": "durotar",
+         "experience": 8.35,
          "waypoints": [
             {
-               "coords": { "x": 18, "y": 16 },
-               "header": "loch modan passageway",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 23, "y": 18 },
-               "align": "top",
-               "header": "mountaineer stormpike",
-               "ends": ["stormpike's delivery"],
-               "starts": ["filthy paws", "stormpike's order"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 35, "y": 47 },
+               "coords": { "x": 52, "y": 42 },
                "align": "right",
-               "header": "thelsamar",
-               "starts": ["rat catching", "thelsamar blood sausages", "honor students"],
+               "header": "razor hill",
+               "ends": ["report to orgnil", "from the wreckage", "break a few eggs"],
+               "starts": ["dark storms"],
                "type": "hub"
             },
             {
-               "coords": { "x": 34, "y": 51 },
+               "coords": { "x": 47, "y": 49 },
                "align": "bottom",
-               "header": "loch modan flightpath",
-               "ends": ["honor students"],
-               "starts": ["ride to ironforge"],
-               "special": ["fly to ironforge"],
-               "type": "flightpath"
+               "header": "razormane grounds",
+               "objectives": ["encroachment"],
+               "special": ["quillboars & scouts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 40 },
+               "header": "razormane grounds",
+               "objectives": ["encroachment"],
+               "special": ["battleguards & dustrunners"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 30 },
+               "align": "top",
+               "header": "misha tor'kren",
+               "starts": ["lost but not forgotten"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 29 },
+               "align": "top",
+               "header": "southfury river",
+               "objectives": ["lost but not forgotten"],
+               "type": "objective"
             }
          ]
       },
       {
-         "zone": "ironforge",
-         "experience": 11.48,
+         "zone": "durotar",
+         "experience": 9.02,
          "waypoints": [
             {
-               "coords": { "x": 51, "y": 26 },
-               "align": "top",
-               "header": "golnir bouldertoe",
-               "ends": ["ride to ironforge"],
-               "starts": ["gryth thurden"],
+               "coords": { "x": 35, "y": 29 },
+               "align": "bottom",
+               "header": "southfury river",
+               "objectives": ["lost but not forgotten"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 30 },
+               "align": "bottom",
+               "header": "misha tor'kren",
+               "ends": ["lost but not forgotten"],
                "type": "quest"
             },
             {
-               "coords": { "x": 56, "y": 48 },
+               "coords": { "x": 42, "y": 26 },
+               "header": "cultist camp",
+               "objectives": ["dark storms"],
+               "special": ["die & take ress sickness"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 18 },
                "align": "right",
-               "header": "ironforge flightpath",
-               "ends": ["gryth thurden"],
-               "starts": ["return to brock"],
-               "special": ["fly to loch modan"],
-               "type": "flightpath"
+               "header": "durotar spirit healer",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 23 },
+               "align": "right",
+               "header": "rezlak",
+               "starts": ["winds in the desert"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 33 },
+               "align": "right",
+               "header": "razorwind canyon",
+               "objectives": ["winds in the desert"],
+               "type": "objective"
             }
          ]
       },
       {
-         "zone": "loch",
-         "experience": 11.55,
+         "zone": "durotar",
+         "experience": 9.27,
          "waypoints": [
             {
-               "coords": { "x": 34, "y": 51 },
-               "align": "right",
-               "header": "loch modan flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 30, "y": 46 },
-               "header": "loch modan peninsula",
-               "objectives": ["thelsamar blood sausages"],
+               "coords": { "x": 47, "y": 33 },
+               "header": "razorwind canyon",
+               "objectives": ["winds in the desert"],
                "type": "objective"
             },
             {
-               "coords": { "x": 34, "y": 29 },
+               "coords": { "x": 52, "y": 42 },
                "align": "right",
-               "header": "loch modan peninsula",
-               "objectives": ["thelsamar blood sausages"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 35, "y": 19 },
-               "align": "top",
-               "header": "silver stream mine",
-               "objectives": ["filthy paws", "rat catching"],
-               "special": ["abysmal droprate on ears"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 23, "y": 18 },
-               "align": "top",
-               "header": "mountaineer stormpike",
-               "ends": ["filthy paws"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "loch",
-         "experience": 12.13,
-         "waypoints": [
-            {
-               "coords": { "x": 23, "y": 18 },
-               "header": "mountaineer stormpike",
-               "ends": ["filthy paws"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 35, "y": 47 },
-               "align": "right",
-               "header": "thelsamar",
-               "ends": ["rat catching", "thelsamar blood sausages", "return to brock"],
+               "header": "razor hill",
+               "ends": ["dark storms", "encroachment"],
+               "starts": ["margoz"],
                "type": "hub"
             },
             {
-               "coords": { "x": 23, "y": 74 },
-               "align": "bottom",
-               "header": "valley of kings",
-               "starts": ["the trogg threat", ["in defense of the king's lands", "p1"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 33, "y": 76 },
-               "align": "bottom",
-               "header": "stonesplinter valley",
-               "objectives": ["the trogg threat", ["in defense of the king's lands", "p1"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "loch",
-         "experience": 12.62,
-         "waypoints": [
-            {
-               "coords": { "x": 23, "y": 74 },
-               "header": "valley of kings",
-               "ends": ["the trogg threat", ["in defense of the king's lands", "p1"]],
-               "starts": [["in defense of the king's lands", "p2"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 36, "y": 82 },
+               "coords": { "x": 46, "y": 23 },
                "align": "right",
-               "header": "valley of kings",
-               "objectives": [["in defense of the king's lands", "p2"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "loch",
-         "experience": 13.03,
-         "waypoints": [
-            {
-               "coords": { "x": 36, "y": 82 },
-               "align": "right",
-               "header": "valley of kings",
-               "objectives": [["in defense of the king's lands", "p2"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 23, "y": 74 },
-               "header": "valley of kings",
-               "ends": [["in defense of the king's lands", "p2"]],
+               "header": "rezlak",
+               "ends": ["winds in the desert"],
+               "starts": ["securing the lines"],
                "type": "quest"
             },
             {
-               "coords": { "x": 34, "y": 51 },
-               "align": "top",
-               "header": "loch modan flightpath",
-               "special": ["fly to wetlands"],
-               "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "wetlands",
-         "experience": 13.13,
-         "waypoints": [
-            {
-               "coords": { "x": 9, "y": 60 },
-               "align": "bottom",
-               "header": "menethil flightpath",
-               "type": "flightpath"
+               "coords": { "x": 42, "y": 19 },
+               "align": "left",
+               "header": "rhinag",
+               "starts": ["need for a cure"],
+               "type": "quest"
             },
             {
-               "coords": { "x": 5, "y": 57 },
-               "align": "top",
-               "header": "menethil harbor",
-               "special": ["sail to darkshore"],
+               "coords": { "x": 46, "y": 12 },
+               "align": "right",
+               "header": "orgrimmar gates",
                "type": "travel"
             }
          ]
       },
       {
-         "zone": "darkshore",
-         "experience": 13.13,
+         "zone": "orgrimmar",
+         "experience": 9.64,
          "waypoints": [
             {
-               "coords": { "x": 32, "y": 44 },
-               "align": "bottom",
-               "header": "auberdine harbor",
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "orgrimmar gates",
                "type": "travel"
             },
             {
-               "coords": { "x": 37, "y": 45 },
-               "align": "bottom",
-               "header": "lower auberdine",
-               "starts": ["for love eternal", "buzzbox 827", ["washed ashore", "p1"], "cave mushrooms", "the red crystal"],
-               "special": ["learn the flightpath"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 39, "y": 43 },
-               "align": "bottom",
-               "header": "upper auberdine",
-               "starts": ["deep ocean, vast sea", ["bashal'aran", "p1"], "tools of the highborne", "plagued lands", ["how big a threat?", "p1"]],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 44, "y": 36 },
+               "coords": { "x": 63, "y": 45 },
                "align": "top",
-               "header": "asterion",
-               "ends": [["bashal'aran", "p1"]],
-               "starts": [["bashal'aran", "p2"]],
+               "header": "thuwd",
+               "special": ["learn the skinning profession", "buy 1x skinning knife"],
                "type": "quest"
             },
             {
-               "coords": { "x": 46, "y": 37 },
+               "coords": { "x": 47, "y": 53 },
+               "align": "bottom",
+               "header": "kor'ghan",
+               "starts": ["finding the antidote"],
+               "ends": ["need for a cure"],
+               "special": ["abandon need for a cure"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 38 },
+               "header": "valley of wisdom",
+               "starts": [["hidden enemies", "p1"]],
+               "ends": [["the admiral's orders", "p2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 9.74,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 38 },
+               "header": "thrall",
+               "starts": [["hidden enemies", "p1"]],
+               "ends": [["the admiral's orders", "p2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "orgrimmar gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 9.74,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "top",
+               "header": "orgrimmar gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 44, "y": 18 },
+               "header": "rocktusk farm",
+               "objectives": ["finding the antidote"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 20 },
                "align": "right",
-               "header": "bashal'aran",
-               "objectives": [["bashal'aran", "p2"]],
+               "header": "margoz",
+               "ends": ["margoz"],
+               "starts": ["skull rock"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 9 },
+               "align": "right",
+               "header": "skull rock cave",
+               "objectives": ["skull rock", ["hidden enemies", "p1"]],
                "type": "objective"
             }
          ]
       },
       {
-         "zone": "darkshore",
-         "experience": 13.28,
+         "zone": "durotar",
+         "experience": 10,
          "waypoints": [
             {
-               "coords": { "x": 44, "y": 36 },
-               "align": "bottom",
-               "header": "asterion",
-               "ends": [["bashal'aran", "p2"]],
-               "starts": [["bashal'aran", "p3"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 48, "y": 37 },
-               "align": "bottom",
-               "header": "bashal'aran",
-               "objectives": [["bashal'aran", "p3"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "darkshore",
-         "experience": 13.40,
-         "waypoints": [
-            {
-               "coords": { "x": 48, "y": 37 },
-               "align": "bottom",
-               "header": "bashal'aran",
-               "objectives": [["bashal'aran", "p3"]],
+               "coords": { "x": 55, "y": 9 },
+               "align": "right",
+               "header": "skull rock cave",
+               "objectives": ["skull rock", ["hidden enemies", "p1"]],
                "type": "objective"
             },
             {
-               "coords": { "x": 44, "y": 36 },
-               "align": "bottom",
-               "header": "asterion",
-               "ends": [["bashal'aran", "p3"]],
-               "starts": [["bashal'aran", "p4"]],
+               "coords": { "x": 56, "y": 20 },
+               "align": "right",
+               "header": "margoz",
+               "ends": ["skull rock"],
+               "starts": ["neeru fireblade"],
                "type": "quest"
             },
             {
-               "coords": { "x": 45, "y": 29 },
+               "coords": { "x": 53, "y": 24 },
+               "align": "bottom",
+               "header": "drygulch ravine",
+               "objectives": ["securing the lines"],
+               "special": ["jump into the ravine", "die & take ress sickness"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 18 },
                "align": "top",
-               "header": "darkshore forest",
-               "objectives": ["plagued lands"],
-               "type": "objective"
+               "header": "durotar spirit healer",
+               "type": "travel"
             },
             {
-               "coords": { "x": 39, "y": 43 },
-               "align": "bottom",
-               "header": "upper auberdine",
-               "ends": ["plagued lands"],
-               "starts": ["cleansing of the infected"],
+               "coords": { "x": 46, "y": 23 },
+               "header": "rezlak",
+               "ends": ["securing the lines"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 12 },
+               "header": "orgrimmar gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 10.49,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "orgrimmar gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 36, "y": 37 },
+               "header": "grommash hold",
+               "starts": [["hidden enemies", "p2"]],
+               "ends": [["hidden enemies", "p1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "right",
+               "header": "cleft of shadow",
+               "ends": ["finding the antidote", "neeru fireblade"],
+               "starts": ["ak'zeloth"],
+               "objectives": [["hidden enemies", "p2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 10.67,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "right",
+               "header": "cleft of shadow",
+               "ends": ["finding the antidote"],
+               "objectives": [["hidden enemies", "p2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 37 },
+               "header": "grommash hold",
+               "ends": [["hidden enemies", "p2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "orgrimmar gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 10.73,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "top",
+               "header": "orgrimmar gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 42, "y": 19 },
+               "header": "rhinag",
+               "completed": ["need for a cure"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "right",
+               "header": "zeppelin station",
+               "special": ["sail to tirisfal glades"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 10.87,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "align": "right",
+               "header": "zeppelin station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "right",
+               "header": "brill",
+               "starts": ["wanted: maggot eye", "deaths in the family", "the haunted mills", "the chill of death", "graverobbers", "delivery to silverpine"],
+               "special": ["set hearthstone", "buy 1x coarse thread", "learn the herbalism profession"],
                "type": "hub"
             },
             {
-               "coords": { "x": 36, "y": 48 },
-               "header": "darkshore coast",
-               "objectives": ["buzzbox 827"],
+               "coords": { "x": 58, "y": 51 },
+               "align": "top",
+               "header": "deathguard dillinger",
+               "starts": ["a putrid task"],
+               "special": ["kill zombies everywhere"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 54 },
+               "header": "gordo",
+               "starts": ["gordo's task"],
+               "special": ["he patrols the road"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 49 },
+               "align": "top",
+               "header": "stillwater pond",
+               "objectives": ["gordo's task", "a putrid task", "the chill of death"],
+               "special": ["locate weeds with herb tracking"],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 55, "y": 49 },
+               "align": "top",
+               "header": "stillwater pond",
+               "objectives": ["gordo's task", "a putrid task"],
+               "special": ["locate weeds with herb tracking"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 58, "y": 50 },
+               "align": "right",
+               "header": "brill graveyard",
+               "ends": ["gordo's task", "a putrid task"],
+               "starts": ["doom weed", "the mills overrun"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 54 },
+               "align": "bottom",
+               "header": "deathguard simmer",
+               "starts": [["fields of grief", "p1"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 51 },
-               "header": "beached sea creature",
-               "objectives": [["washed ashore", "p1"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 39, "y": 53 },
                "align": "bottom",
-               "header": "furbolg encampment",
-               "objectives": [["how big a threat?", "p1"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "darkshore",
-         "experience": 13.65,
-         "waypoints": [
-            {
-               "coords": { "x": 39, "y": 53 },
-               "align": "right",
-               "header": "furbolg encampment",
-               "objectives": [["how big a threat?", "p1"]],
+               "header": "solliden farmstead",
+               "objectives": [["fields of grief", "p1"]],
                "type": "objective"
             },
             {
-               "coords": { "x": 37, "y": 45 },
-               "header": "lower auberdine",
-               "ends": [["washed ashore", "p1"], "buzzbox 827"],
-               "starts": [["washed ashore", "p2"], "buzzbox 411"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 39, "y": 43 },
-               "align": "right",
-               "header": "upper auberdine",
-               "ends": [["how big a threat?", "p1"]],
-               "starts": [["how big a threat?", "p2"], "the cliffspring river", ["the tower of althalaxx", "p1"]],
-               "completed": ["thundris windweaver"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 33, "y": 40 },
-               "header": "mist's edge",
-               "objectives": ["buzzbox 411"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 32, "y": 46 },
-               "header": "skeletan sea turtle",
-               "objectives": [["washed ashore", "p2"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "darkshore",
-         "experience": 13.93,
-         "waypoints": [
-            {
-               "coords": { "x": 32, "y": 46 },
-               "header": "skeletan sea turtle",
-               "objectives": [["washed ashore", "p2"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 37, "y": 45 },
-               "align": "top",
-               "header": "lower auberdine",
-               "ends": [["washed ashore", "p2"]],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 40, "y": 54 },
-               "align": "right",
-               "header": "furbolg encampment",
-               "objectives": [["how big a threat?", "p2"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 37, "y": 62 },
-               "header": "beached sea turtle",
-               "starts": ["beached sea turtle"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 36, "y": 71 },
-               "header": "beached sea creature",
-               "starts": ["beached sea creature"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 39, "y": 64 },
-               "align": "right",
-               "header": "darkshore forest",
-               "objectives": ["cleansing of the infected"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 41, "y": 60 },
-               "align": "top",
-               "header": "sentinel tysha moonblade",
-               "starts": ["the fall of ameth'aran"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 43, "y": 61 },
-               "align": "right",
-               "header": "ameth'aran",
-               "objectives": [["bashal'aran", "p3"], "the fall of ameth'aran", "tools of the highborne", "for love eternal"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "darkshore",
-         "experience": 14.42,
-         "waypoints": [
-            {
-               "coords": { "x": 43, "y": 61 },
+               "coords": { "x": 47, "y": 41 },
                "align": "bottom",
-               "header": "ameth'aran",
-               "objectives": [["bashal'aran", "p3"], "the fall of ameth'aran", "tools of the highborne", "for love eternal"],
+               "header": "devlin agamand",
+               "objectives": ["the haunted mills", "the mills overrun"],
                "type": "objective"
             },
             {
-               "coords": { "x": 41, "y": 60 },
-               "header": "sentinel tysha moonblade",
-               "ends": ["the fall of ameth'aran"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 47, "y": 49 },
+               "coords": { "x": 50, "y": 36 },
                "align": "right",
-               "header": "mysterious red crystal",
-               "objectives": ["the red crystal"],
+               "header": "nissa agamand",
+               "objectives": ["the haunted mills", "the mills overrun"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 36 },
+               "align": "right",
+               "header": "nissa agamand",
+               "objectives": ["the haunted mills", "the mills overrun"],
                "type": "objective"
             },
             {
-               "coords": { "x": 39, "y": 43 },
-               "align": "top",
-               "header": "upper auberdine",
-               "ends": ["cleansing of the infected", ["how big a threat?", "p2"], "tools of the highborne"],
-               "starts": ["tharnariun's hope"],
-               "type": "hub"
+               "coords": { "x": 44, "y": 34 },
+               "header": "thurman agamand",
+               "objectives": ["the haunted mills", "the mills overrun"],
+               "type": "objective"
             },
             {
-               "coords": { "x": 37, "y": 45 },
-               "header": "lower auberdine",
-               "ends": ["the red crystal", "beached sea turtle", "beached sea creature", "for love eternal"],
-               "starts": ["as water cascades", "fruit of the sea"],
-               "special": ["fill the empty vial at the moonwell.", "be level 15"],
+               "coords": { "x": 47, "y": 29 },
+               "align": "top",
+               "header": "gregor agamand",
+               "objectives": ["the haunted mills", "the mills overrun"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 31 },
+               "align": "right",
+               "header": "garren's haunt",
+               "objectives": ["graverobbers", "wanted: maggot eye"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 36 },
+               "align": "right",
+               "header": "garren's haunt",
+               "objectives": ["graverobbers"],
+               "special": ["Mongrels"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 42 },
+               "header": "gnoll encampment",
+               "objectives": ["graverobbers", "doom weed"],
+               "special": ["locate weeds with herb tracking"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 42 },
+               "header": "gnoll encampment",
+               "objectives": ["graverobbers", "doom weed"],
+               "special": ["locate weeds with herb tracking"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "top",
+               "header": "brill",
+               "ends": ["wanted: maggot eye", "graverobbers", "deaths in the family", "the haunted mills", ["fields of grief", "p1"], "the chill of death", "the mills overrun", "doom weed"],
+               "starts": ["forsaken duties", "the prodigal lich", "the family crypt"],
+               "completed": ["speak with sevren", ["fields of grief", "p2"]],
+               "special": ["abandon herbalism is you want"],
                "type": "hub"
             }
          ]
       },
       {
-         "zone": "darkshore",
-         "experience": 15.00,
+         "zone": "tirisfal",
+         "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 37, "y": 45 },
-               "header": "lower auberdine",
+               "coords": { "x": 60, "y": 52 },
+               "align": "top",
+               "header": "brill",
                "type": "hub"
             },
             {
-               "coords": { "x": 47, "y": 49 },
+               "coords": { "x": 65, "y": 60 },
                "align": "bottom",
-               "header": "mysterious red crystal",
-               "ends": ["as water cascades"],
-               "starts": ["the fragments within"],
+               "header": "deathguard linnea",
+               "ends": ["forsaken duties"],
+               "starts": ["return to the magistrate", "rear guard patrol"],
                "type": "quest"
             },
             {
-               "coords": { "x": 44, "y": 36 },
-               "align": "right",
-               "header": "asterion",
-               "ends": [["bashal'aran", "p3"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 42, "y": 29 },
-               "align": "right",
-               "header": "buzzbox",
-               "ends": ["buzzbox 411"],
-               "starts": ["buzzbox 323", "beached sea creature"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 38, "y": 29 },
-               "header": "first shipwreck",
-               "objectives": ["deep ocean, vast sea"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 40, "y": 27 },
-               "align": "top",
-               "header": "second shipwreck",
-               "objectives": ["deep ocean, vast sea"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 46, "y": 26 },
-               "align": "top",
-               "header": "darkshore forest",
-               "objectives": ["buzzbox 323"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "darkshore",
-         "experience": 15.29,
-         "waypoints": [
-            {
-               "coords": { "x": 46, "y": 26 },
+               "coords": { "x": 76, "y": 61 },
                "align": "bottom",
-               "header": "darkshore forest",
-               "objectives": ["buzzbox 323"],
+               "header": "balnir farmstead",
+               "objectives": ["rear guard patrol"],
                "type": "objective"
-            },
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
             {
-               "coords": { "x": 50, "y": 21 },
-               "align": "top",
-               "header": "northern beach",
-               "objectives": ["fruit of the sea"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 51, "y": 25 },
+               "coords": { "x": 76, "y": 61 },
                "align": "bottom",
-               "header": "buzzbox",
-               "ends": ["buzzbox 323"],
-               "starts": ["buzzbox 525"],
-               "objectives": ["the cliffspring river"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 53, "y": 18 },
-               "align": "top",
-               "header": "Giant turtle remains",
-               "starts": ["beached sea turtle"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 55, "y": 25 },
-               "header": "balthule shadowstrike",
-               "ends": [["the tower of althalaxx", "p1"]],
-               "starts": [["the tower of althalaxx", "p2"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 56, "y": 27 },
-               "align": "right",
-               "header": "althalaxx",
-               "objectives": [["the tower of althalaxx", "p2"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "darkshore",
-         "experience": 15.53,
-         "waypoints": [
-            {
-               "coords": { "x": 56, "y": 27 },
-               "align": "right",
-               "header": "althalaxx",
-               "objectives": [["the tower of althalaxx", "p2"]],
+               "header": "balnir farmstead",
+               "objectives": ["rear guard patrol"],
                "type": "objective"
             },
             {
-               "coords": { "x": 55, "y": 25 },
-               "align": "top",
-               "header": "bathule shadowstrike",
-               "ends": [["the tower of althalaxx", "p2"]],
-               "starts": [["the tower of althalaxx", "p3"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 55, "y": 34 },
-               "align": "right",
-               "header": "cliffspring falls cave",
-               "objectives": ["cave mushrooms"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 52, "y": 38 },
+               "coords": { "x": 65, "y": 60 },
                "align": "bottom",
-               "header": "the den mothers cave",
-               "objectives": ["tharnariun's hope"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 39, "y": 43 },
-               "align": "top",
-               "header": "upper auberdine",
-               "ends": ["the cliffspring river", "deep ocean, vast sea", "tharnariun's hope"],
-               "starts": ["the blackwood corrupted"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 37, "y": 45 },
-               "header": "lower auberdine",
-               "ends": ["the fragments within", "cave mushrooms", "fruit of the sea", "beached sea creature", "beached sea turtle"],
-               "special": ["fill your bowl at the moonwell"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "darkshore",
-         "experience": 16.25,
-         "waypoints": [
-            {
-               "coords": { "x": 37, "y": 45 },
-               "header": "lower auberdine",
-               "ends": ["the fragments within", "cave mushrooms", "fruit of the sea", "beached sea creature", "beached sea turtle"],
-               "special": ["fill your bowl at the moonwell"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 51, "y": 35 },
-               "align": "top",
-               "header": "furbolg encampment",
-               "objectives": ["the blackwood corrupted"],
-               "special": ["gather one of each material", "combine at the bonfire"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "darkshore",
-         "experience": 16.34,
-         "waypoints": [
-            {
-               "coords": { "x": 51, "y": 35 },
-               "align": "top",
-               "header": "furbolg encampment",
-               "objectives": ["the blackwood corrupted"],
-               "special": ["gather one of each material", "combine at the bonfire"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 39, "y": 43 },
-               "header": "upper auberdine",
-               "ends": ["the blackwood corrupted"],
-               "special": ["hearthstone to ironforge"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "ironforge",
-         "experience": 16.47,
-         "waypoints": [
-            {
-               "coords": { "x": 19, "y": 51 },
-               "align": "top",
-               "header": "ironforge inn",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 69, "y": 51 },
-               "align": "top",
-               "header": "gnoarn",
-               "starts": ["speak with shoni"],
+               "header": "deathguard linnea",
+               "ends": ["rear guard patrol"],
                "type": "quest"
             },
             {
-               "coords": { "x": 77, "y": 51 },
+               "coords": { "x": 60, "y": 52 },
                "align": "top",
-               "header": "deeprun tram",
-               "completed": ["me brother, nipsy"],
+               "header": "brill",
+               "ends": ["return to the magistrate"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 53, "y": 27 },
+               "header": "agamand family crypt",
+               "objectives": ["the family crypt"],
+               "special": ["hearthstone to brill"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 52 },
+               "header": "brill",
+               "ends": ["the family crypt"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "undercity gates",
                "type": "travel"
             }
          ]
       },
       {
-         "zone": "stormwind",
-         "experience": 16.50,
+         "zone": "undercity",
+         "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 63, "y": 8 },
-               "align": "right",
-               "header": "deeprun tram",
-               "completed": ["me brother, nipsy"],
+               "coords": { "x": 71, "y": 44 },
+               "header": "undercity lifts",
                "type": "travel"
             },
             {
-               "coords": { "x": 55, "y": 12 },
-               "header": "shoni the silent",
-               "ends": ["speak with shoni"],
-               "starts": [["underground assault", "d"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 58, "y": 17 },
-               "align": "bottom",
-               "header": "furen longbeard",
-               "ends": ["stormpike's order"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 65, "y": 21 },
+               "coords": { "x": 84, "y": 17 },
                "align": "right",
-               "header": "wilder thistlenettle",
-               "starts": [["oh brother...", "d"], ["collecting memories", "d"]],
+               "header": "bethor iceshard",
+               "ends": ["the prodigal lich"],
                "type": "quest"
             },
             {
-               "coords": { "x": 49, "y": 30 },
-               "header": "baros alexston",
-               "starts": ["humble beginnings"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 66, "y": 62 },
-               "align": "right",
-               "header": "stormwind flightpath",
-               "special": ["fly to westfall"],
+               "coords": { "x": 63, "y": 48 },
+               "header": "undercity flightpath",
+               "special": ["learn the flightpath"],
                "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "header": "undercity flightpath",
+               "special": ["learn the flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "undercity lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "right",
+               "header": "undercity gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 55, "y": 73 },
+               "header": "silverpine border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 6 },
+               "align": "top",
+               "header": "tirisfal border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 9 },
+               "align": "top",
+               "header": "deathstalker erland",
+               "starts": [["escorting erland", "f"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 13 },
+               "header": "rane yorick",
+               "ends": [["escorting erland", "f"]],
+               "starts": ["the deathstalkers report"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 13 },
+               "align": "right",
+               "header": "rane yorick",
+               "ends": [["escorting erland", "f"]],
+               "starts": ["the deathstalkers report"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 43 },
+               "align": "right",
+               "header": "sepulcher flightpath",
+               "special": ["learn the flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "sepulcher",
+               "ends": ["the deathstalkers report", "delivery to silverpine"],
+               "starts": [["a recipe for death", "p1"], "lost deathstalkers", "the dead fields", "zinge's delivery", "prove your worth"],
+               "completed": ["speak with renferrel"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "bottom",
+               "header": "sepulcher",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 50, "y": 38 },
+               "align": "bottom",
+               "header": "silverpine crossroads",
+               "objectives": ["prove your worth"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 13 },
+               "align": "top",
+               "header": "rane yorick",
+               "ends": ["lost deathstalkers"],
+               "starts": ["wild hearts"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 13 },
+               "align": "top",
+               "header": "silverpine road",
+               "objectives": ["wild hearts"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 13 },
+               "align": "top",
+               "header": "silverpine road",
+               "objectives": ["wild hearts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 21 },
+               "align": "bottom",
+               "header": "the dead fields",
+               "objectives": ["the dead fields"],
+               "special": ["kill gnolls until the banshee spawns"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 15 },
+               "align": "top",
+               "header": "the skittering dark",
+               "objectives": [["a recipe for death", "p1"]],
+               "special": ["die & take ress sickness"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "bottom",
+               "header": "sepulcher",
+               "ends": ["wild hearts", "the dead fields", "prove your worth"],
+               "starts": ["return to quinn", "the decrepit ferry", ["arugal's folly", "p1"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 58, "y": 35 },
+               "align": "bottom",
+               "header": "corpse laden boat",
+               "ends": ["the decrepit ferry"],
+               "starts": ["rot hide clues"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 28 },
+               "header": "dusty spellbooks",
+               "objectives": [["arugal's folly", "p1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 13 },
+               "align": "top",
+               "header": "the ivar patch",
+               "ends": ["return to quinn"],
+               "starts": ["ivar the foul"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 14 },
+               "align": "top",
+               "header": "the ivar patch",
+               "objectives": ["ivar the foul"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 14 },
+               "align": "top",
+               "header": "the ivar patch",
+               "objectives": ["ivar the foul"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 13 },
+               "align": "top",
+               "header": "rane yorick",
+               "ends": ["ivar the foul"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "sepulcher",
+               "ends": ["rot hide clues", ["arugal's folly", "p1"]],
+               "starts": [["arugal's folly", "p2"], "the engraved ring", "border crossing"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "bottom",
+               "header": "deep elem mine",
+               "objectives": [["arugal's folly", "p2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "right",
+               "header": "deep elem mine",
+               "objectives": [["arugal's folly", "p2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "top",
+               "header": "sepulcher",
+               "ends": [["arugal's folly", "p2"]],
+               "starts": [["arugal's folly", "p3"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "top",
+               "header": "sepulcher",
+               "ends": [["arugal's folly", "p2"]],
+               "starts": [["arugal's folly", "p3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "right",
+               "header": "deep elem mine",
+               "objectives": [["arugal's folly", "p3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 60 },
+               "align": "bottom",
+               "header": "dalaran crate",
+               "ends": ["border crossing"],
+               "starts": ["maps and runes"],
+               "special": ["die and corpse res"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "top",
+               "header": "sepulcher",
+               "ends": [["arugal's folly", "p3"], "maps and runes"],
+               "completed": ["dalar's analysis", "dalaran's intentions"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 44 },
+               "align": "right",
+               "header": "sepulcher flightpath",
+               "special": ["fly to undercity"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "top",
+               "header": "undercity flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 49, "y": 69 },
+               "header": "the apothecarium",
+               "ends": [["a recipe for death", "p1"], "zinge's delivery"],
+               "starts": ["sample for helbrim"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 92 },
+               "align": "bottom",
+               "header": "varimathras",
+               "starts": [["the power to destroy", "d"]],
+               "special": ["hearthstone to brill"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "right",
+               "header": "brill",
+               "ends": ["the engraved ring"],
+               "starts": ["raleigh and the undercity"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 60, "y": 59 },
+               "align": "right",
+               "header": "zeppelin station",
+               "special": ["sail to durotar"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "right",
+               "header": "zeppelin station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 44 },
+               "align": "bottom",
+               "header": "takrin pathseeker",
+               "starts": ["conscript of the horde"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 43 },
+               "align": "bottom",
+               "header": "far watch post",
+               "ends": ["ak'zeloth", "conscript of the horde"],
+               "starts": ["crossroads conscription", "the demon seed"],
+               "special": ["loot a power stone"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 20 },
+               "align": "top",
+               "header": "far watch post",
+               "ends": ["ak'zeloth", "conscript of the horde"],
+               "starts": ["crossroads conscription", "the demon seed"],
+               "special": ["loot a power stone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 19 },
+               "align": "top",
+               "header": "the altar of fire",
+               "objectives": ["the demon seed"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 30 },
+               "align": "right",
+               "header": "crossroads",
+               "type": "hub"
             }
          ]
       }
