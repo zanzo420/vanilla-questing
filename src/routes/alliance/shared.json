@@ -2523,13 +2523,21 @@
          "waypoints": [
             {
                "coords": { "x": 60, "y": 64 },
+               "align": "bottom",
                "header": "elling trias",
                "ends": ["look to an old friend"],
                "starts": ["infiltrating the castle"],
                "type": "quest"
             },
             {
+               "coords": { "x": 53, "y": 60 },
+               "header": "stormwind auction house",
+               "special": ["buy 1x swiftness potion"],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 69, "y": 15 },
+               "align": "top",
                "header": "tyrion",
                "ends": ["infiltrating the castle"],
                "starts": ["items of some consequence"],
@@ -2943,6 +2951,7 @@
             },
             {
                "coords": { "x": 51, "y": 8 },
+               "align": "top",
                "header": "rustlocke's corpse",
                "ends": [["the thandol span", "p1"]],
                "starts": [["the thandol span", "p2"]],
@@ -3013,9 +3022,11 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 51, "y": 9 },
-               "header": "arathi highlands border",
-               "type": "travel"
+               "coords": { "x": 49, "y": 8 },
+               "header": "thandol span",
+               "starts": ["mackreel's moonshine", "sully balloo's letter"],
+               "special": ["use your swiftness potion and jump", "the letter is underwater", "drown in arathi highlands"],
+               "type": "quest"
             }
          ]
       },
@@ -3024,9 +3035,10 @@
          "experience": 28.51,
          "waypoints": [
             {
-               "coords": { "x": 45, "y": 93 },
+               "coords": { "x": 49, "y": 56 },
                "align": "right",
-               "header": "wetlands border",
+               "header": "arathi spirit healer",
+               "special": ["take resurrection sickness"],
                "type": "travel"
             },
             {
@@ -3065,7 +3077,7 @@
                "coords": { "x": 50, "y": 57 },
                "align": "bottom",
                "header": "loremaster dibbs",
-               "ends": ["southshore"],
+               "ends": ["southshore", "mackreel's moonshine"],
                "type": "quest"
             },
             {
@@ -3134,6 +3146,60 @@
                "coords": { "x": 9, "y": 61 },
                "align": "top",
                "header": "wetlands flightpath",
+               "special": ["fly to ironforge"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 28.78,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 48 },
+               "align": "top",
+               "header": "ironforge flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 64, "y": 68 },
+               "align": "right",
+               "header": "sara balloo",
+               "ends": ["sully balloo's letter"],
+               "starts": ["sara balloo's letter"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 56 },
+               "header": "king magni bronzebeard",
+               "ends": ["sara balloo's letter"],
+               "starts": [["a king's tribute", "p1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 88 },
+               "header": "grand mason marblesten",
+               "ends": [["a king's tribute", "p1"]],
+               "starts": [["a king's tribute", "p2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 28.78,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 88 },
+               "header": "grand mason marblesten",
+               "ends": [["a king's tribute", "p1"]],
+               "starts": [["a king's tribute", "p2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "align": "top",
+               "header": "ironforge flightpath",
                "special": ["fly to stormwind"],
                "type": "flightpath"
             }
@@ -4684,7 +4750,7 @@
                "coords": { "x": 45, "y": 31 },
                "align": "right",
                "header": "darrow hill cave",
-               "objectives": ["bartolo's yeti fur cloak"],
+               "objectives": ["bartolo's yeti fur cloak", ["a king's tribute", "p2"]],
                "special": ["bad drop rate"],
                "type": "objective"
             },
@@ -4989,7 +5055,7 @@
             },
             {
                "coords": { "x": 71, "y": 17 },
-               "align": "top",
+               "align": "right",
                "header": "the library",
                "ends": ["letter to stormpike"],
                "starts": ["further mysteries", "reclaimers' business in desolace"],
@@ -4997,14 +5063,27 @@
             },
             {
                "coords": { "x": 72, "y": 94 },
-               "align": "bottom",
+               "align": "right",
                "header": "pilot longbeard",
                "starts": ["the brassbolts brothers"],
                "type": "quest"
             },
             {
+               "coords": { "x": 39, "y": 88 },
+               "header": "grand mason marblesten",
+               "ends": [["a king's tribute", "p2"]],
+               "starts": [["a king's tribute", "p3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 56 },
+               "header": "king magni bronzebeard",
+               "ends": [["a king's tribute", "p3"]],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 78, "y": 52 },
-               "align": "right",
+               "align": "top",
                "header": "deeprun tram",
                "type": "travel"
             }
