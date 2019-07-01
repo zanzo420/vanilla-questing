@@ -3065,7 +3065,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 28.58,
+         "experience": 28.56,
          "waypoints": [
             {
                "coords": { "x": 82, "y": 57 },
@@ -3090,7 +3090,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 28.60,
+         "experience": 28.65,
          "waypoints": [
             {
                "coords": { "x": 10, "y": 59 },
@@ -3104,6 +3104,7 @@
                "align": "right",
                "header": "menethil keep",
                "ends": [["defeat nek'rosh", "e"]],
+               "starts": ["fiora longears"],
                "type": "quest"
             },
             {
@@ -3125,7 +3126,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 28.73,
+         "experience": 28.80,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 67 },
@@ -3153,7 +3154,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 28.78,
+         "experience": 28.85,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
@@ -3187,7 +3188,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 28.78,
+         "experience": 28.96,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 88 },
@@ -3207,7 +3208,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 28.78,
+         "experience": 28.96,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -3223,7 +3224,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 28.78,
+         "experience": 28.96,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 57 },
@@ -3242,7 +3243,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 28.78,
+         "experience": 28.96,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 87 },
@@ -3300,7 +3301,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 28.89,
+         "experience": 29.07,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 78 },
@@ -3350,7 +3351,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 29.05,
+         "experience": 29.22,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 47 },
@@ -3369,7 +3370,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 29.09,
+         "experience": 29.27,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
@@ -3395,7 +3396,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 29.22,
+         "experience": 29.39,
          "waypoints": [
             {
                "coords": { "x": 80, "y": 48 },
@@ -3447,7 +3448,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 29.40,
+         "experience": 29.57,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -3465,7 +3466,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 29.40,
+         "experience": 29.57,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },
@@ -3507,7 +3508,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 29.51,
+         "experience": 29.69,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 35 },
@@ -3548,7 +3549,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 29.59,
+         "experience": 29.77,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 78 },
@@ -3568,7 +3569,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 29.62,
+         "experience": 29.79,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
@@ -3597,7 +3598,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 29.93,
+         "experience": 30.07,
          "waypoints": [
             {
                "coords": { "x": 72, "y": 35 },
@@ -3618,7 +3619,6 @@
                "align": "bottom",
                "header": "darkshire",
                "ends": [["worgen in the woods", "p2"]],
-               "starts": [["worgen in the woods", "p3"]],
                "type": "hub"
             },
             {
@@ -3632,7 +3632,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 30.02,
+         "experience": 30.18,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -3650,7 +3650,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 30.02,
+         "experience": 30.18,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },
@@ -3683,7 +3683,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 30.06,
+         "experience": 30.20,
          "waypoints": [
             {
                "coords": { "x": 29, "y": 31 },
@@ -3709,7 +3709,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 30.14,
+         "experience": 30.29,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 45 },
@@ -3719,7 +3719,6 @@
             },
             {
                "coords": { "x": 57, "y": 53 },
-               "align": "top",
                "header": "westfall flightpath",
                "special": ["fly to darkshire"],
                "type": "flightpath"
@@ -3728,42 +3727,14 @@
       },
       {
          "zone": "duskwood",
-         "experience": 30.14,
-         "waypoints": [
-            {
-               "coords": { "x": 78, "y": 44 },
-               "align": "top",
-               "header": "duskwood flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 73, "y": 72 },
-               "header": "worgen grove",
-               "objectives": [["worgen in the woods", "p3"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 74, "y": 47 },
-               "align": "top",
-               "header": "darkshire",
-               "ends": [["worgen in the woods", "p3"], ["mor'ladim", "e"], ["bride of the embalmer", "e"]],
-               "starts": ["a daughters love"],
-               "completed": [["worgen in the woods", "p4"], "the daughter who lived"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "duskwood",
-         "experience": 30.43,
+         "experience": 30.29,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
-               "align": "top",
                "header": "darkshire",
-               "ends": [["worgen in the woods", "p3"], ["mor'ladim", "e"], ["bride of the embalmer", "e"]],
+               "ends": [["mor'ladim", "e"], ["bride of the embalmer", "e"]],
                "starts": ["a daughters love"],
-               "completed": [["worgen in the woods", "p4"], "the daughter who lived"],
+               "completed": ["the daughter who lived"],
                "type": "hub"
             },
             {
@@ -3777,7 +3748,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 30.43,
+         "experience": 30.41,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -3795,7 +3766,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 30.43,
+         "experience": 30.41,
          "waypoints": [
             {
                "coords": { "x": 18, "y": 29 },
@@ -3814,7 +3785,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 30.47,
+         "experience": 30.44,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 45 },
@@ -3832,7 +3803,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 30.47,
+         "experience": 30.44,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -3873,7 +3844,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 30.58,
+         "experience": 30.55,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 30 },
@@ -3916,7 +3887,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 30.62,
+         "experience": 30.59,
          "waypoints": [
             {
                "coords": { "x": 10, "y": 62 },
@@ -3935,7 +3906,6 @@
             },
             {
                "coords": { "x": 5, "y": 63 },
-               "align": "top",
                "header": "menethil harbor",
                "special": ["sail to theramore"],
                "type": "travel"
@@ -3944,7 +3914,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 30.68,
+         "experience": 30.64,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 56 },
@@ -3961,7 +3931,8 @@
             {
                "coords": { "x": 66, "y": 45 },
                "header": "theramore inn",
-               "starts": ["they call him smiling jim", "highperch venom"],
+               "starts": ["they call him smiling jim", "highperch venom", "journey to astranaar"],
+               "ends": ["fiora longears"],
                "type": "quest"
             },
             {
@@ -3976,7 +3947,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 30.71,
+         "experience": 30.68,
          "waypoints": [
             {
                "coords": { "x": 68, "y": 49 },
@@ -4008,7 +3979,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 30.77,
+         "experience": 30.74,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 59 },
@@ -4025,13 +3996,14 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 30.77,
+         "experience": 30.74,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
                "align": "bottom",
                "header": "astranaar",
                "starts": ["kayneth stillwind", "fallen sky lake"],
+               "ends": ["journey to astranaar"],
                "special": ["set hearthstone"],
                "type": "hub"
             },
@@ -4052,7 +4024,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 30.77,
+         "experience": 30.74,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 78 },
@@ -4070,7 +4042,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 30.77,
+         "experience": 30.74,
          "waypoints": [
             {
                "coords": { "x": 94, "y": 47 },
@@ -4103,7 +4075,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 30.89,
+         "experience": 30.85,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 42 },
@@ -4124,7 +4096,7 @@
                "coords": { "x": 82, "y": 49 },
                "align": "bottom",
                "header": "satyrnaar",
-               "objectives": [["the tower of althalaxx", "p5"], "satyr slaying"],
+               "objectives": [["the tower of althalaxx", "p6"], "satyr slaying"],
                "special": ["second spawner"],
                "type": "objective"
             },
@@ -4132,7 +4104,7 @@
                "coords": { "x": 67, "y": 57 },
                "align": "bottom",
                "header": "night run",
-               "objectives": [["the tower of althalaxx", "p5"], "satyr slaying"],
+               "objectives": [["the tower of althalaxx", "p6"], "satyr slaying"],
                "special": ["first spawner"],
                "type": "objective"
             },
@@ -4161,7 +4133,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 31.13,
+         "experience": 31.09,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 46 },
@@ -4197,7 +4169,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 31.27,
+         "experience": 31.23,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
@@ -4241,7 +4213,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 31.53,
+         "experience": 31.50,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 49 },
@@ -4284,7 +4256,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 31.59,
+         "experience": 31.56,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 80 },
@@ -4312,7 +4284,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 31.71,
+         "experience": 31.67,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 94 },
@@ -4329,7 +4301,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 31.71,
+         "experience": 31.67,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
@@ -4356,7 +4328,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 31.73,
+         "experience": 31.68,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 83 },
@@ -4397,7 +4369,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 31.75,
+         "experience": 31.69,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 90 },
@@ -4415,7 +4387,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 31.75,
+         "experience": 31.69,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -4435,7 +4407,7 @@
       },
       {
          "zone": "stv",
-         "experience": 31.77,
+         "experience": 31.72,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -4462,13 +4434,13 @@
       },
       {
          "zone": "duskwood",
-         "experience": 31.79,
+         "experience": 31.74,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
                "header": "darkshire",
                "ends": ["the caravan road"],
-               "starts": ["the scythe of elune"],
+               "starts": [["worgen in the woods", "p3"], "the scythe of elune"],
                "completed": ["the carevin family"],
                "type": "hub"
             },
@@ -4483,7 +4455,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 31.82,
+         "experience": 31.76,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -4502,7 +4474,7 @@
       },
       {
          "zone": "stv",
-         "experience": 31.84,
+         "experience": 31.76,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 8 },
@@ -4539,7 +4511,7 @@
       },
       {
          "zone": "stv",
-         "experience": 31.95,
+         "experience": 31.88,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 13 },
@@ -4554,7 +4526,7 @@
                "header": "kurzens compound",
                "ends": ["bookie herod"],
                "starts": ["the hidden key"],
-               "objectives": ["the second rebellion", "bad medicine", "krazek's cookery"],
+               "objectives": ["the second rebellion", "bad medicine"],
                "type": "objective"
             },
             {
@@ -4589,7 +4561,7 @@
       },
       {
          "zone": "stv",
-         "experience": 32.29,
+         "experience": 32.23,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 16 },
@@ -4630,7 +4602,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 32.53,
+         "experience": 32.45,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 87 },
@@ -4642,13 +4614,14 @@
                "coords": { "x": 73, "y": 75 },
                "align": "right",
                "header": "roland's doom",
-               "objectives": ["the scythe of elune"],
+               "objectives": ["the scythe of elune", ["worgen in the woods", "p3"]],
                "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 47 },
                "header": "darkshire",
-               "ends": ["the scythe of elune"],
+               "ends": ["the scythe of elune", ["worgen in the woods", "p3"]],
+               "completed": [["worgen in the woods", "p4"]],
                "type": "hub"
             },
             {
@@ -4662,7 +4635,7 @@
       },
       {
          "zone": "stv",
-         "experience": 32.59,
+         "experience": 32.65,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -4684,7 +4657,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 32.71,
+         "experience": 32.75,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 51 },
@@ -4772,7 +4745,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 33.44,
+         "experience": 33.41,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 54 },
@@ -4792,7 +4765,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 33.48,
+         "experience": 33.45,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 66 },
@@ -4820,7 +4793,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 33.60,
+         "experience": 33.56,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 68 },
@@ -4847,7 +4820,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 33.63,
+         "experience": 33.59,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 45 },
@@ -4882,7 +4855,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 33.72,
+         "experience": 33.67,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 61 },
@@ -4928,7 +4901,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 34.09,
+         "experience": 34.03,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 36 },
@@ -4980,7 +4953,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 34.22,
+         "experience": 34.15,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 30 },
@@ -5008,7 +4981,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 34.32,
+         "experience": 34.24,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 54 },
@@ -5027,7 +5000,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 34.37,
+         "experience": 34.29,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 48 },
@@ -5046,7 +5019,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 34.46,
+         "experience": 34.38,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
