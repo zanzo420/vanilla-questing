@@ -3863,12 +3863,6 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 58, "y": 61 },
-               "header": "edna mullby",
-               "special": ["buy 4x soothing spices"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 60, "y": 64 },
                "align": "bottom",
                "header": "elling trias",
@@ -3953,21 +3947,15 @@
                "coords": { "x": 68, "y": 49 },
                "align": "bottom",
                "header": "commander samaul",
-               "ends": ["they call him smiling jim", ["the missing diplomat", "p11"]],
-               "starts": [["the missing diplomat", "p12"]],
+               "ends": ["they call him smiling jim", ["the missing diplomat", "p13"]],
+               "starts": [["the missing diplomat", "p14"]],
                "type": "quest"
             },
             {
                "coords": { "x": 60, "y": 41 },
                "header": "sentry point",
-               "objectives": [["the missing diplomat", "p12"]],
+               "objectives": [["the missing diplomat", "p14"]],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 55, "y": 26 },
-               "header": "swamp eye jael",
-               "completed": ["soothing spices"],
-               "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 10 },
@@ -4305,9 +4293,16 @@
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
-               "align": "top",
+               "align": "bottom",
                "header": "darnassus teleporter",
                "type": "travel"
+            },
+            {
+               "coords": { "x": 59, "y": 45 },
+               "align": "bottom",
+               "header": "mathiel",
+               "starts": ["klockmort's essentials"],
+               "type": "quest"
             },
             {
                "coords": { "x": 62, "y": 39 },
@@ -4739,6 +4734,7 @@
                "header": "southshore",
                "ends": ["bartolo's yeti fur cloak", "soothing turtle bisque", "down the coast", "syndicate assassins", "costly menace", "crushridge bounty", "foreboding plans", "encrypted letter"],
                "starts": ["letter to stormpike", ["farren's proof", "p1"]],
+               "special": ["buy 4x soothing spices"],
                "type": "quest"
             }
          ]
@@ -4753,6 +4749,7 @@
                "header": "southshore",
                "ends": ["bartolo's yeti fur cloak", "soothing turtle bisque", "down the coast", "syndicate assassins", "costly menace", "crushridge bounty", "foreboding plans", "encrypted letter"],
                "starts": ["letter to stormpike", ["farren's proof", "p1"]],
+               "special": ["buy 4x soothing spices"],
                "type": "quest"
             },
             {
@@ -4881,53 +4878,6 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 62, "y": 34 },
-               "align": "top",
-               "header": "shard of myzrael",
-               "starts": ["the princess trapped"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 83, "y": 36 },
-               "align": "top",
-               "header": "drywhisper gorge cave",
-               "ends": ["the princess trapped"],
-               "starts": ["stones of binding"],
-               "objectives": ["the princess trapped", "favor for krazek"],
-               "special": ["mine or buy 4x bloodstone ore", "lower level monsters outside cave"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "arathi",
-         "experience": 34.03,
-         "waypoints": [
-            {
-               "coords": { "x": 83, "y": 36 },
-               "align": "top",
-               "header": "drywhisper gorge cave",
-               "ends": ["the princess trapped"],
-               "starts": ["stones of binding"],
-               "objectives": ["the princess trapped", "favor for krazek"],
-               "special": ["mine/buy 4x bloodstone ore", "lower level monsters outside cave"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 67, "y": 30 },
-               "align": "top",
-               "header": "stone of east binding",
-               "objectives": ["stones of binding"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 52, "y": 51 },
-               "align": "bottom",
-               "header": "stone of outer binding",
-               "objectives": ["stones of binding"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 46, "y": 48 },
                "align": "bottom",
                "header": "refuge point",
@@ -4940,40 +4890,6 @@
                "align": "top",
                "header": "northfold manor",
                "objectives": ["northfold manor"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 26, "y": 30 },
-               "align": "top",
-               "header": "stone of west binding",
-               "objectives": ["stones of binding"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "arathi",
-         "experience": 34.15,
-         "waypoints": [
-            {
-               "coords": { "x": 26, "y": 30 },
-               "align": "top",
-               "header": "stone of west binding",
-               "objectives": ["stones of binding"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 36, "y": 57 },
-               "header": "stone of inner binding",
-               "ends": ["stones of binding"],
-               "starts": [["breaking the keystone", "e"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 54, "y": 81 },
-               "align": "right",
-               "header": "boulderfist hall",
-               "objectives": ["wand over fist"],
                "special": ["hearthstone to southshore"],
                "type": "objective"
             }
@@ -4981,7 +4897,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 34.24,
+         "experience": 34.01,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 54 },
@@ -5000,26 +4916,29 @@
       },
       {
          "zone": "arathi",
-         "experience": 34.29,
+         "experience": 34.04,
          "waypoints": [
             {
-               "coords": { "x": 46, "y": 48 },
+               "coords": { "x": 55, "y": 77 },
                "align": "right",
-               "header": "refuge point",
-               "ends": ["northfold manor", "wand over fist"],
-               "type": "quest"
+               "header": "boulderfist hall",
+               "objectives": ["wand over fist"],
+               "special": ["kill the miniboss in the cave"],
+               "type": "objective"
             },
             {
-               "coords": { "x": 45, "y": 45 },
-               "header": "arathi highlands flightpath",
+               "coords": { "x": 46, "y": 47 },
+               "align": "top",
+               "header": "refuge point",
+               "ends": ["northfold manor", "wand over fist"],
                "special": ["fly to ironforge"],
-               "type": "flightpath"
+               "type": "hub"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 34.38,
+         "experience": 34.19,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
@@ -5032,6 +4951,12 @@
                "header": "the library",
                "ends": ["letter to stormpike"],
                "starts": ["further mysteries", "reclaimers' business in desolace"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 68, "y": 46 },
+               "header": "klockmort spannerspan",
+               "ends": ["klockmort's essentials"],
                "type": "quest"
             },
             {
@@ -5064,7 +4989,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 34.48,
+         "experience": 34.30,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 6 },
@@ -5102,12 +5027,12 @@
       },
       {
          "zone": "stv",
-         "experience": 34.53,
+         "experience": 34.35,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 78 },
+               "align": "bottom",
                "header": "booy bay flightpath",
-               "ends": ["favor for krazek"],
                "type": "flightpath"
             },
             {
@@ -5120,7 +5045,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 34.57,
+         "experience": 34.35,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 39 },
@@ -5139,7 +5064,7 @@
                "align": "right",
                "header": "shady rest inn",
                "starts": [["the black shield", "p1"], ["lieutenant paval reethe", "p1"], "suspicious hoofprints"],
-               "special": ["laying around the inn"],
+               "special": ["all items laying around the inn"],
                "type": "quest"
             },
             {
@@ -5153,7 +5078,7 @@
       },
       {
          "zone": "needles",
-         "experience": 34.57,
+         "experience": 34.35,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 21 },
@@ -5182,7 +5107,7 @@
                "align": "right",
                "header": "the shimmering flats",
                "ends": ["the brassbolts brothers"],
-               "starts": ["hardened shells", "salt flat venom", "martek the exiled", "rocket car parts", "wharfmaster dizzywig", "load lightening", "a bump in the road"],
+               "starts": ["hardened shells", "salt flat venom", "rocket car parts", "load lightening", "a bump in the road"],
                "special": ["collect rocket parts everywhere"],
                "type": "hub"
             },
@@ -5197,7 +5122,7 @@
       },
       {
          "zone": "needles",
-         "experience": 34.73,
+         "experience": 34.52,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 88 },
@@ -5235,7 +5160,7 @@
       },
       {
          "zone": "needles",
-         "experience": 34.84,
+         "experience": 34.65,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 63 },
@@ -5249,7 +5174,7 @@
                "align": "right",
                "header": "the shimmering flats",
                "ends": ["hardened shells", "salt flat venom", "rocket car parts", "load lightening", "a bump in the road"],
-               "starts": [["goblin sponsorship", "p1"], "encrusted tail fins", "hemet nesingwary"],
+               "starts": [["goblin sponsorship", "p1"], ["encrusted tail fins", "e"], "hemet nesingwary", "martek the exiled", "wharfmaster dizzywig"],
                "type": "hub"
             },
             {
@@ -5263,7 +5188,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 35.02,
+         "experience": 34.84,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 22 },
@@ -5280,11 +5205,11 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 35.02,
+         "experience": 34.84,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 52 },
-               "align": "right",
+               "align": "bottom",
                "header": "theramore flightpath",
                "type": "flightpath"
             },
@@ -5301,8 +5226,8 @@
                "coords": { "x": 66, "y": 49 },
                "align": "top",
                "header": "theramore tower",
-               "ends": [["the missing diplomat", "p12"]],
-               "starts": [["the missing diplomat", "p13"]],
+               "ends": [["the missing diplomat", "p14"]],
+               "starts": [["the missing diplomat", "p15"]],
                "type": "quest"
             },
             {
@@ -5316,7 +5241,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 35.10,
+         "experience": 34.94,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 50 },
@@ -5327,34 +5252,20 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 68, "y": 49 },
-               "align": "right",
-               "header": "foothold citadel",
-               "ends": [["the black shield", "p3"]],
-               "type": "quest"
-            },
-            {
                "coords": { "x": 66, "y": 45 },
                "align": "right",
                "header": "theramore inn",
                "ends": ["highperch venom", "morgan stern"],
-               "starts": ["mudrock soup and bugs"],
                "special": ["set hearthstone"],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 62, "y": 32 },
-               "align": "top",
-               "header": "dreadmurk shore",
-               "objectives": ["mudrock soup and bugs"],
-               "special": ["abysmal drop rate"],
-               "type": "objective"
             },
             {
                "coords": { "x": 55, "y": 26 },
                "align": "top",
                "header": "swamp eye jarl",
-               "starts": ["jarl needs eyes"],
+               "starts": ["the orc report"],
+               "completed": ["soothing spices"],
+               "special": ["click the pile of loose dirt"],
                "type": "quest"
             },
             {
@@ -5363,34 +5274,27 @@
                "header": "stinky ignaz",
                "starts": [["stinky's escape", "f"]],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 45, "y": 25 },
-               "header": "private hendel",
-               "ends": [["the missing diplomat", "p13"]],
-               "completed": [["the missing diplomat", "p14-15"]],
-               "type": "quest"
             }
          ]
       },
       {
          "zone": "dustwallow",
-         "experience": 35.44,
+         "experience": 35.08,
          "waypoints": [
             {
-               "coords": { "x": 45, "y": 25 },
-               "align": "top",
-               "header": "private hendel",
-               "ends": [["the missing diplomat", "p13"]],
-               "completed": [["the missing diplomat", "p14"]],
+               "coords": { "x": 47, "y": 17 },
+               "align": "right",
+               "header": "stinky ignaz",
+               "starts": [["stinky's escape", "f"]],
                "type": "quest"
             },
             {
-               "coords": { "x": 35, "y": 22 },
-               "align": "top",
-               "header": "darkmist cavern",
-               "objectives": ["jarl needs eyes"],
-               "type": "objective"
+               "coords": { "x": 45, "y": 25 },
+               "align": "right",
+               "header": "private hendel",
+               "ends": [["the missing diplomat", "p15"]],
+               "completed": [["the missing diplomat", "p16-17"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 35, "y": 38 },
@@ -5403,40 +5307,6 @@
                "header": "lost point",
                "ends": [["the deserters", "p1"]],
                "starts": [["the deserters", "p2"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 55, "y": 26 },
-               "align": "bottom",
-               "header": "swamp eye jarl",
-               "ends": ["jarl needs eyes"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 58, "y": 15 },
-               "align": "top",
-               "header": "dreadmurk shore",
-               "objectives": ["hungry!"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "dustwallow",
-         "experience": 35.67,
-         "waypoints": [
-            {
-               "coords": { "x": 58, "y": 15 },
-               "align": "top",
-               "header": "dreadmurk shore",
-               "objectives": ["hungry!"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 35, "y": 38 },
-               "align": "top",
-               "header": "mudcrush durtfeet",
-               "ends": ["hungry!"],
                "special": ["hearthstone to theramore"],
                "type": "quest"
             }
@@ -5444,27 +5314,28 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 35.72,
+         "experience": 35.25,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 45 },
                "header": "theramore inn",
-               "ends": ["mudrock soup and bugs", ["stinky's escape", "f"]],
-               "starts": ["and bugs"],
+               "ends": [["stinky's escape", "f"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 49 },
+               "header": "theramore tower",
+               "completed": [["the missing diplomat", "p16-17"]],
+               "ends": ["the orc report"],
+               "starts": ["captain vimes"],
+               "special": ["if you missed it earlier"],
                "type": "quest"
             },
             {
                "coords": { "x": 68, "y": 49 },
                "align": "right",
                "header": "foothold citadel",
-               "ends": [["the deserters", "p2"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 66, "y": 49 },
-               "header": "theramore tower",
-               "completed": [["the missing diplomat", "p14-15"]],
-               "special": ["if you missed it earlier"],
+               "ends": [["the deserters", "p2"], "captain vimes", ["the black shield", "p3"]],
                "type": "quest"
             },
             {
@@ -5478,7 +5349,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 35.88,
+         "experience": 35.44,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 36 },
@@ -5506,7 +5377,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 35.92,
+         "experience": 35.48,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 97 },
@@ -5529,7 +5400,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 35.92,
+         "experience": 35.48,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 4 },
@@ -5560,8 +5431,16 @@
                "type": "objective"
             },
             {
+               "coords": { "x": 57, "y": 18 },
+               "align": "top",
+               "header": "malem chest",
+               "ends": [["vahlarriel's search", "p1"]],
+               "starts": [["vahlarriel's search", "p2"]],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 62, "y": 39 },
-               "align": "bottom",
+               "align": "right",
                "header": "bibbly f'utzbuckle",
                "starts": ["bone collector"],
                "type": "quest"
@@ -5570,21 +5449,13 @@
       },
       {
          "zone": "desolace",
-         "experience": 36.01,
+         "experience": 35.62,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 39 },
-               "align": "right",
+               "align": "top",
                "header": "bibbly f'utzbuckle",
                "starts": ["bone collector"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 57, "y": 18 },
-               "align": "top",
-               "header": "malem chest",
-               "ends": [["vahlarriel's search", "p1"]],
-               "starts": [["vahlarriel's search", "p2"]],
                "type": "quest"
             },
             {
@@ -5596,10 +5467,9 @@
             },
             {
                "coords": { "x": 36, "y": 30 },
-               "align": "top",
                "header": "karnitols chest",
                "ends": [["the karnitol shipwreck", "p1"]],
-               "starts": [["the karnitol shipwreck", "p2"]],
+               "starts": [["the karnitol shipwreck", "p2"], "claim rackmore's treasure"],
                "special": ["hearthstone to nijel's point"],
                "type": "quest"
             }
@@ -5607,7 +5477,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 36.10,
+         "experience": 35.69,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 10 },
@@ -5650,7 +5520,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 36.29,
+         "experience": 35.90,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 29 },
@@ -5661,7 +5531,7 @@
             },
             {
                "coords": { "x": 55, "y": 26 },
-               "align": "right",
+               "align": "top",
                "header": "dalinda malem",
                "ends": ["search for tyranis"],
                "starts": [["return to vahlarriel", "f"]],
@@ -5669,32 +5539,46 @@
             },
             {
                "coords": { "x": 39, "y": 27 },
-               "align": "bottom",
+               "align": "top",
                "header": "azore aldamort",
                "ends": ["sceptre of light"],
                "starts": ["book of the ancients"],
                "type": "quest"
             },
             {
+               "coords": { "x": 33, "y": 29 },
+               "align": "bottom",
+               "header": "sartheris strand",
+               "objectives": ["claim rackmore's treasure"],
+               "special": ["silver key from large crabs"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 29, "y": 8 },
                "header": "ranazjar isle",
-               "objectives": ["book of the ancients", ["the karnitol shipwreck", "p3"]],
+               "objectives": ["book of the ancients", ["the karnitol shipwreck", "p3"], "claim rackmore's treasure"],
+               "ends": ["claim rackmore's treasure"],
+               "special": ["gold key from sorcs and warriors"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "desolace",
-         "experience": 36.43,
+         "experience": 36.09,
          "waypoints": [
             {
                "coords": { "x": 29, "y": 8 },
+               "align": "top",
                "header": "ranazjar isle",
-               "objectives": ["book of the ancients", ["the karnitol shipwreck", "p3"]],
+               "objectives": ["book of the ancients", ["the karnitol shipwreck", "p3"], "claim rackmore's treasure"],
+               "ends": ["claim rackmore's treasure"],
+               "special": ["gold key from sorcs and warriors"],
                "type": "objective"
             },
             {
                "coords": { "x": 39, "y": 27 },
+               "align": "right",
                "header": "azore aldamort",
                "ends": ["book of the ancients"],
                "type": "quest"
@@ -5725,7 +5609,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 36.54,
+         "experience": 36.20,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 58 },
@@ -5769,13 +5653,13 @@
       },
       {
          "zone": "desolace",
-         "experience": 36.86,
+         "experience": 36.53,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 10 },
                "header": "nijel's point",
-               "ends": [["reagents for reclaimers inc.", "p2"], ["the karnitol shipwreck", "p2"], ["down the scarlet path", "p1"], ["return to vahlarriel", "f"]],
-               "starts": [["reagents for reclaimers inc.", "p3"], ["the karnitol shipwreck", "p3"], ["down the scarlet path", "p2"]],
+               "ends": [["reagents for reclaimers inc.", "p2"], ["the karnitol shipwreck", "p3"], ["down the scarlet path", "p1"], ["return to vahlarriel", "f"]],
+               "starts": [["reagents for reclaimers inc.", "p3"], ["the karnitol shipwreck", "p4"], ["down the scarlet path", "p2"]],
                "type": "hub"
             },
             {
@@ -5812,7 +5696,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 37.22,
+         "experience": 36.89,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 79 },
@@ -5842,7 +5726,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 37.28,
+         "experience": 36.95,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 75 },
@@ -5871,7 +5755,6 @@
                "align": "right",
                "header": "hornizz brimbuzzle",
                "ends": ["ghost-o-plasm round up"],
-               "special": ["hearthstone to nijel's point"],
                "type": "quest"
             },
             {
@@ -5886,6 +5769,88 @@
                "coords": { "x": 65, "y": 11 },
                "align": "top",
                "header": "desolace flightpath",
+               "special": ["fly to theramore"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 37.16,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 51 },
+               "align": "right",
+               "header": "theramore flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "align": "right",
+               "header": "theramore inn",
+               "starts": ["mudrock soup and bugs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 32 },
+               "align": "right",
+               "header": "dreadmurk shore",
+               "objectives": ["mudrock soup and bugs"],
+               "special": ["abysmal drop rate"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 58, "y": 15 },
+               "align": "top",
+               "header": "dreadmurk shore",
+               "objectives": ["hungry!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "align": "bottom",
+               "header": "swamp eye jarl",
+               "starts": ["jarl needs eyes"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 22 },
+               "header": "darkmist cavern",
+               "objectives": ["jarl needs eyes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 38 },
+               "header": "mudcrush durtfeet",
+               "ends": ["hungry!"],
+               "special": ["hearthstone to theramore"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 37.37,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 45 },
+               "align": "right",
+               "header": "theramore inn",
+               "ends": ["mudrock soup and bugs"],
+               "starts": ["and bugs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "align": "top",
+               "header": "swamp eye jarl",
+               "ends": ["jarl needs eyes"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 51 },
+               "align": "right",
+               "header": "theramore flightpath",
                "special": ["fly to ratchet"],
                "type": "flightpath"
             }
@@ -5893,7 +5858,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 37.48,
+         "experience": 37.47,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -5911,7 +5876,7 @@
       },
       {
          "zone": "stv",
-         "experience": 37.48,
+         "experience": 37.47,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -5945,7 +5910,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 37.49,
+         "experience": 37.48,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -5962,7 +5927,7 @@
       },
       {
          "zone": "stv",
-         "experience": 37.49,
+         "experience": 37.48,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 8 },
@@ -5981,7 +5946,6 @@
                "coords": { "x": 38, "y": 3 },
                "align": "top",
                "header": "rebel camp",
-               "ends": ["return to corporal kaleb"],
                "starts": ["special forces"],
                "type": "quest"
             },
@@ -6068,7 +6032,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 37.90,
+         "experience": 37.89,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -6085,7 +6049,7 @@
       },
       {
          "zone": "stv",
-         "experience": 37.90,
+         "experience": 37.89,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 8 },
@@ -6668,44 +6632,86 @@
          "waypoints": [
             {
                "coords": { "x": 46, "y": 46 },
-               "align": "top",
                "header": "refuge point",
                "starts": [["trelane's defenses", "e"], ["wanted: marez cowl", "e"], ["wanted: otto and falconcrest", "e"], ["stromgarde badges", "e"]],
                "type": "hub"
             },
             {
-               "coords": { "x": 67, "y": 36 },
+               "coords": { "x": 62, "y": 34 },
                "align": "top",
-               "header": "fozruk spawn point",
-               "objectives": [["breaking the keystone", "e"]],
-               "special": ["ask about his position in general chat"],
+               "header": "shard of myzrael",
+               "starts": ["the princess trapped"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 83, "y": 36 },
+               "align": "top",
+               "header": "drywhisper gorge cave",
+               "ends": ["the princess trapped"],
+               "starts": ["stones of binding"],
+               "objectives": ["the princess trapped", "favor for krazek"],
+               "special": ["mine or buy 4x bloodstone ore", "farm kobolds inside the cave"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 40.89,
+         "waypoints": [
+            {
+               "coords": { "x": 83, "y": 36 },
+               "align": "top",
+               "header": "drywhisper gorge cave",
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 30 },
+               "align": "top",
+               "header": "stone of east binding",
+               "objectives": ["stones of binding"],
                "type": "objective"
             },
             {
-               "coords": { "x": 36, "y": 58 },
+               "coords": { "x": 52, "y": 51 },
+               "align": "bottom",
+               "header": "stone of outer binding",
+               "objectives": ["stones of binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 30 },
                "align": "top",
-               "header": "keystone monument",
-               "ends": [["breaking the keystone", "e"]],
-               "starts": ["myzrael's allies"],
+               "header": "stone of west binding",
+               "objectives": ["stones of binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 57 },
+               "align": "right",
+               "header": "stone of inner binding",
+               "ends": ["stones of binding"],
+               "starts": [["breaking the keystone", "e"]],
+               "special": ["kill fozruk before leaving arathi", ["Fozruk patrol cycle", "https://vanilla-twinhead.twinstar.cz/?npc=2611#map"]],
                "type": "quest"
             },
             {
                "coords": { "x": 30, "y": 63 },
-               "align": "top",
+               "align": "bottom",
                "header": "eastern stromgarde",
                "objectives": [["wanted: marez cowl", "e"], ["stromgarde badges", "e"]],
                "type": "objective"
             },
             {
                "coords": { "x": 26, "y": 66 },
-               "align": "top",
+               "align": "bottom",
                "header": "stromgarde keep",
                "objectives": [["wanted: otto and falconcrest", "e"], ["stromgarde badges", "e"]],
                "type": "objective"
             },
             {
                "coords": { "x": 21, "y": 68 },
-               "align": "top",
+               "align": "bottom",
                "header": "western stromgarde",
                "objectives": [["trelane's defenses", "e"]],
                "special": ["kill ogre shamans"],
@@ -6715,7 +6721,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 40.94,
+         "experience": 41,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 46 },
@@ -6727,6 +6733,15 @@
                "type": "hub"
             },
             {
+               "coords": { "x": 36, "y": 58 },
+               "align": "bottom",
+               "header": "keystone monument",
+               "ends": [["breaking the keystone", "e"]],
+               "starts": ["myzrael's allies"],
+               "special": [["Fozruk patrol cycle", "https://vanilla-twinhead.twinstar.cz/?npc=2611#map"]],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 18, "y": 68 },
                "header": "stromgarde tower",
                "objectives": ["attack on the tower"],
@@ -6734,21 +6749,10 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 26, "y": 54 },
-               "align": "top",
-               "header": "move here",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 31, "y": 65 },
-               "align": "right",
-               "header": "move here",
-               "type": "travel"
-            },
-            {
                "coords": { "x": 22, "y": 80 },
                "align": "bottom",
                "header": "move here",
+               "special": ["run around the castle"],
                "type": "travel"
             },
             {
@@ -6763,7 +6767,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 41.16,
+         "experience": 41.26,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 82 },
@@ -6798,7 +6802,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 41.20,
+         "experience": 41.29,
          "waypoints": [
             {
                "coords": { "x": 21, "y": 86 },
@@ -6822,7 +6826,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 41.32,
+         "experience": 41.41,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 54 },
@@ -6839,7 +6843,7 @@
       },
       {
          "zone": "alterac",
-         "experience": 41.32,
+         "experience": 41.41,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 69 },
@@ -6878,7 +6882,7 @@
       },
       {
          "zone": "alterac",
-         "experience": 41.38,
+         "experience": 41.44,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 27 },
@@ -6917,7 +6921,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 41.40,
+         "experience": 41.47,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 54 },
@@ -6937,7 +6941,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 41.55,
+         "experience": 41.63,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 48 },
@@ -6952,7 +6956,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 41.59,
+         "experience": 41.66,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
@@ -6983,7 +6987,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 41.66,
+         "experience": 41.74,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 6 },
@@ -7035,7 +7039,7 @@
       },
       {
          "zone": "stv",
-         "experience": 41.82,
+         "experience": 41.90,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 78 },
@@ -7046,7 +7050,7 @@
             {
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
-               "ends": [["sunken treasure", "p4"], "ansirem's key"],
+               "ends": [["sunken treasure", "p4"], "ansirem's key", "favor for krazek"],
                "starts": [["the bloodsail buccaneers", "p1"], "pretty boy duncan"],
                "special": ["set hearthstone"],
                "type": "hub"
@@ -7063,7 +7067,7 @@
       },
       {
          "zone": "stv",
-         "experience": 41.88,
+         "experience": 41.95,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 69 },
@@ -7078,7 +7082,7 @@
                "header": "booty bay",
                "ends": [["the bloodsail buccaneers", "p2"], "pretty boy duncan"],
                "completed": [["the bloodsail buccaneers", "p3"]],
-               "starts": ["singing blue shards", "skullsplitter tusks", ["excelsior", "e"], ["the curse of the tides", "e"]],
+               "starts": ["singing blue shards", "skullsplitter tusks", ["excelsior", "e"], ["the curse of the tides", "e"], "return to corporal kaleb"],
                "type": "hub"
             },
             {
@@ -7092,7 +7096,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 41.97,
+         "experience": 42.05,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -7109,7 +7113,7 @@
       },
       {
          "zone": "stv",
-         "experience": 41.97,
+         "experience": 42.05,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 8 },
@@ -7128,6 +7132,7 @@
                "coords": { "x": 38, "y": 3 },
                "align": "top",
                "header": "rebel camp",
+               "ends": ["return to corporal kaleb"],
                "starts": ["colonel kurzen"],
                "type": "quest"
             },
@@ -7142,7 +7147,7 @@
       },
       {
          "zone": "stv",
-         "experience": 42.07,
+         "experience": 42.11,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 4 },
