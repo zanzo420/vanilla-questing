@@ -123,7 +123,7 @@
    "nugget slugs": 3922,
    "report to kadrak": 6541,
    "naga at the zoram strand": 6442,
-   "allegiance to the old gods": 6565,
+   "allegiance to the old gods": [6564, 6565],
    "the warsong reports": 6543,
    "echeyakee": 881,
    "serena bloodfeather": 876,
