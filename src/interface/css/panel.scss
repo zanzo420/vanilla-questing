@@ -134,8 +134,20 @@
             color: #F1F1F1;
          }
          
-         .ends { background: rgba(94, 207, 94, 0.342); }
-         .starts { background: rgba(255, 255, 29, 0.37); }
+         .ends {
+            background: rgba(94, 207, 94, 0.342);
+            //background-image: url('../images/question.png');
+            //background-repeat: no-repeat;
+            //padding-left: 22px;
+         }
+
+         .starts {
+            background: rgba(255, 255, 29, 0.37);
+            //background-image: url('../images/exclam.png');
+            //background-repeat: no-repeat;
+            //padding-left: 22px;
+         }
+
          .objectives { background: rgba(226, 84, 84, 0.418); }
          .special { background: rgba(94, 125, 192, 0.507); }
          .quest { background: rgba(226, 171, 108, 0.486); }

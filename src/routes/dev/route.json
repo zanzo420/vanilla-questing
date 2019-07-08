@@ -642,7 +642,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 18.69,
+         "experience": 18.73,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
@@ -686,7 +686,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 18.95,
+         "experience": 18.99,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 5 },
@@ -731,7 +731,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 19.19,
+         "experience": 19.22,
          "waypoints": [
             {
                "coords": { "x": 69, "y": 86 },
@@ -786,7 +786,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 19.37,
+         "experience": 19.40,
          "waypoints": [
             {
                "coords": { "x": 16, "y": 19 },
@@ -821,7 +821,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 19.61,
+         "experience": 19.64,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
@@ -849,21 +849,21 @@
                "coords": { "x": 45, "y": 28 },
                "header": "regthar's hut",
                "ends": ["hezrul bloodmark"],
-               "completed": ["counterattack!"],
+               "completed": [["counterattack!", "e"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 20.02,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 28 },
                "align": "top",
                "header": "regthar's hut",
                "ends": ["hezrul bloodmark"],
-               "completed": ["counterattack!"],
+               "completed": [["counterattack!", "e"]],
                "type": "quest"
             },
             {
@@ -871,15 +871,25 @@
                "align": "top",
                "header": "the crossroads",
                "ends": ["the angry scytheclaws"],
+               "starts": ["jorn skyseer"],
                "special": ["fly to ratchet"],
                "type": "hub"
             },
             {
                "coords": { "x": 62, "y": 38 },
-               "align": "top",
+               "align": "right",
                "header": "ratchet",
                "ends": ["the escape", "miner's fortune"],
-               "starts": ["ziz fizziks", "deepmoss spider eggs"],
+               "starts": ["deepmoss spider eggs"],
+               "special": ["fly to camp taurajo"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 59 },
+               "align": "bottom",
+               "header": "camp taurajo",
+               "ends": ["jorn skyseer"],
+               "starts": ["melor sends word", "the ashenvale hunt"],
                "special": ["fly to thunder bluff"],
                "type": "hub"
             }
@@ -887,31 +897,28 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 20.21,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 50 },
-               "align": "top",
                "header": "thunder bluff flightpath",
                "type": "flightpath"
             },
             {
-               "coords": { "x": 40, "y": 59 },
-               "align": "bottom",
-               "header": "bluff runner windstrider",
-               "starts": ["the ashenvale hunt"],
-               "type": "quest"
-            },
-            {
                "coords": { "x": 47, "y": 59 },
-               "align": "bottom",
                "header": "thunder bluff bank",
                "special": ["bank your manual pages"],
                "type": "objective"
             },
             {
-               "coords": { "x": 55, "y": 51 },
+               "coords": { "x": 61, "y": 81 },
                "align": "bottom",
+               "header": "melor stonehoof",
+               "ends": ["melor sends word"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 51 },
                "header": "zangen stonehoof",
                "starts": [["the sacred flame", "p1"]],
                "type": "quest"
@@ -929,7 +936,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 20.38,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 30 },
@@ -951,7 +958,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 20.38,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -967,7 +974,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 20.38,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -986,7 +993,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 20.38,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -1002,7 +1009,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 20.38,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -1036,7 +1043,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 20.48,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 44 },
@@ -1066,13 +1073,14 @@
                "header": "dusty shelf",
                "ends": ["the hidden niche"],
                "starts": ["wand to bethor"],
+               "special": ["on the very upper floor of the castle"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 20.67,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 25 },
@@ -1080,6 +1088,7 @@
                "header": "fenris keep",
                "ends": ["the hidden niche"],
                "starts": ["wand to bethor"],
+               "special": ["on the very upper floor of the castle"],
                "type": "objective"
             },
             {
@@ -1105,7 +1114,7 @@
             },
             {
                "coords": { "x": 67, "y": 80 },
-               "align": "bottom",
+               "align": "right",
                "header": "hillsbrad border",
                "type": "travel"
             }
@@ -1113,11 +1122,11 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 20.81,
          "waypoints": [
             {
                "coords": { "x": 15, "y": 46 },
-               "align": "top",
+               "align": "bottom",
                "header": "silverpine border",
                "type": "travel"
             },
@@ -1155,7 +1164,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 21.15,
          "waypoints": [
             {
                "coords": { "x": 77, "y": 41 },
@@ -1176,26 +1185,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 46, "y": 43 },
-               "align": "right",
-               "header": "sepulcher flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 43, "y": 41 },
-               "header": "sepulcher",
-               "ends": ["beren's peril", "ambermill investigations", "rot hide ichor"],
-               "starts": ["rot hide origins"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "silverpine",
-         "experience": 0,
+         "experience": 21.38,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -1215,7 +1205,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 21.53,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -1240,40 +1230,74 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 21.67,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
                "align": "top",
                "header": "the crossroads",
-               "starts": ["letter to jin'zil", "jorn skyseer", "consumed by hatred", "egg hunt"],
+               "starts": ["letter to jin'zil", "consumed by hatred", "egg hunt"],
+               "special": ["fly to stonetalon"],
                "type": "hub"
-            },
-            {
-               "coords": { "x": 34, "y": 27 },
-               "align": "top",
-               "header": "stonetalon outpost",
-               "starts": ["goblin invaders", "kaya's alive"],
-               "type": "quest"
             }
          ]
       },
       {
          "zone": "stonetalon",
-         "experience": 0,
+         "experience": 21.67,
          "waypoints": [
             {
-               "coords": { "x": 82, "y": 96 },
-               "align": "right",
-               "header": "barrens border",
-               "type": "travel"
+               "coords": { "x": 45, "y": 60 },
+               "header": "sun rock flightpath",
+               "type": "flightpath"
             },
             {
-               "coords": { "x": 72, "y": 95 },
+               "coords": { "x": 47, "y": 61 },
+               "align": "bottom",
+               "header": "sun rock retreat",
+               "starts": ["boulderslide ravine"],
+               "special": ["set hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 59, "y": 62 },
+               "align": "bottom",
+               "header": "ziz fizziks",
+               "starts": ["super reaper 6000"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 60 },
+               "align": "right",
+               "header": "windshear crag",
+               "objectives": ["deepmoss spider eggs", "blood feeders"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 55 },
+               "align": "right",
+               "header": "venture co. encampment",
+               "objectives": ["goblin invaders", "super reaper 6000"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 21.79,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 55 },
                "align": "top",
-               "header": "makala'jin",
-               "ends": ["letter to jin'zil"],
-               "starts": ["blood feeders", "jin'zil's forest magic"],
+               "header": "venture co. encampment",
+               "objectives": ["goblin invaders", "super reaper 6000"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 62 },
+               "header": "ziz fizziks",
+               "ends": ["super reaper 6000"],
+               "starts": [["further instructions", "p1"]],
                "type": "quest"
             },
             {
@@ -1285,131 +1309,46 @@
             },
             {
                "coords": { "x": 53, "y": 74 },
-               "align": "bottom",
                "header": "sishir canyon",
                "objectives": [["arachnophobia", "e"], "blood feeders"],
                "type": "objective"
             },
             {
-               "coords": { "x": 47, "y": 61 },
-               "align": "top",
-               "header": "sun rock retreat",
-               "ends": [["arachnophobia", "e"], "kaya's alive"],
-               "starts": ["boulderslide ravine", "trouble in the deeps"],
-               "special": ["set hearthstone"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 45, "y": 60 },
-               "align": "top",
-               "header": "sun rock flightpath",
-               "special": ["learn the flightpath"],
-               "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "stonetalon",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 45, "y": 60 },
-               "align": "top",
-               "header": "sun rock flightpath",
-               "special": ["learn the flightpath"],
-               "type": "flightpath"
-            },
-            {
                "coords": { "x": 60, "y": 91 },
-               "align": "right",
+               "align": "bottom",
                "header": "boulderslide cavern",
                "objectives": ["boulderslide ravine"],
-               "special": ["discover first!"],
+               "special": ["remember to discover the cave"],
                "type": "objective"
             },
             {
-               "coords": { "x": 59, "y": 62 },
-               "header": "ziz fizziks",
-               "ends": ["ziz fizziks"],
-               "starts": ["super reaper 6000"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 62, "y": 60 },
-               "align": "right",
-               "header": "windshear crag",
-               "objectives": ["deepmoss spider eggs"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 63, "y": 55 },
-               "align": "right",
-               "header": "venture co. encampment",
-               "objectives": ["goblin invaders", "super reaper 6000"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "stonetalon",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 63, "y": 55 },
-               "align": "top",
-               "header": "venture co. encampment",
-               "objectives": ["goblin invaders", "super reaper 6000"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 59, "y": 62 },
+               "coords": { "x": 72, "y": 95 },
                "align": "bottom",
-               "header": "ziz fizziks",
-               "ends": ["super reaper 6000"],
-               "starts": [["further instructions", "p1"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 47, "y": 61 },
-               "align": "top",
-               "header": "sun rock retreat",
-               "ends": ["boulderslide ravine"],
-               "starts": [["earthen arise", "e"]],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 60, "y": 91 },
-               "header": "boulderslide cavern",
-               "objectives": [["earthen arise", "e"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 71, "y": 95 },
-               "align": "top",
-               "header": "xen'zilla",
-               "ends": ["blood feeders"],
+               "header": "makala'jin",
+               "ends": ["letter to jin'zil", "blood feeders"],
+               "starts": ["jin'zil's forest magic"],
                "type": "quest"
             },
             {
                "coords": { "x": 85, "y": 97 },
-               "align": "top",
+               "align": "bottom",
                "header": "stonetalon outpost",
                "ends": ["goblin invaders"],
                "starts": ["the elder crone", "shredding machines"],
-               "special": ["hearthstone to sun rock"],
+               "special": ["hearthstone to sunrock"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "stonetalon",
-         "experience": 0,
+         "experience": 22.09,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 61 },
                "align": "top",
                "header": "sun rock retreat",
-               "ends": [["earthen arise", "e"]],
+               "ends": [["arachnophobia", "e"], "boulderslide ravine"],
                "starts": [],
                "type": "hub"
             },
@@ -1424,13 +1363,13 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 22.20,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 59 },
+               "align": "bottom",
                "header": "camp taurajo",
-               "ends": ["jorn skyseer"],
-               "starts": ["ishamuhale", "melor sends word", "weapons of choice", "tribes at war"],
+               "starts": ["ishamuhale", "weapons of choice", "tribes at war"],
                "special": ["fly to ratchet"],
                "type": "hub"
             },
@@ -1444,7 +1383,7 @@
             },
             {
                "coords": { "x": 60, "y": 30 },
-               "align": "right",
+               "align": "top",
                "header": "thorn hill",
                "objectives": ["ishamuhale"],
                "special": ["plant a zhevra carcass"],
@@ -1454,11 +1393,11 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 22.32,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 30 },
-               "align": "right",
+               "align": "top",
                "header": "thorn hill",
                "objectives": ["ishamuhale"],
                "special": ["plant a zhevra carcass"],
@@ -1488,10 +1427,11 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 22.40,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 62 },
+               "align": "bottom",
                "header": "southern barrens",
                "objectives": ["enraged thunder lizards"],
                "type": "objective"
@@ -1523,19 +1463,21 @@
                "align": "right",
                "header": "lakota'mani",
                "starts": ["lakota'mani"],
+               "objectives": ["cry of the thunderhawk"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 22.62,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 51 },
                "align": "top",
                "header": "lakota'mani",
                "starts": ["lakota'mani"],
+               "objectives": ["cry of the thunderhawk"],
                "type": "objective"
             },
             {
@@ -1564,10 +1506,11 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 22.95,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 71 },
+               "align": "top",
                "header": "field of giants",
                "objectives": ["egg hunt"],
                "type": "objective"
@@ -1597,7 +1540,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 23,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 80 },
@@ -1620,21 +1563,6 @@
                "starts": ["washte pawne"],
                "special": ["stalkers", "washte is a windserpent"],
                "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "barrens",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 44, "y": 83 },
-               "align": "bottom",
-               "header": "nak",
-               "objectives": [["betrayal from within", "p1"], "weapons of choice"],
-               "starts": ["washte pawne"],
-               "special": ["stalkers", "washte is a windserpent"],
-               "type": "objective"
             },
             {
                "coords": { "x": 47, "y": 86 },
@@ -1649,98 +1577,18 @@
                "align": "right",
                "header": "gann's stonespine",
                "ends": ["gann's reclamation"],
-               "starts": [["revenge of gann", "p1"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 23.18,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 77 },
                "header": "gann's stonespine",
                "ends": ["gann's reclamation"],
-               "starts": [["revenge of gann", "p1"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 48, "y": 87 },
-               "align": "bottom",
-               "header": "feegly the exiled",
-               "starts": [["the tear of the moons", "e"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 49, "y": 84 },
-               "align": "right",
-               "header": "general twinbraid's strongbox",
-               "objectives": [["the tear of the moons", "e"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "barrens",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 49, "y": 84 },
-               "align": "right",
-               "header": "general twinbraid's strongbox",
-               "objectives": [["the tear of the moons", "e"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 48, "y": 87 },
-               "align": "bottom",
-               "header": "feegly the exiled",
-               "ends": [["the tear of the moons", "e"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 46, "y": 77 },
-               "header": "gann's stonespine",
-               "ends": [["revenge of gann", "p1"]],
-               "starts": [["revenge of gann", "p2"]],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "barrens",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 46, "y": 77 },
-               "header": "gann's stonespine",
-               "ends": [["revenge of gann", "p1"]],
-               "starts": [["revenge of gann", "p2"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 47, "y": 86 },
-               "header": "bael modan flying machine",
-               "objectives": [["revenge of gann", "p2"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "barrens",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 47, "y": 86 },
-               "header": "bael modan flying machine",
-               "objectives": [["revenge of gann", "p2"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 46, "y": 77 },
-               "header": "gann's stonespine",
-               "ends": [["revenge of gann", "p2"]],
                "type": "quest"
             },
             {
@@ -1756,20 +1604,44 @@
                "align": "top",
                "header": "the crossroads",
                "ends": ["consumed by hatred", ["betrayal from within", "p2"], "egg hunt"],
-               "special": ["set hearthstone", "fly to ratchet"],
+               "special": ["set hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 35 },
+               "align": "top",
+               "header": "wailing caverns",
+               "starts": [["deviate eradication", "d"], ["deviate hides", "d"], "the glowing shard"],
+               "objectives": [["smart drinks", "d"], ["trouble at the docks", "d"], ["serpentbloom", "d"], ["leaders of the fang", "d"]],
+               "special": ["Hearthstone by leaving group"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 23.75,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "align": "top",
+               "header": "the crossroads",
+               "special": ["fly to ratchet"],
                "type": "hub"
             },
             {
                "coords": { "x": 62, "y": 38 },
                "align": "top",
-               "header": "ratchet flightpath",
-               "type": "flightpath"
+               "header": "ratchet",
+               "ends": [["smart drinks", "d"], ["trouble at the docks", "d"]],
+               "objectives": [],
+               "special": ["talk to sputtervale"],
+               "type": "hub"
             },
             {
                "coords": { "x": 66, "y": 44 },
                "align": "right",
                "header": "mahren skyseer",
-               "ends": ["mahren skyseer"],
                "starts": ["isha awak"],
                "type": "quest"
             },
@@ -1778,49 +1650,20 @@
                "align": "bottom",
                "header": "northwatch shore",
                "objectives": ["isha awak"],
-               "special": ["hearthstone to crossroads"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 23.89,
          "waypoints": [
             {
-               "coords": { "x": 52, "y": 31 },
-               "align": "right",
-               "header": "crossroads",
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 46, "y": 35 },
-               "header": "wailing caverns",
-               "starts": [["deviate eradication", "d"], ["deviate hides", "d"], "the glowing shard"],
-               "objectives": [["smart drinks", "d"], ["trouble at the docks", "d"], ["serpentbloom", "d"], ["leaders of the fang", "d"]],
-               "special": ["hearthstone to crossroads"],
+               "coords": { "x": 63, "y": 53 },
+               "align": "bottom",
+               "header": "northwatch shore",
+               "objectives": ["isha awak"],
                "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "barrens",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 52, "y": 31 },
-               "header": "the crossroads",
-               "special": ["fly to ratchet"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 62, "y": 38 },
-               "align": "right",
-               "header": "ratchet",
-               "ends": [["smart drinks", "d"], ["trouble at the docks", "d"]],
-               "objectives": [],
-               "special": ["talk to sputtervale"],
-               "type": "hub"
             },
             {
                "coords": { "x": 66, "y": 44 },
@@ -1834,7 +1677,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 23.99,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
@@ -1861,7 +1704,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 24.21,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 36 },
@@ -1871,7 +1714,7 @@
             },
             {
                "coords": { "x": 52, "y": 31 },
-               "align": "right",
+               "align": "top",
                "header": "crossroads flightpath",
                "special": ["fly to thunder bluff"],
                "type": "flightpath"
@@ -1880,7 +1723,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 24.21,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 50 },
@@ -1890,9 +1733,8 @@
             },
             {
                "coords": { "x": 61, "y": 81 },
-               "align": "right",
+               "align": "bottom",
                "header": "melor stonehoof",
-               "ends": ["melor sends word"],
                "starts": ["steelsnap"],
                "type": "quest"
             },
@@ -1916,7 +1758,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 24.41,
          "waypoints": [
             {
                "coords": { "x": 23, "y": 21 },
@@ -1928,7 +1770,7 @@
             },
             {
                "coords": { "x": 47, "y": 50 },
-               "align": "top",
+               "align": "right",
                "header": "thunder bluff flightpath",
                "special": ["fly to stonetalon"],
                "type": "flightpath"
@@ -1937,13 +1779,20 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 0,
+         "experience": 24.41,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 60 },
-               "align": "bottom",
                "header": "sun rock flightpath",
                "type": "flightpath"
+            },
+            {
+               "coords": { "x": 47, "y": 61 },
+               "align": "bottom",
+               "header": "sun rock retreat",
+               "starts": [["earthen arise", "e"]],
+               "special": ["set hearthstone"],
+               "type": "hub"
             },
             {
                "coords": { "x": 59, "y": 62 },
@@ -1962,25 +1811,11 @@
             },
             {
                "coords": { "x": 74, "y": 60 },
-               "align": "top",
+               "align": "right",
                "header": "windshear mine",
                "completed": [["gerenzo's order", "p1, f"]],
                "starts": [["gerenzo's order", "p2"]],
                "special": ["enter from the left"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "stonetalon",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 74, "y": 60 },
-               "align": "top",
-               "header": "windshear mine",
-               "completed": [["gerenzo's order", "p1, f"]],
-               "starts": [["gerenzo's order", "p2"]],
                "type": "quest"
             },
             {
@@ -1989,9 +1824,23 @@
                "header": "cragpool construction site",
                "objectives": ["gerenzo wrenchwhistle"],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 24.56,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 40 },
+               "align": "right",
+               "header": "cragpool construction site",
+               "objectives": ["gerenzo wrenchwhistle"],
+               "type": "objective"
             },
             {
                "coords": { "x": 65, "y": 47 },
+               "align": "right",
                "header": "xt:4",
                "objectives": ["shredding machines"],
                "type": "objective"
@@ -2003,29 +1852,37 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 60, "y": 91 },
+               "align": "bottom",
+               "header": "boulderslide cavern",
+               "objectives": [["earthen arise", "e"]],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 84, "y": 97 },
-               "align": "right",
+               "align": "bottom",
                "header": "stonetalon outpost",
                "ends": ["shredding machines"],
+               "special": ["hearthstone to sunrock"],
                "type": "quest"
             }
          ]
       },
       {
-         "zone": "barrens",
-         "experience": 0,
+         "zone": "stonetalon",
+         "experience": 24.73,
          "waypoints": [
             {
-               "coords": { "x": 36, "y": 28 },
-               "align": "top",
-               "header": "stonetalon outpost",
-               "ends": ["shredding machines"],
-               "type": "quest"
+               "coords": { "x": 47, "y": 61 },
+               "align": "bottom",
+               "header": "sun rock retreat",
+               "ends": [["earthen arise", "e"]],
+               "type": "hub"
             },
             {
-               "coords": { "x": 52, "y": 31 },
-               "align": "top",
-               "header": "crossroads flightpath",
+               "coords": { "x": 45, "y": 60 },
+               "align": "bottom",
+               "header": "sun rock flightpath",
                "special": ["fly to orgrimmar"],
                "type": "flightpath"
             }
@@ -2033,7 +1890,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 24.78,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -2049,7 +1906,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 24.78,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -2068,7 +1925,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 24.78,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -2084,7 +1941,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 24.78,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -2117,7 +1974,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 24.78,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 43 },
@@ -2161,7 +2018,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 24.98,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -2182,7 +2039,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 25.23,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
