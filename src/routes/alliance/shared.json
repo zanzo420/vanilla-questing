@@ -8816,6 +8816,7 @@
                "coords": { "x": 45, "y": 43 },
                "header": "zorbin fandazzle",
                "ends": ["zapped giants", "fuel for the zapping"],
+               "special": ["repeating the quests won't give XP"],
                "type": "quest"
             },
             {
@@ -9195,7 +9196,7 @@
                "coords": { "x": 56, "y": 54 },
                "align": "right",
                "header": "darnassus auction house",
-               "special": ["buy 15x morrograin", "buy 2x elixir of fortitude", "hearthstone to feathermoon"],
+               "special": ["buy 15x morrowgrain", "buy 2x elixir of fortitude", "hearthstone to feathermoon"],
                "type": "objective"
             }
          ]
@@ -11021,7 +11022,7 @@
                "coords": { "x": 85, "y": 70 },
                "align": "right",
                "header": "morgan's vigil",
-               "starts": [["dragonkin menace", "e"], "extinguish the firegut", "fifty! yep!"],
+               "starts": [["dragonkin menace", "e"], "extinguish the firegut"],
                "type": "hub"
             },
             {
@@ -11036,21 +11037,21 @@
                "coords": { "x": 90, "y": 52 },
                "align": "right",
                "header": "terror wing path",
-               "objectives": [["dragonkin menace", "e"], "broodling essence", "fifty! yep!"],
+               "objectives": [["dragonkin menace", "e"], "broodling essence"],
                "type": "objective"
             },
             {
                "coords": { "x": 90, "y": 37 },
                "align": "right",
                "header": "terror wing path",
-               "objectives": [["dragonkin menace", "e"], "broodling essence", "fifty! yep!"],
+               "objectives": [["dragonkin menace", "e"], "broodling essence"],
                "type": "objective"
             },
             {
                "coords": { "x": 80, "y": 28 },
                "align": "top",
                "header": "terror wing path",
-               "objectives": [["dragonkin menace", "e"], "broodling essence", "fifty! yep!"],
+               "objectives": [["dragonkin menace", "e"], "broodling essence"],
                "type": "objective"
             }
          ]
@@ -11063,7 +11064,7 @@
                "coords": { "x": 80, "y": 28 },
                "align": "right",
                "header": "terror wing path",
-               "objectives": [["dragonkin menace", "e"], "broodling essence", "fifty! yep!"],
+               "objectives": [["dragonkin menace", "e"], "broodling essence"],
                "type": "objective"
             },
             {
@@ -11125,14 +11126,6 @@
                "type": "hub"
             },
             {
-               "coords": { "x": 75, "y": 59 },
-               "align": "top",
-               "header": "terror wing path",
-               "objectives": ["fifty! yep!"],
-               "special": ["kill all the wolves you see"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 39, "y": 55 },
                "align": "top",
                "header": "orc encampment",
@@ -11161,14 +11154,6 @@
                "type": "hub"
             },
             {
-               "coords": { "x": 86, "y": 56 },
-               "align": "right",
-               "header": "terror wing path",
-               "objectives": ["fifty! yep!"],
-               "special": ["farm the remaining medallions"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 81, "y": 47 },
                "align": "top",
                "header": "soft dirt mound",
@@ -11192,7 +11177,7 @@
                "coords": { "x": 85, "y": 70 },
                "align": "bottom",
                "header": "morgan's vigil",
-               "ends": ["ogre head on a stick = party", "fifty! yep!"],
+               "ends": ["ogre head on a stick = party"],
                "type": "hub"
             },
             {
@@ -11535,6 +11520,12 @@
                "align": "right",
                "header": "darnassus flightpath",
                "type": "flightpath"
+            },
+            {
+               "coords": { "x": 55, "y": 92 },
+               "header": "rut'theran village",
+               "ends": ["favored of elune?", "the super snapper fx"],
+               "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 90 },
@@ -12434,7 +12425,6 @@
             {
                "coords": { "x": 55, "y": 92 },
                "header": "rut'theran village",
-               "ends": ["favored of elune?", "the super snapper fx"],
                "starts": ["moontouched wildkin", "return to troyas"],
                "type": "quest"
             },
@@ -14171,7 +14161,7 @@
                "coords": { "x": 86, "y": 69 },
                "align": "bottom",
                "header": "morgan's vigil",
-               "starts": [["marshal windsor", "d"], ["the good stuff", "d"], ["overmaster pyron", "d"]],
+               "starts": [["marshal windsor", "d"], ["the good stuff", "d"], ["overmaster pyron", "d"], "fifty! yep!"],
                "type": "hub"
             },
             {
@@ -14188,8 +14178,14 @@
                "align": "top",
                "header": "flame crest",
                "starts": [["the heart of the mountain", "d"], ["ribbly screwspigot", "d"]],
-               "special": ["hearthstone to lakeshire"],
                "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "pillar of ash",
+               "objectives": ["fifty! yep!"],
+               "special": ["hearthstone to lakeshire"],
+               "type": "objective"
             }
          ]
       },
@@ -14317,7 +14313,7 @@
                "coords": { "x": 86, "y": 69 },
                "align": "right",
                "header": "morgan's vigil",
-               "ends": [["abandoned hope", "d"], ["overmaster pyron", "d"], ["the good stuff", "d"]],
+               "ends": [["abandoned hope", "d"], ["overmaster pyron", "d"], ["the good stuff", "d"], "fifty! yep!"],
                "starts": [["incendius!", "d"]],
                "type": "hub"
             },
