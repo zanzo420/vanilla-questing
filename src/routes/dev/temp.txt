@@ -1,0 +1,359 @@
+//// STV
+
+{
+   "coords": { "x": 25, "y": 25 },
+   "align": "top",
+   "header": "the vile reef",
+   "objectives": ["the vile reef", ["encrusted tail fins", "e"]],
+   "type": "objective"
+}
+
+{
+   "coords": { "x": 32, "y": 29 },
+   "align": "bottom",
+   "header": "grom'gol basecamp",
+   "starts": [["the defense of grom'gol", "p1"]],
+   "ends": ["the vile reef"],
+   "type": "hub"
+}
+
+//// ARATHI
+
+{
+   "coords": { "x": 62, "y": 34 },
+   "align": "top",
+   "header": "shards of myzrael",
+   "starts": ["the princess trapped"],
+   "type": "quest"
+},
+
+{
+   "zone": "arathi",
+   "experience": 0,
+   "waypoints": [
+      {
+         "coords": { "x": 74, "y": 36 },
+         "align": "top",
+         "header": "hammerfall",
+         "type": "hub"
+      },
+      {
+         "coords": { "x": 67, "y": 38 },
+         "align": "top",
+         "header": "placeholder",
+         "objectives": [["raising spirits", "p1"]],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 66, "y": 69 },
+         "header": "witherbark village",
+         "objectives": [["call to arms", "p1"]],
+         "special": ["rush the cave area"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 84, "y": 35 },
+         "align": "top",
+         "header": "drywhisker gorge",
+         "ends": ["the princess trapped"],
+         "starts": ["stones of binding"],
+         "objectives": ["the princess trapped"],
+         "special": ["farm inside the cave"],
+         "type": "objective"
+      }
+   ]
+},
+{
+   "zone": "arathi",
+   "experience": 0,
+   "waypoints": [
+      {
+         "coords": { "x": 84, "y": 35 },
+         "align": "top",
+         "header": "drywhisker gorge",
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 74, "y": 36 },
+         "align": "top",
+         "header": "hammerfall",
+         "ends": [["raising spirits", "p1"], ["call to arms", "p1"]],
+         "starts": [["guile of the raptor", "p1"], ["call to arms", "p2"], ["sigil of strom", "e"]],
+         "completed": [["raising spirits", "p2-3"]],
+         "type": "hub"
+      },
+      {
+         "coords": { "x": 67, "y": 30 },
+         "align": "top",
+         "header": "stone of east binding",
+         "objectives": ["stones of binding"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 52, "y": 51 },
+         "align": "bottom",
+         "header": "stone of outer binding",
+         "objectives": ["stones of binding"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 32, "y": 29 },
+         "align": "top",
+         "header": "northfold manor",
+         "objectives": ["foul magics"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 26, "y": 30 },
+         "align": "top",
+         "header": "stone of west binding",
+         "objectives": ["stones of binding"],
+         "type": "objective"
+      }
+   ]
+},
+{
+   "zone": "arathi",
+   "experience": 0,
+   "waypoints": [
+      {
+         "coords": { "x": 26, "y": 30 },
+         "header": "stone of west binding",
+         "objectives": ["stones of binding"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 26, "y": 59 },
+         "header": "stromgarde keep",
+         "objectives": [["sigil of strom", "e"]],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 36, "y": 57 },
+         "align": "top",
+         "header": "stone of inner binding",
+         "ends": ["stones of binding"],
+         "type": "quest"
+      },
+      {
+         "coords": { "x": 53, "y": 76 },
+         "align": "right",
+         "header": "boulderfist hall",
+         "objectives": [["call to arms", "p2"]],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 48, "y": 79 },
+         "header": "placeholder",
+         "objectives": [["guile of the raptor", "p1"]],
+         "special": ["abysmal drop rate", "hearthstone to hammerfall"],
+         "type": "objective"
+      }
+   ]
+},
+{
+   "zone": "arathi",
+   "experience": 0,
+   "waypoints": [
+      {
+         "coords": { "x": 74, "y": 36 },
+         "align": "top",
+         "header": "hammerfall",
+         "ends": ["foul magics", ["guile of the raptor", "p1"], ["sigil of strom", "e"], ["call to arms", "p2"]],
+         "completed": [["guile of the raptor", "p2-3"]],
+         "special": ["fly to tarren mill"],
+         "type": "hub"
+      }
+   ]
+},
+
+{
+   "coords": { "x": 48, "y": 79 },
+   "align": "bottom",
+   "header": "arathi field",
+   "objectives": [["guile of the raptor", "p1"]],
+   "special": ["abysmal drop rate"],
+   "type": "objective"
+},
+{
+   "coords": { "x": 53, "y": 76 },
+   "align": "right",
+   "header": "boulderfist hall",
+   "objectives": [["call to arms", "p2"]],
+   "special": ["hearthstone to hammerfall"],
+   "type": "objective"
+}
+
+//// THUNDER BLUFF
+
+{
+   "coords": { "x": 61, "y": 81 },
+   "align": "right",
+   "header": "melor stonehoof",
+   "ends": ["frostmaw"],
+   "starts": ["deadmire"],
+   "type": "quest"
+}
+
+// DESOLACE
+
+{
+   "zone": "desolace",
+   "experience": 0,
+   "waypoints": [
+      {
+         "coords": { "x": 24, "y": 71 },
+         "align": "top",
+         "header": "shadowprey village",
+         "ends": ["hand of iruxos", "other fish to fry", "clam bait"],
+         "starts": ["portals of the legion"],
+         "type": "hub"
+      },
+      {
+         "coords": { "x": 50, "y": 59 },
+         "align": "top",
+         "header": "kodo graveyard",
+         "objectives": ["bone collector", "kodo roundup"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 61, "y": 62 },
+         "align": "right",
+         "header": "smeed scrabblescrew",
+         "ends": ["kodo roundup"],
+         "type": "quest"
+      },
+      {
+         "coords": { "x": 56, "y": 56 },
+         "header": "ghost walker post",
+         "ends": ["khan dez'hepah", "befouled by satyr", "the burning of spirits"],
+         "starts": [["alliance relations", "p4"], "centaur bounty"],
+         "type": "hub"
+      },
+      {
+         "coords": { "x": 62, "y": 39 },
+         "align": "top",
+         "header": "bibbly f'utzbuckle",
+         "ends": ["bone collector"],
+         "type": "quest"
+      }
+   ]
+},
+{
+   "zone": "desolace",
+   "experience": 0,
+   "waypoints": [
+      {
+         "coords": { "x": 62, "y": 39 },
+         "header": "bibbly f'utzbuckle",
+         "ends": ["bone collector"],
+         "type": "quest"
+      },
+      {
+         "coords": { "x": 69, "y": 76 },
+         "align": "right",
+         "header": "magram village",
+         "objectives": ["centaur bounty", "gelkis alliance"],
+         "special": ["farm to friendly", "don't worry about ears"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 64, "y": 93 },
+         "align": "right",
+         "header": "valley of bones",
+         "objectives": ["ghost-o-plasm round up"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 50, "y": 76 },
+         "align": "top",
+         "header": "mannoroc coven",
+         "objectives": ["portals of the legion"],
+         "special": ["click on portals & kill the demon"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 36, "y": 79 },
+         "align": "top",
+         "header": "uthek the wise",
+         "ends": ["gelkis alliance"],
+         "starts": ["stealing supplies"],
+         "type": "quest"
+      }
+   ]
+},
+{
+   "zone": "desolace",
+   "experience": 0,
+   "waypoints": [
+      {
+         "coords": { "x": 36, "y": 79 },
+         "header": "uthek the wise",
+         "ends": ["gelkis alliance"],
+         "starts": ["stealing supplies"],
+         "type": "quest"
+      },
+      {
+         "coords": { "x": 69, "y": 76 },
+         "align": "right",
+         "header": "magram village",
+         "objectives": ["stealing supplies", "centaur bounty"],
+         "special": ["farm the remaining ears"],
+         "type": "objective"
+      },
+      {
+         "coords": { "x": 56, "y": 56 },
+         "align": "top",
+         "header": "ghost walker post",
+         "ends": ["centaur bounty"],
+         "type": "hub"
+      },
+      {
+         "coords": { "x": 48, "y": 62 },
+         "header": "hornizz brimbuzzle",
+         "ends": ["ghost-o-plasm round up"],
+         "special": ["hearthstone to shadowprey"],
+         "type": "quest"
+      }
+   ]
+},
+{
+   "zone": "desolace",
+   "experience": 0,
+   "waypoints": [
+      {
+         "coords": { "x": 24, "y": 71 },
+         "header": "shadowprey village",
+         "ends": ["portals of the legion"],
+         "type": "hub"
+      },
+      {
+         "coords": { "x": 36, "y": 79 },
+         "align": "right",
+         "header": "uthek the wise",
+         "ends": ["stealing supplies"],
+         "starts": ["ongeku"],
+         "type": "quest"
+      }
+   ]
+},
+{
+   "zone": "desolace",
+   "experience": 0,
+   "waypoints": [
+      {
+         "coords": { "x": 36, "y": 79 },
+         "align": "right",
+         "header": "uthek the wise",
+         "ends": ["stealing supplies"],
+         "starts": ["ongeku"],
+         "type": "quest"
+      },
+      {
+         "coords": { "x": 24, "y": 71 },
+         "header": "shadowprey village",
+         "special": ["fly to tanaris"],
+         "type": "hub"
+      }
+   ]
+},
