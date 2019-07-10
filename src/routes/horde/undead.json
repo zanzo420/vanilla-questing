@@ -132,7 +132,7 @@
                "coords": { "x": 60, "y": 52 },
                "header": "brill",
                "ends": ["doom weed", "graverobbers", "wanted: maggot eye"],
-               "special": ["abandom herbalism is you want"],
+               "special": ["abandon herbalism if you want"],
                "type": "hub"
             },
             {
