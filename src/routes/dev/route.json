@@ -4360,27 +4360,8 @@
          "experience": 33.42,
          "waypoints": [
             {
-               "coords": { "x": 6, "y": 61 },
-               "header": "deadwind border",
-               "type": "travel"
-            },
-            {
                "coords": { "x": 46, "y": 54 },
-               "align": "right",
-               "header": "stonard",
-               "starts": ["neeka bloodscar"],
-               "special": ["learn the flightpath"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "swamp",
-         "experience": 33.42,
-         "waypoints": [
-            {
-               "coords": { "x": 46, "y": 54 },
-               "align": "right",
+               "align": "top",
                "header": "stonard",
                "starts": ["neeka bloodscar"],
                "special": ["learn the flightpath"],
@@ -4388,6 +4369,7 @@
             },
             {
                "coords": { "x": 6, "y": 61 },
+               "align": "top",
                "header": "deadwind border",
                "type": "travel"
             }
@@ -4843,53 +4825,6 @@
                "align": "bottom",
                "header": "freewind post",
                "starts": ["family tree"],
-               "special": ["set hearthstone", "fly to tanaris"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "tanaris",
-         "experience": 34.62,
-         "waypoints": [
-            {
-               "coords": { "x": 52, "y": 25 },
-               "align": "right",
-               "header": "tanaris flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 51, "y": 21 },
-               "align": "top",
-               "header": "thousand needles border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "needles",
-         "experience": 34.62,
-         "waypoints": [
-            {
-               "coords": { "x": 75, "y": 96 },
-               "align": "right",
-               "header": "tanaris border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 78, "y": 77 },
-               "align": "right",
-               "header": "shimmering flats",
-               "ends": ["parts for kravel"],
-               "starts": ["the rumormonger"],
-               "completed": ["delivery to the gnomes"],
-               "special": ["hearthstone to freewind post"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 45, "y": 50 },
-               "align": "top",
-               "header": "freewind post",
                "special": ["fly to thunder bluff"],
                "type": "hub"
             }
@@ -5208,13 +5143,6 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 47, "y": 80 },
-               "align": "right",
-               "header": "shimra",
-               "special": ["buy 3x soothing spices"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 45, "y": 64 },
                "align": "right",
                "header": "orgrimmar flightpath",
@@ -5244,7 +5172,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 35.95,
          "waypoints": [
             {
                "coords": { "x": 25, "y": 73 },
@@ -5255,9 +5183,8 @@
                "coords": { "x": 27, "y": 77 },
                "align": "right",
                "header": "booty bay",
-               "ends": ["the rumormonger"],
                "starts": ["hostile takeover", ["goblin sponsorship", "p4"], "some assembly required"],
-               "special": ["set hearthstone", "fly to grom'gol"],
+               "special": ["fly to grom'gol"],
                "type": "flightpath"
             },
             {
@@ -5291,7 +5218,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 36.11,
          "waypoints": [
             {
                "coords": { "x": 25, "y": 25 },
@@ -5334,7 +5261,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 36.26,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 22 },
@@ -5361,70 +5288,56 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 36.42,
          "waypoints": [
             {
-               "coords": { "x": 27, "y": 77 },
-               "header": "booty bay",
-               "ends": ["hostile takeover", ["goblin sponsorship", "p4"], "some assembly required"],
-               "starts": [["goblin sponsorship", "p5"]],
-               "special": [ "fly to grom'gol"],
-               "type": "flightpath"
+               "coords": { "x": 37, "y": 31 },
+               "align": "top",
+               "header": "mizjah ruins",
+               "objectives": [["the defense of grom'gol", "p2"]],
+               "type": "objective"
             },
             {
+               "align": "top",
                "coords": { "x": 32, "y": 29 },
                "header": "grom'gol basecamp",
                "ends": [["the defense of grom'gol", "p2"]],
                "special": ["sail to tirisfal glades"],
                "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "tirisfal",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 61, "y": 59 },
-               "header": "zeppelin station",
-               "type": "travel"
             },
             {
-               "coords": { "x": 62, "y": 65 },
-               "header": "undercity gates",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "undercity",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 71, "y": 44 },
-               "align": "top",
-               "header": "undercity lifts",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 64, "y": 47 },
-               "align": "top",
-               "header": "undercity flightpath",
-               "special": ["fly to arathi highlands"],
+               "coords": { "x": 27, "y": 77 },
+               "header": "booty bay",
+               "ends": ["hostile takeover", ["goblin sponsorship", "p4"], "some assembly required"],
+               "starts": [["goblin sponsorship", "p5"]],
+               "special": ["fly to stonard"],
                "type": "flightpath"
             }
          ]
       },
       {
+         "zone": "swamp",
+         "experience": 36.57,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "right",
+               "header": "stonard",
+               "ends": ["report to helgrum"],
+               "special": ["fly to arathi highlands"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 36.61,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
                "align": "top",
                "header": "hammerfall",
                "starts": [["guile of the raptor", "p1"], ["call to arms", "p2"]],
-               "special": ["set hearthstone"],
                "type": "hub"
             },
             {
@@ -5446,18 +5359,26 @@
                "align": "bottom",
                "header": "arathi peninsula",
                "objectives": [["guile of the raptor", "p1"]],
-               "special": ["abysmal drop rate", "hearthstone to hammerfall"],
+               "special": ["abysmal drop rate"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 36.78,
          "waypoints": [
             {
-               "coords": { "x": 74, "y": 36 },
+               "coords": { "x": 48, "y": 79 },
                "align": "bottom",
+               "header": "arathi peninsula",
+               "objectives": [["guile of the raptor", "p1"]],
+               "special": ["abysmal drop rate"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 74, "y": 36 },
+               "align": "top",
                "header": "hammerfall",
                "ends": [["guile of the raptor", "p1"], ["call to arms", "p2"]],
                "completed": [["guile of the raptor", "p2"]],
@@ -5465,41 +5386,345 @@
             },
             {
                "coords": { "x": 84, "y": 35 },
-               "align": "bottom",
+               "align": "top",
                "header": "drywhisker gorge",
                "ends": ["the princess trapped"],
                "starts": ["stones of binding"],
                "objectives": ["the princess trapped"],
-               "special": ["farm inside the cave"],
+               "special": ["hearthstone to desolace"],
                "type": "objective"
-            },
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 37,
+         "waypoints": [
             {
-               "coords": { "x": 67, "y": 30 },
+               "coords": { "x": 24, "y": 71 },
                "align": "top",
-               "header": "stone of east binding",
-               "objectives": ["stones of binding"],
-               "type": "objective"
+               "header": "shadowprey village",
+               "starts": ["portals of the legion"],
+               "type": "hub"
             },
             {
-               "coords": { "x": 52, "y": 51 },
+               "coords": { "x": 36, "y": 79 },
                "align": "bottom",
-               "header": "stone of outer binding",
-               "objectives": ["stones of binding"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 26, "y": 30 },
-               "align": "top",
-               "header": "stone of west binding",
-               "objectives": ["stones of binding"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 36, "y": 57 },
-               "align": "top",
-               "header": "stone of inner binding",
-               "ends": ["stones of binding"],
+               "header": "uthek the wise",
+               "starts": ["stealing supplies"],
                "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 93 },
+               "align": "bottom",
+               "header": "valley of bones",
+               "objectives": ["ghost-o-plasm round up"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 69, "y": 76 },
+               "align": "top",
+               "header": "magram village",
+               "objectives": ["stealing supplies"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 62 },
+               "align": "top",
+               "header": "hornizz brimbuzzle",
+               "ends": ["ghost-o-plasm round up"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 76 },
+               "header": "mannoroc coven",
+               "objectives": ["portals of the legion"],
+               "special": ["click on portals & kill the demon"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 37.12,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 76 },
+               "align": "top",
+               "header": "mannoroc coven",
+               "objectives": ["portals of the legion"],
+               "special": ["click on portals & kill the demon"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 79 },
+               "align": "bottom",
+               "header": "uthek the wise",
+               "ends": ["stealing supplies"],
+               "starts": ["ongeku"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 24, "y": 71 },
+               "align": "top",
+               "header": "shadowprey village",
+               "ends": ["portals of the legion"],
+               "special": ["buy 3x soothing spices", "fly to tanaris"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 37.18,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "right",
+               "header": "tanaris flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 51, "y": 21 },
+               "header": "thousand needles border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 37.18,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 77 },
+               "align": "right",
+               "header": "shimmering flats",
+               "ends": [["encrusted tail fins", "e"], ["goblin sponsorship", "p5"], "parts for kravel"],
+               "completed": ["the eighteenth pilot", "delivery to the gnomes"],
+               "starts": ["razzeric's tweaking", "the rumormonger"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "tanaris border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 37.24,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 21 },
+               "header": "thousand needles border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "right",
+               "header": "tanaris flightpath",
+               "special": ["fly to camp taurajo"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 37.24,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 59 },
+               "header": "camp taurajo",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 51, "y": 79 },
+               "align": "right",
+               "header": "shady rest inn",
+               "starts": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 37.24,
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 48 },
+               "align": "bottom",
+               "header": "shady rest inn",
+               "starts": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 38 },
+               "align": "right",
+               "header": "mudcrush durtfeet",
+               "starts": ["hungry!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 31 },
+               "align": "right",
+               "header": "brackenwall village",
+               "ends": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
+               "starts": [["the black shield", "p3"], "theramore spies"],
+               "completed": [["the black shield", "p2"]],
+               "special": ["learn the flightpath", "set hearthstone"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 37.29,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 31 },
+               "header": "brackenwall village",
+               "ends": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
+               "starts": [["the black shield", "p3"], "theramore spies"],
+               "completed": [["the black shield", "p2"]],
+               "special": ["learn the flightpath", "set hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 40, "y": 24 },
+               "align": "top",
+               "header": "placeholder",
+               "objectives": ["theramore spies"],
+               "special": ["they are stealthed"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 17 },
+               "align": "top",
+               "header": "stinky ignaz",
+               "starts": [["stinky's escape", "f"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "align": "bottom",
+               "header": "swamp eye jael",
+               "completed": ["soothing spices"],
+               "starts": ["jarl needs eyes"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 15 },
+               "align": "right",
+               "header": "dreadmurk shore",
+               "objectives": ["hungry!"],
+               "special": ["hearthstone to brackenwall"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 37.41,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 31 },
+               "align": "right",
+               "header": "brackenwall village",
+               "ends": ["theramore spies"],
+               "starts": ["the theramore docks"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 35, "y": 38 },
+               "header": "mudcrush durtfeet",
+               "ends": ["hungry!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 22 },
+               "align": "top",
+               "header": "darkmist cavern",
+               "objectives": [["the black shield", "p3"], "jarl needs eyes"],
+               "special": ["abysmal drop rate"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "align": "top",
+               "header": "swamp eye jael",
+               "ends": ["jarl needs eyes"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 72, "y": 51 },
+               "align": "right",
+               "header": "captain's footlocker",
+               "objectives": ["the theramore docks"],
+               "special": ["die & spirit ress"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 37.63,
+         "waypoints": [
+            {
+               "coords": { "x": 40, "y": 31 },
+               "align": "top",
+               "header": "brackenwall spirit healer",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 36, "y": 31 },
+               "align": "top",
+               "header": "brackenwall village",
+               "ends": ["the theramore docks", ["the black shield", "p3"]],
+               "starts": [["the black shield", "p5"]],
+               "completed": [["the black shield", "p4"]],
+               "special": ["fly to ratchet"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 37.75,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "top",
+               "header": "ratchet",
+               "ends": [["stinky's escape", "f"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 64, "y": 39 },
+               "align": "top",
+               "header": "ratchet harbor",
+               "special": ["sail to booty bay"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 37.82,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "booty bay harbor",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "align": "right",
+               "header": "booty bay",
+               "ends": ["the rumormonger"],
+               "starts": ["dream dust in the swamp"],
+               "special": ["grind mobs to level 40", "buy a mount", "continue from undercity"],
+               "type": "flightpath"
             }
          ]
       },
@@ -5623,16 +5848,38 @@
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
-               "align": "top",
+               "align": "right",
                "header": "hammerfall",
                "starts": [["the broken sigil", "e"], ["call to arms", "p3, e"], ["the real threat", "e"], ["foul magics", "e"]],
                "special": ["set hearthstone"],
                "type": "hub"
             },
             {
-               "coords": { "x": 36, "y": 57 },
+               "coords": { "x": 67, "y": 30 },
+               "align": "top",
+               "header": "stone of east binding",
+               "objectives": ["stones of binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 51 },
                "align": "bottom",
+               "header": "stone of outer binding",
+               "objectives": ["stones of binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 30 },
+               "align": "top",
+               "header": "stone of west binding",
+               "objectives": ["stones of binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 57 },
+               "align": "right",
                "header": "stone of inner binding",
+               "ends": ["stones of binding"],
                "starts": [["breaking the keystone", "e"]],
                "type": "quest"
             },
@@ -5677,7 +5924,7 @@
                "align": "top",
                "header": "fozruk",
                "objectives": [["breaking the keystone", "e"]],
-               "special": ["ask about his position in general chat"],
+               "special": ["ask about fozruk's position in general chat"],
                "type": "objective"
             },
             {
@@ -5693,28 +5940,8 @@
                "header": "keystone monument",
                "ends": [["breaking the keystone", "e"]],
                "starts": ["myzrael's allies"],
+               "special": ["run back to hammerfall"],
                "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "arathi",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 36, "y": 58 },
-               "header": "keystone monument",
-               "ends": [["breaking the keystone", "e"]],
-               "starts": ["myzrael's allies"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 74, "y": 36 },
-               "align": "top",
-               "header": "hammerfall",
-               "ends": [["sigil of arathor", "e"], "myzrael's allies"],
-               "starts": [["sigil of trollbane", "e"], "theldurin the lost"],
-               "type": "hub"
             }
          ]
       },
@@ -5735,28 +5962,8 @@
                "align": "top",
                "header": "the sanctum",
                "objectives": [["sigil of trollbane", "e"]],
+               "special": ["run back to hammerfall"],
                "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "arathi",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 28, "y": 58 },
-               "align": "top",
-               "header": "the sanctum",
-               "objectives": [["sigil of trollbane", "e"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 74, "y": 36 },
-               "align": "top",
-               "header": "hammerfall",
-               "ends": [["sigil of trollbane", "e"]],
-               "starts": [["trol'kalar", "p1"]],
-               "type": "hub"
             }
          ]
       },
@@ -5784,7 +5991,7 @@
                "coords": { "x": 22, "y": 80 },
                "align": "bottom",
                "header": "move here",
-               "special": ["run alongside the left wall"],
+               "special": ["run alongside the left outer castle wall"],
                "type": "travel"
             },
             {
@@ -6045,7 +6252,7 @@
          "waypoints": [
             {
                "coords": { "x": 46, "y": 54 },
-               "align": "right",
+               "align": "bottom",
                "header": "stonard",
                "ends": ["report to helgrum"],
                "starts": [["lack of surplus", "p1"], "pool of tears"],
@@ -6053,6 +6260,7 @@
             },
             {
                "coords": { "x": 14, "y": 60 },
+               "align": "bottom",
                "header": "itharius's cave",
                "objectives": ["dream dust in the swamp"],
                "special": ["abysmal drop rate"],
@@ -6131,86 +6339,29 @@
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
+               "align": "right",
                "header": "booty bay",
                "ends": ["dream dust in the swamp", ["sunken treasure", "p4"]],
                "starts": [["excelsior", "e"], "singing blue shards"],
-               "special": ["fly to grom'gol"],
+               "special": ["set hearthstone", "fly to grom'gol"],
                "type": "hub"
             },
             {
                "coords": { "x": 32, "y": 29 },
+               "align": "right",
                "header": "grom'gol basecamp",
-               "starts": ["headhunting"],
-               "special": ["set hearthstone"],
+               "starts": ["bloodscalp clan heads", ["mok'thardin's enchantment", "p1"]],
                "type": "hub"
             },
             {
-               "coords": { "x": 34, "y": 32 },
-               "align": "bottom",
-               "header": "the savage coast",
-               "objectives": [["excelsior", "e"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 34, "y": 32 },
-               "align": "bottom",
+               "coords": { "x": 28, "y": 21 },
                "header": "the savage coast",
                "objectives": [["excelsior", "e"]],
                "type": "objective"
             },
             {
-               "coords": { "x": 36, "y": 11 },
-               "align": "top",
-               "header": "nesingwary's expedition",
-               "starts": [["tiger mastery", "p3"], ["panther mastery", "p2"], ["raptor mastery", "p2"]],
-               "completed": ["the green hills of stranglethorn", ["chapter", "1-4"]],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 32, "y": 17 },
-               "align": "bottom",
-               "header": "sin'dall",
-               "objectives": [["tiger mastery", "p3"]],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 23, "y": 9 },
                "align": "top",
-               "header": "ruins of zul'kunda",
-               "objectives": ["headhunting"],
-               "special": ["kill headhunters in the back"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 32, "y": 29 },
-               "align": "bottom",
-               "header": "grom'gol basecamp",
-               "ends": ["headhunting"],
-               "starts": ["bloodscalp clan heads", ["mok'thardin's enchantment", "p1"]],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 32, "y": 29 },
-               "align": "bottom",
-               "header": "grom'gol basecamp",
-               "ends": ["headhunting"],
-               "starts": ["bloodscalp clan heads", ["mok'thardin's enchantment", "p1"]],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 23, "y": 9 },
                "header": "ruins of zul'kunda",
                "objectives": ["bloodscalp clan heads"],
                "type": "objective"
@@ -6219,7 +6370,22 @@
                "coords": { "x": 36, "y": 11 },
                "align": "top",
                "header": "nesingwary's expedition",
-               "ends": [["tiger mastery", "p3"]],
+               "starts": [["tiger mastery", "p4"], ["panther mastery", "p3"], ["raptor mastery", "p3"]],
+               "completed": ["the green hills of stranglethorn", ["chapter", "1-4"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "nesingwary's expedition",
+               "starts": [["tiger mastery", "p4"], ["panther mastery", "p3"], ["raptor mastery", "p3"]],
+               "completed": ["the green hills of stranglethorn", ["chapter", "1-4"]],
                "type": "hub"
             },
             {
@@ -6229,23 +6395,10 @@
                "objectives": [["panther mastery", "p2"], ["mok'thardin's enchantment", "p1"]],
                "special": ["panthers are stealthed"],
                "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 48, "y": 22 },
-               "align": "top",
-               "header": "ruins of zul'kunda",
-               "objectives": [["panther mastery", "p2"], ["mok'thardin's enchantment", "p1"]],
-               "special": ["panthers are stealthed"],
-               "type": "objective"
             },
             {
                "coords": { "x": 32, "y": 29 },
+               "align": "top",
                "header": "grom'gol basecamp",
                "ends": ["bloodscalp clan heads", ["mok'thardin's enchantment", "p1"]],
                "starts": [["mok'thardin's enchantment", "p2"]],
@@ -6273,7 +6426,6 @@
          "waypoints": [
             {
                "coords": { "x": 32, "y": 40 },
-               "align": "bottom",
                "header": "the cape of stranglethorn",
                "objectives": [["raptor mastery", "p2"], ["mok'thardin's enchantment", "p2"]],
                "special": ["abysmal drop rate"],
@@ -6286,10 +6438,16 @@
                "type": "hub"
             },
             {
+               "coords": { "x": 32, "y": 17 },
+               "header": "sin'dall",
+               "objectives": [["tiger mastery", "p4"]],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 36, "y": 11 },
                "align": "top",
                "header": "nesingwary's expedition",
-               "ends": [["panther mastery", "p2"], ["raptor mastery", "p2"]],
+               "ends": [["tiger mastery", "p4"], ["panther mastery", "p3"], ["raptor mastery", "p3"]],
                "special": ["hearthstone to booty bay"],
                "type": "hub"
             }
@@ -6301,14 +6459,16 @@
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
+               "align": "right",
                "header": "booty bay",
                "ends": [["excelsior", "e"], "singing blue shards"],
-               "starts": ["tran'rek", "rumors for kravel", ["goblin sponsorship", "p5"], "stoley's debt"],
+               "starts": ["tran'rek", "rumors for kravel", "stoley's debt"],
                "type": "hub"
             },
             {
                "coords": { "x": 26, "y": 73 },
                "header": "booty bay harbor",
+               "special": ["sail to ratchet"],
                "type": "travel"
             }
          ]
@@ -6326,43 +6486,45 @@
             {
                "coords": { "x": 62, "y": 38 },
                "header": "ratchet flightpath",
-               "special": ["fly to orgrimmar"],
+               "special": ["fly to thunder bluff"],
                "type": "flightpath"
             }
          ]
       },
       {
-         "zone": "orgrimmar",
+         "zone": "thunderbluff",
          "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 45, "y": 64 },
-               "align": "right",
-               "header": "orgrimmar flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 39, "y": 86 },
-               "header": "deino",
-               "starts": ["tabetha's task"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "orgrimmar",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 39, "y": 86 },
-               "header": "deino",
+               "coords": { "x": 26, "y": 14 },
+               "header": "ursyn ghull",
                "starts": ["tabetha's task"],
                "type": "quest"
             },
             {
-               "coords": { "x": 45, "y": 64 },
-               "align": "right",
-               "header": "orgrimmar flightpath",
+               "coords": { "x": 34, "y": 47 },
+               "header": "sage truthseeker",
+               "ends": [["compendium of the fallen", "d"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 81 },
+               "align": "bottom",
+               "header": "mosarn",
+               "ends": [["the black shield", "p4"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 61, "y": 81 },
+               "align": "bottom",
+               "header": "melor stonehoof",
+               "starts": ["deadmire"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "top",
+               "header": "thunder bluff flightpath",
                "special": ["fly to dustwallow marsh"],
                "type": "flightpath"
             }
@@ -6373,24 +6535,12 @@
          "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 36, "y": 31 },
-               "header": "brackenwall village",
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 46, "y": 57 },
+               "coords": { "x": 54, "y": 56 },
                "align": "bottom",
-               "header": "tabetha",
-               "ends": ["tabetha's task"],
-               "objectives": ["deadmire"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "dustwallow",
-         "experience": 0,
-         "waypoints": [
+               "header": "beezil's wreck",
+               "objectives": ["razzeric's tweaking"],
+               "type": "objective"
+            },
             {
                "coords": { "x": 46, "y": 57 },
                "align": "bottom",
@@ -6452,8 +6602,8 @@
                "coords": { "x": 78, "y": 77 },
                "align": "right",
                "header": "shimmering flats",
-               "ends": ["rumors for kravel", ["goblin sponsorship", "p5"]],
-               "completed": ["the eighteenth pilot"],
+               "ends": ["rumors for kravel", "razzeric's tweaking"],
+               "starts": ["back to booty bay", ["safety first", "p1"]],
                "type": "quest"
             },
             {
@@ -6476,41 +6626,8 @@
          "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 47, "y": 50 },
-               "align": "top",
-               "header": "thunder bluff flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 34, "y": 47 },
-               "align": "top",
-               "header": "sage truthseeker",
-               "ends": [["compendium of the fallen", "d"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 54, "y": 81 },
-               "align": "bottom",
-               "header": "mosarn",
-               "ends": [["the black shield", "p4"]],
-               "type": "quest"
-            },
-            {
                "coords": { "x": 61, "y": 81 },
                "align": "bottom",
-               "header": "melor stonehoof",
-               "ends": ["deadmire"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "thunderbluff",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 61, "y": 81 },
-               "align": "right",
                "header": "melor stonehoof",
                "ends": ["deadmire"],
                "type": "quest"
@@ -6610,6 +6727,7 @@
             {
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
+               "ends": ["back to booty bay"],
                "special": ["fly to badlands"],
                "type": "hub"
             }
@@ -7271,7 +7389,7 @@
             },
             {
                "coords": { "x": 37, "y": 69 },
-               "align": "right",
+               "align": "bottom",
                "header": "the crystal shore",
                "objectives": [["the captain's chest", "e"]],
                "type": "objective"
@@ -7282,19 +7400,6 @@
                "ends": [["the captain's chest", "e"], "voodoo dues", "fool's stout", "venture company mining", "skullsplitter tusks", "stranglethorn fever"],
                "starts": [["cracking maury's foot", "e"], ["the bloodsail buccaneers", "p4"], "up to snuff", "akiris by the bundle", "keep an eye out"],
                "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 27, "y": 77 },
-               "header": "booty bay",
-               "ends": [["the captain's chest", "e"], "voodoo dues", "fool's stout", "venture company mining", "skullsplitter tusks", "stranglethorn fever"],
-               "starts": [["cracking maury's foot", "e"], ["the bloodsail buccaneers", "p4"], "up to snuff", "akiris by the bundle", "keep an eye out"],
-               "type": "hub"
             },
             {
                "coords": { "x": 27, "y": 83 },
@@ -7314,19 +7419,6 @@
                "objectives": [["the bloodsail buccaneers", "p4"], "up to snuff", "keep an eye out"],
                "type": "objective"
             },
-            {
-               "coords": { "x": 27, "y": 77 },
-               "header": "booty bay",
-               "ends": [["the bloodsail buccaneers", "p4"], "up to snuff", "keep an eye out"],
-               "starts": [["the bloodsail buccaneers", "p5"]],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 0,
-         "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
