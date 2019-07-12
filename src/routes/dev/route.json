@@ -8,7 +8,7 @@
                "coords": { "x": 52, "y": 31 },
                "header": "the crossroads",
                "ends": ["sample for helbrim", "crossroads conscription"],
-               "starts": ["plainstrider menace", "lost in battle", "the forgotten pools", "raptor thieves", "disrupt the attacks", "harpy raiders", "fungal spores", "wharfmaster dizzywig"],
+               "starts": ["fungal spores", "wharfmaster dizzywig", "plainstrider menace", "the forgotten pools", "raptor thieves", "disrupt the attacks", "harpy raiders"],
                "special": ["set hearthstone", "learn the flightpath"],
                "type": "hub"
             },
@@ -36,7 +36,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 14.75,
+         "experience": 14.76,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 24 },
@@ -76,7 +76,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 15.05,
+         "experience": 15,
          "waypoints": [
             {
                "coords": { "x": 40, "y": 17 },
@@ -98,7 +98,7 @@
                "align": "top",
                "header": "the crossroads",
                "ends": ["fungal spores", "disrupt the attacks", "harpy raiders", "plainstrider menace", "the forgotten pools"],
-               "starts": ["supplies for the crossroads", "the zhevra", "the stagnant oasis"],
+               "starts": ["supplies for the crossroads", "harpy lieutenants", "the zhevra", "the stagnant oasis"],
                "type": "hub"
             },
             {
@@ -110,26 +110,25 @@
             },
             {
                "coords": { "x": 58, "y": 35 },
-               "align": "top",
+               "align": "right",
                "header": "barrens savannah",
                "objectives": ["the zhevra", "raptor thieves"],
                "special": ["collect some of the raptors heads"],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 62, "y": 38 },
-               "align": "right",
-               "header": "ratchet",
-               "ends": ["wharfmaster dizzywig"],
-               "special": ["learn the flightpath"],
-               "type": "hub"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 15.67,
+         "experience": 15.56,
          "waypoints": [
+            {
+               "coords": { "x": 58, "y": 35 },
+               "header": "barrens savannah",
+               "objectives": ["the zhevra", "raptor thieves"],
+               "special": ["collect some of the raptors heads"],
+               "type": "objective"
+            },
             {
                "coords": { "x": 62, "y": 38 },
                "align": "bottom",
@@ -164,7 +163,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 15.85,
+         "experience": 15.82,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
@@ -196,6 +195,7 @@
             },
             {
                "coords": { "x": 58, "y": 54 },
+               "align": "bottom",
                "header": "raptor grounds",
                "objectives": ["raptor horns", "stolen silver"],
                "type": "objective"
@@ -204,10 +204,11 @@
       },
       {
          "zone": "barrens",
-         "experience": 16.40,
+         "experience": 16.38,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 54 },
+               "align": "bottom",
                "header": "raptor grounds",
                "objectives": ["raptor horns", "stolen silver"],
                "type": "objective"
@@ -225,7 +226,7 @@
                "coords": { "x": 62, "y": 38 },
                "align": "right",
                "header": "ratchet",
-               "ends": ["the guns of northwatch", "wanted: baron longshore", ["free from the hold", "f"], "raptor horns", "southsea freebooters"],
+               "ends": ["the guns of northwatch", ["free from the hold", "f"], "raptor horns", "wanted: baron longshore", "southsea freebooters"],
                "starts": ["stolen booty"],
                "completed": [["the missing shipment", "p1-2"]],
                "type": "hub"
@@ -234,13 +235,13 @@
       },
       {
          "zone": "barrens",
-         "experience": 16.95,
+         "experience": 16.91,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 38 },
                "align": "right",
                "header": "ratchet",
-               "ends": ["the guns of northwatch", ["free from the hold", "f"], "raptor horns", "southsea freebooters"],
+               "ends": ["the guns of northwatch", ["free from the hold", "f"], "raptor horns", "wanted: baron longshore", "southsea freebooters"],
                "starts": ["stolen booty"],
                "completed": [["the missing shipment", "p1-2"]],
                "type": "hub"
@@ -254,6 +255,7 @@
             },
             {
                "coords": { "x": 63, "y": 50 },
+               "align": "bottom",
                "header": "drizzlik's emporium",
                "objectives": ["stolen booty"],
                "type": "objective"
@@ -262,7 +264,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 16.98,
+         "experience": 16.94,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 50 },
@@ -283,7 +285,7 @@
                "coords": { "x": 52, "y": 31 },
                "header": "the crossroads",
                "ends": ["stolen silver", "the disruption ends"],
-               "starts": ["apothecary zamah"],
+               "starts": ["apothecary zamah", "lost in battle"],
                "type": "hub"
             },
             {
@@ -310,7 +312,7 @@
                "coords": { "x": 44, "y": 59 },
                "align": "bottom",
                "header": "taurajo flightpath",
-               "special": ["learn the flightpath", "taurens fly to thunderbluff"],
+               "special": ["learn the flightpath", "taurens should fly to thunder bluff"],
                "type": "flightpath"
             },
             {
@@ -323,7 +325,7 @@
       },
       {
          "zone": "mulgore",
-         "experience": 17.27,
+         "experience": 17.24,
          "waypoints": [
             {
                "coords": { "x": 69, "y": 61 },
@@ -341,7 +343,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 17.27,
+         "experience": 17.24,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 65 },
@@ -376,7 +378,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 17.32,
+         "experience": 17.29,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 28 },
@@ -391,7 +393,6 @@
                "align": "bottom",
                "header": "the crossroads",
                "ends": ["altered beings", "lost in battle"],
-               "starts": ["harpy lieutenants"],
                "special": ["fly to orgrimmar"],
                "type": "hub"
             }
@@ -399,7 +400,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 17.51,
+         "experience": 17.48,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -433,7 +434,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 17.70,
+         "experience": 17.71,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 49 },
@@ -462,7 +463,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 17.91,
+         "experience": 17.92,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 53 },
@@ -568,7 +569,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 18.27,
+         "experience": 18.25,
          "waypoints": [
             {
                "coords": { "x": 81, "y": 88 },
@@ -597,7 +598,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 18.48,
+         "experience": 18.46,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 86 },
@@ -642,7 +643,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 18.73,
+         "experience": 18.77,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
@@ -686,7 +687,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 18.99,
+         "experience": 19,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 5 },
@@ -731,7 +732,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 19.22,
+         "experience": 19.24,
          "waypoints": [
             {
                "coords": { "x": 69, "y": 86 },
@@ -786,7 +787,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 19.40,
+         "experience": 19.43,
          "waypoints": [
             {
                "coords": { "x": 16, "y": 19 },
@@ -821,7 +822,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 19.64,
+         "experience": 19.67,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
@@ -856,7 +857,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 20.02,
+         "experience": 20,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 28 },
@@ -900,13 +901,8 @@
          "experience": 20.21,
          "waypoints": [
             {
-               "coords": { "x": 47, "y": 50 },
-               "header": "thunder bluff flightpath",
-               "type": "flightpath"
-            },
-            {
                "coords": { "x": 61, "y": 81 },
-               "align": "bottom",
+               "align": "right",
                "header": "melor stonehoof",
                "ends": ["melor sends word"],
                "type": "quest"
@@ -914,21 +910,6 @@
             {
                "coords": { "x": 75, "y": 30 },
                "align": "right",
-               "header": "elder rise",
-               "ends": [["testing an enemy's strength", "d"], ["returning the lost satchel", "d"], "hamuul runetotem"],
-               "starts": [["leaders of the fang", "d"]],
-               "completed": ["nara wildmane"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "thunderbluff",
-         "experience": 20.38,
-         "waypoints": [
-            {
-               "coords": { "x": 73, "y": 30 },
-               "align": "top",
                "header": "elder rise",
                "ends": [["testing an enemy's strength", "d"], ["returning the lost satchel", "d"], "hamuul runetotem"],
                "starts": [["leaders of the fang", "d"]],
@@ -1068,7 +1049,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 20.67,
+         "experience": 20.69,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 25 },
@@ -1110,7 +1091,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 20.81,
+         "experience": 20.84,
          "waypoints": [
             {
                "coords": { "x": 15, "y": 46 },
@@ -1152,7 +1133,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 21.15,
+         "experience": 21.21,
          "waypoints": [
             {
                "coords": { "x": 77, "y": 41 },
@@ -1173,10 +1154,11 @@
       },
       {
          "zone": "silverpine",
-         "experience": 21.38,
+         "experience": 21.44,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
+               "align": "top",
                "header": "sepulcher",
                "ends": ["beren's peril", "ambermill investigations", "rot hide ichor"],
                "starts": ["rot hide origins"],
@@ -1184,7 +1166,7 @@
             },
             {
                "coords": { "x": 46, "y": 43 },
-               "align": "right",
+               "align": "top",
                "header": "sepulcher flightpath",
                "special": ["fly to undercity"],
                "type": "flightpath"
@@ -1193,7 +1175,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 21.53,
+         "experience": 21.59,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -1218,13 +1200,13 @@
       },
       {
          "zone": "barrens",
-         "experience": 21.67,
+         "experience": 21.73,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
                "align": "top",
                "header": "the crossroads",
-               "starts": ["letter to jin'zil", "consumed by hatred", "egg hunt"],
+               "starts": ["consumed by hatred", "egg hunt", "letter to jin'zil"],
                "special": ["fly to stonetalon"],
                "type": "hub"
             }
@@ -1232,7 +1214,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 21.67,
+         "experience": 21.73,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 60 },
@@ -1272,7 +1254,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 21.79,
+         "experience": 21.82,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 55 },
@@ -1330,7 +1312,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 22.09,
+         "experience": 22.13,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 61 },
@@ -1351,7 +1333,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 22.20,
+         "experience": 22.25,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 59 },
@@ -1374,21 +1356,21 @@
                "align": "top",
                "header": "thorn hill",
                "objectives": ["ishamuhale"],
-               "special": ["plant a zhevra carcass"],
+               "special": ["plant a zhevra carcass & plant it"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 22.32,
+         "experience": 22.36,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 30 },
                "align": "top",
                "header": "thorn hill",
                "objectives": ["ishamuhale"],
-               "special": ["plant a zhevra carcass"],
+               "special": ["plant a zhevra carcass & plant it"],
                "type": "objective"
             },
             {
@@ -1415,7 +1397,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 22.40,
+         "experience": 22.44,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 62 },
@@ -1458,7 +1440,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 22.62,
+         "experience": 22.66,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 51 },
@@ -1494,7 +1476,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 22.95,
+         "experience": 23.02,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 71 },
@@ -1528,7 +1510,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 23,
+         "experience": 23.08,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 80 },
@@ -1571,7 +1553,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 23.18,
+         "experience": 23.20,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 77 },
@@ -1608,7 +1590,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 23.75,
+         "experience": 23.80,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
@@ -1645,7 +1627,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 23.89,
+         "experience": 23.95,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 53 },
@@ -1661,13 +1643,7 @@
                "ends": ["isha awak"],
                "special": ["hearthstone to crossroads"],
                "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "barrens",
-         "experience": 23.99,
-         "waypoints": [
+            },
             {
                "coords": { "x": 52, "y": 31 },
                "align": "top",
@@ -1693,7 +1669,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 24.21,
+         "experience": 24.26,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 36 },
@@ -1712,14 +1688,8 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 24.21,
+         "experience": 24.26,
          "waypoints": [
-            {
-               "coords": { "x": 47, "y": 50 },
-               "align": "bottom",
-               "header": "thunder bluff flightpath",
-               "type": "flightpath"
-            },
             {
                "coords": { "x": 55, "y": 51 },
                "align": "bottom",
@@ -1742,24 +1712,10 @@
                "ends": [["serpentbloom", "d"], "forsaken aid"],
                "starts": ["journey to tarren mill"],
                "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "thunderbluff",
-         "experience": 24.41,
-         "waypoints": [
-            {
-               "coords": { "x": 23, "y": 21 },
-               "align": "top",
-               "header": "apothecary zamah",
-               "ends": [["serpentbloom", "d"], "forsaken aid"],
-               "starts": ["journey to tarren mill"],
-               "type": "quest"
             },
             {
                "coords": { "x": 47, "y": 50 },
-               "align": "right",
+               "align": "bottom",
                "header": "thunder bluff flightpath",
                "special": ["fly to stonetalon"],
                "type": "flightpath"
@@ -1768,10 +1724,11 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 24.41,
+         "experience": 24.47,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 60 },
+               "align": "bottom",
                "header": "sun rock flightpath",
                "type": "flightpath"
             },
@@ -1818,7 +1775,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 24.56,
+         "experience": 24.66,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 40 },
@@ -1859,7 +1816,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 24.73,
+         "experience": 24.85,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 61 },
@@ -1879,7 +1836,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 24.78,
+         "experience": 24.90,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -1895,7 +1852,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 24.78,
+         "experience": 24.90,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -1914,7 +1871,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 24.78,
+         "experience": 24.90,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -1930,7 +1887,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 24.78,
+         "experience": 24.90,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -1963,7 +1920,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 24.78,
+         "experience": 24.90,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 43 },
@@ -2007,7 +1964,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 24.98,
+         "experience": 25.14,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -2028,7 +1985,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 25.23,
+         "experience": 25.35,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -2073,7 +2030,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 25.43,
+         "experience": 25.52,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -2096,7 +2053,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 25.81,
+         "experience": 25.88,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -2118,7 +2075,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 25.89,
+         "experience": 25.97,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -2140,7 +2097,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 26,
+         "experience": 26.07,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -2162,7 +2119,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 26.14,
+         "experience": 26.21,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -2176,7 +2133,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 26.33,
+         "experience": 26.41,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 45 },
@@ -2208,7 +2165,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 26.42,
+         "experience": 26.50,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -2224,7 +2181,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 26.42,
+         "experience": 26.50,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 13 },
@@ -2242,7 +2199,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 26.42,
+         "experience": 26.50,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -2259,7 +2216,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 26.42,
+         "experience": 26.50,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 61 },
@@ -2296,7 +2253,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 26.58,
+         "experience": 26.66,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 61 },
@@ -2317,7 +2274,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 26.72,
+         "experience": 26.79,
          "waypoints": [
             {
                "coords": { "x": 72, "y": 95 },
@@ -2337,7 +2294,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 26.72,
+         "experience": 26.79,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 33 },
@@ -2383,7 +2340,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 26.88,
+         "experience": 26.96,
          "waypoints": [
             {
                "coords": { "x": 68, "y": 75 },
@@ -2422,7 +2379,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 27.16,
+         "experience": 27.26,
          "waypoints": [
             {
                "coords": { "x": 81, "y": 50 },
@@ -2475,7 +2432,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 27.25,
+         "experience": 27.37,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 68 },
@@ -2504,14 +2461,14 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 27.37,
+         "experience": 27.44,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 61 },
                "align": "top",
                "header": "splintertree post",
                "completed": ["the hunt completed"],
-               "ends": ["satyr horns", "ursangous's paw", "shadumbra's head", ["freedom to ruul", "f"], "stonetalon standstill", "the befouled element"],
+               "ends": ["ursangous's paw", "shadumbra's head", "satyr horns", ["freedom to ruul", "f"], "stonetalon standstill", "the befouled element"],
                "starts": ["je'neu of the earthen ring"],
                "special": ["fly to zoram strand"],
                "type": "hub"
@@ -2529,7 +2486,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 27.85,
+         "experience": 27.97,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 38 },
@@ -2548,17 +2505,18 @@
       },
       {
          "zone": "stv",
-         "experience": 27.85,
+         "experience": 27.97,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
                "header": "booty bay harbor",
                "objectives": ["warsong supplies"],
                "special": ["warsong axe shipment"],
-               "type": "travel"
+               "type": "objective"
             },
             {
                "coords": { "x": 27, "y": 77 },
+               "align": "right",
                "header": "booty bay flightpath",
                "special": ["learn the flightpath"],
                "type": "flightpath"
@@ -2567,11 +2525,13 @@
       },
       {
          "zone": "stv",
-         "experience": 27.85,
+         "experience": 27.97,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
+               "align": "right",
                "header": "booty bay flightpath",
+               "special": ["learn the flightpath"],
                "type": "flightpath"
             },
             {
@@ -2584,7 +2544,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 27.85,
+         "experience": 27.97,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 39 },
@@ -2602,14 +2562,8 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 27.85,
+         "experience": 27.97,
          "waypoints": [
-            {
-               "coords": { "x": 47, "y": 50 },
-               "align": "bottom",
-               "header": "thunder bluff flightpath",
-               "type": "flightpath"
-            },
             {
                "coords": { "x": 40, "y": 51 },
                "align": "bottom",
@@ -2632,33 +2586,19 @@
                "ends": [["the sacred flame", "p1"]],
                "starts": [["the sacred flame", "p2"]],
                "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "thunderbluff",
-         "experience": 27.96,
-         "waypoints": [
-            {
-               "coords": { "x": 55, "y": 51 },
-               "align": "bottom",
-               "header": "zangen stonehoof",
-               "ends": [["the sacred flame", "p1"]],
-               "starts": [["the sacred flame", "p2"]],
-               "type": "quest"
             },
             {
                "coords": { "x": 47, "y": 50 },
                "align": "bottom",
                "header": "thunder bluff flightpath",
-               "special": ["fly to ashenvale"],
+               "special": ["fly to splintertree post"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 27.96,
+         "experience": 28.07,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 61 },
@@ -2694,7 +2634,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 28.13,
+         "experience": 28.26,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 61 },
@@ -2723,11 +2663,11 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 28.34,
+         "experience": 28.43,
          "waypoints": [
             {
                "coords": { "x": 16, "y": 19 },
-               "align": "top",
+               "align": "right",
                "header": "blackfathom deeps",
                "starts": [["blackfathom villainy", "d"]],
                "objectives": [["blackfathom villainy", "d"], ["allegiance to the old gods", "p2, d"], ["the essence of aku'mai", "d"], ["amongst the ruins", "d"]],
@@ -2745,7 +2685,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 28.53,
+         "experience": 28.63,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 59 },
@@ -2758,7 +2698,7 @@
                "align": "right",
                "header": "sun rock retreat",
                "ends": ["ordanus"],
-               "starts": [["the den", "e"], "calling in the reserves", "harpies threaten", "elemental war", "new life"],
+               "starts": ["new life", ["the den", "e"], "calling in the reserves", "harpies threaten", "elemental war"],
                "special": ["set hearthstone"],
                "type": "hub"
             },
@@ -2781,7 +2721,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 28.82,
+         "experience": 28.93,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 61 },
@@ -2802,7 +2742,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 28.98,
+         "experience": 29.09,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 70 },
@@ -2823,33 +2763,15 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 29.03,
+         "experience": 29.14,
          "waypoints": [
             {
-               "coords": { "x": 47, "y": 50 },
-               "header": "thunder bluff flightpath",
-               "type": "flightpath"
-            },
-            {
                "coords": { "x": 73, "y": 30 },
-               "align": "top",
+               "align": "right",
                "header": "bushana runetotem",
                "ends": [["blackfathom villainy", "d"]],
                "type": "quest"
             },
-            {
-               "coords": { "x": 61, "y": 81 },
-               "align": "bottom",
-               "header": "melor stonehoof",
-               "starts": ["steelsnap"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "thunderbluff",
-         "experience": 29.11,
-         "waypoints": [
             {
                "coords": { "x": 61, "y": 81 },
                "align": "bottom",
@@ -2867,11 +2789,10 @@
       },
       {
          "zone": "barrens",
-         "experience": 29.11,
+         "experience": 29.21,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 59 },
-               "align": "right",
                "header": "camp taurajo",
                "starts": ["a new ore sample"],
                "type": "quest"
@@ -2900,7 +2821,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 29.14,
+         "experience": 29.23,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 84 },
@@ -2934,7 +2855,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 29.24,
+         "experience": 29.34,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 86 },
@@ -2961,7 +2882,7 @@
       },
       {
          "zone": "needles",
-         "experience": 29.32,
+         "experience": 29.42,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 22 },
@@ -2992,7 +2913,7 @@
       },
       {
          "zone": "needles",
-         "experience": 29.38,
+         "experience": 29.50,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 50 },
@@ -3031,7 +2952,7 @@
       },
       {
          "zone": "needles",
-         "experience": 29.53,
+         "experience": 29.64,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 50 },
@@ -3083,7 +3004,7 @@
       },
       {
          "zone": "needles",
-         "experience": 29.85,
+         "experience": 29.93,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 35 },
@@ -3119,7 +3040,7 @@
       },
       {
          "zone": "needles",
-         "experience": 30.08,
+         "experience": 30.14,
          "waypoints": [
             {
                "coords": { "x": 23, "y": 25 },
@@ -3140,6 +3061,7 @@
                "align": "top",
                "header": "darkcloud pond",
                "objectives": ["sacred fire"],
+               "special": ["low amount of yellowish flowers"],
                "type": "objective"
             },
             {
@@ -3162,7 +3084,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 30.27,
+         "experience": 30.34,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 59 },
@@ -3176,16 +3098,11 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 30.32,
+         "experience": 30.40,
          "waypoints": [
             {
-               "coords": { "x": 46, "y": 49 },
-               "header": "thunder bluff flightpath",
-               "type": "flightpath"
-            },
-            {
                "coords": { "x": 70, "y": 31 },
-               "align": "top",
+               "align": "right",
                "header": "magatha grimtotem",
                "ends": ["sacred fire"],
                "starts": ["arikara"],
@@ -3204,23 +3121,10 @@
                "header": "auld stonespire",
                "starts": [["a vengeful fate", "d"]],
                "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "thunderbluff",
-         "experience": 30.42,
-         "waypoints": [
-            {
-               "coords": { "x": 36, "y": 60 },
-               "align": "bottom",
-               "header": "auld stonespire",
-               "starts": [["a vengeful fate", "d"]],
-               "type": "quest"
             },
             {
                "coords": { "x": 46, "y": 49 },
-               "align": "right",
+               "align": "top",
                "header": "thunder bluff flightpath",
                "special": ["fly to stonetalon"],
                "type": "flightpath"
@@ -3229,7 +3133,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 30.42,
+         "experience": 30.49,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 60 },
@@ -3264,7 +3168,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 30.45,
+         "experience": 30.51,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 61 },
@@ -3283,7 +3187,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 30.45,
+         "experience": 30.51,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 61 },
@@ -3301,7 +3205,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 30.45,
+         "experience": 30.51,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 61 },
@@ -3323,7 +3227,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 30.49,
+         "experience": 30.56,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 61 },
@@ -3342,7 +3246,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 30.49,
+         "experience": 30.56,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
@@ -3356,7 +3260,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 30.49,
+         "experience": 30.56,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 34 },
@@ -3376,7 +3280,7 @@
       },
       {
          "zone": "needles",
-         "experience": 30.52,
+         "experience": 30.59,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 50 },
@@ -3403,7 +3307,7 @@
       },
       {
          "zone": "needles",
-         "experience": 30.54,
+         "experience": 30.62,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 32 },
@@ -3455,7 +3359,7 @@
       },
       {
          "zone": "needles",
-         "experience": 30.66,
+         "experience": 30.71,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 50 },
@@ -3482,7 +3386,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 30.87,
+         "experience": 30.92,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 21 },
@@ -3501,7 +3405,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 30.87,
+         "experience": 30.92,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -3526,7 +3430,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 30.87,
+         "experience": 30.92,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -3545,7 +3449,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 30.87,
+         "experience": 30.92,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -3561,7 +3465,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 30.87,
+         "experience": 30.92,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -3587,7 +3491,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 30.89,
+         "experience": 30.94,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -3622,7 +3526,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 31.03,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 23 },
@@ -3650,7 +3554,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 31.08,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -3670,7 +3574,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 31.42,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -3685,7 +3589,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 31.62,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 47 },
@@ -3716,7 +3620,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 31.67,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -3733,7 +3637,7 @@
       },
       {
          "zone": "stv",
-         "experience": 31.67,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 29 },
@@ -3746,7 +3650,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 31.67,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 13 },
@@ -3764,7 +3668,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 31.67,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -3798,20 +3702,19 @@
       },
       {
          "zone": "barrens",
-         "experience": 31.68,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 38 },
                "align": "top",
                "header": "ratchet flightpath",
                "starts": [["blueleaf tubers", "d"]],
-               "special": ["pick up all the garbage on the table", "fly to camp taurajo"],
+               "special": ["pick up all the garbage on the table", "set hearthstone", "fly to camp taurajo"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 45, "y": 59 },
                "header": "camp taurajo",
-               "special": ["set hearthstone"],
                "type": "hub"
             },
             {
@@ -3819,20 +3722,15 @@
                "header": "razorfen kraul",
                "completed": [["willix the importer", "d, f"]],
                "objectives": [["blueleaf tubers", "d"], ["going, going, guano", "d"], ["a vengeful fate", "d"]],
-               "special": ["hearthstone to camp taurajo"],
+               "special": ["hearthstone to ratchet"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 31.86,
+         "experience": 0,
          "waypoints": [
-            {
-               "coords": { "x": 45, "y": 59 },
-               "header": "camp taurajo",
-               "type": "hub"
-            },
             {
                "coords": { "x": 62, "y": 38 },
                "align": "right",
@@ -3859,7 +3757,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 31.91,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 28 },
@@ -3880,33 +3778,14 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 31.91,
+         "experience": 0,
          "waypoints": [
-            {
-               "coords": { "x": 47, "y": 50 },
-               "align": "right",
-               "header": "thunder bluff flightpath",
-               "type": "flightpath"
-            },
             {
                "coords": { "x": 23, "y": 21 },
                "header": "apothecary zamah",
                "ends": ["the flying machine airport"],
                "type": "quest"
             },
-            {
-               "coords": { "x": 38, "y": 58 },
-               "align": "bottom",
-               "header": "placeholder",
-               "ends": [["a vengeful fate", "d"]],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "thunderbluff",
-         "experience": 32.02,
-         "waypoints": [
             {
                "coords": { "x": 38, "y": 58 },
                "align": "bottom",
@@ -3925,7 +3804,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 32.02,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 25 },
@@ -3943,7 +3822,7 @@
       },
       {
          "zone": "needles",
-         "experience": 32.02,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 96 },
@@ -3983,7 +3862,7 @@
       },
       {
          "zone": "needles",
-         "experience": 32.23,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 88, "y": 65 },
@@ -4023,7 +3902,7 @@
       },
       {
          "zone": "needles",
-         "experience": 32.35,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 68, "y": 64 },
@@ -4037,40 +3916,23 @@
                "align": "right",
                "header": "shimmering flats",
                "ends": ["hardened shells", "salt flat venom", "rocket car parts", "load lightening", "a bump in the road"],
-               "starts": [["encrusted tail fins", "e"], ["goblin sponsorship", "p1"], "hemet nesingwary", "wharfmaster dizzywig", "martek the exiled"],
+               "starts": [["encrusted tail fins", "e"], ["goblin sponsorship", "p1"], "hemet nesingwary", "wharfmaster dizzywig"],
+               "special": ["hearthstone to ratchet"],
                "type": "hub"
-            },
-            {
-               "coords": { "x": 75, "y": 96 },
-               "align": "right",
-               "header": "tanaris border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "tanaris",
-         "experience": 32.57,
-         "waypoints": [
-            {
-               "coords": { "x": 51, "y": 21 },
-               "align": "top",
-               "header": "thousand needles border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 52, "y": 25 },
-               "align": "bottom",
-               "header": "tanaris flightpath",
-               "special": ["fly to crossroads"],
-               "type": "flightpath"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 32.57,
+         "experience": 0,
          "waypoints": [
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "ratchet",
+               "special": ["fly to crossroads"],
+               "type": "hub"
+            },
             {
                "coords": { "x": 52, "y": 31 },
                "header": "the crossroads",
@@ -4083,7 +3945,7 @@
       },
       {
          "zone": "stonetalon",
-         "experience": 32.63,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 60 },
@@ -4100,7 +3962,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 32.63,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 4 },
@@ -4142,7 +4004,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 32.68,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 38 },
@@ -4162,7 +4024,7 @@
       },
       {
          "zone": "stv",
-         "experience": 32.73,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 25, "y": 73 },
@@ -4198,7 +4060,7 @@
       },
       {
          "zone": "stv",
-         "experience": 32.79,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 9 },
@@ -4234,7 +4096,7 @@
       },
       {
          "zone": "stv",
-         "experience": 32.91,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 12 },
@@ -4268,7 +4130,7 @@
       },
       {
          "zone": "stv",
-         "experience": 33.06,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 16 },
@@ -4298,12 +4160,13 @@
       },
       {
          "zone": "stv",
-         "experience": 33.29,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
                "ends": ["bloodscalp ears", "supply and demand", "investigate the camp"],
+               "starts": ["hostile takeover", ["goblin sponsorship", "p4"], "some assembly required"],
                "special": ["bank your stv pages", "fly to grom'gol basecamp"],
                "type": "hub"
             },
@@ -4311,186 +4174,37 @@
                "coords": { "x": 32, "y": 29 },
                "header": "grom'gol basecamp",
                "ends": ["hunt for yenniku", "bloody bone necklaces"],
+               "special": ["sail to undercity"],
                "type": "hub"
-            },
-            {
-               "coords": { "x": 41, "y": 4 },
-               "align": "right",
-               "header": "duskwood border",
-               "type": "travel"
             }
          ]
       },
       {
-         "zone": "duskwood",
-         "experience": 33.42,
+         "zone": "tirisfal",
+         "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 45, "y": 86 },
-               "header": "stranglethorn border",
+               "coords": { "x": 61, "y": 59 },
+               "header": "zeppelin station",
                "type": "travel"
             },
             {
-               "coords": { "x": 88, "y": 41 },
-               "align": "right",
-               "header": "deadwind border",
+               "coords": { "x": 62, "y": 65 },
+               "header": "undercity gates",
                "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "deadwind",
-         "experience": 33.42,
-         "waypoints": [
-            {
-               "coords": { "x": 33, "y": 36 },
-               "header": "duskwood border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 58, "y": 42 },
-               "align": "right",
-               "header": "swamp border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "swamp",
-         "experience": 33.42,
-         "waypoints": [
-            {
-               "coords": { "x": 46, "y": 54 },
-               "align": "top",
-               "header": "stonard",
-               "starts": ["neeka bloodscar"],
-               "special": ["learn the flightpath"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 6, "y": 61 },
-               "align": "top",
-               "header": "deadwind border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "deadwind",
-         "experience": 33.42,
-         "waypoints": [
-            {
-               "coords": { "x": 58, "y": 42 },
-               "align": "right",
-               "header": "swamp border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 33, "y": 36 },
-               "header": "duskwood border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "duskwood",
-         "experience": 33.42,
-         "waypoints": [
-            {
-               "coords": { "x": 88, "y": 41 },
-               "header": "deadwind border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 93, "y": 12 },
-               "header": "redridge border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "redridge",
-         "experience": 33.42,
-         "waypoints": [
-            {
-               "coords": { "x": 8, "y": 89 },
-               "header": "duskwood border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 48, "y": 12 },
-               "align": "right",
-               "header": "burning steppes border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "steppes",
-         "experience": 33.42,
-         "waypoints": [
-            {
-               "coords": { "x": 78, "y": 79 },
-               "header": "redridge border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 65, "y": 24 },
-               "align": "top",
-               "header": "flame crest",
-               "special": ["learn the flightpath"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 29, "y": 37 },
-               "align": "top",
-               "header": "blackrock mountain",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "searing",
-         "experience": 33.42,
-         "waypoints": [
-            {
-               "coords": { "x": 35, "y": 84 },
-               "header": "blackrock mountain",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 74, "y": 56 },
-               "align": "right",
-               "header": "badlands border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "badlands",
-         "experience": 33.42,
-         "waypoints": [
-            {
-               "coords": { "x": 3, "y": 63 },
-               "align": "right",
-               "header": "searing gorge border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 6, "y": 45 },
-               "align": "right",
-               "header": "kargath",
-               "ends": ["neeka bloodscar"],
-               "starts": ["report to helgrum"],
-               "special": ["fly to undercity"],
-               "type": "hub"
             }
          ]
       },
       {
          "zone": "undercity",
-         "experience": 33.45,
+         "experience": 0,
          "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "undercity lifts",
+               "type": "travel"
+            },
             {
                "coords": { "x": 49, "y": 69 },
                "header": "master apothecary faranell",
@@ -4499,7 +4213,7 @@
             },
             {
                "coords": { "x": 63, "y": 48 },
-               "align": "right",
+               "align": "top",
                "header": "undercity flightpath",
                "starts": ["to steal from thieves"],
                "special": ["fly to tarren mill"],
@@ -4509,7 +4223,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 33.51,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -4534,7 +4248,7 @@
       },
       {
          "zone": "alterac",
-         "experience": 33.52,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 65 },
@@ -4583,7 +4297,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 33.73,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 28 },
@@ -4616,7 +4330,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 33.82,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 21, "y": 30 },
@@ -4651,7 +4365,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 34,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
@@ -4677,7 +4391,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 34.17,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 69 },
@@ -4714,7 +4428,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 34.35,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
@@ -4728,7 +4442,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 34.44,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -4742,7 +4456,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 34.55,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -4760,7 +4474,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 34.60,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -4770,13 +4484,14 @@
             {
                "coords": { "x": 61, "y": 59 },
                "header": "zeppelin station",
+               "special": ["sail to orgrimmar"],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "durotar",
-         "experience": 34.60,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 13 },
@@ -4794,7 +4509,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 34.60,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -4818,7 +4533,7 @@
       },
       {
          "zone": "needles",
-         "experience": 34.62,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 50 },
@@ -4832,7 +4547,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 34.68,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 47 },
@@ -4859,14 +4574,13 @@
       },
       {
          "zone": "desolace",
-         "experience": 34.77,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 71 },
                "align": "top",
                "header": "shadowprey village",
                "starts": ["hand of iruxos", "other fish to fry", "clam bait"],
-               "special": ["set hearthstone"],
                "type": "hub"
             },
             {
@@ -4880,7 +4594,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 34.80,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 19, "y": 77 },
@@ -4923,7 +4637,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 34.90,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 62 },
@@ -4972,7 +4686,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 35.11,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 27 },
@@ -5009,7 +4723,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 35.24,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 7 },
@@ -5044,7 +4758,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 35.49,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 59 },
@@ -5079,7 +4793,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 35.73,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 69, "y": 76 },
@@ -5094,38 +4808,20 @@
                "align": "top",
                "header": "ghost walker post",
                "ends": ["centaur bounty"],
-               "special": ["hearthstone to shadowprey"],
                "type": "hub"
             },
             {
+               "coords": { "x": 36, "y": 79 },
+               "align": "bottom",
+               "header": "uthek the wise",
+               "ends": ["gelkis alliance"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 24, "y": 71 },
+               "align": "top",
                "header": "shadowprey village",
                "ends": ["hand of iruxos", "other fish to fry", "clam bait"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 36, "y": 79 },
-               "align": "bottom",
-               "header": "uthek the wise",
-               "ends": ["gelkis alliance"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "desolace",
-         "experience": 35.90,
-         "waypoints": [
-            {
-               "coords": { "x": 36, "y": 79 },
-               "align": "bottom",
-               "header": "uthek the wise",
-               "ends": ["gelkis alliance"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 24, "y": 71 },
-               "header": "shadowprey village",
                "special": ["fly to orgrimmar"],
                "type": "hub"
             }
@@ -5133,205 +4829,27 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 35.90,
+         "experience": 0,
          "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "align": "right",
+               "header": "orgrimmar flightpath",
+               "type": "flightpath"
+            },
             {
                "coords": { "x": 22, "y": 53 },
                "align": "top",
                "header": "keldran",
                "ends": [["alliance relations", "p4"]],
+               "special": ["hearthstone to hammerfall"],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 45, "y": 64 },
-               "align": "right",
-               "header": "orgrimmar flightpath",
-               "special": ["fly to ratchet"],
-               "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "barrens",
-         "experience": 35.95,
-         "waypoints": [
-            {
-               "coords": { "x": 62, "y": 38 },
-               "align": "top",
-               "header": "ratchet flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 64, "y": 39 },
-               "align": "right",
-               "header": "ratchet harbor",
-               "special": ["sail to booty bay"],
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 35.95,
-         "waypoints": [
-            {
-               "coords": { "x": 25, "y": 73 },
-               "header": "booty bay harbor",
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 27, "y": 77 },
-               "align": "right",
-               "header": "booty bay",
-               "starts": ["hostile takeover", ["goblin sponsorship", "p4"], "some assembly required"],
-               "special": ["fly to grom'gol"],
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 32, "y": 29 },
-               "align": "right",
-               "header": "grom'gol basecamp",
-               "starts": [["the defense of grom'gol", "p1"], "the vile reef", "headhunting"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 31, "y": 25 },
-               "header": "grom'gol hillside",
-               "objectives": [["raptor mastery", "p2"], ["the defense of grom'gol", "p1"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 32, "y": 19 },
-               "align": "top",
-               "header": "placeholder",
-               "objectives": [["tiger mastery", "p3"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 25, "y": 25 },
-               "align": "bottom",
-               "header": "the vile reef",
-               "objectives": ["the vile reef", ["encrusted tail fins", "e"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 36.11,
-         "waypoints": [
-            {
-               "coords": { "x": 25, "y": 25 },
-               "align": "right",
-               "header": "the vile reef",
-               "objectives": ["the vile reef", ["encrusted tail fins", "e"]],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 23, "y": 9 },
-               "align": "top",
-               "header": "ruins of zul'kunda",
-               "objectives": ["headhunting"],
-               "special": ["enter from the back"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 36, "y": 11 },
-               "align": "top",
-               "header": "nesingwary's expedition",
-               "ends": [["tiger mastery", "p3"], ["raptor mastery", "p2"]],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 44, "y": 20 },
-               "align": "right",
-               "header": "venture co. encampment",
-               "objectives": ["hostile takeover", ["goblin sponsorship", "p4"]],
-               "special": ["kill the foreman ontop", "loot the chest"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 41, "y": 22 },
-               "align": "bottom",
-               "header": "placeholder",
-               "objectives": ["some assembly required"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 36.26,
-         "waypoints": [
-            {
-               "coords": { "x": 41, "y": 22 },
-               "align": "top",
-               "header": "placeholder",
-               "objectives": ["some assembly required"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 32, "y": 29 },
-               "header": "grom'gol basecamp",
-               "ends": [["the defense of grom'gol", "p1"], "the vile reef", "headhunting"],
-               "starts": [["the defense of grom'gol", "p2"]],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 37, "y": 31 },
-               "align": "bottom",
-               "header": "mizjah ruins",
-               "objectives": [["the defense of grom'gol", "p2"]],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "stv",
-         "experience": 36.42,
-         "waypoints": [
-            {
-               "coords": { "x": 37, "y": 31 },
-               "align": "top",
-               "header": "mizjah ruins",
-               "objectives": [["the defense of grom'gol", "p2"]],
-               "type": "objective"
-            },
-            {
-               "align": "top",
-               "coords": { "x": 32, "y": 29 },
-               "header": "grom'gol basecamp",
-               "ends": [["the defense of grom'gol", "p2"]],
-               "special": ["sail to tirisfal glades"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 27, "y": 77 },
-               "header": "booty bay",
-               "ends": ["hostile takeover", ["goblin sponsorship", "p4"], "some assembly required"],
-               "starts": [["goblin sponsorship", "p5"]],
-               "special": ["fly to stonard"],
-               "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "swamp",
-         "experience": 36.57,
-         "waypoints": [
-            {
-               "coords": { "x": 46, "y": 54 },
-               "align": "right",
-               "header": "stonard",
-               "ends": ["report to helgrum"],
-               "special": ["fly to arathi highlands"],
-               "type": "hub"
             }
          ]
       },
       {
          "zone": "arathi",
-         "experience": 36.61,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
@@ -5366,7 +4884,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 36.78,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 79 },
@@ -5391,14 +4909,309 @@
                "ends": ["the princess trapped"],
                "starts": ["stones of binding"],
                "objectives": ["the princess trapped"],
-               "special": ["hearthstone to desolace"],
                "type": "objective"
             }
          ]
       },
       {
+         "zone": "arathi",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 84, "y": 35 },
+               "align": "top",
+               "header": "drywhisker gorge",
+               "ends": ["the princess trapped"],
+               "starts": ["stones of binding"],
+               "objectives": ["the princess trapped"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 74, "y": 36 },
+               "align": "top",
+               "header": "hammerfall",
+               "special": ["fly to undercity"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "header": "undercity flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "undercity lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "right",
+               "header": "undercity gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "zeppelin station",
+               "special": ["sail to grom'gol basecamp"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "right",
+               "header": "grom'gol basecamp",
+               "starts": [["the defense of grom'gol", "p1"], "the vile reef", "headhunting"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 31, "y": 25 },
+               "header": "grom'gol hillside",
+               "objectives": [["raptor mastery", "p2"], ["the defense of grom'gol", "p1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 19 },
+               "align": "top",
+               "header": "placeholder",
+               "objectives": [["tiger mastery", "p3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 25, "y": 25 },
+               "align": "bottom",
+               "header": "the vile reef",
+               "objectives": ["the vile reef", ["encrusted tail fins", "e"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 23, "y": 9 },
+               "align": "top",
+               "header": "ruins of zul'kunda",
+               "objectives": ["headhunting"],
+               "special": ["enter from the back"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "nesingwary's expedition",
+               "ends": [["tiger mastery", "p3"], ["raptor mastery", "p2"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "nesingwary's expedition",
+               "ends": [["tiger mastery", "p3"], ["raptor mastery", "p2"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 44, "y": 20 },
+               "align": "right",
+               "header": "venture co. encampment",
+               "objectives": ["hostile takeover", ["goblin sponsorship", "p4"]],
+               "special": ["kill the foreman ontop", "loot the chest"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 22 },
+               "align": "bottom",
+               "header": "placeholder",
+               "objectives": ["some assembly required"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "header": "grom'gol basecamp",
+               "ends": [["the defense of grom'gol", "p1"], "the vile reef", "headhunting"],
+               "starts": [["the defense of grom'gol", "p2"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 37, "y": 31 },
+               "align": "bottom",
+               "header": "mizjah ruins",
+               "objectives": [["the defense of grom'gol", "p2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 37, "y": 31 },
+               "align": "top",
+               "header": "mizjah ruins",
+               "objectives": [["the defense of grom'gol", "p2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "top",
+               "header": "grom'gol basecamp",
+               "ends": [["the defense of grom'gol", "p2"]],
+               "special": ["sail to tirisfal glades"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "align": "bottom",
+               "header": "booty bay",
+               "ends": ["hostile takeover", ["goblin sponsorship", "p4"], "some assembly required"],
+               "starts": [["goblin sponsorship", "p5"]],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "booty bay harbor",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 39 },
+               "align": "top",
+               "header": "ratchet harbor",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "top",
+               "header": "ratchet",
+               "special": ["fly to camp taurajo"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 59 },
+               "header": "camp taurajo",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 51, "y": 79 },
+               "align": "bottom",
+               "header": "shady rest inn",
+               "starts": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 48 },
+               "align": "bottom",
+               "header": "shady rest inn",
+               "starts": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 38 },
+               "align": "right",
+               "header": "mudcrush durtfeet",
+               "starts": ["hungry!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 31 },
+               "align": "right",
+               "header": "brackenwall village",
+               "ends": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
+               "completed": [["the black shield", "p2"]],
+               "special": ["fly to tanaris"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "right",
+               "header": "tanaris flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 51, "y": 21 },
+               "header": "thousand needles border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 77 },
+               "align": "right",
+               "header": "shimmering flats",
+               "ends": [["encrusted tail fins", "e"], ["goblin sponsorship", "p5"], "parts for kravel"],
+               "completed": ["the eighteenth pilot", "delivery to the gnomes"],
+               "starts": ["razzeric's tweaking", "the rumormonger", "martek the exiled"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "tanaris border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 21 },
+               "header": "thousand needles border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "right",
+               "header": "tanaris flightpath",
+               "special": ["fly to desolace"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
          "zone": "desolace",
-         "experience": 37,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 71 },
@@ -5446,7 +5259,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 37.12,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 76 },
@@ -5469,131 +5282,26 @@
                "align": "top",
                "header": "shadowprey village",
                "ends": ["portals of the legion"],
-               "special": ["buy 3x soothing spices", "fly to tanaris"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "tanaris",
-         "experience": 37.18,
-         "waypoints": [
-            {
-               "coords": { "x": 52, "y": 25 },
-               "align": "right",
-               "header": "tanaris flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 51, "y": 21 },
-               "header": "thousand needles border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "needles",
-         "experience": 37.18,
-         "waypoints": [
-            {
-               "coords": { "x": 78, "y": 77 },
-               "align": "right",
-               "header": "shimmering flats",
-               "ends": [["encrusted tail fins", "e"], ["goblin sponsorship", "p5"], "parts for kravel"],
-               "completed": ["the eighteenth pilot", "delivery to the gnomes"],
-               "starts": ["razzeric's tweaking", "the rumormonger"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 75, "y": 96 },
-               "header": "tanaris border",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "tanaris",
-         "experience": 37.24,
-         "waypoints": [
-            {
-               "coords": { "x": 51, "y": 21 },
-               "header": "thousand needles border",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 52, "y": 25 },
-               "align": "right",
-               "header": "tanaris flightpath",
-               "special": ["fly to camp taurajo"],
-               "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "barrens",
-         "experience": 37.24,
-         "waypoints": [
-            {
-               "coords": { "x": 45, "y": 59 },
-               "header": "camp taurajo",
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 51, "y": 79 },
-               "align": "right",
-               "header": "shady rest inn",
-               "starts": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "dustwallow",
-         "experience": 37.24,
-         "waypoints": [
-            {
-               "coords": { "x": 30, "y": 48 },
-               "align": "bottom",
-               "header": "shady rest inn",
-               "starts": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 35, "y": 38 },
-               "align": "right",
-               "header": "mudcrush durtfeet",
-               "starts": ["hungry!"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 36, "y": 31 },
-               "align": "right",
-               "header": "brackenwall village",
-               "ends": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
-               "starts": [["the black shield", "p3"], "theramore spies"],
-               "completed": [["the black shield", "p2"]],
-               "special": ["learn the flightpath", "set hearthstone"],
+               "special": ["buy 3x soothing spices", "fly to dustwallow marsh"],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "dustwallow",
-         "experience": 37.29,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 31 },
                "header": "brackenwall village",
-               "ends": [["the black shield", "p1"], "lieutenant paval reethe", "suspicious hoofprints"],
                "starts": [["the black shield", "p3"], "theramore spies"],
-               "completed": [["the black shield", "p2"]],
-               "special": ["learn the flightpath", "set hearthstone"],
+               "special": ["set hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 40, "y": 24 },
                "align": "top",
-               "header": "placeholder",
+               "header": "marshlands",
                "objectives": ["theramore spies"],
                "special": ["they are stealthed"],
                "type": "objective"
@@ -5625,7 +5333,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 37.41,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 31 },
@@ -5668,7 +5376,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 37.63,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 40, "y": 31 },
@@ -5690,7 +5398,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 37.75,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 38 },
@@ -5710,7 +5418,7 @@
       },
       {
          "zone": "stv",
-         "experience": 37.82,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -6239,8 +5947,178 @@
          "waypoints": [
             {
                "coords": { "x": 32, "y": 29 },
-               "align": "right",
                "header": "grom'gol basecamp",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 41, "y": 4 },
+               "align": "right",
+               "header": "duskwood border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 86 },
+               "header": "stranglethorn border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 88, "y": 41 },
+               "align": "right",
+               "header": "deadwind border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "deadwind",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 36 },
+               "header": "duskwood border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 58, "y": 42 },
+               "align": "right",
+               "header": "swamp border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "top",
+               "header": "stonard",
+               "starts": ["neeka bloodscar"],
+               "special": ["learn the flightpath"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 6, "y": 61 },
+               "align": "top",
+               "header": "deadwind border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "deadwind",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 42 },
+               "align": "right",
+               "header": "swamp border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 33, "y": 36 },
+               "header": "duskwood border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 88, "y": 41 },
+               "header": "deadwind border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 93, "y": 12 },
+               "header": "redridge border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 8, "y": 89 },
+               "header": "duskwood border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 48, "y": 12 },
+               "align": "right",
+               "header": "burning steppes border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 79 },
+               "header": "redridge border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 65, "y": 24 },
+               "align": "top",
+               "header": "flame crest",
+               "special": ["learn the flightpath"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 29, "y": 37 },
+               "align": "top",
+               "header": "blackrock mountain",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 84 },
+               "header": "blackrock mountain",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 74, "y": 56 },
+               "align": "right",
+               "header": "badlands border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 3, "y": 63 },
+               "align": "right",
+               "header": "searing gorge border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "right",
+               "header": "kargath",
+               "ends": ["neeka bloodscar"],
+               "starts": ["report to helgrum"],
                "special": ["fly to swamp of sorrows"],
                "type": "hub"
             }
