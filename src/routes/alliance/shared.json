@@ -4637,7 +4637,6 @@
                "header": "booty bay",
                "ends": ["investigate the camp", "krazek's cookery", "bloodscalp ears", "supply and demand"],
                "completed": ["the haunted isle"],
-               "starts": ["favor for krazek"],
                "special": ["bank any STV pages"],
                "type": "hub"
             },
@@ -5895,7 +5894,7 @@
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
                "ends": [["goblin sponsorship", "p3"]],
-               "starts": [["goblin sponsorship", "p4"], "some assembly required", "hostile takeover", "the stone of the tides", "return to corporal kaleb"],
+               "starts": [["goblin sponsorship", "p4"], "some assembly required", "hostile takeover", "the stone of the tides"],
                "special": ["set hearthstone"],
                "type": "hub"
             },
@@ -6141,7 +6140,7 @@
                "coords": { "x": 27, "y": 77 },
                "header": "booty bay",
                "ends": ["water elementals"],
-               "starts": ["magical analysis"],
+               "starts": ["magical analysis", "favor for krazek"],
                "type": "hub"
             },
             {
