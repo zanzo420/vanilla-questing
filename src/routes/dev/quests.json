@@ -285,7 +285,7 @@
    "raising spirits": [672, 674, 675],
    "call to arms": [677, 678, 679],
    "stones of binding": 651,
-   "foul magics": 671,
+   "foul magics": [671, 673],
    "guile of the raptor": [701, 702, 847],
    "sigil of strom": 639,
    "dalaran patrols": 545,
