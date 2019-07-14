@@ -5621,7 +5621,7 @@
                "coords": { "x": 74, "y": 36 },
                "align": "top",
                "header": "hammerfall",
-               "ends": [["the broken sigil", "e"], ["call to arms", "p3, e"], ["the real threat", "e"], ["foul magics", "e"]],
+               "ends": [["the broken sigil", "e"], ["call to arms", "p3, e"], ["the real threat", "e"], ["foul magics", "p2, e"]],
                "starts": [["sigil of arathor", "e"]],
                "completed": ["sigil of thoradin"],
                "type": "hub"
