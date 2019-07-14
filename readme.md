@@ -4,7 +4,10 @@ This is an open source webapp that presents quest related content for Classic Wo
 **Disclaimer**: The content of the website represents the latest “gh-pages” branch which is a compiled and minified version of the master branch. If you clone this repository and it acts weird, it might have devmode turned on which modifies some of the core functionality. Devmode can be turned off from the [init file](https://github.com/wickstjo/vanilla-questing/blob/master/src/init.js).
 
 ## Cloning the project
-The application is entirely written in **ReactJS** and comes with automatic hot reloading. You need to have NodeJS and NPM installed in order to install the required node modules after cloning the project. I'm personally running **Node v11.12.0** and **NPM 6.7.0** but the latest versions should work just fine.
+The application is entirely written in **ReactJS** and comes with automatic hot reloading. You need to have NodeJS and NPM installed in order to install the required node modules after cloning the project. This are the version I have installed:
+
+* **Node** v11.12.0
+* **NPM** 6.7.0
 
 The following bash commands should install and boot up the project successfully:
 
@@ -16,7 +19,7 @@ $ npm start
 ```
 
 ## Launching in Development mode
-Development mode bypasses some core functionality like auto selects the dev profile and the last viewed page/block after a hot reload occurs which makes writing route files significantly faster and easier. To setup everything correctly, do these things:
+Development mode bypasses some core functionality, for example, it auto selects the dev profile and the last viewed page/block after a hot reload occurs which makes writing route files significantly faster and easier. To setup everything correctly, do these things:
 
 * Make sure the development variable in [init.js](https://github.com/wickstjo/vanilla-questing/blob/master/src/init.js) is **false**.
 * Create a new profile with the name "dev".
@@ -38,7 +41,7 @@ Every page/block in your route needs to be wrapped neatly inside an **Array** wi
 ## Required page/block properties:
 
 * **Zone**: Has to match the name of the background image file. [See list](https://github.com/wickstjo/vanilla-questing/blob/master/src/funcs/misc.js#L42).
-* **Experience**: Your estimation to what level you should be at this point.
+* **Experience**: Your estimation of what level the user should be at this point.
 	* Can be either an integer or float. 
 * **Waypoints**: Needs to be of the type Array.
 
