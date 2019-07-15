@@ -64,6 +64,7 @@
                "header": "dolanaar tower",
                "ends": ["zenn's bidding"],
                "starts": ["seek redemption!", "denalan's earth", "a troubling breeze", "twisted hatred", "the emerald dreamcatcher"],
+               "special": ["buy 1x skinning knife"],
                "type": "quest"
             },
             {
@@ -72,7 +73,6 @@
                "header": "dolanaar",
                "ends": ["dolanaar delivery", ["crown of the earth", "p2"]],
                "starts": [["crown of the earth", "p3"]],
-               "special": ["buy 1x skinning knife"],
                "type": "quest"
             },
             {
