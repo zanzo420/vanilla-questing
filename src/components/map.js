@@ -26,10 +26,12 @@ function Map() {
    });
 
    // CHANGE RESOLUTION
-   const change_resolution = () => {
-      set_local({
-         ...local,
-         resolution: dimensions()
+   function change_resolution() {
+      dimensions().then(dimensions => {
+         set_local({
+            ...local,
+            resolution: dimensions
+         })
       })
    }
 
@@ -99,7 +101,7 @@ function Map() {
    // ON INITIAL LOAD
    useEffect(() => {
       change_resolution();
-   }, [state.profiles])
+   }, [])
 
    // CHANGE POSITION
    useEffect(() => {

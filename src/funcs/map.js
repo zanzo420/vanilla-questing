@@ -1,3 +1,5 @@
+import { sleep } from './misc';
+
 // BACKGROUND DIMENSIONS
 const background = {
    width: 1440,
@@ -122,14 +124,16 @@ function update_position({ event, last_event, last_position, resolution }) {
    } else { return last_position; }
 }
 
-// CALCULATE SELECTOR DIMENSIONS
+// FETCH SELECTOR DIMENSIONS
 function dimensions() {
-   const wrapper = document.getElementById("map-wrapper");
+   return sleep(200).then(() => {
+      const wrapper = document.getElementById("map-wrapper");
 
-   return {
-      width: wrapper.clientWidth,
-      height: wrapper.clientHeight
-   }
+      return {
+         width: wrapper.clientWidth,
+         height: wrapper.clientHeight
+      }
+   })
 }
 
 export {

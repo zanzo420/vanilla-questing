@@ -18,6 +18,8 @@ $ npm install
 $ npm start
 ```
 
+There are some relatively large changes being deployed to the master branch code. If the version you cloned is something completely different than what the website is displaying, consider downgrading to [this commit](https://github.com/wickstjo/vanilla-questing/tree/f5756699f8c76707c40e5fafc84c09c30708cedf).
+
 ## Launching in Development mode
 Development mode bypasses some core functionality, for example, it auto selects the dev profile and the last viewed page/block after a hot reload occurs which makes writing route files significantly faster and easier. To setup everything correctly, do these things:
 

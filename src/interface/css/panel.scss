@@ -110,9 +110,28 @@
             padding: 1px;
             margin-bottom: 4px;
             text-shadow: 1px 1px #242424;
+            position: relative;
          }
 
-         .section:last-child { margin-bottom: 2px; }
+         .section:last-child {
+            margin-bottom: 2px;
+         }
+
+         .fetch, .finish, .objec, .note {
+            background-color: rgba(0, 0, 0, 0.199);
+            background-image: url('../images/icons/ends.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: absolute;
+            height: 28px;
+            width: 28px;
+            margin-top: 1px;
+            border-right: 1px solid rgba(0, 0, 0, 0.425);
+         }
+
+         .fetch { background-image: url('../images/icons/starts.png'); }
+         .objec { background-image: url('../images/icons/objectives.png'); }
+         .note { background-image: url('../images/icons/special.png'); }
 
          .title {
             display: table;
@@ -131,23 +150,16 @@
             background: rgba(255, 255, 255, 0.130);
             margin-top: 1px;
             padding: 5px 7px;
+            padding-left: 35px;
             color: #F1F1F1;
          }
+
+         .title, .quest {
+            padding-left: 7px;
+         }
          
-         .ends {
-            background: rgba(94, 207, 94, 0.342);
-            //background-image: url('../images/question.png');
-            //background-repeat: no-repeat;
-            //padding-left: 22px;
-         }
-
-         .starts {
-            background: rgba(255, 255, 29, 0.37);
-            //background-image: url('../images/exclam.png');
-            //background-repeat: no-repeat;
-            //padding-left: 22px;
-         }
-
+         .ends { background: rgba(94, 207, 94, 0.342); }
+         .starts { background: rgba(255, 255, 29, 0.37); }
          .objectives { background: rgba(226, 84, 84, 0.418); }
          .special { background: rgba(94, 125, 192, 0.507); }
          .quest { background: rgba(226, 171, 108, 0.486); }

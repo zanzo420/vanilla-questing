@@ -1,12 +1,10 @@
 import React, { useContext } from 'react';
 import { Context } from "../context";
+import '../interface/css/innerbody.scss';
 
 import EventListener from 'react-event-listener';
 import { key_listener } from '../funcs/browsing';
 
-import '../interface/css/innerbody.scss';
-
-import Message from '../components/message';
 import Map from '../components/map';
 import Panel from '../components/panel';
 
@@ -16,32 +14,26 @@ function Home() {
    const { state, dispatch } = useContext(Context);
 
    // KEYBOARD EVENT LISTENER
-   const key_event = (event) => {
+   function key_event(event) {
       key_listener(event, state, dispatch)
    }
 
-   // IF DATA HAS BEN LOADED
-   if (state.data !== null) {
-      return (
-         <div id={ 'innerbody' }>
-            <EventListener
-               target={ document }
-               onKeyDown={ key_event }
-            />
-            <Message />
-            <div className={ 'inner' }>
-               <div id={ 'map-wrapper' }>
-                  <Map />
-               </div>
-               <div id={ 'panel-wrapper' }>
-                  <Panel />
-               </div>
+   return (
+      <div id={ 'innerbody' }>
+         <EventListener
+            target={ document }
+            onKeyDown={ key_event }
+         />
+         <div className={ 'inner' }>
+            <div id={ 'map-wrapper' }>
+               <Map />
+            </div>
+            <div id={ 'panel-wrapper' }>
+               <Panel />
             </div>
          </div>
-      )
-   
-   // OTHERWISE, RETURN NOTHING
-   } else { return null; }
+      </div>
+   )
 }
 
 export default Home;

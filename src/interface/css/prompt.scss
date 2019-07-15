@@ -1,12 +1,14 @@
 #prompt {
    background: rgba(0, 0, 0, 0.644);
    position: absolute;
+   left: 0px;
+   top: 0px;
    height: 100%;
    width: 100%;
    z-index: 99;
    transition: 0.1s;
-   opacity: 1;
-   display: flex;
+   opacity: 0;
+   display: none;
    justify-content: center;
    align-items: center;
 

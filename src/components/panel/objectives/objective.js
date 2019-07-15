@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { shorten } from '../../../funcs/misc';
 import { fetch_id } from '../../../funcs/quests';
 
@@ -24,11 +24,66 @@ function Objective({ index, quests, waypoint }) {
 
    // PROCESS CONTENT
    function process({ data, type }) {
-      return data.map((header, index) =>
-         <div key={ index } className={ type }>
-            { row(header, type) }
-         </div>
-      );
+      switch (type) {
+
+         // STARTS
+         case 'starts': {
+            return data.map((header, index) =>
+               <Fragment key={ index }>
+                  <span className={ 'fetch' } />
+                  <div className={ type }>
+                     { row(header, type) }
+                  </div>
+               </Fragment>
+            );
+         }
+
+         // ENDS
+         case 'completed':
+         case 'ends': {
+            return data.map((header, index) =>
+               <Fragment key={ index }>
+                  <span className={ 'finish' } />
+                  <div className={ type }>
+                     { row(header, type) }
+                  </div>
+               </Fragment>
+            );
+         }
+
+         // OBJECTIVES
+         case 'objectives': {
+            return data.map((header, index) =>
+               <Fragment key={ index }>
+                  <span className={ 'objec' } />
+                  <div className={ type }>
+                     { row(header, type) }
+                  </div>
+               </Fragment>
+            );
+         }
+
+         // ENDS
+         case 'special': {
+            return data.map((header, index) =>
+               <Fragment key={ index }>
+                  <span className={ 'note' } />
+                  <div className={ type }>
+                     { row(header, type) }
+                  </div>
+               </Fragment>
+            );
+         }
+
+         // FALLBACK
+         default: {
+            return data.map((header, index) =>
+               <div key={ index } className={ type }>
+                  { row(header, type) }
+               </div>
+            )
+         }
+      }
    }
    
    // GENERATE APPROPRIATE ROW
