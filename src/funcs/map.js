@@ -1,5 +1,3 @@
-import { sleep } from './misc';
-
 // BACKGROUND DIMENSIONS
 const background = {
    width: 1440,
@@ -126,14 +124,12 @@ function update_position({ event, last_event, last_position, resolution }) {
 
 // FETCH SELECTOR DIMENSIONS
 function dimensions() {
-   return sleep(1000).then(() => {
-      const wrapper = document.getElementById("map-wrapper");
+   const wrapper = document.getElementById("map-wrapper");
 
-      return {
-         width: wrapper.clientWidth,
-         height: wrapper.clientHeight
-      }
-   })
+   return {
+      width: wrapper.clientWidth,
+      height: wrapper.clientHeight
+   }
 }
 
 export {

@@ -64,18 +64,18 @@ function fetch_id(quest, quests) {
 
       // ARRAYS
       default: {
+         switch(quest[1][0].toLowerCase()) {
 
-         // CHAIN QUEST
-         if (quest[1][0].toLowerCase() === 'p') {
+            // CHAIN QUEST
+            case 'p': {
+               const id = parseInt(quest[1].split('-')[0].replace(/\D/g, '')) - 1;
+               return quests[quest[0].toString().toLowerCase()][id];
+            }
 
-            // FISH OUT NUMERIC ID
-            const id = quest[1].replace(/\D/g,'').substring(0, 2);
-
-            return quests[quest[0].toString().toLowerCase()][id - 1];
-         
-         // SOMETHING ELSE
-         } else {
-            return quests[quest[0].toString().toLowerCase()];
+            // SOMETHING ELSE
+            default: {
+               return quests[quest[0].toString().toLowerCase()];
+            }
          }
       }
    }
