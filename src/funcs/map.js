@@ -126,7 +126,7 @@ function update_position({ event, last_event, last_position, resolution }) {
 
 // FETCH SELECTOR DIMENSIONS
 function dimensions() {
-   return sleep(200).then(() => {
+   return sleep(1000).then(() => {
       const wrapper = document.getElementById("map-wrapper");
 
       return {

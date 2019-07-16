@@ -1,6 +1,6 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Context } from "../../../context";
-import Objective from './objective';
+import Quests from './quests';
 
 function Objectives({ visible }) {
 
@@ -11,9 +11,8 @@ function Objectives({ visible }) {
    const [local, set_local] = useState({
       visibility: {
          display: 'block'
-      },
-      content: null
-   });
+      }
+   })
 
    // TOGGLE VISIBILITY
    useEffect(() => {
@@ -25,24 +24,17 @@ function Objectives({ visible }) {
       })
    }, [visible])
 
-   // RENDER OBJECTIVES
-   useEffect(() => {
-      set_local({
-         ...local,
-         content: state.data.route[state.current].waypoints.map((waypoint, index) =>
-            <Objective
-               key={ index }
-               index={ index }
-               waypoint={ waypoint }
-               quests={ state.data.quests }
-            />
-         )
-      })
-   }, [state.current, state.data])
-
    return (
       <div id="objectives" style={ local.visibility }>
-         { local.content }
+         { state.data.route[state.current].waypoints.map((data, index) =>
+            <div className="section" key={ index }>
+               <div className="title">
+                  <div>{ index + 1 }. { data.header }</div>
+                  <div>{ data.coords.x + '.' + data.coords.y }</div>
+               </div>
+               <Quests data={ data } />
+            </div>
+         )}
       </div>
    )
 }

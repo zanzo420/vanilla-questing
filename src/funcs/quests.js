@@ -54,26 +54,31 @@ function quest_name(quest) {
 }
 
 // FETCH QUEST ID FOR SIDEPANEL LINKS
-function fetch_id({ quests, header, tag }) {
+function fetch_id(quest, quests) {
+   switch(typeof quest) {
 
-   // PLACEHOLDER
-   let id = quests[header.toString().toLowerCase()];
-   
-   // IF THE QUEST IS TAGGED, FETCH THE CORRECT ID
-   if (tag !== undefined && tag[0] === 'p') {
-      id = quests[header.toString().toLowerCase()][tag[1] - 1]
+      // STRING
+      case 'string': {
+         return quests[quest.toString().toLowerCase()];
+      }
+
+      // ARRAYS
+      default: {
+
+         // CHAIN QUEST
+         if (quest[1][0].toLowerCase() === 'p') {
+
+            // FISH OUT NUMERIC ID
+            const id = quest[1].replace(/\D/g,'').substring(0, 2);
+
+            return quests[quest[0].toString().toLowerCase()][id - 1];
+         
+         // SOMETHING ELSE
+         } else {
+            return quests[quest[0].toString().toLowerCase()];
+         }
+      }
    }
-
-   // IF THE ID CANT BE LOCATED, LOG ERROR
-   if (id === undefined) {
-      console.log(header + ' not found!');
-   }
-
-   if (id instanceof Array) {
-      console.log(header + ' is an array')
-   }
-
-   return id;
 }
 
 export {
