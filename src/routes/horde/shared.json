@@ -11222,7 +11222,7 @@
                "coords": { "x": 35, "y": 53 },
                "align": "right",
                "header": "bloodvenom post",
-               "objectives": ["a husband's last battle", ["wild guardians", "p1"], "well of corruption"],
+               "starts": ["a husband's last battle", ["wild guardians", "p1"], "well of corruption"],
                "special": ["learn the flightpath"],
                "type": "hub"
             },

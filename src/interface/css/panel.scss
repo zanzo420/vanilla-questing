@@ -16,7 +16,7 @@
          color: rgb(214, 214, 214);
          margin-bottom: 1px;
          position: relative;
-         transition: 0.3s;
+         transition: width 0.3s;
          text-shadow: 1px 1px #242424;
       }
 
@@ -36,7 +36,7 @@
       #level #bar, #progress #bar {
          background: rgba(255, 255, 255, 0.062);
          border-right: 1px solid rgba(255, 255, 255, 0.11);
-         transition: 0.2s;
+         transition: width 0.2s;
          position: absolute;
          top: 0px;
          left: 0px;
@@ -62,7 +62,7 @@
             padding-bottom: 6px;
             color: white;
             cursor: pointer;
-            transition: 0.2s;
+            transition: background 0.2s;
          }
          
          #objectives {
