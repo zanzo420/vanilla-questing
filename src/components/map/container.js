@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect, Fragment } from 'react';
 import { Context } from "../../context";
 
-import { autocenter } from "../../funcs/map";
+import { autocenter, update_position } from "../../funcs/map";
 
 import Line from './line';
 import Waypoint from './waypoint';
@@ -11,10 +11,15 @@ function Container({ resolution }) {
    // GLOBAL STATE
    const { state } = useContext(Context);
 
-   // LOCAL BACKGROUND, POSITION & MARKER STATES
+   // LOCAL STATES
    const [background, set_background] = useState({})
-   const [position, set_position] = useState({})
    const [markers, set_markers] = useState([])
+   const [position, set_position] = useState({})
+   const [movement, set_movement] = useState({
+      last_position: {},
+      last_event: {},
+      enabled: false
+   })
 
    // CHANGE LINE COLOR FOR THE FOLLOWING ZONES
    const whitelist = new Set([
@@ -91,13 +96,76 @@ function Container({ resolution }) {
             top: position.y + 'px',
          })
 
+         // UPDATE MOVEMENT STATE
+         set_movement({
+            ...movement,
+            last_position: position
+         })
+
       }
    }, [resolution, state.data.route[state.current].waypoints])
 
+   // ENABLE MOVEMENT
+   function enable(event) {
+      event.target.parentElement.style.transition = "none";
+   
+      // UPDATE MOVEMENT STATE
+      set_movement({
+         ...movement,
+         enabled: true,
+         last_event: event
+      })
+   }
+
+   // DISABLE MOVEMENT
+   function disable(event) {
+      event.target.parentElement.style.transition = "0.2s";
+      
+      // UPDATE MOVEMENT STATE
+      set_movement({
+         ...movement,
+         enabled: false,
+      })
+   }
+
+   // MOVE MAP POSITION
+   function move(event) {
+      event.persist();
+
+      if (movement.enabled) {
+
+         // FIND NEW POSITION
+         const position = update_position({
+            event: event,
+            last_event: movement.last_event,
+            last_position: movement.last_position,
+            resolution: resolution
+         })
+
+         // UPDATE POSITION STATE
+         set_position({
+            left: position.x + 'px',
+            top: position.y + 'px',
+         })
+
+         // UPDATE MOVEMENT STATE
+         set_movement({
+            ...movement,
+            last_event: event,
+            last_position: position
+         })
+      }
+   }
+
    return (
-      <svg id={ 'map' } style={{ ...background, ...position }}>
-         { markers }
-      </svg>
+      <svg
+         id={ 'map' }
+         style={{ ...background, ...position }}
+         onMouseDown={ enable }
+         onMouseUp={ disable }
+         onMouseLeave={ disable }
+         onMouseMove={ move }
+      >{ markers }</svg>
    )
 }
 
