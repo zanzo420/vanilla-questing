@@ -31,7 +31,31 @@ function filter({ current, data }) {
       
                // QUEST NAME
                const name = quest_name(quest);
-               container.set(name, quest);
+
+               // ADD IT
+               container.set(name, {
+                  quest: quest,
+                  status: false
+               });
+            });
+         }
+
+         // LOOP THROUGH OBJECTIVES
+         if (waypoint.objectives !== undefined) {
+            waypoint.objectives.forEach(quest => {
+
+               // QUEST NAME
+               const name = quest_name(quest);
+
+               // IF THE QUEST HAS BEEN PICKED UP
+               if (container.has(name)) {
+
+                  // CHANGE STATUS
+                  container.set(name, {
+                     quest: quest,
+                     status: true
+                  });
+               }
             });
          }
       });

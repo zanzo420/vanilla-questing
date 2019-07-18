@@ -1,10 +1,10 @@
 import React from 'react';
 import Row from './row';
 
-function Quests({ data }) {
+function Rows({ data }) {
 
    // SELECTOR CONTAINER & ROW TYPES
-   const types = ['ends', 'completed', 'starts', 'objectives', 'special']
+   const types = ['ends', 'completed', 'starts', 'objectives', 'special'];
    const container = [];
 
    // LOOP THROUGH EACH TYPE
@@ -23,4 +23,4 @@ function Quests({ data }) {
    return container;
 }
 
-export default Quests;
+export default Rows;

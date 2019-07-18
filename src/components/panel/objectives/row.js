@@ -4,6 +4,9 @@ import { Context } from "../../../context";
 import { shorten } from '../../../funcs/misc';
 import { fetch_id } from '../../../funcs/quests';
 
+import Single from '../single';
+import Split from '../split';
+
 function Row({ data, type }) {
    return data.map((quest, index) =>
       <Fragment key={ index }>
@@ -39,7 +42,7 @@ function Name({ data, type }) {
    
          // STRING
          default: { return (
-            <Link
+            <Single
                header={ shorten(data) }
                to={ 'https://classicdb.ch/?quest=' + fetch_id(data, state.data.quests) }
             />
@@ -52,7 +55,7 @@ function Name({ data, type }) {
 
          // ARRAY
          case 'object': {
-            return <Link header={ data[0] } to={ data[1] }  />
+            return <Single header={ data[0] } to={ data[1] }  />
          }
 
          // STRING
@@ -62,18 +65,5 @@ function Name({ data, type }) {
       }
    }
 }
-
-// PLAIN LINK
-function Link({ header, to }) {
-   return <div><a href={ to } target='_blank' rel='noopener noreferrer'>{ header }</a></div>
-}
-
-// SPLIT TBL LINK
-function Split({ header, to, tag }) { return (
-   <div className="split">
-      <div><a href={ to } target='_blank' rel='noopener noreferrer'>{ header }</a></div>
-      <div>{ tag }</div>
-   </div>
-)}
 
 export default Row;
