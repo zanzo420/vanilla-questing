@@ -43,12 +43,9 @@ function Container({ resolution }) {
    // UPDATE BACKGROUND
    useEffect(() => {
 
-      // ASYNC LOAD BACKGROUND IN
-      const image = require('../../interface/images/maps/' + state.data.route[state.current].zone + '.jpg');
-
       // UPDATE STATE
       set_background({
-         background: 'url(' + image + ')'
+         background: 'url(' + require('../../interface/images/maps/' + state.data.route[state.current].zone + '.jpg') + ')'
       })
 
    }, [state.data.route[state.current].zone])
@@ -60,8 +57,8 @@ function Container({ resolution }) {
       const waypoints = state.data.route[state.current].waypoints;
       const offcolor = whitelist.has(state.data.route[state.current].zone);
 
-      // GENERATE MARKERS
-      const markers = waypoints.map((waypoint, index) =>
+      // UPDATE STATE
+      set_markers(waypoints.map((waypoint, index) =>
          <Fragment key={ index }>
             <Line
                current={ waypoint }
@@ -73,10 +70,7 @@ function Container({ resolution }) {
                block={ index } 
             />
          </Fragment>
-      )
-
-      // UPDATE STATE
-      set_markers(markers)
+      ))
 
    }, [state.data.route[state.current].waypoints])
 

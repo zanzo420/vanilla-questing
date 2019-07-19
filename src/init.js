@@ -1,5 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { Context } from "./context";
+
 import { random } from './funcs/build';
 import { check as check_storage } from './funcs/storage';
 import { check as check_settings } from './funcs/settings';
