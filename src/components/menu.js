@@ -19,9 +19,7 @@ function Menu() { return (
       <div>
          <Storage />
          <Actions />
-         <Main header='Load Progress'>
-            <Profiles />
-         </Main>
+         <Profiles />
          <Create />
       </div>
    </div></div>

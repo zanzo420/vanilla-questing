@@ -24,6 +24,34 @@ function reducer(state, action) {
          }
       }
 
+      // LOAD PROFILE
+      case 'load-profile': {
+         return {
+            ...state,
+            data: action.payload.build.data,
+            current: action.payload.build.current,
+            loaded: action.payload.profile,
+            message: {
+               visible: true,
+               type: 'good',
+               value: action.payload.msg
+            }
+         }
+      }
+
+      // REMOVE PROFILE
+      case 'remove-profile': {
+         return {
+            ...state,
+            profiles: action.payload.profiles,
+            message: {
+               visible: true,
+               type: 'good',
+               value: action.payload.msg
+            }
+         }
+      }
+
       // OLD STUFF ---------------------------------------------
 
       // CHANGE BLOCK
