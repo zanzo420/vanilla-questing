@@ -20,7 +20,7 @@ function Profiles({ hide }) {
          type: 'remove-profile',
          payload: {
             profiles: state.profiles,
-            msg: 'profile "' + header + '" removed'
+            msg: 'profile "' + name + '" removed'
          }
       })
 
@@ -51,11 +51,10 @@ function Profiles({ hide }) {
       // CONVERT TO MAPPABLE ARRAY
       const profiles = Array.from(state.profiles);
 
-      // GENERATE & RETURN PROFILE ROWS
+      // GENERATE & RETURN PROFILE ROWS         -- FIX THIS
       return profiles.map((item, index) =>
-         <Main header='Load Progress'>
+         <Main header='Load Progress' key={ index }>
             <Profile
-               key={ index }
                header={ item[0] }
                details={ item[1] }
                remove={ remove }
@@ -88,10 +87,10 @@ function Profile({ header, details, load, remove, state }) {
 
       // OTHERWISE
       default: { return (
-         <div className={ 'item' } onClick={() => { load(header, details) }}>
-            <div className={ 'icon' } id={ details.race } />
-            <div className={ 'header' }>{ header }</div>
-            <div className={ 'action' } id={ 'remove' } />
+         <div className={ 'item' }>
+            <div className={ 'icon' } id={ details.race } onClick={() => { load(header, details) }} />
+            <div className={ 'header' } onClick={() => { load(header, details) }}>{ header }</div>
+            <div className={ 'action' } id={ 'remove' } onClick={() => { remove(header) }} />
          </div>
       )}
    }
