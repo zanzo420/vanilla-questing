@@ -4,13 +4,13 @@ import { specific } from '../../funcs/build';
 import Main from './main';
 
 // ALL PROFILES
-function Profiles({ hide }) {
+function Profiles() {
 
    // ROUTE STATE
    const { state, dispatch } = useContext(Context);
 
    // REMOVE PROFILE
-   function remove(name) {
+   function remove(name, hide) {
 
       // REMOVE PROFILE FROM PROFILES HASHMAP
       state.profiles.delete(name);
@@ -29,7 +29,7 @@ function Profiles({ hide }) {
    }
 
    // LOAD PROFILE
-   function load(header, details) {
+   function load(header, details, hide) {
 
       // UPDATE STORAGE
       dispatch({
@@ -51,16 +51,19 @@ function Profiles({ hide }) {
       // CONVERT TO MAPPABLE ARRAY
       const profiles = Array.from(state.profiles);
 
-      // GENERATE & RETURN PROFILE ROWS         -- FIX THIS
-      return profiles.map((item, index) =>
-         <Main header='Load Progress' key={ index }>
-            <Profile
-               header={ item[0] }
-               details={ item[1] }
-               remove={ remove }
-               load={ load }
-               state={ state }
-            />
+      // GENERATE & RETURN PROFILE ROWS
+      return (
+         <Main header='Load Progress'>
+            { profiles.map((item, index) =>
+               <Profile
+                  key={ index }
+                  header={ item[0] }
+                  details={ item[1] }
+                  remove={ remove }
+                  load={ load }
+                  state={ state }
+               />
+            )}
          </Main>
       )
 
@@ -73,7 +76,7 @@ function Profiles({ hide }) {
 }
 
 // PROFILE ROW
-function Profile({ header, details, load, remove, state }) {
+function Profile({ header, details, load, remove, state, hide }) {
    switch(state.loaded) {
 
       // IS LOADED
@@ -88,9 +91,9 @@ function Profile({ header, details, load, remove, state }) {
       // OTHERWISE
       default: { return (
          <div className={ 'item' }>
-            <div className={ 'icon' } id={ details.race } onClick={() => { load(header, details) }} />
-            <div className={ 'header' } onClick={() => { load(header, details) }}>{ header }</div>
-            <div className={ 'action' } id={ 'remove' } onClick={() => { remove(header) }} />
+            <div className={ 'icon' } id={ details.race } onClick={() => { load(header, details, hide) }} />
+            <div className={ 'header' } onClick={() => { load(header, details, hide) }}>{ header }</div>
+            <div className={ 'action' } id={ 'remove' } onClick={() => { remove(header, hide) }} />
          </div>
       )}
    }

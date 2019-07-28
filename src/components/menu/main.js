@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Main({ children, header, link }) {
 
-   // STYLE STATE
+   // LOCAL STATE
    const [style, set_style] = useState({
       display: 'none',
       top: 0,
@@ -11,7 +11,7 @@ function Main({ children, header, link }) {
    });
 
    // SHOW SUBMENU
-   const showSubmenu = (event) => {
+   function showSubmenu(event) {
 
       // DEFAULT TO LEFT ALIGNING
       let position = event.target.offsetLeft;
@@ -30,7 +30,7 @@ function Main({ children, header, link }) {
    }
 
    // HIDE SUBMENU
-   const hideSubmenu = () => {
+   function hideSubmenu() {
       set_style({
          display: 'none',
          top: 0,
@@ -69,7 +69,9 @@ function Multi({ showSubmenu, hideSubmenu, header, style, children }) { return (
       { header }
       <div id="submenu" style={ style }>
          { Children.map(children, child =>
-            cloneElement(child, { hide: hideSubmenu })
+            cloneElement(child, {
+               hide: hideSubmenu
+            })
          )}
       </div>
    </li>
