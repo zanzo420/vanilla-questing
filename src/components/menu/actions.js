@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { Context } from "../../context";
-
-import { preload_bgs } from "../../funcs/misc";
-
+import { preload_bgs, sleep } from "../../funcs/misc";
 import Main from './main';
 import Sub from './sub';
 
@@ -21,7 +19,38 @@ function Actions() {
 
    // PRELOAD BACKGROUNDS
    function preload() {
-      preload_bgs(dispatch);
+
+      // LOG START MESSAGE
+      console.log('Started Preload!');
+
+      // SHOW LOADING PROMPT
+      dispatch({
+         type: 'show-prompt',
+         payload: 'loading'
+      })
+
+      // WAIT 200MS TO EVEN OUT UI
+      sleep(200).then(() => {
+
+         // START PRELOADING
+         preload_bgs().then(() => {
+
+            // LOG SUCCESS & HIDE PROMPT
+            console.log('Preload Complete!');
+      
+            // HIDE PROMPT
+            dispatch({ type: 'hide-prompt' })
+      
+            // SHOW MESSAGE
+            dispatch({
+               type: 'show-message',
+               payload: {
+                  type: 'good',
+                  value: 'backgrounds preloaded'
+               }
+            })
+         })
+      })
    }
 
    return (

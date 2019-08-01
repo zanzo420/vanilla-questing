@@ -10,7 +10,7 @@ function Profiles() {
    const { state, dispatch } = useContext(Context);
 
    // REMOVE PROFILE
-   function remove(name, hide) {
+   function remove(name) {
 
       // REMOVE PROFILE FROM PROFILES HASHMAP
       state.profiles.delete(name);
@@ -23,13 +23,10 @@ function Profiles() {
             msg: 'profile "' + name + '" removed'
          }
       })
-
-      // HIDE SUBMENU
-      hide();
    }
 
    // LOAD PROFILE
-   function load(header, details, hide) {
+   function load(header, details) {
 
       // UPDATE STORAGE
       dispatch({
@@ -40,9 +37,6 @@ function Profiles() {
             msg: 'profile "' + header + '" loaded'
          }
       })
-
-      // HIDE SUBMENU
-      hide();
    }
 
    // IF PROFILES HAVE LOADED
@@ -76,7 +70,7 @@ function Profiles() {
 }
 
 // PROFILE ROW
-function Profile({ header, details, load, remove, state, hide }) {
+function Profile({ header, details, load, remove, state }) {
    switch(state.loaded) {
 
       // IS LOADED
@@ -91,9 +85,9 @@ function Profile({ header, details, load, remove, state, hide }) {
       // OTHERWISE
       default: { return (
          <div className={ 'item' }>
-            <div className={ 'icon' } id={ details.race } onClick={() => { load(header, details, hide) }} />
-            <div className={ 'header' } onClick={() => { load(header, details, hide) }}>{ header }</div>
-            <div className={ 'action' } id={ 'remove' } onClick={() => { remove(header, hide) }} />
+            <div className={ 'icon' } id={ details.race } onClick={() => { load(header, details) }} />
+            <div className={ 'header' } onClick={() => { load(header, details) }}>{ header }</div>
+            <div className={ 'action' } id={ 'remove' } onClick={() => { remove(header) }} />
          </div>
       )}
    }

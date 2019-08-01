@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect, Fragment } from 'react';
 import { Context } from "../../context";
-
 import { autocenter, update_position } from "../../funcs/map";
 
 import Line from './line';

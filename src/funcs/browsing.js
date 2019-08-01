@@ -26,6 +26,8 @@ function next(state, dispatch) {
 
 // JUMP IN PROGRESS
 function jump(event, state, dispatch) {
+
+   // EVENT PARAMS
    const parameters = {
       window: window.innerWidth,
       width: event.target.clientWidth,

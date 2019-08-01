@@ -28,14 +28,7 @@ function shorten(string) {
 }
 
 // PRELOAD BACKGROUNDS
-function preload_bgs(dispatch) {
-   console.log('Started Preload!');
-
-   // SHOW PROMPT
-   dispatch({
-      type: 'show-prompt',
-      payload: 'loading'
-   })
+function preload_bgs() {
 
    // ALL THE ZONES
    const zones = [
@@ -97,27 +90,14 @@ function preload_bgs(dispatch) {
          axios.get(
             require('../interface/images/maps/' + zone + '.jpg')
          ).then(() => { resolve(); });
-      });
+      })
 
       // PUSH IT TO THE CONTAINER
       promises.push(p);
    });
 
-   // WAIT FOR EVERYTHING TO RESOLVE
-   Promise.all(promises).then(() => {
-
-      // LOG SUCCESS & HIDE PROMPT
-      console.log('Preload Complete!');
-      dispatch({ type: 'hide-prompt' })
-
-      dispatch({
-         type: 'show-message',
-         payload: {
-            type: 'good',
-            value: 'backgrounds preloaded'
-         }
-      })
-   });
+   // RETURN THE UNIFIED PROMISES
+   return Promise.all(promises);
 }
 
 export {

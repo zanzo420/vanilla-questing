@@ -59,30 +59,25 @@ function Create() {
          
          // GENERATE DETAILS
          const details = {
-            race: state.selected_race,
+            race: state.request,
             block: 0
          }
 
-         // ADD PROFILE TO HASHMAP
+         // ADD PROFILE TO HASHMAP & LOAD THE BUILD
          state.profiles.set(local.name, details);
+         const build = specific(details);
 
-         // LOAD REQUESTED BUILD
+         // ADD PROFILE
          dispatch({
-            type: 'load',
-            payload: specific(details)
+            type: 'add-profile',
+            payload: {
+               data: build.data,
+               current: build.current,
+               profile: local.name,
+               profiles: state.profiles,
+               msg: 'profile "' + local.name + '" created'
+            }
          })
-
-         // SET 'LOADED' PROFILE
-         dispatch({
-            type: 'loaded',
-            payload: local.name
-         })
-
-         // UPDATE STORAGE
-         dispatch({
-            type: 'update_profiles',
-            payload: state.profiles
-         });
 
          // RESET LOCAL STATE
          set_local({
@@ -90,18 +85,6 @@ function Create() {
             button: 'bad',
             errors: []
          })
-
-         // SHOW MESSAGE
-         dispatch({
-            type: 'show-message',
-            payload: {
-               type: 'good',
-               value: 'profile "' + local.name + '" created'
-            }
-         })
-
-         // HIDE PROMPT
-         dispatch({ type: 'hide-prompt' });
       }
    }
 

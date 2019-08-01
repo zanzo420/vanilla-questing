@@ -4,7 +4,7 @@ import { Context } from "../../context";
 import Main from './main';
 import Sub from './sub';
 
-function Help() {
+function Create() {
 
    // GLOBAL STATE
    const { dispatch } = useContext(Context);
@@ -12,12 +12,8 @@ function Help() {
    // CREATE PROFILE
    function create(race) {
       dispatch({
-         type: 'selected_race',
+         type: 'create-prompt',
          payload: race
-      })
-      dispatch({
-         type: 'show-prompt',
-         payload: 'create'
       })
    }
 
@@ -79,4 +75,4 @@ function Help() {
    )
 }
 
-export default Help;
+export default Create;

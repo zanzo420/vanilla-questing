@@ -1,4 +1,4 @@
-import React, { useState, cloneElement, Children } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Main({ children, header, link }) {
@@ -68,11 +68,7 @@ function Multi({ showSubmenu, hideSubmenu, header, style, children }) { return (
    <li className='more' onMouseEnter={ showSubmenu } onMouseLeave={ hideSubmenu }>
       { header }
       <div id="submenu" style={ style }>
-         { Children.map(children, child =>
-            cloneElement(child, {
-               hide: hideSubmenu
-            })
-         )}
+         { children }
       </div>
    </li>
 )}

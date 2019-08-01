@@ -89,7 +89,7 @@ function random() {
 function specific({ race, block }) {
 
    // DEFAULT TO RANDOM ROUTE
-   let response = random();
+   let response = {};
    
    // MAKE SURE THE RACE EXISTS
    if (exists(race)) {
@@ -106,7 +106,9 @@ function specific({ race, block }) {
             current: parseInt(block)
          }
       }
-   }
+
+   // OTHERWISE, LOAD RANDOM ROUTE
+   } else { response = random(); }
 
    // FINALLY RETURN
    return response;
