@@ -1,4 +1,5 @@
-import React, { useState, useContext, useEffect, Fragment } from 'react';
+import React, { useContext, useEffect, useReducer, Fragment } from 'react';
+import reducer from '../../reducers/map';
 import { Context } from "../../context";
 import { autocenter, update_position } from "../../funcs/map";
 
@@ -10,14 +11,17 @@ function Container({ resolution }) {
    // GLOBAL STATE
    const { state } = useContext(Context);
 
-   // LOCAL STATES
-   const [background, set_background] = useState({})
-   const [markers, set_markers] = useState([])
-   const [position, set_position] = useState({})
-   const [movement, set_movement] = useState({
-      last_position: {},
-      last_event: {},
-      enabled: false
+   // LOCAL STATE
+   const [local, set_local] = useReducer(reducer, {
+      background: {},
+      markers: [],
+      position: {},
+      transition: {},
+      movement: {
+         last_position: {},
+         last_event: {},
+         enabled: false
+      }
    })
 
    // CHANGE LINE COLOR FOR THE FOLLOWING ZONES
@@ -41,12 +45,10 @@ function Container({ resolution }) {
 
    // UPDATE BACKGROUND
    useEffect(() => {
-
-      // UPDATE STATE
-      set_background({
-         background: 'url(' + require('../../interface/images/maps/' + state.data.route[state.current].zone + '.jpg') + ')'
+      set_local({
+         type: 'background',
+         payload: state.data.route[state.current].zone
       })
-
    }, [state.data.route[state.current].zone])
 
    // UPDATE MARKERS
@@ -56,20 +58,23 @@ function Container({ resolution }) {
       const waypoints = state.data.route[state.current].waypoints;
       const offcolor = whitelist.has(state.data.route[state.current].zone);
 
-      // UPDATE STATE
-      set_markers(waypoints.map((waypoint, index) =>
-         <Fragment key={ index }>
-            <Line
-               current={ waypoint }
-               next={ waypoints[index + 1] }
-               offcolor={ offcolor }
-            />
-            <Waypoint
-               waypoint={ waypoint }
-               block={ index } 
-            />
-         </Fragment>
-      ))
+      // SET MARKERS
+      set_local({
+         type: 'markers',
+         payload: waypoints.map((waypoint, index) =>
+            <Fragment key={ index }>
+               <Line
+                  current={ waypoint }
+                  next={ waypoints[index + 1] }
+                  offcolor={ offcolor }
+               />
+               <Waypoint
+                  waypoint={ waypoint }
+                  block={ index } 
+               />
+            </Fragment>
+         )
+      })
 
    }, [state.data.route[state.current].waypoints])
 
@@ -83,16 +88,16 @@ function Container({ resolution }) {
             resolution: resolution
          })
 
-         // UPDATE POSITION STATE
-         set_position({
-            left: position.x + 'px',
-            top: position.y + 'px',
-         })
-
-         // UPDATE MOVEMENT STATE
-         set_movement({
-            ...movement,
-            last_position: position
+         // SET POSITION PARAMS
+         set_local({
+            type: 'position',
+            payload: {
+               coords: {
+                  left: position.x + 'px',
+                  top: position.y + 'px',
+               },
+               position: position
+            }
          })
 
       }
@@ -100,24 +105,16 @@ function Container({ resolution }) {
 
    // ENABLE MOVEMENT
    function enable(event) {
-      event.target.parentElement.style.transition = "none";
-   
-      // UPDATE MOVEMENT STATE
-      set_movement({
-         ...movement,
-         enabled: true,
-         last_event: event
+      set_local({
+         type: 'enable-movement',
+         payload: event
       })
    }
 
    // DISABLE MOVEMENT
-   function disable(event) {
-      event.target.parentElement.style.transition = "0.2s";
-      
-      // UPDATE MOVEMENT STATE
-      set_movement({
-         ...movement,
-         enabled: false,
+   function disable() {
+      set_local({
+         type: 'disable-movement',
       })
    }
 
@@ -125,27 +122,27 @@ function Container({ resolution }) {
    function move(event) {
       event.persist();
 
-      if (movement.enabled) {
+      if (local.movement.enabled) {
 
          // FIND NEW POSITION
          const position = update_position({
             event: event,
-            last_event: movement.last_event,
-            last_position: movement.last_position,
+            last_event: local.movement.last_event,
+            last_position: local.movement.last_position,
             resolution: resolution
          })
 
-         // UPDATE POSITION STATE
-         set_position({
-            left: position.x + 'px',
-            top: position.y + 'px',
-         })
-
-         // UPDATE MOVEMENT STATE
-         set_movement({
-            ...movement,
-            last_event: event,
-            last_position: position
+         // SET MOVEMENT
+         set_local({
+            type: 'move',
+            payload: {
+               coords: {
+                  left: position.x + 'px',
+                  top: position.y + 'px',
+               },
+               position: position,
+               event: event
+            }
          })
       }
    }
@@ -153,12 +150,16 @@ function Container({ resolution }) {
    return (
       <svg
          id={ 'map' }
-         style={{ ...background, ...position }}
+         style={{
+            ...local.background,
+            ...local.position,
+            ...local.transition
+         }}
          onMouseDown={ enable }
          onMouseUp={ disable }
          onMouseLeave={ disable }
          onMouseMove={ move }
-      >{ markers }</svg>
+      >{ local.markers }</svg>
    )
 }
 
