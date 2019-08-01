@@ -3,7 +3,6 @@ import { Context } from "../../context";
 import { exists } from '../../funcs/settings';
 
 import EventListener from 'react-event-listener';
-import Message from '../../components/message';
 
 function Keybind({ header, name, bind }) {
 
@@ -52,7 +51,6 @@ function Keybind({ header, name, bind }) {
 
    return (
       <div>
-         <Message />
          <div className={ 'keybind' } onClick={ update }>
             <div id={ 'header' }>{ header }</div>
             <div id={ local.listener ? 'current' : 'bind' }>{ local.key }</div>

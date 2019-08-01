@@ -6,7 +6,7 @@ import Init from './init';
 import Menu from './components/menu';
 import Pages from './pages';
 import Prompt from './components/prompt';
-import Message from './components/message';
+import Messages from './components/messages';
 
 function App() { return (
    <BrowserRouter>
@@ -17,7 +17,7 @@ function App() { return (
             <Pages />
          </div>
          <Prompt />
-         <Message />
+         <Messages />
       </Provider>
    </BrowserRouter>
 )}

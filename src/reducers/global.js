@@ -23,22 +23,24 @@ function global(state, action) {
          data: action.payload.build.data,
          current: action.payload.build.current,
          loaded: action.payload.profile,
-         message: {
-            visible: true,
-            type: 'good',
-            value: action.payload.msg
-         }
+         messages: [
+            ...state.messages, {
+               text: action.payload.msg,
+               type: 'good'
+            }
+         ]
       }}
 
       // REMOVE PROFILE
       case 'remove-profile': { return {
          ...state,
          profiles: update_profiles(action.payload.profiles),
-         message: {
-            visible: true,
-            type: 'good',
-            value: action.payload.msg
-         }
+         messages: [
+            ...state.messages, {
+               text: action.payload.msg,
+               type: 'good'
+            }
+         ]
       }}
 
       // ADD PROFILE
@@ -48,15 +50,16 @@ function global(state, action) {
          current: action.payload.current,
          loaded: action.payload.profile,
          profiles: update_profiles(action.payload.profiles),
-         message: {
-            visible: true,
-            type: 'good',
-            value: action.payload.msg
-         },
          prompt: {
             ...state.prompt,
             visible: false
-         }
+         },
+         messages: [
+            ...state.messages, {
+               text: action.payload.msg,
+               type: 'good'
+            }
+         ]
       }}
 
       // CREATE PROFILE PROMPT
@@ -90,26 +93,6 @@ function global(state, action) {
          prompt: {
             ...state.prompt,
             visible: false
-         }
-      }}
-
-      // SHOW MESSAGE
-      case 'show-message': { return {
-         ...state,
-         message: {
-            visible: true,
-            type: action.payload.type,
-            value: action.payload.value
-         }
-      }}
-
-      // HIDE MESSAGE
-      case 'hide-message': { return {
-         ...state,
-         message: {
-            visible: false,
-            type: undefined,
-            value: undefined
          }
       }}
 

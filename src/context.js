@@ -15,14 +15,10 @@ function Provider({ children }) {
       settings: null,
       request: null,
       loaded: null,
+      messages: [],
       prompt: {
          visible: false,
          type: null
-      },
-      message: {
-         visible: false,
-         type: undefined,
-         value: undefined
       }
    })
 
