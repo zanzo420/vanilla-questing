@@ -92,8 +92,16 @@ function fetch_id(quest, quests) {
 
             // CHAIN QUEST
             case 'p': {
+
+               // FISH OUT THE CHAIN PART
                const id = parseInt(quest[1].split('-')[0].replace(/\D/g, '')) - 1;
-               return quests[quest[0].toString().toLowerCase()][id];
+
+               // IF THE QUEST NAME EXISTS, RETURN THE ID
+               if (quests[quest[0]] !== undefined) {
+                  return quests[quest[0].toString().toLowerCase()][id];
+               
+               // OTHERWISE, RETURN UNDEFINED
+               } else { return undefined; }
             }
 
             // SOMETHING ELSE

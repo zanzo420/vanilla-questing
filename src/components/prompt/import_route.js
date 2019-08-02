@@ -1,7 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, Fragment } from 'react';
 import { Context } from "../../context";
 import { custom } from '../../funcs/build';
-
 import axios from 'axios';
 
 function ImportRoute() {
@@ -16,7 +15,7 @@ function ImportRoute() {
    })
 
    // TOGGLE FACTION
-   const toggle = (target) => {
+   function toggle(target) {
       if (!target) {
          set_local({
             alliance: !local.alliance,
@@ -26,7 +25,7 @@ function ImportRoute() {
    }
 
    // PARSE SELECTED FILE
-   const parse_file = (event) => {
+   function parse_file(event) {
       event.persist();
 
       // FIND THE FILE
@@ -45,47 +44,36 @@ function ImportRoute() {
             // IF ITS A PROPERLY FORMATTED OBJECT
             if (type !== 'string' && Object.keys(response.data).length) {
 
-               // SET BUILD
-               dispatch({
-                  type: 'load',
-                  payload: custom({
-                     build: response.data,
-                     faction: local.alliance ? 'alliance' : 'horde'
-                  })
+               // GENERATE BUILD
+               const build = custom({
+                  build: response.data,
+                  faction: local.alliance ? 'alliance' : 'horde'
                })
 
-               // SET LOADED PROFILE TO NULL
+               // IMPORT THE ROUTE
                dispatch({
-                  type: 'loaded',
-                  payload: null
-               })
-
-               // SHOW MESSAGE
-               dispatch({
-                  type: 'show-message',
+                  type: 'import-route',
                   payload: {
-                     type: 'good',
-                     value: 'ROUTE IMPORTED SUCCESSFULLY'
+                     data: build.data,
+                     current: build.current,
+                     msg: 'ROUTE IMPORTED SUCCESSFULLY'
                   }
                })
-
-               // HIDE PROMPT
-               dispatch({ type: 'hide-prompt' });
 
             // OTHERWISE, LOADING NOTHING & SHOW ERROR MESSAGE
             } else {
-               
-               // SHOW MESSAGE
-               dispatch({
-                  type: 'show-message',
-                  payload: {
-                     type: 'bad',
-                     value: 'ROUTE IMPORT FAILED DUE TO TYPOS'
-                  }
-               })
 
                // HIDE PROMPT
                dispatch({ type: 'hide-prompt' });
+
+               // SHOW MESSAGE
+               dispatch({
+                  type: 'add-message',
+                  payload: {
+                     msg: 'YOUR FILE CONTAINS ERRORS',
+                     type: 'bad'
+                  }
+               })
             }
 
             // IRREGARDLESS, CLEAR THE INPUT FIELD
@@ -98,12 +86,12 @@ function ImportRoute() {
    }
 
    // TOGGLE FACTION
-   const picker = (faction) => {
+   function picker(faction) {
       if (faction) { return 'selected'; }
    }
 
    return (
-      <>
+      <Fragment>
          <div id={ 'header' }>Import Route</div>
          <div id={ 'import' }>
             <div id={ 'factions' }>
@@ -119,7 +107,7 @@ function ImportRoute() {
                <div id={ 'label' }>Select or Drop a route File</div>
             </div>
          </div>
-      </>
+      </Fragment>
    )
 }
 

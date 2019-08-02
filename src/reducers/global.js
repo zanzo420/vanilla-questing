@@ -62,6 +62,41 @@ function global(state, action) {
          ]
       }}
 
+      // IMPORT ROUTE
+      case 'import-route': { return {
+         ...state,
+         data: action.payload.data,
+         current: action.payload.current,
+         loaded: null,
+         prompt: {
+            ...state.prompt,
+            visible: false
+         },
+         messages: [
+            ...state.messages, {
+               text: action.payload.msg,
+               type: 'good'
+            }
+         ]
+      }}
+
+      // IMPORT PROFILES
+      case 'import-profiles': { return {
+         ...state,
+         profiles: update_profiles(action.payload.profiles),
+         loaded: null,
+         prompt: {
+            ...state.prompt,
+            visible: false
+         },
+         messages: [
+            ...state.messages, {
+               text: action.payload.msg,
+               type: 'good'
+            }
+         ]
+      }}
+
       // CREATE PROFILE PROMPT
       case 'create-prompt': { return {
          ...state,
@@ -78,7 +113,7 @@ function global(state, action) {
          current: update_block(state, action.payload)
       }}
 
-      // SHOW PROMPT WITH APPROPARIATE CONTENT
+      // SHOW SPECIFIC PROMPT
       case 'show-prompt': { return {
          ...state,
          prompt: {
@@ -106,6 +141,17 @@ function global(state, action) {
       case 'change-setting': { return {
          ...state,
          settings: update_prop(state.settings, action.payload)
+      }}
+
+      // ADD MESSAGE
+      case 'add-message': { return {
+         ...state,
+         messages: [
+            ...state.messages, {
+               text: action.payload.msg,
+               type: action.payload.type
+            }
+         ]
       }}
 
       // FALLBACK

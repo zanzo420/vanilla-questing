@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, Fragment } from 'react';
 import EventListener from 'react-event-listener';
 
 import { Context } from "../../context";
@@ -15,7 +15,7 @@ function ImportProfiles() {
    })
 
    // AUDIT INPUT
-   const audit = (event) => {
+   function audit(event) {
 
       // SHORTHAND
       const input = event.target.value;
@@ -47,26 +47,19 @@ function ImportProfiles() {
    }
 
    // REPLACE OLD PROFILE OBJECT
-   const submit = () => {
+   function submit() {
       if (local.button === 'good') {
+         
+         // UPDATE STATE
          dispatch({
-            type: 'update_profiles',
-            payload: new Map(JSON.parse(local.value).profiles)
-         })
-         dispatch({
-            type: 'hide-prompt'
-         })
-         dispatch({
-            type: 'loaded',
-            payload: null
-         })
-         dispatch({
-            type: 'show-message',
+            type: 'import-profiles',
             payload: {
-               type: 'good',
-               value: 'imported profiles successfully'
+               profiles: new Map(JSON.parse(local.value).profiles),
+               msg: 'IMPORTED PROFILE SUCCESSFULLY'
             }
          })
+
+         // RESET THE BUTTON
          set_local({
             value: '',
             button: 'bad'
@@ -75,14 +68,14 @@ function ImportProfiles() {
    }
 
    // ENTER KEY LISTENER
-   const key_listener = (event) => {
+   function key_listener(event) {
       if (event.key.toLowerCase() === 'enter' && state.prompt.visible) {
          submit();
       }
    }
 
    return (
-      <>
+      <Fragment>
          <div id={ 'header' }>Import Profiles</div>
          <div id={ 'import' }>
             <EventListener
@@ -102,7 +95,7 @@ function ImportProfiles() {
                onClick={ submit }
             />
          </div>
-      </>
+      </Fragment>
    )
 }
 

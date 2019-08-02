@@ -43,10 +43,10 @@ function Actions() {
       
             // SHOW MESSAGE
             dispatch({
-               type: 'show-message',
+               type: 'add-message',
                payload: {
-                  type: 'good',
-                  value: 'backgrounds preloaded'
+                  msg: 'backgrounds preloaded',
+                  type: 'good'
                }
             })
          })
