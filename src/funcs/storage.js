@@ -21,9 +21,7 @@ function check() {
    if (localStorage.getItem(key) === null) {
       
       // OVERWRITE STORAGE VAR
-      storage = {
-         profiles: []
-      }
+      storage = { profiles: [] }
 
       // STRINGIFY & SET IT
       localStorage.setItem(key, JSON.stringify(storage));

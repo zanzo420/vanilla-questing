@@ -16,8 +16,8 @@ function Init() {
       const profiles = check_storage();
       const settings = check_settings();
 
-      // GENERATE RANDOM BUILD
-      const build = random();
+      // BUILD PLACEHOLDER
+      let build = random();
 
       // SET GLOBAL STATE & STOP LOADING
       dispatch({
