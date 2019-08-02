@@ -16,6 +16,9 @@ function Manifesto() { return (
             <Paragraph>
                It was originally intended for quest routing in mind, but can be used for anything map and coordinate related and uses the same metrics that the game does. The route files were designed with flexibility and precision in mind so even large sweeping changes are easy to implement while machine auditing makes sure that every quest has an appropriate start and conclusion.
             </Paragraph>
+            <Paragraph>
+               Consider this manifesto a more broad introduction with the service. For more technical information about routing and code, check out the <a href='https://github.com/wickstjo/vanilla-questing' target="_blank" rel="noopener noreferrer">readme section on github</a>!
+            </Paragraph>
             <Secondary header={ 'Design Philosophy' } id={ 'design' }>
                <Paragraph>
                   Leveling efficiently from start to finish involves you completing 850-900 unique quests with weird interconnected requirements and is above everything else, a marathon. Contrary to popular belief, there are plenty of quests available but they need to be completed in a rough sequence in order to unlock a sufficient amount simultaneously that then can be completed with a few efficient loops around the zone.

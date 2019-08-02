@@ -31,6 +31,13 @@ function global(state, action) {
          ]
       }}
 
+      // LOAD BUILD REQUEST
+      case 'load-request': { return {
+         ...state,
+         data: action.payload.data,
+         current: action.payload.current
+      }}
+
       // REMOVE PROFILE
       case 'remove-profile': { return {
          ...state,

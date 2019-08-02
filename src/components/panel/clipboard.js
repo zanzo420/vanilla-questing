@@ -10,10 +10,10 @@ function Clipboard() {
    // SEND FRONTEND MESSAGE ON COPY
    function message() {
       dispatch({
-         type: 'show-message',
+         type: 'add-message',
          payload: {
             type: 'good',
-            value: 'link copied to clipboard'
+            msg: 'link copied to clipboard'
          }
       })
    }

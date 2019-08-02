@@ -8,7 +8,7 @@ import { key_listener } from '../funcs/browsing';
 import Map from '../components/map';
 import Panel from '../components/panel';
 
-function Home() {
+function Home({ location }) {
    
    // GLOBAL CONTEXT
    const { state, dispatch } = useContext(Context);

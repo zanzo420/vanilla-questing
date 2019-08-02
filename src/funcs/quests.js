@@ -22,7 +22,7 @@ function filter({ current, data }) {
 
                // REMOVE IT
                container.delete(name);
-            });
+            })
          }
 
          // LOOP THROUGH STARTS
@@ -33,32 +33,10 @@ function filter({ current, data }) {
                const name = quest_name(quest);
 
                // ADD IT
-               container.set(name, {
-                  quest: quest,
-                  status: false
-               });
-            });
+               container.set(name, quest)
+            })
          }
-
-         // LOOP THROUGH OBJECTIVES
-         if (waypoint.objectives !== undefined) {
-            waypoint.objectives.forEach(quest => {
-
-               // QUEST NAME
-               const name = quest_name(quest);
-
-               // IF THE QUEST HAS BEEN PICKED UP
-               if (container.has(name)) {
-
-                  // CHANGE STATUS
-                  container.set(name, {
-                     quest: quest,
-                     status: true
-                  });
-               }
-            });
-         }
-      });
+      })
    }
 
    // CONVERT TO ARRAY & RETURN

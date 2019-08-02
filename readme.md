@@ -1,7 +1,7 @@
 # Vanilla Questing
 This is an open source webapp that presents quest related content for Classic World of Warcraft in a graphical and easy-to-follow format. The underlying algorithm parses a custom written JSON file and dynamically renders the page content based on the JSON block you’re viewing. There are no traditional backend components like a database being used, and the application functions completely on the client side. Profiles and settings are stored locally in your browsers localstorage.
 
-**Disclaimer**: The content of the website represents the latest “gh-pages” branch which is a compiled and minified version of the master branch. If you clone this repository and it acts weird, it might have devmode turned on which modifies some of the core functionality. Devmode can be turned off from the [init file](https://github.com/wickstjo/vanilla-questing/blob/master/src/init.js).
+**Disclaimer**: The content of the website represents the latest “gh-pages” branch which is a compiled and minified version of the master branch. The master branch might not fully represent the current iteration of the live website if something new is in development. If you're interested in routing rather than the code, read the section about routing locally.
 
 ## Cloning the project
 The application is entirely written in **ReactJS** and comes with automatic hot reloading. You need to have NodeJS and NPM installed in order to install the required node modules after cloning the project. This are the version I have installed:
@@ -18,22 +18,19 @@ $ npm install
 $ npm start
 ```
 
-There are some relatively large changes being deployed to the master branch code. If the version you cloned is something completely different than what the website is displaying, consider downgrading to [this commit](https://github.com/wickstjo/vanilla-questing/tree/f5756699f8c76707c40e5fafc84c09c30708cedf).
-
-## Launching in Development mode
-Development mode bypasses some core functionality, for example, it auto selects the dev profile and the last viewed page/block after a hot reload occurs which makes writing route files significantly faster and easier. To setup everything correctly, do these things:
-
-* Make sure the development variable in [init.js](https://github.com/wickstjo/vanilla-questing/blob/master/src/init.js) is **false**.
-* Create a new profile with the name "dev".
-* Make sure the src/routes/dev/ directory has the following files:
-	* route.json
-	* quests.json
-* Change the development variable in [init.js](https://github.com/wickstjo/vanilla-questing/blob/master/src/init.js) to **true**.
+## Routing locally with hot-reloading
+I recently nuked the "development mode" from the main product and will instead be launching a separate repository for that purpose that does not have a multitude of unnecessary bells and whistles. This should not take very long so be on the lookout!
 
 ## Writing your own route file
-JSON files read very much like text, so converting your leveling routes to a format the algorithm can understand is not a massive undertaking, even for people with no prior programming experience. The same patterns are repeated from start to finish, so after understanding the basics you end up mostly copy/pasting blocks and modifying small details here and there. Most of the heavy lifting is already done since you can borrow references for quests and NPCs from my completed route files with CTRL+F searching. You can read [this reddit post](https://www.reddit.com/r/classicwow/comments/ca6ud9/vanillaquestingme_last_minute_betanew_fresh/et971t5/) for a more detailed breakdown of JSON. You can view my [route files](https://github.com/wickstjo/vanilla-questing/tree/master/src/routes) for tips and references.
+JSON files read very much like text, so converting your leveling routes to a format the algorithm can understand is not a massive undertaking, even for people with no prior programming experience. The same patterns are repeated from start to finish, so after understanding the basics you end up mostly copy/pasting blocks and modifying small details here and there.
 
-Every page/block in your route needs to be wrapped neatly inside an **Array** with the name **path**:
+Many quests are “punny” and written with awkward capitalization and general spelling. Because of this, stick to writing everything in **lowercase**. If a mouseover tooltip for a quest comes back as undefined it’s either spelled incorrectly or doesn’t exist in the ID file. Consult the files [[horde](https://github.com/wickstjo/vanilla-questing/blob/master/src/routes/horde/quests.json) / [alliance](https://github.com/wickstjo/vanilla-questing/blob/master/src/routes/alliance/quests.json)] for spelling issues, and if the quest doesn’t exist at all, contact me and I’ll add it asap.
+
+Most of the heavy lifting is already done since you can borrow references for quests and NPCs from my completed route files with CTRL+F searching. You can read [this reddit post](https://www.reddit.com/r/classicwow/comments/ca6ud9/vanillaquestingme_last_minute_betanew_fresh/et971t5/) for a more detailed breakdown of JSON. You can view my [route files](https://github.com/wickstjo/vanilla-questing/tree/master/src/routes) for tips and references.
+
+
+## The route wrapper:
+Everything in your route needs to be wrapped neatly inside an **Array** with the name **path**:
 ```
 {
    "path": []
@@ -127,7 +124,7 @@ Special notes work in a similar way, except that the note is turned into a link 
 }
 ```
 
-## Example of finished waypoint:
+## Samplecode for a finished waypoint:
 
 ```
 {
@@ -137,5 +134,56 @@ Special notes work in a similar way, except that the note is turned into a link 
    "starts": [["cortello's riddle", "p1"]],
    "special": ["look for a scroll inside the boats"],
    "type": "objective"
+}
+```
+
+## Samplecode that's ready to be imported
+```
+{
+   "path": [
+      {
+         "zone": "tirisfal",
+         "experience": 12.82,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "zeppelin station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 52 },
+               "align": "right",
+               "header": "brill",
+               "starts": ["delivery to silverpine"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "right",
+               "header": "undercity gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 12.82,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "top",
+               "header": "undercity flightpath",
+               "special": ["learn the flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "undercity lifts",
+               "type": "travel"
+            }
+         ]
+      }
+   ]
 }
 ```

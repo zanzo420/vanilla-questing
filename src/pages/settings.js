@@ -12,9 +12,7 @@ function Settings() {
 
    return (
       <div id={ 'settings' }>
-         <div className={ 'header' }>
-            Modify Keybindings
-         </div>
+         <div className={ 'header' }>Modify Keybindings</div>
          <div className={ 'container' }>
             <Swapper
                header={ 'keybinds' }

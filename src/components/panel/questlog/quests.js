@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Context } from "../../../context";
 import { filter } from "../../../funcs/quests";
-
 import Quest from './quest';
 
 function Quests({ visible }) {
@@ -15,7 +14,7 @@ function Quests({ visible }) {
    // LOCAL VISIBILITY STATE
    const [visibility, set_visibility] = useState({
       display: 'none'
-   });
+   })
 
    // TOGGLE VISIBILITY
    useEffect(() => {
@@ -28,10 +27,10 @@ function Quests({ visible }) {
    useEffect(() => {
 
       // PARSE QUESTS
-      const quests = filter(state).map((data, index) => 
+      const quests = filter(state).map((quest, index) => 
          <Quest
             key={ index }
-            data={ data }
+            quest={ quest }
             quests={ state.data.quests }
          />
       );
@@ -39,7 +38,7 @@ function Quests({ visible }) {
       // UPDATE CONTENT STATE
       set_content(quests);
 
-   }, [state.current, state.data.route])
+   }, [state.data.route[state.current]])
 
    return (
       <div id="quests" style={ visibility }>

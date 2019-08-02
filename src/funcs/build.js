@@ -12,10 +12,6 @@ import undead from '../routes/horde/undead.json';
 import horde_shared from '../routes/horde/shared.json';
 import horde_quests from '../routes/horde/quests.json';
 
-// DEVELOPMENT
-import dev_route from '../routes/dev/route.json';
-import dev_quests from '../routes/dev/quests.json';
-
 // RACE SPECIFIC STARTERS
 const races = {
    alliance: new Map([
@@ -126,18 +122,6 @@ function custom({ build, faction }) {
    }
 }
 
-// DEVELOPMENT DATASET
-function dev() {
-   return {
-      data: {
-         quests: dev_quests,
-         route: dev_route.path,
-         hearthstones: hearthstones(dev_route.path)
-      },
-      current: 0
-   }
-}
-
 // FIND HEARTHSTONE BLOCK INDEXES
 function hearthstones(route) {
    const container = [];
@@ -178,6 +162,5 @@ export {
    random,
    specific,
    custom,
-   dev,
    exists
 }
