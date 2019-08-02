@@ -9,7 +9,6 @@ function check() {
       
       // SET DEFAULT SETTINGS
       set({
-         database: 'classicdb',
          keybinds: 'enable',
          binds: {
             close: 'Escape',
