@@ -1329,9 +1329,7 @@
             {
                "coords": { "x": 20, "y": 42 },
                "header": "teronis' corpse",
-               "ends": [["raene's cleansing", "p1"]],
-               "starts": [["raene's cleansing", "p2"]],
-               "objectives": [["raene's cleansing", "p2"]],
+               "objectives": [["raene's cleansing", "p1"]],
                "special": ["kill murlocs for the gem"],
                "type": "quest"
             },
@@ -1425,16 +1423,16 @@
                "coords": { "x": 36, "y": 50 },
                "align": "top",
                "header": "astranaar",
-               "ends": ["the zoram strand", ["raene's cleansing", "p2"], "the ruins of stardust"],
-               "starts": [["raene's cleansing", "p3"], "an aggressive defense"],
+               "ends": ["the zoram strand", "the ruins of stardust"],
+               "starts": ["an aggressive defense"],
                "type": "hub"
             },
             {
                "coords": { "x": 54, "y": 46 },
                "align": "right",
                "header": "shael'dryn",
-               "ends": [["raene's cleansing", "p3"]],
-               "starts": [["raene's cleansing", "p4"]],
+               "ends": [["raene's cleansing", "p1"]],
+               "starts": [["raene's cleansing", "p2"]],
                "type": "quest"
             },
             {
@@ -3998,7 +3996,7 @@
             {
                "coords": { "x": 22, "y": 53 },
                "header": "the shrine of aessina",
-               "starts": ["the howling vale"],
+               "starts": ["the howling vale", "vile satyr! dryads in danger!"],
                "type": "quest"
             },
             {
@@ -4043,7 +4041,7 @@
                "align": "bottom",
                "header": "forest song",
                "ends": ["kayneth stillwind"],
-               "starts": ["vile satyr! dryads in danger!", "forsaken diseases"],
+               "starts": ["forsaken diseases"],
                "type": "quest"
             },
             {
@@ -4067,32 +4065,16 @@
          "waypoints": [
             {
                "coords": { "x": 78, "y": 42 },
-               "align": "top",
+               "align": "right",
                "header": "geltharis",
                "objectives": ["the branch of cenarius"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 85, "y": 45 },
-               "align": "right",
-               "header": "forest song",
-               "ends": ["the branch of cenarius"],
-               "starts": ["satyr slaying"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 82, "y": 49 },
-               "align": "bottom",
-               "header": "satyrnaar",
-               "objectives": [["the tower of althalaxx", "p6"], "satyr slaying"],
-               "special": ["second spawner"],
                "type": "objective"
             },
             {
                "coords": { "x": 67, "y": 57 },
                "align": "bottom",
                "header": "night run",
-               "objectives": [["the tower of althalaxx", "p6"], "satyr slaying"],
+               "objectives": [["the tower of althalaxx", "p6"]],
                "special": ["first spawner"],
                "type": "objective"
             },
@@ -4100,21 +4082,21 @@
                "coords": { "x": 55, "y": 34 },
                "align": "top",
                "header": "nightsong woods",
-               "objectives": ["the howling vale", ["raene's cleansing", "p4"]],
+               "objectives": ["the howling vale", ["raene's cleansing", "p2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 39 },
                "header": "tome of melandris",
-               "objectives": ["the howling vale", ["raene's cleansing", "p4"]],
+               "objectives": ["the howling vale"],
                "type": "quest"
             },
             {
                "coords": { "x": 54, "y": 46 },
                "align": "bottom",
                "header": "shael'dryn",
-               "ends": [["raene's cleansing", "p4"]],
-               "starts": [["raene's cleansing", "p5"]],
+               "ends": [["raene's cleansing", "p2"]],
+               "starts": [["raene's cleansing", "p3"]],
                "type": "quest"
             }
          ]
@@ -4126,8 +4108,8 @@
             {
                "coords": { "x": 54, "y": 46 },
                "header": "shael'dryn",
-               "ends": [["raene's cleansing", "p4"]],
-               "starts": [["raene's cleansing", "p5"]],
+               "ends": [["raene's cleansing", "p2"]],
+               "starts": [["raene's cleansing", "p3"]],
                "type": "quest"
             },
             {
@@ -4142,14 +4124,21 @@
                "coords": { "x": 75, "y": 72 },
                "align": "right",
                "header": "the dor'danil barrow den",
-               "objectives": [["raene's cleansing", "p5"], "forsaken diseases"],
+               "objectives": [["raene's cleansing", "p3"], "forsaken diseases"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 82, "y": 49 },
+               "header": "satyrnaar",
+               "objectives": [["the tower of althalaxx", "p6"]],
+               "special": ["second spawner"],
                "type": "objective"
             },
             {
                "coords": { "x": 85, "y": 45 },
-               "align": "right",
+               "align": "top",
                "header": "forest song",
-               "ends": ["satyr slaying", "forsaken diseases"],
+               "ends": ["forsaken diseases"],
                "special": ["hearthstone to astranaar"],
                "type": "quest"
             }
@@ -4170,7 +4159,7 @@
                "coords": { "x": 22, "y": 53 },
                "align": "bottom",
                "header": "the shrine of aessina",
-               "ends": ["the howling vale"],
+               "ends": ["the howling vale", "the branch of cenarius"],
                "starts": ["velinde starsong"],
                "type": "quest"
             },
@@ -4185,16 +4174,16 @@
                "coords": { "x": 54, "y": 46 },
                "align": "top",
                "header": "shael'dryn",
-               "ends": [["raene's cleansing", "p5"]],
-               "starts": [["raene's cleansing", "p6"]],
+               "ends": [["raene's cleansing", "p3"]],
+               "starts": [["raene's cleansing", "p4"]],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 49 },
                "align": "right",
                "header": "hidden shrine",
-               "ends": [["raene's cleansing", "p6"]],
-               "starts": [["raene's cleansing", "p7"]],
+               "ends": [["raene's cleansing", "p4"]],
+               "starts": [["raene's cleansing", "p5"]],
                "type": "quest"
             }
          ]
@@ -4207,37 +4196,37 @@
                "coords": { "x": 56, "y": 49 },
                "align": "right",
                "header": "hidden shrine",
-               "ends": [["raene's cleansing", "p6"]],
-               "starts": [["raene's cleansing", "p7"]],
+               "ends": [["raene's cleansing", "p4"]],
+               "starts": [["raene's cleansing", "p5"]],
                "type": "quest"
             },
             {
                "coords": { "x": 54, "y": 46 },
                "align": "top",
                "header": "shael'dryn",
-               "ends": [["raene's cleansing", "p7"]],
-               "starts": [["raene's cleansing", "p8"]],
+               "ends": [["raene's cleansing", "p5"]],
+               "starts": [["raene's cleansing", "p6"]],
                "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 50 },
                "header": "astranaar",
-               "ends": [["raene's cleansing", "p8"]],
-               "starts": [["raene's cleansing", "p9"]],
+               "ends": [["raene's cleansing", "p6"]],
+               "starts": [["raene's cleansing", "p7"]],
                "type": "hub"
             },
             {
                "coords": { "x": 51, "y": 75 },
                "header": "krolg",
-               "ends": [["raene's cleansing", "p9"]],
-               "starts": [["raene's cleansing", "p10"]],
+               "ends": [["raene's cleansing", "p7"]],
+               "starts": [["raene's cleansing", "p8"]],
                "type": "quest"
             },
             {
                "coords": { "x": 55, "y": 80 },
                "align": "bottom",
                "header": "bloodtooth camp",
-               "objectives": [["raene's cleansing", "p10"]],
+               "objectives": [["raene's cleansing", "p8"]],
                "type": "objective"
             }
          ]
@@ -4250,21 +4239,21 @@
                "coords": { "x": 55, "y": 80 },
                "align": "right",
                "header": "bloodtooth camp",
-               "objectives": [["raene's cleansing", "p10"]],
+               "objectives": [["raene's cleansing", "p8"]],
                "type": "objective"
             },
             {
                "coords": { "x": 51, "y": 75 },
                "header": "krolg",
-               "ends": [["raene's cleansing", "p10"]],
-               "starts": [["raene's cleansing", "p11"]],
+               "ends": [["raene's cleansing", "p8"]],
+               "starts": [["raene's cleansing", "p9"]],
                "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 50 },
                "align": "top",
                "header": "astranaar",
-               "ends": [["raene's cleansing", "p11"]],
+               "ends": [["raene's cleansing", "p9"]],
                "special": ["you will lose your rod", "fly to darnassus"],
                "type": "hub"
             }
