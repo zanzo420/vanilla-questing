@@ -113,7 +113,7 @@ Everything in your route needs to be wrapped neatly inside an **Array** with the
 ```
 
 ## Quest type formatting
-For the engine to fetch IDs correctly, standalone quests only require the name of the quest while chain quests require a second property that defines  which part should be fetched. Elite, dungeon, escort and random drop quests should also be tagged with their corresponding letter for readability, but it's not mandatory.
+For the engine to fetch IDs correctly, standalone quests only require the name of the quest while chain quests require a second property that defines  which part should be fetched. Elite, dungeon, escort and random drop quests should also be tagged with their corresponding letter for readability, but it's not mandatory. Remember, stick to lowercase!
 
 * **P#**: Part # of a chain quest.
 * **E**: Elite quest
@@ -124,10 +124,10 @@ For the engine to fetch IDs correctly, standalone quests only require the name o
 ```json
 {
    "starts": [["this is a chain quest", "p1"]],
-   "starts": [["this is an elite quest", "E"]],
-   "starts": [["this is a dungeon quest", "D"]],
-   "starts": [["this is an escort quest", "F"]],
-   "starts": [["this is a random drop quest", "R"]],
+   "starts": [["this is an elite quest", "e"]],
+   "starts": [["this is a dungeon quest", "d"]],
+   "starts": [["this is an escort quest", "f"]],
+   "starts": [["this is a random drop quest", "r"]],
 }
 ```
 
