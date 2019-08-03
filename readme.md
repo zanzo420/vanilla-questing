@@ -1,11 +1,11 @@
 # Vanilla Questing
 This is an open source webapp that presents quest related content for Classic World of Warcraft in a graphical and easy-to-follow format. The underlying algorithm parses a custom written JSON file and dynamically renders the page content based on the JSON block you’re viewing. There are no traditional backend components like a database being used, and the application functions completely on the client side. Profiles and settings are stored locally in your browsers localstorage.
 
-**Disclaimer**: The content of the website represents the latest “gh-pages” branch which is a compiled and minified version of the master branch. The master branch might not fully represent the current iteration of the live website if something new is in development. If you're interested in routing rather than the code, read the section about routing locally.
+**Disclaimer**: The content of the website represents the latest “gh-pages” branch which is a compiled and minified version of the master branch. The master branch might not fully represent the current iteration of the live website if something new is in development. If you're interested in routing rather than the code, read the second topic.
 
 ## Table of Contents
-* [Cloning the project](https://github.com/wickstjo/vanilla-questing#cloning-the-project)
-* [Routing locally with hot-reloading](https://github.com/wickstjo/vanilla-questing#routing-locally-with-hot-reloading)
+* [How to install](https://github.com/wickstjo/vanilla-questing#how-to-install)
+* [Routing in development mode](https://github.com/wickstjo/vanilla-questing#routing-in-development-mode)
 * [Writing your own route file](https://github.com/wickstjo/vanilla-questing#writing-your-own-route-file)
 	* [Stick to lowercase](https://github.com/wickstjo/vanilla-questing#stick-to-lowercase)
 	* [Borrow heavily](https://github.com/wickstjo/vanilla-questing#borrow-heavily)
@@ -16,13 +16,14 @@ This is an open source webapp that presents quest related content for Classic Wo
 * [Quest type formatting](https://github.com/wickstjo/vanilla-questing#quest-type-formatting)
 * [Samplecode](https://github.com/wickstjo/vanilla-questing#samplecode-for-a-finished-waypoint)
 
-## Cloning the project
-The application is entirely written in **ReactJS** and comes with automatic hot reloading. You need to have NodeJS and NPM installed in order to install the required node modules after cloning the project. This are the version I have installed:
+## How to install
+You need to have **NodeJS** and **NPM** installed in order to install the required node modules. **Git** isn’t mandatory, but I highly suggest you create a repo of your own and version your progress so none of your code goes to waste. There’s plenty of guides in both video and written form to assist you in installing these on your system. These are the versions I’m using:
 
-* **Node** v11.12.0
+* **NodeJS** v11.12.0
 * **NPM** 6.7.0
+* **Git** 2.21.0
 
-The following bash commands should install and boot up the project successfully:
+The following bash commands should result in a running project:
 
 ```bash
 $ git clone https://github.com/wickstjo/vanilla-questing
@@ -30,9 +31,20 @@ $ cd vanilla-questing/
 $ npm install
 $ npm start
 ```
+If you didn't install git, manually download the project from [here](https://github.com/wickstjo/vanilla-questing/archive/master.zip). With your terminal/cmd browse to the extracted directory and run the following commands:
 
-## Routing locally with hot-reloading
-I recently nuked the "development mode" from the main product and will instead be launching a separate repository for that purpose that does not have a multitude of unnecessary bells and whistles. This should not take very long so be on the lookout!
+```bash
+$ npm install
+$ npm start
+```
+
+Afterwards, the application should be locally available in your browser from:
+* http://localhost:3000/
+
+## Routing in development mode
+I cannot express how much easier it is to do routing with the development version of this application. It has built-in **hot reloading** and always **opens the block you were viewing last**, which means that you can edit your route file freely and the browser automatically re-renders the changes in your browser after you save.
+
+This version of the application is available from [another repository](https://github.com/wickstjo/vanilla-routing) and has everything non-essential stripped away.
 
 ## Writing your own route file
 JSON files read very much like text, so converting your leveling routes to a format the algorithm can understand is not a massive undertaking, even for people with no prior programming experience. The same patterns are repeated from start to finish, so after understanding the basics you end up mostly copy/pasting blocks and modifying small details here and there.
