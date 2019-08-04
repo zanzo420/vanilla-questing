@@ -1,7 +1,6 @@
 import React, { useContext  } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Context } from './context';
-import './interface/css/general.scss';
 
 import Home from './pages/home';
 import Manifesto from './pages/manifesto';

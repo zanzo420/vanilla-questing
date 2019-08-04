@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-function PrevNext({ visibility, type, func }) {
+function PrevNext({ visibility, type, func, resolution }) {
 
    // OPACITY STATE
    const [opacity, set_opacity] = useState({
       opacity: 0
+   })
+
+   // OPACITY STATE
+   const [height, set_height] = useState({
+      height: '0px'
    })
 
    // TOGGLE OPACITY
@@ -14,10 +19,19 @@ function PrevNext({ visibility, type, func }) {
       })
    }, [visibility])
 
+   // CHANGE HEIGHT
+   useEffect(() => {
+      if (resolution !== null) {
+         set_height({
+            height: resolution.height + 'px'
+         })
+      }
+   }, [resolution])
+
    return (
       <div
          id={ type }
-         style={ opacity }
+         style={{ ...opacity, ...height }}
          onClick={ func }
       />
    )

@@ -165,18 +165,21 @@
             padding: 2px;
             padding-bottom: 1px;
 
-            #green, #yellow, #red, #blue, #brown, #purple {
+            #yellow, #green, #red, #blue, #brown, #purple {
+               position: relative;
+               background-color: rgba(67, 110, 68, 0.973);
                padding: 6px 8px;
+               padding-left: 35px;
                color: white;
                margin-bottom: 1px;
             }
 
-            // COLUMN COLORS
-            #green { background: rgba(67, 110, 68, 0.973); }
-            #yellow { background: rgba(133, 134, 51, 0.973); }
-            #red { background: rgba(129, 66, 66, 0.973); }
-            #blue { background: #455475f6; }
-            #purple { background: rgba(139, 77, 163, 0.76); }
+            #brown { padding-left: 6px; }
+
+            #yellow { background-color: rgba(133, 134, 51, 0.973); }
+            #red { background-color: rgba(129, 66, 66, 0.973); }
+            #blue { background-color: #455475f6; }
+            #purple { background-color: rgba(139, 77, 163, 0.76); }
 
             // CALIBRATE MAP MARKER BACKGROUNDS
             #brown {
@@ -185,6 +188,23 @@
                background-repeat: no-repeat;
                background-position: center right 10px;
             }
+
+            .yellow-icon, .green-icon, .purple-icon, .red-icon, .blue-icon {
+               background-color: rgba(0, 0, 0, 0.199);
+               background-image: url('../images/icons/ends.png');
+               background-repeat: no-repeat;
+               background-position: center center;
+               position: absolute;
+               left: 1px;
+               top: 0px;
+               height: 28px;
+               width: 28px;
+               margin-top: 1px;
+            }
+
+            .yellow-icon { background-image: url('../images/icons/starts.png'); }
+            .red-icon { background-image: url('../images/icons/objectives.png'); }
+            .blue-icon { background-image: url('../images/icons/special.png'); }
          }
          
          .container:last-child {

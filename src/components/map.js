@@ -72,11 +72,13 @@ function Map() {
             type={ 'prev' }
             visibility={ local.prevnext }
             func={() => { previous(state, dispatch) }}
+            resolution={ local.resolution }
          />
          <PrevNext
             type={ 'next' }
             visibility={ local.prevnext }
             func={() => { next(state, dispatch) }}
+            resolution={ local.resolution }
          />
       </div>
    )

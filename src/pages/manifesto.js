@@ -123,17 +123,22 @@ function Manifesto() { return (
             </Secondary>
          </Primary>
          <Primary header={ `Credits` } id={ `credits` }>
-         <Secondary header={ `WC3 Icons` } id={ `icons` }>
+         <Secondary header={ `WC3 Icons` } id={ `wc3-icons` }>
                <Paragraph>
                   I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for extracting high quality icons from WC3 and providing a <a href="https://barrens.chat/viewtopic.php?f=5&t=901" target="_blank" rel="noopener noreferrer">downloadable package</a> to use in projects like this. There’s a wide assortment of classic related content being posted there regularly that you might actually learn something from which certainly can’t be said about the trash that gets constantly re-uploaded to youtube.
                </Paragraph>
             </Secondary>
             <Secondary header={ `Remastered Backgrounds` } id={ `backgrounds` }>
                <Paragraph>
-               The in-game coordinate system which every addon follows is percentage based, which means that only the original maps can be used for a guide like this. I had hoped blizzard would redo the original maps themselves for classics launch, but this is yet another thing that the community has taken upon themselves to fix.
+                  The in-game coordinate system which every addon follows is percentage based, which means that only the original maps can be used for a guide like this. I had hoped blizzard would redo the original maps themselves for classics launch, but this is yet another thing that the community has taken upon themselves to fix.
                </Paragraph>
                <Paragraph>
-               Again, I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for providing maps in a proper format and size, and the reddit user <a href="https://www.reddit.com/user/AthenaNosta" target="_blank" rel="noopener noreferrer">AthenaNosta</a> for algorithmically remastering them. All of the remastered backgrounds are publically available in gigapixel resolution if that’s something you’re into. You can read more in the <a href="https://www.reddit.com/r/classicwow/comments/bwqzql/here_have_some_upscaled_highresolution_wow_maps/" target="_blank" rel="noopener noreferrer">reddit thread</a>.
+                  Again, I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for providing maps in a proper format and size, and the reddit user <a href="https://www.reddit.com/user/AthenaNosta" target="_blank" rel="noopener noreferrer">AthenaNosta</a> for algorithmically remastering them. All of the remastered backgrounds are publically available in gigapixel resolution if that’s something you’re into. You can read more in the <a href="https://www.reddit.com/r/classicwow/comments/bwqzql/here_have_some_upscaled_highresolution_wow_maps/" target="_blank" rel="noopener noreferrer">reddit thread</a>.
+               </Paragraph>
+            </Secondary>
+            <Secondary header={ `Sidepanel Icons` } id={ `sidepanel-icons` }>
+               <Paragraph>
+                  Thank you to reddit user <a href="https://www.reddit.com/user/Vrty" target="_blank" rel="noopener noreferrer">Vrty</a> for creating the sidepanel icons for quests and objectives.
                </Paragraph>
             </Secondary>
          </Primary>

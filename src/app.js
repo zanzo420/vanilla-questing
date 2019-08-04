@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from "./context";
+import './interface/css/general.scss';
 
 import Init from './init';
 import Menu from './components/menu';

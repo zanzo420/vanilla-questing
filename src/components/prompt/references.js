@@ -13,8 +13,8 @@ function References() { return (
          </div>
          <div className='container'>
             <Color data={['Return quest', 'green']} />
-            <Color data={['Pick up quest', 'yellow']} />
             <Color data={['Pick up & return quest', 'purple']} />
+            <Color data={['Pick up quest', 'yellow']} />
             <Color data={['Complete objective', 'red']} />
             <Color data={['Authors note', 'blue']} />
          </div>
@@ -32,6 +32,7 @@ function References() { return (
 // COLOR ROW
 function Color({ data }) { return (
    <div className='row' id={ data[1] }>
+      <span className={ data[1] + '-icon' } />
       { data[0] }
    </div>
 )}
