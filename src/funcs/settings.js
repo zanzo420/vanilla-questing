@@ -9,6 +9,7 @@ function check() {
       
       // SET DEFAULT SETTINGS
       set({
+         database: 'classicdb',
          keybinds: 'enable',
          binds: {
             close: 'Escape',
@@ -19,8 +20,19 @@ function check() {
       })
    }
 
+   // FETCH THE CONTENT
+   const settings = fetch();
+
+   // IF THE DATABASE PROP DOESNT EXIST
+   if (settings.database === undefined) {
+
+      // SET THE DB VALUE & UPDATE STORAGE
+      settings.database = 'classicdb';
+      set(settings);
+   }
+
    // PARSE & RETURN STORAGE ITEM
-   return fetch();
+   return settings;
 }
 
 // PARSE & RETURN STORAGE VALUE
@@ -72,9 +84,26 @@ function update_prop(settings, payload) {
    return settings;
 }
 
+// FETCH URL OF PREFERRED DATABASE
+function database(state) {
+   switch(state.settings.database) {
+
+      // CLASSICDB
+      case 'classicdb': {
+         return 'https://classicdb.ch/?quest='
+      }
+
+      // WOWHEAD
+      default: {
+         return 'https://classic.wowhead.com/quest=';
+      }
+   }
+}
+
 export {
    check,
    exists,
    update_bind,
-   update_prop
+   update_prop,
+   database
 }

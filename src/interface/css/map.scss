@@ -31,6 +31,14 @@
       z-index: 10;
    }
 
+   circle {
+      opacity: 0;
+      transition: opacity 0.2s;
+      r: 30;
+      stroke: rgb(12, 12, 12);
+      stroke-width: 1;
+   }
+
    .waypoint {
       position: absolute;
       width: 1px;

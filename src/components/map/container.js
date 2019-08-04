@@ -5,6 +5,7 @@ import { autocenter, update_position } from "../../funcs/map";
 
 import Line from './line';
 import Waypoint from './waypoint';
+import Circle from './circle';
 
 function Container({ resolution }) {
 
@@ -71,6 +72,11 @@ function Container({ resolution }) {
                <Waypoint
                   waypoint={ waypoint }
                   block={ index } 
+               />
+               <Circle
+                  waypoint={ waypoint }
+                  block={ index }
+                  offcolor={ offcolor }
                />
             </Fragment>
          )

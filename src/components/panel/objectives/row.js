@@ -3,6 +3,7 @@ import { Context } from "../../../context";
 
 import { shorten } from '../../../funcs/misc';
 import { fetch_id } from '../../../funcs/quests';
+import { database } from '../../../funcs/settings';
 
 import Single from '../single';
 import Split from '../split';
@@ -29,6 +30,11 @@ function Name({ data, type }) {
 
    // NON SPECIALS
    if (type !== 'special') {
+
+      // FETCH URL TO PREFERRED DATABASE
+      const url = database(state);
+
+      // DETERMINE CONTAINER
       switch(typeof data) {
 
          // ARRAY
@@ -36,7 +42,8 @@ function Name({ data, type }) {
             <Split
                header={ shorten(data[0]) }
                tag={ data[1] }
-               to={ 'https://classicdb.ch/?quest=' + fetch_id(data, state.data.quests) }
+               url={ url }
+               id={ fetch_id(data, state.data.quests) }
             />
          )}
    
@@ -44,7 +51,8 @@ function Name({ data, type }) {
          default: { return (
             <Single
                header={ shorten(data) }
-               to={ 'https://classicdb.ch/?quest=' + fetch_id(data, state.data.quests) }
+               url={ url }
+               id={ fetch_id(data, state.data.quests) }
             />
          )}
       }
@@ -54,9 +62,12 @@ function Name({ data, type }) {
       switch(typeof data) {
 
          // ARRAY
-         case 'object': {
-            return <Single header={ data[0] } to={ data[1] }  />
-         }
+         case 'object': { return (
+            <Single
+               header={ data[0] }
+               url={ data[1] }
+            />
+         )}
 
          // STRING
          default: {

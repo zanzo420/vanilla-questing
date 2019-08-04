@@ -4,6 +4,9 @@ const background = {
    height: 960
 }
 
+// MOST RECENTLY HIGHLIGHTED CIRCLE
+let highlight = null;
+
 // POSITION BACKGROUND AROUND AVERAGE WAYPOINT
 function autocenter({ waypoints, resolution }) {
 
@@ -132,8 +135,28 @@ function dimensions() {
    }
 }
 
+// SHOW HIGHLIGHT CIRCLE
+function show_circle(index) {
+   if (document.getElementById('circle-' + index) !== null && document.getElementById('circle-' + index).style.opacity !== 0.7) {
+
+      hide_circle();
+
+      document.getElementById('circle-' + index).style.opacity = 0.7;
+      highlight = document.getElementById('circle-' + index);
+   }
+}
+
+// HIDE HIGHLIGHT CIRCLES
+function hide_circle() {
+   if (highlight !== null) {
+      highlight.style.opacity = 0;
+   }
+}
+
 export {
    autocenter,
    update_position,
-   dimensions
-};
+   dimensions,
+   show_circle,
+   hide_circle
+}

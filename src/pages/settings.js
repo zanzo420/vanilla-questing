@@ -40,6 +40,14 @@ function Settings() {
                bind={ state.settings.binds.forward }
             />
          </div>
+         <div className={ 'header' }>Preferred Database</div>
+         <div className={ 'container' }>
+            <Swapper
+               header={ 'database' }
+               first={ 'classicdb' }
+               second={ 'wowhead' }
+            />
+         </div>
       </div>
    )
 }

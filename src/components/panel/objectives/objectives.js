@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Context } from "../../../context";
+import { show_circle, hide_circle } from "../../../funcs/map";
 import Rows from './rows';
 
 function Objectives({ visible }) {
@@ -10,7 +11,7 @@ function Objectives({ visible }) {
    // LOCAL VISIBILITY STATE
    const [visibility, set_visibility] = useState({
       display: 'block'
-   });
+   })
 
    // TOGGLE VISIBILITY
    useEffect(() => {
@@ -22,7 +23,7 @@ function Objectives({ visible }) {
    return (
       <div id="objectives" style={ visibility }>
          { state.data.route[state.current].waypoints.map((data, index) =>
-            <div className="section" key={ index }>
+            <div className="section" key={ index } onMouseOver={() => { show_circle(index) } } onMouseOut={ hide_circle }>
                <div className="title">
                   <div>{ index + 1 }. { data.header }</div>
                   <div>{ data.coords.x + '.' + data.coords.y }</div>

@@ -1,6 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { useContext, Fragment } from 'react';
+import { Context } from '../../../context';
+
 import { shorten } from '../../../funcs/misc';
 import { fetch_id } from '../../../funcs/quests';
+import { database } from '../../../funcs/settings';
 
 import Single from '../single';
 import Split from '../split';
@@ -18,6 +21,14 @@ function Quest({ quest, quests }) { return (
 )}
 
 function Row({ quest, quests }) {
+
+   // GLOBAL STATE
+   const { state } = useContext(Context);
+
+   // FETCH URL TO PREFERRED DATABASE
+   const url = database(state);
+
+   // DETERMINE CONTAINER
    switch(typeof quest) {
 
       // ARRAYS
@@ -25,7 +36,8 @@ function Row({ quest, quests }) {
          <Split
             header={ shorten(quest[0]) }
             tag={ quest[1] }
-            to={ 'https://classicdb.ch/?quest=' + fetch_id(quest, quests) }
+            url={ url }
+            id={ fetch_id(quest, quests) }
          />
       )}
 
@@ -33,7 +45,8 @@ function Row({ quest, quests }) {
       default: { return (
          <Single
             header={ shorten(quest) }
-            to={ 'https://classicdb.ch/?quest=' + fetch_id(quest, quests) }
+            url={ url }
+            id={ fetch_id(quest, quests) }
          />
       )}
    }
