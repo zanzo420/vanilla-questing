@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useReducer, Fragment } from 'react';
-import reducer from '../../reducers/map';
+import { values, reducer } from '../../reducers/map';
 import { Context } from "../../context";
 import { autocenter, update_position } from "../../funcs/map";
 
@@ -13,17 +13,7 @@ function Container({ resolution }) {
    const { state } = useContext(Context);
 
    // LOCAL STATE
-   const [local, set_local] = useReducer(reducer, {
-      background: {},
-      markers: [],
-      position: {},
-      transition: {},
-      movement: {
-         last_position: {},
-         last_event: {},
-         enabled: false
-      }
-   })
+   const [local, set_local] = useReducer(reducer, values)
 
    // CHANGE LINE COLOR FOR THE FOLLOWING ZONES
    const whitelist = new Set([

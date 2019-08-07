@@ -1,7 +1,23 @@
 import { update as update_profiles, change as update_block } from "../funcs/storage";
 import { update_bind, update_prop } from "../funcs/settings";
 
-function global(state, action) {
+// DEFUALT VALUES
+const values = {
+   data: null,
+   current: 0,
+   profiles: null,
+   settings: null,
+   request: null,
+   loaded: null,
+   messages: [],
+   prompt: {
+      visible: false,
+      type: null
+   }
+}
+
+// REDUCER
+function reducer(state, action) {
    switch (action.type) {
 
       // ON THE INITIAL PAGE LOAD
@@ -169,4 +185,7 @@ function global(state, action) {
    }
 }
 
-export default global;
+export {
+   values,
+   reducer
+}

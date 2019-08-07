@@ -1,4 +1,18 @@
-function map(state, action) {
+// DEFAULT VALUES
+const values = {
+   background: {},
+   markers: [],
+   position: {},
+   transition: {},
+   movement: {
+      last_position: {},
+      last_event: {},
+      enabled: false
+   }
+}
+
+// REDUCER
+function reducer(state, action) {
    switch (action.type) {
 
       // UPDATE BACKGROUND
@@ -69,4 +83,7 @@ function map(state, action) {
    }
 }
 
-export default map;
+export {
+   values,
+   reducer
+}
