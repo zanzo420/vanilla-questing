@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useReducer, Fragment } from 'react';
-import { values, reducer } from '../../reducers/map';
+import { values, reducer } from '../../states/map';
 import { Context } from "../../context";
 import { autocenter, update_position } from "../../funcs/map";
 
