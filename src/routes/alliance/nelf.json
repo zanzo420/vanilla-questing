@@ -62,7 +62,6 @@
                "coords": { "x": 55, "y": 57 },
                "align": "top",
                "header": "dolanaar tower",
-               "ends": ["zenn's bidding"],
                "starts": ["seek redemption!", "denalan's earth", "a troubling breeze", "twisted hatred", "the emerald dreamcatcher"],
                "special": ["buy 1x skinning knife"],
                "type": "quest"
