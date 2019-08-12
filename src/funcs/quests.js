@@ -66,26 +66,30 @@ function fetch_id(quest, quests) {
 
       // ARRAYS
       default: {
-         switch(quest[1][0].toLowerCase()) {
+         if(quest.length >= 2) {
+            switch(quest[1][0].toLowerCase()) {
 
-            // CHAIN QUEST
-            case 'p': {
-
-               // FISH OUT THE CHAIN PART
-               const id = parseInt(quest[1].split('-')[0].replace(/\D/g, '')) - 1;
-
-               // IF THE QUEST NAME EXISTS, RETURN THE ID
-               if (quests[quest[0]] !== undefined) {
-                  return quests[quest[0].toString().toLowerCase()][id];
-               
-               // OTHERWISE, RETURN UNDEFINED
-               } else { return undefined; }
+               // CHAIN QUEST
+               case 'p': {
+   
+                  // FISH OUT THE CHAIN PART
+                  const id = parseInt(quest[1].split('-')[0].replace(/\D/g, '')) - 1;
+   
+                  // IF THE QUEST NAME EXISTS, RETURN THE ID
+                  if (quests[quest[0]] !== undefined) {
+                     return quests[quest[0].toString().toLowerCase()][id];
+                  
+                  // OTHERWISE, RETURN UNDEFINED
+                  } else { return undefined; }
+               }
+   
+               // SOMETHING ELSE
+               default: {
+                  return quests[quest[0].toString().toLowerCase()];
+               }
             }
-
-            // SOMETHING ELSE
-            default: {
-               return quests[quest[0].toString().toLowerCase()];
-            }
+         } else {
+            return quests[quest[0].toString().toLowerCase()];
          }
       }
    }
