@@ -1154,7 +1154,7 @@
                "coords": { "x": 43, "y": 61 },
                "align": "right",
                "header": "ameth'aran",
-               "objectives": [["bashal'aran", "p3"], "the fall of ameth'aran", "tools of the highborne", "for love eternal"],
+               "objectives": [["bashal'aran", "p4"], "the fall of ameth'aran", "tools of the highborne", "for love eternal"],
                "type": "objective"
             }
          ]
@@ -1167,7 +1167,7 @@
                "coords": { "x": 43, "y": 61 },
                "align": "bottom",
                "header": "ameth'aran",
-               "objectives": [["bashal'aran", "p3"], "the fall of ameth'aran", "tools of the highborne", "for love eternal"],
+               "objectives": [["bashal'aran", "p4"], "the fall of ameth'aran", "tools of the highborne", "for love eternal"],
                "type": "objective"
             },
             {
@@ -1225,7 +1225,7 @@
                "coords": { "x": 44, "y": 36 },
                "align": "right",
                "header": "asterion",
-               "ends": [["bashal'aran", "p3"]],
+               "ends": [["bashal'aran", "p4"]],
                "type": "quest"
             },
             {
