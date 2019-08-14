@@ -5777,6 +5777,7 @@
                "align": "right",
                "header": "theramore inn",
                "starts": ["mudrock soup and bugs"],
+               "special": ["set hearthstone"],
                "type": "quest"
             },
             {
