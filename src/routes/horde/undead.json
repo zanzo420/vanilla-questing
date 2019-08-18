@@ -559,7 +559,7 @@
                "coords": { "x": 60, "y": 52 },
                "header": "brill",
                "ends": ["the family crypt", ["at war with the scarlet crusade", "p2"]],
-               "starts": [["at war with the scarlet crusade", "p3"], "delivery to silverpine", "forsaken duties", "the prodigal lich"],
+               "starts": [["at war with the scarlet crusade", "p3"], "delivery to silverpine", "forsaken duties"],
                "type": "hub"
             },
             {
@@ -614,51 +614,6 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 62, "y": 65 },
-               "align": "bottom",
-               "header": "undercity gates",
-               "special": ["undeads go straight to silverpine"],
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "undercity",
-         "experience": 12.40,
-         "waypoints": [
-            {
-               "coords": { "x": 84, "y": 17 },
-               "align": "right",
-               "header": "bethor iceshard",
-               "ends": ["the prodigal lich"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 63, "y": 48 },
-               "align": "bottom",
-               "header": "undercity flightpath",
-               "special": ["learn the flightpath"],
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 71, "y": 44 },
-               "align": "right",
-               "header": "undercity lifts",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "tirisfal",
-         "experience": 12.41,
-         "waypoints": [
-            {
-               "coords": { "x": 62, "y": 65 },
-               "align": "top",
-               "header": "undercity gates",
-               "type": "travel"
-            },
-            {
                "coords": { "x": 55, "y": 73 },
                "header": "silverpine border",
                "type": "travel"
@@ -667,7 +622,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 12.41,
+         "experience": 12.40,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 6 },
