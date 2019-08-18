@@ -5777,6 +5777,7 @@
                "align": "right",
                "header": "theramore inn",
                "starts": ["mudrock soup and bugs"],
+               "special": ["set hearthstone"],
                "type": "quest"
             },
             {
@@ -14124,7 +14125,7 @@
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
-               "header": "lakeshier inn",
+               "header": "lakeshire inn",
                "special": ["set hearthstone"],
                "type": "hub"
             },
@@ -14183,7 +14184,7 @@
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
-               "header": "lakeshier inn",
+               "header": "lakeshire inn",
                "type": "hub"
             },
             {
@@ -14282,7 +14283,7 @@
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
-               "header": "lakeshier inn",
+               "header": "lakeshire inn",
                "type": "hub"
             },
             {
@@ -14361,7 +14362,7 @@
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
-               "header": "lakeshier inn",
+               "header": "lakeshire inn",
                "type": "hub"
             },
             {
