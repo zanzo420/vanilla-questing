@@ -4,6 +4,7 @@ import '../interface/css/settings.scss';
 
 import Swapper from '../components/settings/swapper';
 import Keybind from '../components/settings/keybind';
+import Language from '../components/settings/language';
 
 function Settings() {
    
@@ -12,7 +13,7 @@ function Settings() {
 
    return (
       <div id={ 'settings' }>
-         <div className={ 'header' }>Modify Keybindings</div>
+         <div className={ 'header' }>Change Keybinds</div>
          <div className={ 'container' }>
             <Swapper
                header={ 'keybinds' }
@@ -40,12 +41,27 @@ function Settings() {
                bind={ state.settings.binds.forward }
             />
          </div>
-         <div className={ 'header' }>Preferred Database</div>
+         <div className={ 'header' }>Change Database</div>
          <div className={ 'container' }>
             <Swapper
                header={ 'database' }
                first={ 'classicdb' }
                second={ 'wowhead' }
+            />
+         </div>
+         <div className={ 'header' }>Change Language</div>
+         <div className={ 'container' }>
+            <Language
+               header={ 'Language' }
+               options={[
+                  'EN',
+                  'RU',
+                  'GE',
+                  'FR',
+                  'SP',
+                  'KR',
+                  'CH'
+               ]}
             />
          </div>
       </div>

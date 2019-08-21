@@ -6,8 +6,8 @@ function Single({ header, url, id }) {
       // PLAIN LINKS
       case undefined: { return (
          <div>
-         <a href={ url } target={ '_blank' } rel={ 'noopener noreferrer' }>{ header }</a>
-      </div>
+            <a href={ url } target={ '_blank' } rel={ 'noopener noreferrer' }>{ header }</a>
+         </div>
       )}
 
       // DATABASE LINKS

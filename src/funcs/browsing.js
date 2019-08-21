@@ -54,41 +54,39 @@ const key_listener = (event, state, dispatch) => {
       switch (event.code) {
 
          // PREVIOUS BLOCK
-         case state.settings.binds.backward: {
+         case state.settings.binds.backward:
             if (!state.prompt.visible) {
                previous(state, dispatch);
-            } break;
-         }
+            }
+         break;
 
          // NEXT BLOCK
-         case state.settings.binds.forward: {
+         case state.settings.binds.forward:
             if (!state.prompt.visible) {
                next(state, dispatch);
-            } break;
-         }
+            }
+         break;
 
          // SHOW REFERENCES
-         case state.settings.binds.references: {
+         case state.settings.binds.references:
             if (!state.prompt.visible) {
                dispatch({
                   type: 'show-prompt',
                   payload: 'references'
                })
-            } break;
-         }
+            }
+         break;
 
          // CLOSE PROMPT
-         case state.settings.binds.close: {
+         case state.settings.binds.close:
             dispatch({
                type: 'hide-prompt',
             })
-            break;
-         }
+         break;
 
          // FALLBACK
-         default: {
+         default:
             return null;
-         }
       }
    }
 }
