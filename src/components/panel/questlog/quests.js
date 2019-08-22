@@ -31,7 +31,6 @@ function Quests({ visible }) {
          <Quest
             key={ index }
             quest={ quest }
-            quests={ state.data.quests }
          />
       );
 

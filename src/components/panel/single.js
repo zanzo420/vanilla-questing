@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Single({ header, url, id }) {
+function Single({ header, url, id, prefix }) {
    switch(id) {
 
       // PLAIN LINKS
@@ -13,7 +13,7 @@ function Single({ header, url, id }) {
       // DATABASE LINKS
       default: { return (
          <div>
-            <a href={ url + id } data-wowhead={ 'quest=' + id + '?domain=classic' } target={ '_blank' } rel={ 'noopener noreferrer' }>{ header }</a>
+            <a href={ url + id } data-wowhead={ 'quest=' + id + '&domain=' + prefix + '.classic' } target={ '_blank' } rel={ 'noopener noreferrer' }>{ header }</a>
          </div>
       )}
    }

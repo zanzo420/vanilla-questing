@@ -12,6 +12,14 @@ import undead from '../routes/horde/undead.json';
 import horde_shared from '../routes/horde/shared.json';
 import horde_quests from '../routes/horde/quests.json';
 
+// LOCALIZED NAMES
+import chinese from '../routes/langs/cn.json';
+import french from '../routes/langs/fra.json';
+import german from '../routes/langs/ger.json';
+import korean from '../routes/langs/kor.json';
+import russian from '../routes/langs/rus.json';
+import spanish from '../routes/langs/spa.json';
+
 // RACE SPECIFIC STARTERS
 const races = {
    alliance: new Map([
@@ -77,7 +85,15 @@ function random() {
    // RETURN FINALIZED BUILD
    return {
       data: build,
-      current: Math.floor((Math.random() * build.route.length - 1) + 1)
+      current: Math.floor((Math.random() * build.route.length - 1) + 1),
+      lang: {
+         cn: chinese,
+         fr: french,
+         ge: german,
+         kr: korean,
+         ru: russian,
+         sp: spanish
+      }
    }
 }
 

@@ -1,10 +1,5 @@
 import axios from 'axios';
 
-// SHORTHAND FOR LOGGING
-function log(stuff) {
-   console.log(stuff);
-}
-
 // WAIT FOR GIVEN MILLISECONDS
 function sleep (time) {
    return new Promise((resolve) => setTimeout(resolve, time));
@@ -15,9 +10,11 @@ function shorten(string) {
    
    // MAX CHARACTER LIMIT
    const max_length = 25;
+
+   console.log(string)
    
-   // CHECK IF THE STRING IS LONGER THAN 22 CHARACTERS
-   if (string.length > max_length) {
+   // CHECK IF THE STRING IS UNDEFINED OR LONGER THAN 22 CHARACTERS
+   if (string !== undefined && string.length > max_length) {
 
       // ALLOW THE FIRST 20 CHARACTERS AND TAG ON THE TRIPLEDOT
       string = string.substring(0, (max_length - 3));
@@ -101,7 +98,6 @@ function preload_bgs() {
 }
 
 export {
-   log,
    sleep,
    shorten,
    preload_bgs

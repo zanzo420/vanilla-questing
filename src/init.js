@@ -26,7 +26,8 @@ function Init() {
             profiles: profiles,
             settings: settings,
             data: build.data,
-            current: build.current
+            current: build.current,
+            lang: build.lang
          }
       })
    }, [])

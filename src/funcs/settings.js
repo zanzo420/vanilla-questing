@@ -10,6 +10,7 @@ function check() {
       // SET DEFAULT SETTINGS
       set({
          database: 'classicdb',
+         language: 'en',
          keybinds: 'enable',
          binds: {
             close: 'Escape',
@@ -26,8 +27,16 @@ function check() {
    // IF THE DATABASE PROP DOESNT EXIST
    if (settings.database === undefined) {
 
-      // SET THE DB VALUE & UPDATE STORAGE
+      // SET IT & UPDATE STORAGE
       settings.database = 'classicdb';
+      set(settings);
+   }
+
+   // IF THE DATABASE PROP DOESNT EXIST
+   if (settings.language === undefined) {
+
+      // SET IT & UPDATE STORAGE
+      settings.language = 'en';
       set(settings);
    }
 
@@ -84,19 +93,58 @@ function update_prop(settings, payload) {
    return settings;
 }
 
-// FETCH URL OF PREFERRED DATABASE
-function database(state) {
+// FETCH DB PREFIX & URK
+function resource(state) {
+
+   // PLACEHOLDERS
+   let prefix = '';
+   let url = '';
+
+   // SELECT PREFIX
+   switch(state.settings.language) {
+
+      // ENGLISH
+      case 'en':
+         prefix = ''
+      break;
+
+      // GERMAN
+      case 'ge':
+         prefix = 'de'
+      break;
+
+      // KOREAN
+      case 'kr':
+         prefix = 'ko'
+      break;
+
+      // SPANISH
+      case 'sp':
+         prefix = 'es'
+      break;
+
+      default:
+         prefix = state.settings.language
+      break;
+   }
+
+   // SELECT URL
    switch(state.settings.database) {
 
       // CLASSICDB
-      case 'classicdb': {
-         return 'https://classicdb.ch/?quest='
-      }
+      case 'classicdb':
+            url = 'https://classicdb.ch/?quest='
+      break;
 
       // WOWHEAD
-      default: {
-         return 'https://classic.wowhead.com/quest=';
-      }
+      default:
+            url = 'https://' + prefix + '.classic.wowhead.com/quest='
+      break;
+   }
+
+   return {
+      prefix: prefix,
+      url: url
    }
 }
 
@@ -105,5 +153,5 @@ export {
    exists,
    update_bind,
    update_prop,
-   database
+   resource
 }

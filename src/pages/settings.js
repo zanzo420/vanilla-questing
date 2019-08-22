@@ -54,13 +54,13 @@ function Settings() {
             <Language
                header={ 'Language' }
                options={[
-                  'EN',
-                  'RU',
-                  'GE',
-                  'FR',
-                  'SP',
-                  'KR',
-                  'CH'
+                  'en',
+                  'ru',
+                  'ge',
+                  'fr',
+                  'sp',
+                  'kr',
+                  'cn'
                ]}
             />
          </div>

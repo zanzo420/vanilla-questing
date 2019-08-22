@@ -2,31 +2,29 @@ import React, { useContext, Fragment } from 'react';
 import { Context } from '../../../context';
 
 import { shorten } from '../../../funcs/misc';
-import { fetch_id } from '../../../funcs/quests';
-import { database } from '../../../funcs/settings';
+import { extract } from '../../../funcs/quests';
+import { resource } from '../../../funcs/settings';
 
 import Single from '../single';
 import Split from '../split';
 
-function Quest({ quest, quests }) { return (
+function Quest({ quest }) { return (
    <Fragment>
       <span className={ 'starts-icon' } />
       <div className={ 'starts-row' }>
-         <Row
-            quest={ quest }
-            quests={ quests }
-         />
+         <Row quest={ quest } />
       </div>
    </Fragment>
 )}
 
-function Row({ quest, quests }) {
+function Row({ quest }) {
 
    // GLOBAL STATE
    const { state } = useContext(Context);
 
-   // FETCH URL TO PREFERRED DATABASE
-   const url = database(state);
+   // FETCH QUEST ID & NAME, THEN URL & LOCALIZATION PREFIX
+   const { name, id } = extract(quest, state);
+   const { url, prefix } = resource(state);
 
    // DETERMINE CONTAINER
    switch(typeof quest) {
@@ -34,19 +32,21 @@ function Row({ quest, quests }) {
       // ARRAYS
       case 'object': { return (
          <Split
-            header={ shorten(quest[0]) }
+            header={ shorten(name) }
             tag={ quest[1] }
             url={ url }
-            id={ fetch_id(quest, quests) }
+            id={ id }
+            prefix={ prefix }
          />
       )}
 
       // STRINGS
       default: { return (
          <Single
-            header={ shorten(quest) }
+            header={ shorten(name) }
             url={ url }
-            id={ fetch_id(quest, quests) }
+            id={ id }
+            prefix={ prefix }
          />
       )}
    }

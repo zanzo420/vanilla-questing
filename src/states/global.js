@@ -13,7 +13,8 @@ const values = {
    prompt: {
       visible: false,
       type: null
-   }
+   },
+   lang: null
 }
 
 // REDUCER
@@ -27,6 +28,7 @@ function reducer(state, action) {
          settings: action.payload.settings,
          data: action.payload.data,
          current: action.payload.current,
+         lang: action.payload.lang,
          prompt: {
             ...state.prompt,
             visible: false

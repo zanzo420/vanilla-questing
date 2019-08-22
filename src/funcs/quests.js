@@ -55,6 +55,29 @@ function quest_name(quest) {
    }
 }
 
+// EXTRACT QUEST NAME & ID
+function extract(data, state) {
+
+   // NAME PLACEHOLDER & ID
+   let name = data;
+   const id = fetch_id(data, state.data.quests);
+
+   // IF DATA IS AN ARRAY
+   if (typeof data === 'object') {
+      name = data[0]
+   }
+
+   // TRANSLATE IF NECESSARY
+   if (state.settings.language !== 'en') {
+      name = state.lang[state.settings.language][id];
+   }
+   
+   return {
+      name: name,
+      id: id
+   }
+}
+
 // FETCH QUEST ID FOR SIDEPANEL LINKS
 function fetch_id(quest, quests) {
    switch(typeof quest) {
@@ -97,5 +120,5 @@ function fetch_id(quest, quests) {
 
 export {
    filter,
-   fetch_id
+   extract
 }

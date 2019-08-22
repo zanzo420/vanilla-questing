@@ -2,8 +2,8 @@ import React, { useContext, Fragment } from 'react';
 import { Context } from "../../../context";
 
 import { shorten } from '../../../funcs/misc';
-import { fetch_id } from '../../../funcs/quests';
-import { database } from '../../../funcs/settings';
+import { extract } from '../../../funcs/quests';
+import { resource } from '../../../funcs/settings';
 
 import Single from '../single';
 import Split from '../split';
@@ -31,8 +31,9 @@ function Name({ data, type }) {
    // NON SPECIALS
    if (type !== 'special') {
 
-      // FETCH URL TO PREFERRED DATABASE
-      const url = database(state);
+      // FETCH QUEST ID & NAME, THEN URL & LOCALIZATION PREFIX
+      const { name, id } = extract(data, state);
+      const { url, prefix } = resource(state);
 
       // DETERMINE CONTAINER
       switch(typeof data) {
@@ -40,19 +41,21 @@ function Name({ data, type }) {
          // ARRAY
          case 'object': { return (
             <Split
-               header={ shorten(data[0]) }
+               header={ shorten(name) }
                tag={ data[1] }
                url={ url }
-               id={ fetch_id(data, state.data.quests) }
+               id={ id }
+               prefix={ prefix }
             />
          )}
    
          // STRING
          default: { return (
             <Single
-               header={ shorten(data) }
+               header={ shorten(name) }
                url={ url }
-               id={ fetch_id(data, state.data.quests) }
+               id={ id }
+               prefix={ prefix }
             />
          )}
       }
