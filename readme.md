@@ -5,6 +5,7 @@ This is an open source webapp that presents quest related content for Classic Wo
 
 ## Table of Contents
 * [How to install](https://github.com/wickstjo/vanilla-questing#how-to-install)
+* [Launch with Docker](https://github.com/wickstjo/vanilla-questing#launch-with-docker)
 * [Routing in development mode](https://github.com/wickstjo/vanilla-questing#routing-in-development-mode)
 * [Writing your own route file](https://github.com/wickstjo/vanilla-questing#writing-your-own-route-file)
 	* [Stick to lowercase](https://github.com/wickstjo/vanilla-questing#stick-to-lowercase)
@@ -40,6 +41,12 @@ $ npm start
 
 Afterwards, the application should be locally available in your browser from:
 * http://localhost:3000/
+
+## Launch with Docker
+Courtesy of user [ninthwalker](https://github.com/ninthwalker), you can launch the full application through docker with the following command:
+```bash
+docker run -p 3000:3000 -d ninthwalker/vanilla-questing
+```
 
 ## Routing in development mode
 I cannot express how much easier it is to do routing with the development version of this application. It has built-in **hot reloading** and always **opens the block you were viewing last**, which means that you can edit your route file freely and the browser automatically re-renders the changes in your browser after you save.
