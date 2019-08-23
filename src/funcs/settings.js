@@ -110,21 +110,21 @@ function resource(state) {
 
       // GERMAN
       case 'ge':
-         prefix = 'de'
+         prefix = 'de.'
       break;
 
       // KOREAN
       case 'kr':
-         prefix = 'ko'
+         prefix = 'ko.'
       break;
 
       // SPANISH
       case 'sp':
-         prefix = 'es'
+         prefix = 'es.'
       break;
 
       default:
-         prefix = state.settings.language
+         prefix = state.settings.language + '.'
       break;
    }
 
@@ -138,7 +138,7 @@ function resource(state) {
 
       // WOWHEAD
       default:
-            url = 'https://' + prefix + '.classic.wowhead.com/quest='
+            url = 'https://' + prefix + 'classic.wowhead.com/quest='
       break;
    }
 

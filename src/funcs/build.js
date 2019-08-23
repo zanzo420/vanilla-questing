@@ -1,16 +1,19 @@
-// ALLIANCE
+// ALLIANCE ROUTES
 import human from '../routes/alliance/human.json';
 import gnorf from '../routes/alliance/gnorf.json';
 import nelf from '../routes/alliance/nelf.json';
 import alliance_shared from '../routes/alliance/shared.json';
 import alliance_quests from '../routes/alliance/quests.json';
 
-// HORDE
+// HORDE ROUTES
 import trorc from '../routes/horde/trorc.json';
 import tauren from '../routes/horde/tauren.json';
 import undead from '../routes/horde/undead.json';
 import horde_shared from '../routes/horde/shared.json';
 import horde_quests from '../routes/horde/quests.json';
+
+// SHARED QUEST IDS
+import ids from '../routes/quests.json';
 
 // RACE SPECIFIC STARTERS
 const races = {
@@ -32,34 +35,39 @@ const races = {
 function route(race) {
 
    // PLACEHOLDER
-   let content = {};
+   let data = {}
 
-   // GENERATE ALLIANCE BUILD
-   if (races.alliance.has(race)) {
-      content = {
-         quests: alliance_quests,
-         route: [
-            ...races.alliance.get(race).path,
-            ...alliance_shared.path
-         ]
-      }
+   // CONSTRUCT ROUTE
+   switch (races.alliance.has(race)) {
+      
+      // ALLIANCE
+      case true:
+         data = {
+            quests: alliance_quests,
+            route: [
+               ...races.alliance.get(race).path,
+               ...alliance_shared.path
+            ]
+         }
+      break;
 
-   // GENERATE HORDE BUILD
-   } else if (races.horde.has(race)) {
-      content = {
-         quests: horde_quests,
-         route: [
-            ...races.horde.get(race).path,
-            ...horde_shared.path
-         ]
-      }
+      // HORDE
+      default:
+         data = {
+            quests: horde_quests,
+            route: [
+               ...races.horde.get(race).path,
+               ...horde_shared.path
+            ]
+         }
+      break;
    }
 
    // CONSTRUCT & RETURN DATA OBJECT
    return {
-      quests: content.quests,
-      route: content.route,
-      hearthstones: hearthstones(content.route),
+      quests: data.quests,
+      route: data.route,
+      hearthstones: hearthstones(data.route),
       race: race
    }
 }
@@ -101,20 +109,31 @@ function specific({ race, block }) {
             data: build,
             current: parseInt(block)
          }
+
+      // OTHERWISE
+      } else {
+
+         // SET CURRENT TO ZERO
+         response = {
+            data: build,
+            current: 0
+         }
+
+         // SEND ERROR
+         console.log('OUT OF BOUNDS, BACK TO ZERO')
       }
 
    // OTHERWISE, LOAD RANDOM ROUTE
    } else { response = random(); }
 
-   // FINALLY RETURN
    return response;
 }
 
 // IMPORTED DATASET
-function custom({ build, faction }) {
+function custom({ build }) {
    return {
       data: {
-         quests: faction === 'alliance' ? alliance_quests : horde_quests,
+         quests: ids,
          route: build.path,
          hearthstones: hearthstones(build.path)
       },

@@ -77,42 +77,30 @@ function extract(data, state) {
 
 // FETCH QUEST ID FOR SIDEPANEL LINKS
 function fetch_id(quest, quests) {
-   switch(typeof quest) {
 
-      // STRING
-      case 'string': {
-         return quests[quest.toString().toLowerCase()];
-      }
+   // FETCH PARAMS
+   const name = quest_name(quest);
+   const id = parseInt(quest[1].replace(/[^0-9]/g, ''));
 
-      // ARRAYS
-      default: {
-         if(quest.length >= 2) {
-            switch(quest[1][0].toLowerCase()) {
-
-               // CHAIN QUEST
-               case 'p': {
+   // FETCH DATA
+   const target = quests[name];
+   let response = target;
    
-                  // FISH OUT THE CHAIN PART
-                  const id = parseInt(quest[1].split('-')[0].replace(/\D/g, '')) - 1;
-
-                  // IF THE QUEST NAME EXISTS, RETURN THE ID
-                  if (quests[quest[0]] !== undefined) {
-                     return quests[quest[0].toString().toLowerCase()][id];
-                  
-                  // OTHERWISE, RETURN UNDEFINED
-                  } else { return undefined; }
-               }
-   
-               // SOMETHING ELSE
-               default: {
-                  return quests[quest[0].toString().toLowerCase()];
-               }
-            }
+   if (target !== undefined) {
+      if (typeof target === 'object') {
+         if (!isNaN(id)) {
+            response = target[id - 1];
          } else {
-            return quests[quest[0].toString().toLowerCase()];
+            response = target[0]
+            console.log(name + ' found indexless array')
          }
       }
+   } else {
+      console.log(name + ' could not find')
+      response = 2;
    }
+
+   return response;
 }
 
 export {
