@@ -1,7 +1,6 @@
 import React, { useContext, Fragment } from 'react';
 import { Context } from '../../../context';
 
-import { shorten } from '../../../funcs/misc';
 import { extract } from '../../../funcs/quests';
 import { resource } from '../../../funcs/settings';
 
@@ -32,7 +31,7 @@ function Row({ quest }) {
       // ARRAYS
       case 'object': { return (
          <Split
-            header={ shorten(name) }
+            header={ name }
             tag={ quest[1] }
             url={ url }
             id={ id }
@@ -43,7 +42,7 @@ function Row({ quest }) {
       // STRINGS
       default: { return (
          <Single
-            header={ shorten(name) }
+            header={ name }
             url={ url }
             id={ id }
             prefix={ prefix }

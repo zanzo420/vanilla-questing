@@ -1,3 +1,5 @@
+import { shorten } from '../funcs/misc';
+
 // PARSE QUESTLOG
 function filter({ current, data }) {
 
@@ -59,13 +61,8 @@ function quest_name(quest) {
 function extract(data, state) {
 
    // NAME PLACEHOLDER & ID
-   let name = data;
+   let name = quest_name(data);
    const id = fetch_id(data, state.data.quests);
-
-   // IF DATA IS AN ARRAY
-   if (typeof data === 'object') {
-      name = data[0]
-   }
 
    // TRANSLATE IF NECESSARY
    if (state.settings.language !== 'en') {
@@ -73,7 +70,7 @@ function extract(data, state) {
    }
    
    return {
-      name: name,
+      name: shorten(name),
       id: id
    }
 }
@@ -97,7 +94,7 @@ function fetch_id(quest, quests) {
    
                   // FISH OUT THE CHAIN PART
                   const id = parseInt(quest[1].split('-')[0].replace(/\D/g, '')) - 1;
-   
+
                   // IF THE QUEST NAME EXISTS, RETURN THE ID
                   if (quests[quest[0]] !== undefined) {
                      return quests[quest[0].toString().toLowerCase()][id];

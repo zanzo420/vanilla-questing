@@ -10,8 +10,8 @@ function shorten(string) {
    
    // MAX CHARACTER LIMIT
    const max_length = 25;
-   
-   // CHECK IF THE STRING IS UNDEFINED OR LONGER THAN 22 CHARACTERS
+
+   // CHECK IF THE STRING LONGER THAN 22 CHARACTERS -- CRASHED WITHOUT UNDEFINED CHECK??
    if (string !== undefined && string.length > max_length) {
 
       // ALLOW THE FIRST 20 CHARACTERS AND TAG ON THE TRIPLEDOT
