@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Context } from "../../context";
 
@@ -6,6 +6,19 @@ function Clipboard() {
 
    // GLOBAL STATE
    const { state, dispatch } = useContext(Context);
+
+   // HEADER
+   const [header, set_header] = useState('Link');
+
+   // TRANSLATE HEADER
+   useEffect(() => {
+      if (state.settings.language !== 'en') {
+
+         // FETCH & SET NEW NAME
+         const name = state.lang.terms[state.settings.language]['link'];
+         set_header(name);
+      }
+   }, [state.settings.language])
 
    // SEND FRONTEND MESSAGE ON COPY
    function message() {
@@ -20,7 +33,7 @@ function Clipboard() {
 
    return (
       <CopyToClipboard text={ 'http://vanilla-questing.me/' + state.data.race + '/' + state.current } onCopy={ message }>
-         <div id={ 'link' }>Link</div>
+         <div id={ 'link' }>{ header }</div>
       </CopyToClipboard>
    )
 }

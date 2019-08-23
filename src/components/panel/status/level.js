@@ -12,6 +12,9 @@ function Level() {
       width: {}
    })
 
+   // LOCAL HEADER
+   const [header, set_header] = useState('Level');
+
    // RECALIBRATE LEVEL VALUES
    useEffect(() => {
 
@@ -28,10 +31,20 @@ function Level() {
 
    }, [state.current, state.data])
 
+   // TRANSLATE HEADER
+   useEffect(() => {
+      if (state.settings.language !== 'en') {
+
+         // FETCH & SET NEW NAME
+         const name = state.lang.terms[state.settings.language]['level'];
+         set_header(name);
+      }
+   }, [state.settings.language])
+
    return (
       <div id="level">
          <div className="split">
-            <div>Level</div>
+            <div>{ header }</div>
             <div>{ local.level }</div>
             <div id="bar" style={ local.width }></div>
          </div>

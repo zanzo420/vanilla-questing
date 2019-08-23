@@ -10,8 +10,6 @@ function shorten(string) {
    
    // MAX CHARACTER LIMIT
    const max_length = 25;
-
-   console.log(string)
    
    // CHECK IF THE STRING IS UNDEFINED OR LONGER THAN 22 CHARACTERS
    if (string !== undefined && string.length > max_length) {

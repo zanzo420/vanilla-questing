@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import { Context } from "../context";
 import '../interface/css/panel.scss';
 
 import Level from './panel/status/level';
@@ -11,11 +12,20 @@ import Quests from './panel/questlog/quests';
 
 function Panel() {
 
+   // GLOBAL STATE
+   const { state } = useContext(Context);
+
    // LOCAL STATE
    const [local, set_local] = useState({
       objectives: true,
       quests: false
-   });
+   })
+
+   // TAB HEADERS
+   const [headers, set_headers] = useState({
+      obj: 'Objectives',
+      log: 'Quests'
+   })
 
    // TOGGLE PANEL CONTENT
    function toggle() {
@@ -25,6 +35,18 @@ function Panel() {
       });
    }
 
+   // TRANSLATE HEADERS
+   useEffect(() => {
+      if (state.settings.language !== 'en') {
+
+         // FETCH & SET HEADERS
+         set_headers({
+            obj: state.lang.terms[state.settings.language]['objectives'],
+            log: state.lang.terms[state.settings.language]['questlog']
+         });
+      }
+   }, [state.settings.language])
+
    return (
       <div id='panel'>
          <div id='status'>
@@ -33,12 +55,12 @@ function Panel() {
             <Hearthstone />
             <div id='panel-menu' className='split'>
                <Tab
-                  label={ 'Objectives' }
+                  label={ headers.obj }
                   func={ toggle }
                   selected={ local.objectives }
                />
                <Tab
-                  label={ 'Quests' }
+                  label={ headers.log }
                   func={ toggle }
                   selected={ local.quests }
                />

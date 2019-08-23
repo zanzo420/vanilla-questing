@@ -14,7 +14,7 @@ const values = {
       visible: false,
       type: null
    },
-   lang: null
+   lang: {}
 }
 
 // REDUCER

@@ -12,7 +12,7 @@ function Home() {
    
    // GLOBAL CONTEXT
    const { state, dispatch } = useContext(Context);
-
+   
    // KEYBOARD EVENT LISTENER
    function key_event(event) {
       key_listener(event, state, dispatch)

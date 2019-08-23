@@ -13,6 +13,9 @@ function Progress() {
       width: {}
    })
 
+   // LOCAL HEADER
+   const [header, set_header] = useState('Progress');
+
    // RECALIBRATE PROGRESS
    useEffect(() => {
 
@@ -29,10 +32,20 @@ function Progress() {
 
    }, [state.current, state.data])
 
+   // TRANSLATE HEADER
+   useEffect(() => {
+      if (state.settings.language !== 'en') {
+
+         // FETCH & SET NEW NAME
+         const name = state.lang.terms[state.settings.language]['progress'];
+         set_header(name);
+      }
+   }, [state.settings.language])
+
    return (
       <div id="progress" onClick={(event) => { jump(event, state, dispatch) }}>
          <div className="split">
-            <div>Progress</div>
+            <div>{ header }</div>
             <div>{ local.progress }</div>
             <div id="bar" style={ local.width } />
          </div>

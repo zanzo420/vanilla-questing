@@ -6,8 +6,9 @@ function Hearthstone() {
    // GLOBAL STATE
    const { state } = useContext(Context);
 
-   // LOCATION STATE
+   // LOCATION & HEADER STATES
    const [location, set_location] = useState(null)
+   const [header, set_header] = useState('Hearthstone');
 
    // FIND LATEST HEARTHSTONE LOCATION
    useEffect(() => {
@@ -21,14 +22,29 @@ function Hearthstone() {
          value = filtered[filtered.length - 1].zone;
       }
 
-      // UPDATE LOCATION STATE
+      // TRANSLATE IF NECESSARY
+      if (value !== 'none' && state.settings.language !== 'en') {
+         value = state.lang.terms[state.settings.language].zones[value]
+      }
+
+      // UPDATE LOCATION
       set_location(value)
 
    }, [state.current, state.data])
 
+   // TRANSLATE HEADER
+   useEffect(() => {
+      if (state.settings.language !== 'en') {
+
+         // FETCH & SET NEW NAME
+         const name = state.lang.terms[state.settings.language]['hearthstone'];
+         set_header(name);
+      }
+   }, [state.settings.language])
+
    return (
       <div id="hearthstone" className="split">
-         <div>Hearthstone</div>
+         <div>{ header }</div>
          <div>{ location }</div>
       </div>
    )

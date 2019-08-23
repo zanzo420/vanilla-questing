@@ -4,6 +4,17 @@ import { random, specific } from './funcs/build';
 import { check as check_storage } from './funcs/storage';
 import { check as check_settings } from './funcs/settings';
 
+// LOCALIZED NAMES
+import chinese from './langs/cn.json';
+import french from './langs/fra.json';
+import german from './langs/ger.json';
+import korean from './langs/kor.json';
+import russian from './langs/rus.json';
+import spanish from './langs/spa.json';
+
+// LOCALIZED TERMS
+import terms from './langs/terms.json';
+
 function Init() {
 
    // GLOBAL STATE
@@ -27,7 +38,15 @@ function Init() {
             settings: settings,
             data: build.data,
             current: build.current,
-            lang: build.lang
+            lang: {
+               cn: chinese,
+               fr: french,
+               ge: german,
+               kr: korean,
+               ru: russian,
+               sp: spanish,
+               terms: terms
+            }
          }
       })
    }, [])
