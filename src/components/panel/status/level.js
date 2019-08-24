@@ -36,7 +36,7 @@ function Level() {
       if (state.settings.language !== 'en') {
 
          // FETCH & SET NEW NAME
-         const name = state.lang.terms[state.settings.language]['level'];
+         const name = state.lang.terms[state.settings.language].panel['level'];
          set_header(name);
       }
    }, [state.settings.language])

@@ -107,9 +107,9 @@ function Manifesto() { return (
                   If you have ideas on how the project could be improved, feel free to make pull requests on GitHub or contact me directly via your preferred medium. The same thing applies to route related bugs/ideas, but to make things easier for both of us, read the "direct linking" header and provide me with a link ontop of a brief explanation of the issue.
                </Paragraph>
             </Secondary>
-            <Secondary header={ `Monetary Donations` } id={ `monetary` }>
+            <Secondary header={ `Donations` } id={ `monetary` }>
                <Paragraph>
-                  If you feel like the project has saved you time, any and all monetary contributions via PayPal are greatly appreciated. Thank you to all the generous people who have already donated!
+                  If you feel like the project has saved you time, any and all <a href={ 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LNLHSGMLKXL74&source=url' } target="_blank" rel="noopener noreferrer">monetary contributions via PayPal</a> are greatly appreciated. Thank you to all the generous people who have already donated!
                </Paragraph>
             </Secondary>
             <Secondary header={ `Contact Me` } id={ `contact` }>

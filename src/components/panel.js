@@ -41,8 +41,8 @@ function Panel() {
 
          // FETCH & SET HEADERS
          set_headers({
-            obj: state.lang.terms[state.settings.language]['objectives'],
-            log: state.lang.terms[state.settings.language]['questlog']
+            obj: state.lang.terms[state.settings.language].panel['objectives'],
+            log: state.lang.terms[state.settings.language].panel['questlog']
          });
       }
    }, [state.settings.language])

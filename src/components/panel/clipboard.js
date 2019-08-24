@@ -15,7 +15,7 @@ function Clipboard() {
       if (state.settings.language !== 'en') {
 
          // FETCH & SET NEW NAME
-         const name = state.lang.terms[state.settings.language]['link'];
+         const name = state.lang.terms[state.settings.language].panel['link'];
          set_header(name);
       }
    }, [state.settings.language])

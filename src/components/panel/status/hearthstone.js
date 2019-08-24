@@ -37,7 +37,7 @@ function Hearthstone() {
       if (state.settings.language !== 'en') {
 
          // FETCH & SET NEW NAME
-         const name = state.lang.terms[state.settings.language]['hearthstone'];
+         const name = state.lang.terms[state.settings.language].panel['hearthstone'];
          set_header(name);
       }
    }, [state.settings.language])

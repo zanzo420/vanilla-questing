@@ -5,26 +5,11 @@ function sleep (time) {
    return new Promise((resolve) => setTimeout(resolve, time));
 }
 
-function query(db) {
-   const container = {};
-   Object.keys(db).forEach(id => {
-      const value = db[id].replace(/[^a-zA-Z]+/g, '');
-      
-      if(value !== '') {
-         container[id] = db[id];
-
-         axios.get('https://ru.classic.wowhead.com/quest='+ id).then(result => {
-            console.log(result)
-         })
-      }
-   })
-}
-
 // SHORTEN STRING
 function shorten(string) {
    
    // MAX CHARACTER LIMIT
-   const max_length = 25;
+   const max_length = 22;
 
    // string !== undefined && 
 
@@ -115,6 +100,5 @@ function preload_bgs() {
 export {
    sleep,
    shorten,
-   preload_bgs,
-   query
+   preload_bgs
 }

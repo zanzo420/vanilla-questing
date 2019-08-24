@@ -78,15 +78,22 @@ function extract(data, state) {
 // FETCH QUEST ID FOR SIDEPANEL LINKS
 function fetch_id(quest, quests) {
 
-   // FETCH NAME -- FORCE LOWERCASE
+   // FETCH NAME & TARGET DATA -- FORCE LOWERCASE
    const name = quest_name(quest).toLowerCase();
+   const target = quests[name];
+
+   // PLACEHOLDER
+   let split;
+
+   // SPLIT IF THERE ARE MORE THAN ONE ELEMENT
+   if (typeof quest === 'object' && quest.length > 1) {
+      split = quest[1].split('-');
+
+   // OTHERWISE, RETURN FIRST INDEX VALUE
+   } else { split = quest[0] }
 
    // FETCH ID
-   const split = quest[1].split('-');
    const id = parseInt(split[0].replace(/[^0-9]/g, ''));
-
-   // FETCH TARGET DATA
-   const target = quests[name];
    
    // IF THE QUEST DOESNT EXIST
    if (target === undefined) {
@@ -109,7 +116,7 @@ function fetch_id(quest, quests) {
          // OTHERWISE, DEFAULT TO FIRST INDEX
          default:
             response = target[0]
-            console.log(name + ' found indexless array')
+            console.log(name + ' found an indexless array')
          break;
       }
    }

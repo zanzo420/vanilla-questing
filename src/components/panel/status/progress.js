@@ -37,7 +37,7 @@ function Progress() {
       if (state.settings.language !== 'en') {
 
          // FETCH & SET NEW NAME
-         const name = state.lang.terms[state.settings.language]['progress'];
+         const name = state.lang.terms[state.settings.language].panel['progress'];
          set_header(name);
       }
    }, [state.settings.language])

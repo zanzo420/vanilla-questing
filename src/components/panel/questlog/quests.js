@@ -24,7 +24,7 @@ function Quests({ visible }) {
       if (state.settings.language !== 'en') {
 
          // FETCH & SET NEW NAME
-         const name = state.lang.terms[state.settings.language]['current'];
+         const name = state.lang.terms[state.settings.language].panel['current'];
          set_header(name);
       }
    }, [state.settings.language])

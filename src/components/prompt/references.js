@@ -1,33 +1,74 @@
-import React from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import { Context } from "../../context";
 
-function References() { return (
-   <>
-      <div id={ 'header' }>References</div>
-      <div id="references">
-         <div className='container'>
-            <Marker data={['Flightpath', 'green']} />
-            <Marker data={['Quest Hub', 'blue']} />
-            <Marker data={['Quest Interaction', 'yellow']} />
-            <Marker data={['Quest Objective', 'red']} />
-            <Marker data={['Travel Point', 'purple']} />
+function References() {
+
+   // GLOBAL CONTEXT
+   const { state } = useContext(Context);
+
+   // LOCAL STATE
+   const [ headers, set_headers ] = useState({
+      refs: 'References',
+
+      flightpath: 'Flightpath',
+      hub: 'Quest Hub',
+      interaction: 'Quest Interaction',
+      objectives: 'Quest Objective',
+      travel: 'Travel Point',
+      
+      return: 'Return quest',
+      complete: 'Pick up & return quest',
+      pickup: 'Pick up quest',
+      objective: 'Complete objective',
+      note: 'Authors note',
+      
+      chain: 'Part # of Chain',
+      elite: 'Elite Quest',
+      dungeon: 'Dungeon Quest',
+      escort: 'Escort Quest',
+      drop: 'Random Drop Starter'
+   })
+
+   // TRANSLATE WHEN NECESSARY
+   useEffect(() => {
+      if (state.settings.language !== 'en') {
+
+         // FETCH & SET NEW HEADERS
+         const data = state.lang.terms[state.settings.language].references;
+         set_headers(data);
+
+      }
+   }, state.settings.language)
+
+   return (
+      <>
+         <div id={ 'header' }>{ headers.refs }</div>
+         <div id="references">
+            <div className='container'>
+               <Marker data={[ headers.flightpath, 'green' ]} />
+               <Marker data={[ headers.hub, 'blue' ]} />
+               <Marker data={[ headers.interaction, 'yellow' ]} />
+               <Marker data={[ headers.objectives, 'red' ]} />
+               <Marker data={[ headers.travel, 'purple' ]} />
+            </div>
+            <div className='container'>
+               <Color data={[ headers.return, 'green' ]} />
+               <Color data={[ headers.complete, 'purple' ]} />
+               <Color data={[ headers.pickup, 'yellow' ]} />
+               <Color data={[ headers.objective, 'red' ]} />
+               <Color data={[ headers.note, 'blue' ]} />
+            </div>
+            <div className='container'>
+               <Code data={[ headers.chain, 'P' ]} />
+               <Code data={[ headers.elite, 'E' ]} />
+               <Code data={[ headers.dungeon, 'D' ]} />
+               <Code data={[ headers.escort, 'F' ]} />
+               <Code data={[ headers.drop, 'R' ]} />
+            </div>
          </div>
-         <div className='container'>
-            <Color data={['Return quest', 'green']} />
-            <Color data={['Pick up & return quest', 'purple']} />
-            <Color data={['Pick up quest', 'yellow']} />
-            <Color data={['Complete objective', 'red']} />
-            <Color data={['Authors note', 'blue']} />
-         </div>
-         <div className='container'>
-            <Code data={['Part # of Chain', 'P']} />
-            <Code data={['Elite Quest', 'E']} />
-            <Code data={['Dungeon Quest', 'D']} />
-            <Code data={['Escort Quest', 'F']} />
-            <Code data={['Random Drop Starter', 'R']} />
-         </div>
-      </div>
-   </>
-)}
+      </>
+   )
+}
 
 // COLOR ROW
 function Color({ data }) { return (

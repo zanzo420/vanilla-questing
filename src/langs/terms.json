@@ -1,12 +1,35 @@
 {
     "cn": {
-        "level": "级别",
-        "progress": "进展",
-        "hearthstone": "炉石",
-        "objectives": "目标",
-        "questlog": "任务日志",
-        "link": "链接",
-        "current": "目前的任务",
+        "panel": {
+            "level": "级别",
+            "progress": "进展",
+            "hearthstone": "炉石",
+            "objectives": "目标",
+            "questlog": "任务日志",
+            "link": "链接",
+            "current": "目前的任务"
+        },
+        "references": {
+            "refs": "引用",
+        
+            "flightpath": "飞行路径",
+            "hub": "任务中心",
+            "interaction": "任务互动",
+            "objectives": "任务目标",
+            "travel": "旅行点",
+        
+            "return": "回归任务",
+            "complete": "获得并返回",
+            "pickup": "获得任务",
+            "objective": "任务目标",
+            "note": "作者说",
+        
+            "chain": "连锁任务",
+            "elite": "精英任务",
+            "dungeon": "地下城任务",
+            "escort": "护送任务",
+            "drop": "放下任务"
+        },
         "zones": {
             "alterac": "奥特兰克山脉",
             "arathi": "阿拉希高地",
@@ -56,13 +79,36 @@
         }
     },
     "fr": {
-        "level": "Niveau",
-        "progress": "Progrès",
-        "hearthstone": "Pierre de foyer",
-        "objectives": "Objectifs",
-        "questlog": "Journal",
-        "link": "Link",
-        "current": "Quêtes Actuelles",
+        "panel": {
+            "level": "Niveau",
+            "progress": "Progrès",
+            "hearthstone": "Pierre de foyer",
+            "objectives": "Objectifs",
+            "questlog": "Journal",
+            "link": "Link",
+            "current": "Quêtes Actuelles"
+        },
+        "references": {
+            "refs": "Références",
+        
+            "flightpath": "Trajectoire de vol",
+            "hub": "Centre de quêtes",
+            "interaction": "Interaction de quête",
+            "objectives": "Objectif de quête",
+            "travel": "Point de voyage",
+        
+            "return": "Terminer la quête",
+            "complete": "Obtenir et finir",
+            "pickup": "Obtenir la quête",
+            "objective": "Objectif de quête",
+            "note": "Note de l'auteur",
+        
+            "chain": "Quête de la chaîne",
+            "elite": "Quête d'élite",
+            "dungeon": "Quête de donjon",
+            "escort": "Quête d'escorte",
+            "drop": "Déposer la Quête"
+        },
         "zones": {
             "alterac": "Montagnes d'Alterac",
             "arathi": "Hautes-terres d'Arathi",
@@ -112,13 +158,36 @@
         }
     },
     "ge": {
-        "level": "Niveau",
-        "progress": "Fortschritt",
-        "hearthstone": "Herdstein",
-        "objectives": "Ziele",
-        "questlog": "Questliste",
-        "link": "Link",
-        "current": "Aktuelle Quests",
+        "panel": {
+            "level": "Niveau",
+            "progress": "Fortschritt",
+            "hearthstone": "Herdstein",
+            "objectives": "Ziele",
+            "questlog": "Questliste",
+            "link": "Link",
+            "current": "Aktuelle Quests"
+        },
+        "references": {
+            "refs": "Verweise",
+        
+            "flightpath": "Flugbahn",
+            "hub": "Quest-Hub",
+            "interaction": "Quest-Interaktion",
+            "objectives": "Questziele",
+            "travel": "Reisepunkt",
+        
+            "return": "Beende die Quest",
+            "complete": "Erhalten und beenden",
+            "pickup": "Quest erhalten",
+            "objective": "Questziele",
+            "note": "Spezielle Notiz",
+        
+            "chain": "Kettenquest",
+            "elite": "Elite Quest",
+            "dungeon": "Dungeon Quest",
+            "escort": "Eskorte Quest",
+            "drop": "Quest fallen lassen"
+        },
         "zones": {
             "alterac": "Alteracgebirge",
             "arathi": "Arathihochland",
@@ -168,13 +237,36 @@
         }
     },
     "kr": {
-        "level": "수평",
-        "progress": "진행",
-        "hearthstone": "귀환석",
-        "objectives": "목표",
-        "questlog": "퀘스트 로그",
-        "link": "링크",
-        "current": "현재 퀘스트",
+        "panel": {
+            "level": "수평",
+            "progress": "진행",
+            "hearthstone": "귀환석",
+            "objectives": "목표",
+            "questlog": "퀘스트 로그",
+            "link": "링크",
+            "current": "현재 퀘스트"
+        },
+        "references": {
+            "refs": "참조",
+
+            "flightpath": "비행 경로",
+            "hub": "퀘스트 허브",
+            "interaction": "퀘스트 상호 작용",
+            "objectives": "퀘스트 목표",
+            "travel": "여행지",
+
+            "return": "귀환 퀘스트",
+            "complete": "시작과 귀환",
+            "pickup": "퀘스트를 얻다",
+            "objective": "퀘스트 목표",
+            "note": "저자 참고",
+
+            "chain": "체인 퀘스트",
+            "elite": "엘리트 퀘스트",
+            "dungeon": "던전 퀘스트",
+            "escort": "호위 퀘스트",
+            "drop": "드롭 퀘스트"
+        },
         "zones": {
             "alterac": "알터랙 산맥",
             "arathi": "아라시 고원",
@@ -224,13 +316,36 @@
         }
     },
     "ru": {
-        "level": "уровень",
-        "progress": "прогресс",
-        "hearthstone": "Камень возвращения",
-        "objectives": "цели",
-        "questlog": "квесты",
-        "link": "Link",
-        "current": "текущие квесты",
+        "panel": {
+            "level": "уровень",
+            "progress": "прогресс",
+            "hearthstone": "Камень возвращения",
+            "objectives": "цели",
+            "questlog": "квесты",
+            "link": "Link",
+            "current": "текущие квесты"
+        },
+        "references": {
+            "refs": "Рекомендации",
+        
+            "flightpath": "полоса взлета",
+            "hub": "квест центр",
+            "interaction": "квест событие",
+            "objectives": "цели квеста",
+            "travel": "пункт путешествия",
+        
+            "return": "закончить квест",
+            "complete": "получить и закончить",
+            "pickup": "получить квест",
+            "objective": "цели квеста",
+            "note": "примечание авторов",
+        
+            "chain": "цепной квест",
+            "elite": "элитный квест",
+            "dungeon": "подземелье квест",
+            "escort": "эскорт квест",
+            "drop": "бросить квест"
+        },
         "zones": {
             "alterac": "Альтеракские горы",
             "arathi": "Нагорье Арати",
@@ -280,13 +395,36 @@
         }
     },
     "sp": {
-        "level": "Nivel",
-        "progress": "Progreso",
-        "hearthstone": "Piedra de hogar",
-        "objectives": "Objetivos",
-        "questlog": "Misiones",
-        "link": "Link",
-        "current": "Misiones Actuales",
+        "panel": {
+            "level": "Nivel",
+            "progress": "Progreso",
+            "hearthstone": "Piedra de hogar",
+            "objectives": "Objetivos",
+            "questlog": "Misiones",
+            "link": "Link",
+            "current": "Misiones Actuales"
+        },
+        "references": {
+            "refs": "referencias",
+        
+            "flightpath": "trayectoria de vuelo",
+            "hub": "centro de misiones",
+            "interaction": "evento de búsqueda",
+            "objectives": "objetivo de búsqueda",
+            "travel": "punto de viaje",
+        
+            "return": "terminar la búsqueda",
+            "complete": "obtener y terminar",
+            "pickup": "obtener búsqueda",
+            "objective": "objetivo de búsqueda",
+            "note": "nota del autor",
+        
+            "chain": "búsqueda en cadena",
+            "elite": "búsqueda de élite",
+            "dungeon": "búsqueda de mazmorras",
+            "escort": "búsqueda de escolta",
+            "drop": "soltar búsqueda"
+        },
         "zones": {
             "alterac": "Montañas de Alterac",
             "arathi": "Tierras Altas de Arathi",
