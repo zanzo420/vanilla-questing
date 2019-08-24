@@ -8,16 +8,6 @@ function Quests({ visible }) {
    // GLOBAL & LOCAL STATE
    const { state } = useContext(Context);
    const [ header, set_header ] = useState('Current Quests');
-   const [ visibility, set_visibility ] = useState({
-      display: 'none'
-   })
-
-   // UPDATE VISIBILITY
-   useEffect(() => {
-      set_visibility({
-         display: visible ? 'block' : 'none'
-      })
-   }, [visible])
 
    // TRANSLATE HEADER
    useEffect(() => {
@@ -39,7 +29,7 @@ function Quests({ visible }) {
          const content = filter(state);
          
          return (
-            <div id={ 'quests' } style={ visibility }>
+            <div id={ 'quests' }>
                <div className={ 'section' }>
                   <div className={ 'title' }>
                      <div>{ header }</div>
@@ -57,10 +47,8 @@ function Quests({ visible }) {
          )
       }
 
-      // RENDER NOTHING
-      default: {
-         return null;
-      }
+      // OTHERWISE, RENDER NOTHING
+      default: { return null; }
    }
 }
 

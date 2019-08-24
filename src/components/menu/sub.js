@@ -1,17 +1,28 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-function Sub({ header, icon, func, link }) {
-   if (link === undefined) {
-      return <Func
-         func={ func }
+function Sub({ header, icon, func, link, url }) {
+
+   // HASHLINK
+   if (link !== undefined) {
+      return <Hash
+         link={ link }
          icon={ icon }
          header={ header }
       />
 
+   // NORMAL LINK
+   } else if (url !== undefined) {
+      return <Link
+         url={ url }
+         icon={ icon }
+         header={ header }
+      />
+
+   // FUNC LINK
    } else {
-      return <Plain
-         link={ link }
+      return <Func
+         func={ func }
          icon={ icon }
          header={ header }
       />
@@ -26,14 +37,24 @@ function Func({ header, icon, func }) { return (
    </div>
 )}
 
-// PLAIN OLD LINK
-function Plain({ header, icon, link }) { return (
+// HASH LINK
+function Hash({ header, icon, link }) { return (
    <HashLink to={ link }>
       <div className="item">
          <div className='icon' id={ icon } />
          <div className='header'>{ header }</div>
       </div>
    </HashLink>
+)}
+
+// PLAIN OLD LINK
+function Link({ header, icon, url }) { return (
+   <a href={ url } target={ '_blank' } rel={ 'noopener noreferrer' }>
+      <div className="item">
+         <div className='icon' id={ icon } />
+         <div className='header'>{ header }</div>
+      </div>
+   </a>
 )}
 
 export default Sub;

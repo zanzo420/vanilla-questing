@@ -32,7 +32,7 @@ function Help() {
          <Sub
             header={ 'Donate' }
             icon={ 'donate' }
-            link={ '/manifesto#contribute' }
+            url={ 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LNLHSGMLKXL74&source=url' }
          />
       </Main>
    )

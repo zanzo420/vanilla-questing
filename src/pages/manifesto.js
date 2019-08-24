@@ -5,19 +5,20 @@ import Primary from '../components/docs/primary';
 import Secondary from '../components/docs/secondary';
 import Paragraph from '../components/docs/paragraph';
 import Table from '../components/docs/table';
+import Link from '../components/docs/link';
 
 function Manifesto() { return (
    <div id={ 'docs' }>
       <div id={ 'inner' }>
          <Primary header={ 'Introduction' } id={ 'intro' }>
             <Paragraph>
-               Greetings! This is a web-based quest helper for Vanilla/Classic World of Warcraft. The application takes a <a href='https://github.com/wickstjo/vanilla-questing/blob/master/src/routes/alliance/human.json' target="_blank" rel="noopener noreferrer">handwritten JSON file</a> (that contains a route) and parses it to an easy to follow guide with dynamically rendered maps, directions and objective/quest logs.
+               Greetings! This is a web-based quest helper for Vanilla/Classic World of Warcraft. The application takes a <Link header={ 'handwritten JSON file' } url={ 'https://github.com/wickstjo/vanilla-questing/blob/master/src/routes/alliance/human.json' } /> (that contains a route) and parses it to an easy to follow guide with dynamically rendered maps, directions and objective/quest logs.
             </Paragraph>
             <Paragraph>
                It was originally intended for quest routing in mind, but can be used for anything map and coordinate related and uses the same metrics that the game does. The route files were designed with flexibility and precision in mind so even large sweeping changes are easy to implement while machine auditing makes sure that every quest has an appropriate start and conclusion.
             </Paragraph>
             <Paragraph>
-               Consider this manifesto a more broad introduction with the service. For more technical information about routing and code, check out the <a href='https://github.com/wickstjo/vanilla-questing' target="_blank" rel="noopener noreferrer">readme section on github</a>!
+               Consider this manifesto a more broad introduction with the service. For more technical information about routing and code, check out the <Link header={ 'readme section on github' } url={ 'https://github.com/wickstjo/vanilla-questing' } />!
             </Paragraph>
             <Secondary header={ 'Design Philosophy' } id={ 'design' }>
                <Paragraph>
@@ -56,11 +57,11 @@ function Manifesto() { return (
          </Primary>
          <Primary header={ `Features` } id={ `features` }>
             <Paragraph>
-               The entire application is written in React and hosted via Github pages. The route files are very self explanatory and you don't need to be a programmer to write one yourself. Everything is open-source and viewable from the <a href="https://github.com/wickstjo/vanilla-questing" target="_blank" rel="noopener noreferrer">github repository</a>. There are no backend components or cookies being used.
+               The entire application is written in React and hosted via Github pages. The route files are very self explanatory and you don't need to be a programmer to write one yourself. Everything is open-source and viewable from the <Link header={ 'github repository' } url={ 'https://github.com/wickstjo/vanilla-questing' } />. There are no backend components or cookies being used.
             </Paragraph>
             <Secondary header={ `Saving Your Progress` } id={ `storage` }>
                <Paragraph>
-                  There is no traditional backend component like a database for storage. Everything runs locally and your profiles are saved to your <a href="https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36" target="_blank" rel="noopener noreferrer">browsers localstorage</a>. The string is only a few kilobytes in size and snapshots your character progress, which the application then parses, uses and updates. Only you have access to this information.
+                  There is no traditional backend component like a database for storage. Everything runs locally and your profiles are saved to your <Link header={ 'browsers localstorage' } url={ 'https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36' } />. The string is only a few kilobytes in size and snapshots your character progress, which the application then parses, uses and updates. Only you have access to this information.
                </Paragraph>
             </Secondary>
             <Secondary header={ `Smaller Devices` } id={ `smaller-devices` }>
@@ -83,12 +84,12 @@ function Manifesto() { return (
             </Secondary>
             <Secondary header={ `Key Bindings` } id={ `bindings` }>
                <Paragraph>
-                  For browsing back and forward, you can choose between using <i>A and D</i> or the <i>Arrowkeys</i>. To quickly open the reference overview, use <i>Q</i>. To close any prompt, use <i>Escape</i>. For the time being there is no way to customize these, but rest assured that the feature is coming.
+                  For browsing back and forward, you can choose between using <i>A and D</i> or the <i>Arrowkeys</i>. To quickly open the reference overview, use <i>Q</i>. To close any prompt, use <i>Escape</i>. You can change these freely from the settings menu.
                </Paragraph>
             </Secondary>
             <Secondary header={ `Reducing Pickup Time` } id={ `questie` }>
                <Paragraph>
-                  It’s very hard to indicate where exactly the quests I want you to pick up are in hubs like Lakeshire that contains a multitude of both high and low level quests in close proximity. I suggest using the <a href="https://willitclassic.com/view/zN3cdlIhnmtCjOwOnH8q" target="_blank" rel="noopener noreferrer">ingame addon Questie</a> to get minimap markers in order to speed up the process of picking up and returning the correct quests with minimal downtime. Try the following questie configs:
+                  It’s very hard to indicate where exactly the quests I want you to pick up are in hubs like Lakeshire that contains a multitude of both high and low level quests in close proximity. I suggest using the <Link header={ 'ingame addon Questie' } url={ 'https://willitclassic.com/view/zN3cdlIhnmtCjOwOnH8q' } /> to get minimap markers in order to speed up the process of picking up and returning the correct quests with minimal downtime. Try the following questie configs:
                </Paragraph>
                <Paragraph>
                   /questie setminlevel 15<br />
@@ -102,44 +103,35 @@ function Manifesto() { return (
             </Secondary>
          </Primary>
          <Primary header={ `Contribute` } id={ `contribute` }>
-            <Secondary header={ `Reporting Bugs` } id={ `report` }>
-               <Paragraph>
-                  If you have ideas on how the project could be improved, feel free to make pull requests on GitHub or contact me directly via your preferred medium. The same thing applies to route related bugs/ideas, but to make things easier for both of us, read the "direct linking" header and provide me with a link ontop of a brief explanation of the issue.
-               </Paragraph>
-            </Secondary>
+            <Paragraph>
+               If you have ideas on how the project could be improved, feel free to make pull requests on GitHub or contact me directly via your preferred medium. The same thing applies to route related bugs/ideas, but to make things easier for both of us, read the "direct linking" header and provide me with a link ontop of a brief explanation of the issue.
+            </Paragraph>
             <Secondary header={ `Donations` } id={ `monetary` }>
                <Paragraph>
-                  If you feel like the project has saved you time, any and all <a href={ 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LNLHSGMLKXL74&source=url' } target="_blank" rel="noopener noreferrer">monetary contributions via PayPal</a> are greatly appreciated. Thank you to all the generous people who have already donated!
+                  If you feel like the project has saved you time, any and all <Link header={ 'monetary contributions via PayPal' } url={ 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LNLHSGMLKXL74&source=url' } /> are greatly appreciated. Thank you to all the generous people who have already donated!
                </Paragraph>
             </Secondary>
             <Secondary header={ `Contact Me` } id={ `contact` }>
                <Table data={[
-                  ['PayPal', 'Jfwick@gmail.com'],
+                  ['PayPal', <Link header={ 'Jfwick@gmail.com' } url={ 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LNLHSGMLKXL74&source=url' } />],
                   ['Discord', 'Strafir#9133'],
                   ['BattleNet', 'Strafir#2132'],
-                  ['Reddit', 'Wickstjo'],
-                  ['GitHub', 'Wickstjo']
+                  ['Reddit', <Link header={ 'Wickstjo' } url={ 'https://www.reddit.com/user/wickstjo/' } />],
+                  ['GitHub', <Link header={ 'Wickstjo' } url={ 'https://github.com/wickstjo' } />],
+                  ['Shazzrah', 'Strafir / Strafirz']
                ]}/>
             </Secondary>
          </Primary>
          <Primary header={ `Credits` } id={ `credits` }>
-         <Secondary header={ `WC3 Icons` } id={ `wc3-icons` }>
-               <Paragraph>
-                  I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for extracting high quality icons from WC3 and providing a <a href="https://barrens.chat/viewtopic.php?f=5&t=901" target="_blank" rel="noopener noreferrer">downloadable package</a> to use in projects like this. There’s a wide assortment of classic related content being posted there regularly that you might actually learn something from which certainly can’t be said about the trash that gets constantly re-uploaded to youtube.
-               </Paragraph>
-            </Secondary>
-            <Secondary header={ `Remastered Backgrounds` } id={ `backgrounds` }>
-               <Paragraph>
-                  The in-game coordinate system which every addon follows is percentage based, which means that only the original maps can be used for a guide like this. I had hoped blizzard would redo the original maps themselves for classics launch, but this is yet another thing that the community has taken upon themselves to fix.
-               </Paragraph>
-               <Paragraph>
-                  Again, I would like to thank Teeb of <a href="https://barrens.chat/" target="_blank" rel="noopener noreferrer">barrens.chat</a> for providing maps in a proper format and size, and the reddit user <a href="https://www.reddit.com/user/AthenaNosta" target="_blank" rel="noopener noreferrer">AthenaNosta</a> for algorithmically remastering them. All of the remastered backgrounds are publically available in gigapixel resolution if that’s something you’re into. You can read more in the <a href="https://www.reddit.com/r/classicwow/comments/bwqzql/here_have_some_upscaled_highresolution_wow_maps/" target="_blank" rel="noopener noreferrer">reddit thread</a>.
-               </Paragraph>
-            </Secondary>
-            <Secondary header={ `Sidepanel Icons` } id={ `sidepanel-icons` }>
-               <Paragraph>
-                  Thank you to reddit user <a href="https://www.reddit.com/user/Vrty" target="_blank" rel="noopener noreferrer">Vrty</a> for creating the sidepanel icons for quests and objectives.
-               </Paragraph>
+            <Paragraph>
+               Open source projects are the lifeblood of innovation, because they can be learned from and improved upon over time. Single man projects like this benefit greatly from outside contributors with different skill sets and help everything come together. I want to thank the following people for making their work public and encourage you to check out what else they have available:
+            </Paragraph>
+            <Secondary header={ `The Boys` } id={ `backgrounds` }>
+               <Table data={[
+                  ['Teeb', <Link header={ 'WC3 Icons @ Barrens.chat' } url={ 'https://barrens.chat/viewtopic.php?f=5&t=901' } />],
+                  ['Athena', <Link header={ 'Remastered Zone Backgrounds @ Reddit thread' } url={ 'https://www.reddit.com/r/classicwow/comments/bwqzql/here_have_some_upscaled_highresolution_wow_maps/' } />],
+                  ['Vrty', <Link header={ 'Sidepanel Icons @ Reddit' } url={ 'https://www.reddit.com/user/Vrty' } />],
+               ]}/>
             </Secondary>
          </Primary>
       </div>

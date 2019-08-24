@@ -1,38 +1,37 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Context } from "../../../context";
 import { show_circle, hide_circle } from "../../../funcs/map";
-import Rows from './rows';
+import Row from './row';
 
 function Objectives({ visible }) {
 
-   // GLOBAL STATE
+   // GLOBAL & LOCAL STATE
    const { state } = useContext(Context);
-   
-   // LOCAL VISIBILITY STATE
-   const [visibility, set_visibility] = useState({
-      display: 'block'
-   })
+   const [ types ] = useState(['ends', 'completed', 'starts', 'objectives', 'special']);
 
-   // TOGGLE VISIBILITY
-   useEffect(() => {
-      set_visibility({
-         display: visible ? 'block' : 'none'
-      })
-   }, [visible])
+   // DETERMINE CONTENT
+   switch (visible) {
 
-   return (
-      <div id="objectives" style={ visibility }>
-         { state.data.route[state.current].waypoints.map((data, index) =>
-            <div className="section" key={ index } onMouseOver={() => { show_circle(index) } } onMouseOut={ hide_circle }>
-               <div className="title">
-                  <div>{ index + 1 }. { data.header }</div>
-                  <div>{ data.coords.x + '.' + data.coords.y }</div>
+      // TAB VISIBLE, RENDER NORMALLY
+      case true: { return (
+         <div id="objectives">
+            { state.data.route[state.current].waypoints.map((data, index) =>
+               <div className="section" key={ index } onMouseOver={() => { show_circle(index) } } onMouseOut={ hide_circle }>
+                  <div className="title">
+                     <div>{ index + 1 }. { data.header }</div>
+                     <div>{ data.coords.x + '.' + data.coords.y }</div>
+                  </div>
+                  { types.map((type, index) =>
+                     (data[type] !== undefined) ? <Row type={ type } data={ data[type] } key={ index } /> : null
+                  )}
                </div>
-               <Rows data={ data } />
-            </div>
-         )}
-      </div>
-   )
+            )}
+         </div>
+      )}
+
+      // OTHERWISE, RENDER NOTHING
+      default: { return null; }
+   }
 }
 
 export default Objectives;
