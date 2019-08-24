@@ -15,6 +15,8 @@ import spanish from './langs/spa.json';
 // LOCALIZED TERMS
 import terms from './langs/terms.json';
 
+import { query } from './funcs/misc';
+
 function Init() {
 
    // GLOBAL STATE
@@ -29,6 +31,8 @@ function Init() {
 
       // BUILD PLACEHOLDER
       let build = random();
+
+      query(korean);
 
       // SET GLOBAL STATE & STOP LOADING
       dispatch({
