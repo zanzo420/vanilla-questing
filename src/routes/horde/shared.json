@@ -8136,7 +8136,7 @@
                "coords": { "x": 60, "y": 65 },
                "align": "top",
                "header": "homing robot",
-               "completed": ["Find OOX-17/TN!"],
+               "completed": ["find oox-17/tn!"],
                "special": ["if a distress beacon has dropped"],
                "type": "quest"
             },
@@ -8297,7 +8297,7 @@
                "align": "top",
                "header": "feral scar vale",
                "objectives": ["the mark of quality"],
-               "completed": ["find OOX-22/FE!"],
+               "completed": ["find oox-22/fe!"],
                "special": ["if the distress beacon has dropped"],
                "type": "objective"
             },
@@ -8766,7 +8766,7 @@
                "coords": { "x": 49, "y": 38 },
                "align": "top",
                "header": "homing robot",
-               "completed": ["Find OOX-09/HL!"],
+               "completed": ["find oox-09/hl!"],
                "special": ["if the distress beacon has dropped"],
                "type": "quest"
             },

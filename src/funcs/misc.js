@@ -13,7 +13,7 @@ function shorten(string) {
 
    // string !== undefined && 
 
-   // CHECK IF THE STRING LONGER THAN 22 CHARACTERS -- CRASHED WITHOUT UNDEFINED CHECK??
+   // CHECK IF THE STRING LONGER THAN 22 CHARACTERS
    if (string.length > max_length) {
 
       // ALLOW THE FIRST 20 CHARACTERS AND TAG ON THE TRIPLEDOT

@@ -12,9 +12,6 @@ import undead from '../routes/horde/undead.json';
 import horde_shared from '../routes/horde/shared.json';
 import horde_quests from '../routes/horde/quests.json';
 
-// SHARED QUEST IDS
-import ids from '../routes/quests.json';
-
 // RACE SPECIFIC STARTERS
 const races = {
    alliance: new Map([
@@ -130,10 +127,10 @@ function specific({ race, block }) {
 }
 
 // IMPORTED DATASET
-function custom({ build }) {
+function custom({ build, faction }) {
    return {
       data: {
-         quests: ids,
+         quests: faction === 'alliance' ? alliance_quests : horde_quests,
          route: build.path,
          hearthstones: hearthstones(build.path)
       },

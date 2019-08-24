@@ -1,5 +1,4 @@
-import React, { useContext, Fragment } from 'react';
-import { Context } from '../../../context';
+import React, { Fragment } from 'react';
 
 import { extract } from '../../../funcs/quests';
 import { resource } from '../../../funcs/settings';
@@ -7,19 +6,19 @@ import { resource } from '../../../funcs/settings';
 import Single from '../single';
 import Split from '../split';
 
-function Quest({ quest }) { return (
+function Quest({ quest, state }) { return (
    <Fragment>
       <span className={ 'starts-icon' } />
       <div className={ 'starts-row' }>
-         <Row quest={ quest } />
+         <Row
+            quest={ quest }
+            state={ state }
+         />
       </div>
    </Fragment>
 )}
 
-function Row({ quest }) {
-
-   // GLOBAL STATE
-   const { state } = useContext(Context);
+function Row({ quest, state }) {
 
    // FETCH QUEST ID & NAME, THEN URL & LOCALIZATION PREFIX
    const { name, id } = extract(quest, state);

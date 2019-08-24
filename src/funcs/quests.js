@@ -78,26 +78,40 @@ function extract(data, state) {
 // FETCH QUEST ID FOR SIDEPANEL LINKS
 function fetch_id(quest, quests) {
 
-   // FETCH PARAMS
-   const name = quest_name(quest);
-   const id = parseInt(quest[1].replace(/[^0-9]/g, ''));
+   // FETCH NAME -- FORCE LOWERCASE
+   const name = quest_name(quest).toLowerCase();
 
-   // FETCH DATA
+   // FETCH ID
+   const split = quest[1].split('-');
+   const id = parseInt(split[0].replace(/[^0-9]/g, ''));
+
+   // FETCH TARGET DATA
    const target = quests[name];
-   let response = target;
    
-   if (target !== undefined) {
-      if (typeof target === 'object') {
-         if (!isNaN(id)) {
+   // IF THE QUEST DOESNT EXIST
+   if (target === undefined) {
+      console.log(name + ' ID was not found');
+      return 2;
+   }
+
+   // DEFAULT TO STANDALONE QUEST
+   let response = target;
+
+   // IF IT HAS A TYPE
+   if (typeof target === 'object') {
+      switch (isNaN(id)) {
+
+         // THE ID WAS VALID
+         case false:
             response = target[id - 1];
-         } else {
+         break;
+
+         // OTHERWISE, DEFAULT TO FIRST INDEX
+         default:
             response = target[0]
             console.log(name + ' found indexless array')
-         }
+         break;
       }
-   } else {
-      console.log(name + ' could not find')
-      response = 2;
    }
 
    return response;

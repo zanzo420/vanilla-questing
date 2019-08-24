@@ -6,6 +6,7 @@
         "objectives": "目标",
         "questlog": "任务日志",
         "link": "链接",
+        "current": "目前的任务",
         "zones": {
             "alterac": "奥特兰克山脉",
             "arathi": "阿拉希高地",
@@ -61,6 +62,7 @@
         "objectives": "Objectifs",
         "questlog": "Journal",
         "link": "Link",
+        "current": "Quêtes Actuelles",
         "zones": {
             "alterac": "Montagnes d'Alterac",
             "arathi": "Hautes-terres d'Arathi",
@@ -116,6 +118,7 @@
         "objectives": "Ziele",
         "questlog": "Questliste",
         "link": "Link",
+        "current": "Aktuelle Quests",
         "zones": {
             "alterac": "Alteracgebirge",
             "arathi": "Arathihochland",
@@ -171,6 +174,7 @@
         "objectives": "목표",
         "questlog": "퀘스트 로그",
         "link": "링크",
+        "current": "현재 퀘스트",
         "zones": {
             "alterac": "알터랙 산맥",
             "arathi": "아라시 고원",
@@ -226,6 +230,7 @@
         "objectives": "цели",
         "questlog": "квесты",
         "link": "Link",
+        "current": "текущие квесты",
         "zones": {
             "alterac": "Альтеракские горы",
             "arathi": "Нагорье Арати",
@@ -281,6 +286,7 @@
         "objectives": "Objetivos",
         "questlog": "Misiones",
         "link": "Link",
+        "current": "Misiones Actuales",
         "zones": {
             "alterac": "Montañas de Alterac",
             "arathi": "Tierras Altas de Arathi",
