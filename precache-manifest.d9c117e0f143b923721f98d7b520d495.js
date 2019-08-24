@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/ironforge.5cd8119b.jpg"
   },
   {
-    "revision": "cd1213c4bff7fc05a2a1",
-    "url": "/static/css/main.bc873a28.chunk.css"
+    "revision": "79021a44207ed83dbe56",
+    "url": "/static/css/main.329f931e.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.fdfcfda2.js"
   },
   {
-    "revision": "d21bd98cea60b01a1552",
-    "url": "/static/js/2.d21bd98c.chunk.js"
+    "revision": "861dc4525db2fd6975ce",
+    "url": "/static/js/2.861dc452.chunk.js"
   },
   {
     "revision": "3eb14f3838ada50e10f062a895c3b9cf",
@@ -104,8 +104,8 @@ self.__precacheManifest = [
     "url": "/static/media/hinterlands.a9ef10be.jpg"
   },
   {
-    "revision": "cd1213c4bff7fc05a2a1",
-    "url": "/static/js/main.cd1213c4.chunk.js"
+    "revision": "79021a44207ed83dbe56",
+    "url": "/static/js/main.79021a44.chunk.js"
   },
   {
     "revision": "7febd91b3e060d5b6b3f27989b1fa5c0",
@@ -138,6 +138,10 @@ self.__precacheManifest = [
   {
     "revision": "4781a257c2fdf90668c5f5d845b67b6a",
     "url": "/static/media/searing.4781a257.jpg"
+  },
+  {
+    "revision": "173c1c893ab8c44dc99960ced6655773",
+    "url": "/static/media/silithus.173c1c89.jpg"
   },
   {
     "revision": "6a604113fc8387f274f135c52e15ea6c",
@@ -204,7 +208,7 @@ self.__precacheManifest = [
     "url": "/static/media/wpl.1676a0cc.jpg"
   },
   {
-    "revision": "4af87656f5aa055e45fc4634f8b1ae28",
+    "revision": "c0502768abefc2b65be5d7068391e558",
     "url": "/index.html"
   }
 ];
