@@ -6,8 +6,8 @@ function References() {
    // GLOBAL CONTEXT
    const { state } = useContext(Context);
 
-   // LOCAL STATE
-   const [ headers, set_headers ] = useState({
+   // DEFAULT ENGLISH HEADERS
+   const [ defaults ] = useState({
       refs: 'References',
 
       flightpath: 'Flightpath',
@@ -29,15 +29,21 @@ function References() {
       drop: 'Random Drop Starter'
    })
 
+   // LOCAL STATE
+   const [ headers, set_headers ] = useState(defaults)
+
    // TRANSLATE WHEN NECESSARY
    useEffect(() => {
+
+      // IF SOMETHING OTHER THAN ENGLISH WAS SELECTED
       if (state.settings.language !== 'en') {
 
          // FETCH & SET NEW HEADERS
          const data = state.lang.terms[state.settings.language].references;
          set_headers(data);
 
-      }
+      // OTHERWISE, RESET TO DEFAULTS
+      } else { set_headers(defaults) }
    }, state.settings.language)
 
    return (

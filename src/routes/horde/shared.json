@@ -1370,7 +1370,7 @@
                "align": "top",
                "header": "thorn hill",
                "objectives": ["ishamuhale"],
-               "special": ["plant a zhevra carcass & plant it"],
+               "special": ["plant a zhevra carcass"],
                "type": "objective"
             },
             {
@@ -5698,7 +5698,7 @@
                "coords": { "x": 22, "y": 80 },
                "align": "bottom",
                "header": "move here",
-               "special": ["run alongside the left outer castle wall"],
+               "special": ["run alongside the left castle wall"],
                "type": "travel"
             },
             {

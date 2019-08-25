@@ -131,6 +131,7 @@ function Manifesto() { return (
                   ['Teeb', <Link header={ 'WC3 Icons @ Barrens.chat' } url={ 'https://barrens.chat/viewtopic.php?f=5&t=901' } />],
                   ['Athena', <Link header={ 'Remastered Zone Backgrounds @ Reddit thread' } url={ 'https://www.reddit.com/r/classicwow/comments/bwqzql/here_have_some_upscaled_highresolution_wow_maps/' } />],
                   ['Vrty', <Link header={ 'Sidepanel Icons @ Reddit' } url={ 'https://www.reddit.com/user/Vrty' } />],
+                  ['Shagu', <Link header={ 'Localized Databases @ pfQuest' } url={ 'https://shagu.org/pfQuest/' } />],
                ]}/>
             </Secondary>
          </Primary>
