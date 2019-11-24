@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/ironforge.5cd8119b.jpg"
   },
   {
-    "revision": "927e5868ebe71e7c71b5",
-    "url": "/static/css/main.329f931e.chunk.css"
+    "revision": "0e7c55ec603cdec3a6b5",
+    "url": "/static/css/main.89872f67.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -104,8 +104,8 @@ self.__precacheManifest = [
     "url": "/static/media/hinterlands.a9ef10be.jpg"
   },
   {
-    "revision": "927e5868ebe71e7c71b5",
-    "url": "/static/js/main.927e5868.chunk.js"
+    "revision": "0e7c55ec603cdec3a6b5",
+    "url": "/static/js/main.0e7c55ec.chunk.js"
   },
   {
     "revision": "7febd91b3e060d5b6b3f27989b1fa5c0",
@@ -208,7 +208,7 @@ self.__precacheManifest = [
     "url": "/static/media/wpl.1676a0cc.jpg"
   },
   {
-    "revision": "64de4925ae98043e4495755fd675003e",
+    "revision": "55ebe55c269f4500f39ff8fae97ad1b7",
     "url": "/index.html"
   }
 ];
