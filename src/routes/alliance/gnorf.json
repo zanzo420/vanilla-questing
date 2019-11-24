@@ -16,7 +16,7 @@
                "align": "bottom",
                "header": "kharanos",
                "ends": ["senir's observations", "supplies to tannok"],
-               "starts": [],
+               "special": ["set hearthstone"],
                "type": "hub"
             },
             {
@@ -143,6 +143,7 @@
                "align": "bottom",
                "header": "tundra macgrann",
                "ends": ["tundra macgrann's stolen stash"],
+               "special": ["corpse res?"],
                "type": "quest"
             },
             {
@@ -151,7 +152,8 @@
                "header": "kharanos",
                "ends": ["bitter rivals"],
                "starts": ["return to marleth", "frostmane hold", "tools for steelgrill"],
-               "special": ["buy 1x thunder ale", "set hearthstone"],
+               "completed": ["guarded thunderbrew barrel"],
+               "special": ["buy 1x thunder ale"],
                "type": "hub"
             },
             {

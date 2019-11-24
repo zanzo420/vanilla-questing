@@ -1,5 +1,6 @@
 {
    "name": "vanilla-questing",
+   "homepage": "https://wickstjo.github.io/vanilla-questing/",
    "version": "2.1.0",
    "private": true,
    "dependencies": {
