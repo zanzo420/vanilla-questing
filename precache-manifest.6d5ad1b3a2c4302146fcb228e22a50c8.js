@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/vanilla-questing/static/media/ironforge.5cd8119b.jpg"
   },
   {
-    "revision": "2c658b6a0e6ceec41de1",
+    "revision": "d85c4507bf8b96e1fa1d",
     "url": "/vanilla-questing/static/css/main.0229c231.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/vanilla-questing/static/js/runtime~main.dfa4cbc1.js"
   },
   {
-    "revision": "861dc4525db2fd6975ce",
-    "url": "/vanilla-questing/static/js/2.861dc452.chunk.js"
+    "revision": "e1189af1ed48f8f23be0",
+    "url": "/vanilla-questing/static/js/2.e1189af1.chunk.js"
   },
   {
     "revision": "3eb14f3838ada50e10f062a895c3b9cf",
@@ -104,8 +104,8 @@ self.__precacheManifest = [
     "url": "/vanilla-questing/static/media/hinterlands.a9ef10be.jpg"
   },
   {
-    "revision": "2c658b6a0e6ceec41de1",
-    "url": "/vanilla-questing/static/js/main.2c658b6a.chunk.js"
+    "revision": "d85c4507bf8b96e1fa1d",
+    "url": "/vanilla-questing/static/js/main.d85c4507.chunk.js"
   },
   {
     "revision": "7febd91b3e060d5b6b3f27989b1fa5c0",
@@ -208,7 +208,7 @@ self.__precacheManifest = [
     "url": "/vanilla-questing/static/media/wpl.1676a0cc.jpg"
   },
   {
-    "revision": "6472a4aab173add6858e90152534a477",
+    "revision": "82a558b69fe49f17c01d5dff83327c6f",
     "url": "/vanilla-questing/index.html"
   }
 ];
