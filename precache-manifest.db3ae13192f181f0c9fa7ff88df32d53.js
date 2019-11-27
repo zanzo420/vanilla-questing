@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/vanilla-questing/static/media/ironforge.5cd8119b.jpg"
   },
   {
-    "revision": "793079c3729fad23ac35",
+    "revision": "690ccde068348300084d",
     "url": "/vanilla-questing/static/css/main.0229c231.chunk.css"
   },
   {
@@ -104,8 +104,8 @@ self.__precacheManifest = [
     "url": "/vanilla-questing/static/media/hinterlands.a9ef10be.jpg"
   },
   {
-    "revision": "793079c3729fad23ac35",
-    "url": "/vanilla-questing/static/js/main.793079c3.chunk.js"
+    "revision": "690ccde068348300084d",
+    "url": "/vanilla-questing/static/js/main.690ccde0.chunk.js"
   },
   {
     "revision": "7febd91b3e060d5b6b3f27989b1fa5c0",
@@ -208,7 +208,7 @@ self.__precacheManifest = [
     "url": "/vanilla-questing/static/media/wpl.1676a0cc.jpg"
   },
   {
-    "revision": "04e06d61d345f24007d07960c2e4f98e",
+    "revision": "5989445db208bb26eaa0fc551de7e223",
     "url": "/vanilla-questing/index.html"
   }
 ];
