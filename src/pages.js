@@ -16,10 +16,10 @@ function Pages() {
    // IF ROUTE & SETTINGS DATA HAS LOADED, RENDER PAGES NORMALLY
    if (state.data !== null && state.settings !== null) { return (
       <Switch>
-         <Route exact path={ '/' } component={ Home } />
-         <Route path={ '/manifesto' } component={ Manifesto } />
-         <Route path={ '/:race/:block' } component={ Target } />
-         <Route path={ '/settings' } component={ Settings } />
+         <Route exact path={ '/vanilla-questing/' } component={ Home } />
+         <Route path={ '/vanilla-questing/manifesto' } component={ Manifesto } />
+         <Route path={ '/vanilla-questing/:race/:block' } component={ Target } />
+         <Route path={ '/vanilla-questing/settings' } component={ Settings } />
          <Route component={ Error } />
       </Switch>
 

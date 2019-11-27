@@ -27,7 +27,7 @@ function Help() {
          <Sub
             header={ 'Report Issues' }
             icon={ 'report' }
-            link={ '/manifesto#contribute' }
+            link={ '/vanilla-questing/manifesto#contribute' }
          />
          <Sub
             header={ 'Donate' }

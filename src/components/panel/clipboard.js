@@ -32,7 +32,7 @@ function Clipboard() {
    }
 
    return (
-      <CopyToClipboard text={ 'http://vanilla-questing.me/' + state.data.race + '/' + state.current } onCopy={ message }>
+      <CopyToClipboard text={ 'https://wickstjo.github.io/vanilla-questing/' + state.data.race + '/' + state.current } onCopy={ message }>
          <div id={ 'link' }>{ header }</div>
       </CopyToClipboard>
    )
